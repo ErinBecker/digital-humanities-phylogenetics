@@ -8,3 +8,12 @@ http://www.nature.com/nature/journal/v394/n6696/full/394839a0.html
 https://viraltexts.org/  
 https://books.google.com/ngrams  
 http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0167822  
+
+# People to follow up with  
+@acerbialberto  
+@ryancordell  
+@FolgertK (http://www.karsdorp.io/ )  
+@Mike_Kestemont  
+@billhd 
+@tla   
+@justingrimmer  
