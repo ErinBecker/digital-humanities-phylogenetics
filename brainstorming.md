@@ -35,6 +35,7 @@ different parameters.
 Index numbers distinguish between homphones. The system has a long history and is far from consistent. It does, however, allow one to identify which signs were used in the original text.
 
 <span style="font-family: Cuneiform_Composite">
+𒈪
 &#12000; sign name A; may be read a = water or duru₅ = wet; or can be used as the syllable -a-.
 
 &#12009; sign name A2; may be read a₂ = arm, power, time. Is not regularly used as a syllabic value.
