@@ -35,7 +35,9 @@ different parameters.
 Index numbers distinguish between homphones. The system has a long history and is far from consistent. It does, however, allow one to identify which signs were used in the original text.
 
 &#12000; sign name A; may be read a = water or duru₅ = wet; or can be used as the syllable -a-.
+
 &#12009; sign name A2; may be read a₂ = arm, power, time. Is not regularly used as a syllabic value.
+
 etc. [the cuneiform signs will only render if you have a unicode font that includes the cuneiform code block].
 
 Note that some scholars will use accents instead of the subscript numbers 2 and 3: á = a₂ and è = e₃ - these are identical.
