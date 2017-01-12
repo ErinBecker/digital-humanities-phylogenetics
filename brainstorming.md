@@ -34,12 +34,13 @@ different parameters.
 ## About transliteration:
 Index numbers distinguish between homphones. The system has a long history and is far from consistent. It does, however, allow one to identify which signs were used in the original text.
 
+<span style="font-family: CuneiformComposite">
 &#12000; sign name A; may be read a = water or duru₅ = wet; or can be used as the syllable -a-.
 
 &#12009; sign name A2; may be read a₂ = arm, power, time. Is not regularly used as a syllabic value.
-
+</span>
 etc. [the cuneiform signs will only render if you have a unicode font that includes the cuneiform code block].
 
 Note that some scholars will use accents instead of the subscript numbers 2 and 3: á = a₂ and è = e₃ - these are identical.
 
-Determinatives (or semantic classifiers) are conventionally rendered as superscripts; foe instance <sup>d</sup>inana 'the goddess Inana". The superscripted d renders the DINGIR sign that is not pronounced, but indicates that what follows is a divine being. In digital transliterations such determinatives are often rendered with curly brackets (as in {d}inana), which may, or may not, be replaced by the appropriate tags when rendered in HTML.
+Determinatives (or semantic classifiers) are conventionally rendered as superscripts; for instance <sup>d</sup>inana 'the goddess Inana". The superscripted d renders the DINGIR sign that is not pronounced, but indicates that what follows is the name of a divine being. In digital transliterations such determinatives are often rendered with curly brackets (as in {d}inana), which may, or may not, be replaced by the appropriate tags when rendered in HTML.
