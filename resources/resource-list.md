@@ -9,7 +9,7 @@ http://www.mike-kestemont.org/
 
 Author attribution: were these documents written by Hildegard von Bingen or by her secretary? Based on usage of function words such articles, prepositions. Not immediately applicable to Sumerian sources - but very interesting. Mike Kestemont also does 'n-gram' analysis - where n-gram refers to the number of characters (not words).
 
-## Folgert Karsdorp, Antal van den Bosch: Roodkapje (Little Riding Hood)
+## Folgert Karsdorp, Antal van den Bosch: Roodkapje (Little Red Riding Hood)
 http://rsos.royalsocietypublishing.org/content/3/6/160071  
 
 Analysis of some 300 versions of Little Riding Hood in Dutch, creating a network of dependencies. Based on distance measurements, based on bag-of-words approach (many words in common = small distance). Very interesting for the network theory behind it. The BOW ignores word order, which is not appropriate for the current project. Distance and network are most intruiging.
