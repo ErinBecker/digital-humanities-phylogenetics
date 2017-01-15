@@ -19,7 +19,12 @@ http://lmullen.github.io/civil-procedure-codes/
 
 Similarities between field codes to detect dependencies, working with 5-grams (see their [working paper](http://lmullen.github.io/civil-procedure-codes/talks/dh-working-group/Funk-Mullen.Migration-Field-Code.working-paper.pdf)) and Jaccard similarity score. The dependencies between codes are not wholesale, but rather based on sections. That is, a code may borrow sections from various other codes. The result is a network of codes (with NeW York at the heart), but also graphs that show the origin of each section in a single code. The full scripts are available on Github (in R).
 
+## Jamshid J. Tehrani: The Phylogeny of Little Red Riding Hood
 http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0078871  
+
+Analysis of 58 versions of two related fairy tales: "Little Red Riding Hood" and "the Wolf and the Kids." The study takes a distincly phylogenetic perspective, asking how these versions depend on each other. The analysis is based on identification of motifs and characters (I believe by hand-coding them). The recorded stories come from Europe, Middle East, Africa and the Far East. The analysis shows that "Little Red Riding Hood" and "The Wolf and the Kids" are clearly separate branches (or clades). The third branch, which comprises the Far Eastern stories, references elements of both stories, which is interpreted as a later conflation of the two.
+The analysis uses three different statistical approaches: 1. Cladistic analysis searching for the 'Most Parimonous Tree'; 2. Bayseian inference and 3. NeighborNet. Each of these approaches has statistics to describe the strength or probability of the solution found. Of these three, NeighbornNet may be most interesting because it allows for overlap and intersection.
+
 http://www.nature.com/nature/journal/v394/n6696/full/394839a0.html  
 https://viraltexts.org/  
 https://books.google.com/ngrams  
