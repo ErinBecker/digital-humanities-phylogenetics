@@ -12,12 +12,12 @@ Author attribution: were these documents written by Hildegard von Bingen or by h
 ## Folgert Karsdorp, Antal van den Bosch: Roodkapje (Little Red Riding Hood)
 http://rsos.royalsocietypublishing.org/content/3/6/160071  
 
-Analysis of some 300 versions of Little Riding Hood in Dutch, creating a network of dependencies. Based on distance measurements, based on bag-of-words approach (many words in common = small distance). Very interesting for the network theory behind it. The BOW ignores word order, which is not appropriate for the current project. Distance and network are most intruiging.
+Analysis of some 300 versions of Little Riding Hood in Dutch, creating a network of dependencies. Based on distance measurements and on bag-of-words approach (many words in common = small distance). Very interesting for the network theory behind it. The BOW ignores word order, which is not appropriate for the current project. Distance and network are most intruiging.
 
 ## Kellen Funk and Lincoln Mullen: dependencies among 19th century American legal codes (Field Codes)
 http://lmullen.github.io/civil-procedure-codes/  
 
-Similarities between field codes to detect dependencies, working with 5-grams (see their [working paper](http://lmullen.github.io/civil-procedure-codes/talks/dh-working-group/Funk-Mullen.Migration-Field-Code.working-paper.pdf)) and Jaccard similarity score. The dependencies between codes are not wholesale, but rather based on sections. That is, a code may borrow sections from various other codes. The result is a network of codes (with NeW York at the heart), but also graphs that show the origin of each section in a single code. The full scripts are available on Github (in R).
+Similarities between field codes to detect dependencies, working with 5-grams (see their [working paper](http://lmullen.github.io/civil-procedure-codes/talks/dh-working-group/Funk-Mullen.Migration-Field-Code.working-paper.pdf)) and Jaccard similarity score. The dependencies between codes are not wholesale, but rather based on sections. That is, a code may borrow sections from various other codes. The result is a network of codes (with New York at the heart), but also graphs that show the origin of each section in a single code. The full scripts are available on Github (in R).
 
 ## Jamshid J. Tehrani: The Phylogeny of Little Red Riding Hood
 http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0078871  
