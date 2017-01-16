@@ -11,4 +11,13 @@ In addition to the Nippur version, there are versions of this list from many oth
 All texts discussed in this section have been edited in DCCLT. The internal chronology of the texts is fairly clear for provenanced material, but usually unclear for other texts (only a few tablets are explicitly dated).
 
 ## Middle Babylonian
-Although we have a few exemplars of Middle Babylonian lists of trees and wooden objects from the Babylonian heartland, the majority of such texts come from places such as [Ugarit](http://oracc.org/dcclt/lexicallistsperiods/middlebabylonian/ugarit/index.html) and [Emar](http://oracc.org/dcclt/lexicallistsperiods/middlebabylonian/emar/index.html (in present-day Syria) and [Hattusa](http://oracc.org/dcclt/lexicallistsperiods/middlebabylonian/hattusha/index.html) (in present-day Turkey). Cuneiform had spread throughout the Near East as a language of trade and diplomacy. Interestingly, the city of Emar yields two distinct versions of the list: one unilingual and one bilingual. Emar and Ugarit traditions tend to be fairly close; the Hattusa tradition seems to be different. 
+Although we have a few exemplars of Middle Babylonian lists of trees and wooden objects from the Babylonian heartland, the majority of such texts come from places such as [Ugarit](http://oracc.org/dcclt/lexicallistsperiods/middlebabylonian/ugarit/index.html) and [Emar](http://oracc.org/dcclt/lexicallistsperiods/middlebabylonian/emar/index.html (in present-day Syria) and [Hattusa](http://oracc.org/dcclt/lexicallistsperiods/middlebabylonian/hattusha/index.html) (in present-day Turkey). Cuneiform had spread throughout the Near East as a language of trade and diplomacy. Interestingly, the city of Emar yields two distinct versions of the list: one unilingual and one bilingual; one closer alligned with Old Babylonian models, the other closer alligned with later versions. Emar and Ugarit traditions tend to be fairly close; the Hattusa tradition seems to be different.
+
+Most texts from this period can be dated and located fairly well. The great majority is available on [DCCLT](http://oracc.org/dcclt).
+
+## First Millennium
+Local variation largely disappears in first millennium sources; all sources are now bilingual. The list of trees and wooden objects is *much* longer than its Old Babylonian and Middle Babylonian counterparts were. The sources have not been collected systematically in DCCLT and those that are available have not been linked to a composite texts. The impression is that previous generations of scholars over-emphasized the homogeneity of first millennium scholarly tradition and that in fact there is quite a bit of variation (although certainly much less than in earlier periods.
+
+# Other Lists
+The list of Trees and Wooden objects is just one example of a (thematic) lexical lists. Other such lists exist and present their own opportunities and challenges.
+
