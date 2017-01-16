@@ -38,7 +38,10 @@ https://viraltexts.org/
 
 NEH supported project at Northeastern. Finding duplicates (poems, articles, jokes) in large amounts of OCRed newspapers. A [methods article](http://viraltexts.org/2015/05/22/computational-methods-for-uncovering-reprinted-texts-in-antebellum-newspapers/) by David Smith, Ryan Cordell, and Abby Mullen describes a. how to reduce the billions of potential matches (based on 5-grams - matching sequences of 5 words) to consider and b. how to deal with partial matches (due to OCR errors or small changes in a poem). Quote: "A simple Levenshtein edit distance model, which is commonly applied in natural language processing (see, for instance, Gusfield’s textbook for an extensive discussion), aligns these two strings with three character substitutions (in red) and one character insertion."
 
+## Google ngram viewer
 https://books.google.com/ngrams  
+Displays a graph of one or more ngrams (n is 1-5) distributed over time. Different languages available. The data set can be accessed (that is, the complete set of ngrams for the languages included).
+
 http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0167822  
 
 # People to follow up with  
