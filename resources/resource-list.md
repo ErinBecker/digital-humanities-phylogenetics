@@ -40,8 +40,9 @@ NEH supported project at Northeastern. Finding duplicates (poems, articles, joke
 
 ## Google ngram viewer
 https://books.google.com/ngrams  
-Displays a graph of one or more ngrams (n is 1-5) distributed over time. Different languages available. The data set can be accessed (that is, the complete set of ngrams for the languages included).
+Displays a graph of one or more ngrams (n = 1 to 5) distributed over time. Different languages available. The data set can be accessed (that is, the complete set of ngrams for the languages included).
 
+## Guilherme D. Marmerola e.a. On the Reconstruction of Text Phylogeny Trees: Evaluation and Analysis of Textual Relationships
 http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0167822  
 
 # People to follow up with  
