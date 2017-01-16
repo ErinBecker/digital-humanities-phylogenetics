@@ -31,9 +31,13 @@ The article includes extensive bibliography, including studies that use phylogen
 ## Adrian C. Barbrook e.a. Phylogeny of Canterbury Tales
 http://www.nature.com/nature/journal/v394/n6696/full/394839a0.html  
 
-Phylogenetic reconstruction of one of the tales in the Cantebury Tales based on 58 manuscripts. The study finds several branches of the tradition and manuscripts that may be close to Chaucer's original. Fourteen manuscripts are left out because they appear to have used multiple originals from different branches. It is not clear what the analysis is based upon (words, spelling, phrases?) or how the data were acquired. Article dates to 1998(!) and it is unlikely that the software used would still be current. The ommission of 14 manuscripts because of their mixed origin seems arbitrary - the mixed nature of manuscript tradition is an important feature of how such tradition works. The analysis does not seem to include chronological information. The tree-structure of the resulting graph is interesting.
+Phylogenetic reconstruction of one of the tales in the Cantebury Tales based on 58 manuscripts. The study finds several branches of the tradition and manuscripts that may be close to Chaucer's original. Fourteen manuscripts are left out because they appear to have used multiple originals from different branches. It is not clear what the analysis is based upon (words, spelling, phrases?) or how the data were acquired. Article dates to 1998(!) and it is unlikely that the software used would still be current. The ommission of 14 manuscripts because of their mixed origin seems arbitrary - the mixed nature of manuscript tradition is an important feature of how such tradition works. The analysis does not seem to include chronological information. The Splits-tree structure of the resulting graph is interesting.
 
+## Viral Texts Mapping Networks of Reprinting in 19th-Century Newspapers and Magazines
 https://viraltexts.org/  
+
+NEH supported project at Northeastern. Finding duplicates (poems, articles, jokes) in large amounts of OCRed newspapers. A [methods article](http://viraltexts.org/2015/05/22/computational-methods-for-uncovering-reprinted-texts-in-antebellum-newspapers/) by David Smith, Ryan Cordell, and Abby Mullen describes a. how to reduce the billions of potential matches (based on 5-grams - matching sequences of 5 words) to consider and b. how to deal with partial matches (due to OCR errors or small changes in a poem). Quote: "A simple Levenshtein edit distance model, which is commonly applied in natural language processing (see, for instance, Gusfield’s textbook for an extensive discussion), aligns these two strings with three character substitutions (in red) and one character insertion."
+
 https://books.google.com/ngrams  
 http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0167822  
 
