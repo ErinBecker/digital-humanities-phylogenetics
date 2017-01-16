@@ -45,6 +45,11 @@ Displays a graph of one or more ngrams (n = 1 to 5) distributed over time. Diffe
 ## Guilherme D. Marmerola e.a. On the Reconstruction of Text Phylogeny Trees: Evaluation and Analysis of Textual Relationships
 http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0167822  
 
+Using a variety of computational methods to build a phylogenetic tree of near-duplicate documents. Three different methods for calculating dissimilarity and three different approaches to building the phylogenetic tree, comparing the performance of each.
+Dissimilarity measures include 'edit distance', 'Normalized Compression Distance' (based on the size of compressed files), and vector distance, based on tf-idf weighing. The three approaches to building the phylogenetic tree include 'minimum cost heuristic' and two supervised machine-learning algoritms to classify documents as 'original' or 'reused' : 'Support Vector Machines' and 'Rondom Forrest.'
+
+The framework developed here may not be directly applicable to Sumerian texts, but it contains a wealth of ideas and potential approaches.
+
 # People to follow up with  
 @acerbialberto  
 @ryancordell  
