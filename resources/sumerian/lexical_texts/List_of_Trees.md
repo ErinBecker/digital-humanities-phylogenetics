@@ -16,7 +16,7 @@ Although we have a few exemplars of Middle Babylonian lists of trees and wooden 
 Most texts from this period can be dated and located fairly well. The great majority is available on [DCCLT](http://oracc.org/dcclt).
 
 ## First Millennium
-Local variation largely disappears in first millennium sources; all sources are now bilingual. The list of trees and wooden objects is *much* longer than its Old Babylonian and Middle Babylonian counterparts were. The sources have not been collected systematically in DCCLT and those that are available have not been linked to a composite texts. The impression is that previous generations of scholars over-emphasized the homogeneity of first millennium scholarly tradition and that in fact there is quite a bit of variation (although certainly much less than in earlier periods.
+Local variation largely disappears in first millennium sources; all sources are now bilingual. The list of trees and wooden objects is *much* longer than its Old Babylonian and Middle Babylonian counterparts were. The sources have not been collected systematically in DCCLT and those that are available have not been linked to a composite texts. The impression is that previous generations of scholars over-emphasized the homogeneity of first millennium scholarly tradition and that in fact there is quite a bit of variation (although certainly much less than in earlier periods).
 
 # Other Lists
 The list of Trees and Wooden objects is just one example of a (thematic) lexical lists. Other such lists exist and present their own opportunities and challenges.
