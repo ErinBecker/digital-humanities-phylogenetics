@@ -1,0 +1,4 @@
+id_text,text_name,l_no,text
+dcclt/P249383,AUCT 5 186 [OB Ura],o 1,sux:e[house]N sux:gigir[chariot]N
+dcclt/P249383,AUCT 5 186 [OB Ura],o 2,sux:e[house]N sux:usan[whip]N sux:la[hang]V/t sux:gigir[chariot]N
+dcclt/P249383,AUCT 5 186 [OB Ura],o 3,sux:e[house]N sux:gigir[chariot]N

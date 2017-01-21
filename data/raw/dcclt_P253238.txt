@@ -1,0 +1,37 @@
+id_text,text_name,l_no,text
+dcclt/P253238,CUSAS 12 3.1.10 [OB Ura],o 1',sux:šinig[tamarisk]N
+dcclt/P253238,CUSAS 12 3.1.10 [OB Ura],o 2',sux:šinig[tamarisk]N sux:dili[single]V/i
+dcclt/P253238,CUSAS 12 3.1.10 [OB Ura],o 3',sux:šinig[tamarisk]N sux:kur[mountain]N
+dcclt/P253238,CUSAS 12 3.1.10 [OB Ura],o 4',sux:šaršabid[tree]N
+dcclt/P253238,CUSAS 12 3.1.10 [OB Ura],o 5',sux:mes[tree]N sux:šaršabid[tree]N
+dcclt/P253238,CUSAS 12 3.1.10 [OB Ura],o 6',sux:lam[tree]N
+dcclt/P253238,CUSAS 12 3.1.10 [OB Ura],o 7',sux:eš[tree]N
+dcclt/P253238,CUSAS 12 3.1.10 [OB Ura],o 8',sux:usuh[tree]N
+dcclt/P253238,CUSAS 12 3.1.10 [OB Ura],o 9',sux:usuh[tree]N sux:tur[small]V/i
+dcclt/P253238,CUSAS 12 3.1.10 [OB Ura],o 10',sux:še[cone]N sux:usuh[tree]N
+dcclt/P253238,CUSAS 12 3.1.10 [OB Ura],o 11',sux:pa[branch]N sux:usuh[tree]N
+dcclt/P253238,CUSAS 12 3.1.10 [OB Ura],o 12',sux:an[sky]N sux:usuh[tree]N
+dcclt/P253238,CUSAS 12 3.1.10 [OB Ura],o 13',sux:bir.GAM.la.e[tree]N
+dcclt/P253238,CUSAS 12 3.1.10 [OB Ura],o 14',sux:šimgig[tree]N
+dcclt/P253238,CUSAS 12 3.1.10 [OB Ura],o 15',sux:šennur[plum]N
+dcclt/P253238,CUSAS 12 3.1.10 [OB Ura],o 16',sux:lamgal[nut]N
+dcclt/P253238,CUSAS 12 3.1.10 [OB Ura],o 17',sux:lamtur[nut]N
+dcclt/P253238,CUSAS 12 3.1.10 [OB Ura],o 18',sux:allanum[oak]N
+dcclt/P253238,CUSAS 12 3.1.10 [OB Ura],o 19',sux:ildag[poplar]N
+dcclt/P253238,CUSAS 12 3.1.10 [OB Ura],r 1,sux:ildag[poplar]N sux:kur[mountain]N
+dcclt/P253238,CUSAS 12 3.1.10 [OB Ura],r 2,sux:ildag[poplar]N sux:bur[to-spread-out;-cover]V/t
+dcclt/P253238,CUSAS 12 3.1.10 [OB Ura],r 3,sux:ildag[poplar]N sux:šitan[water-channel]N
+dcclt/P253238,CUSAS 12 3.1.10 [OB Ura],r 4,sux:kur[wood]N
+dcclt/P253238,CUSAS 12 3.1.10 [OB Ura],r 5,sux:ŋešaʾabak[tree]N
+dcclt/P253238,CUSAS 12 3.1.10 [OB Ura],r 6,sux:ŋešaʾabak[tree]N sux:Meluhha[1]GN
+dcclt/P253238,CUSAS 12 3.1.10 [OB Ura],r 7,sux:ŋipar[tree]N
+dcclt/P253238,CUSAS 12 3.1.10 [OB Ura],r 8,sux:manu[wood]N
+dcclt/P253238,CUSAS 12 3.1.10 [OB Ura],r 9,sux:manu[wood]N sux:gibil[firewood]N
+dcclt/P253238,CUSAS 12 3.1.10 [OB Ura],r 10,sux:manu[wood]N sux:šu[hand]N sux:ak[do]V/t
+dcclt/P253238,CUSAS 12 3.1.10 [OB Ura],r 11,sux:manu[wood]N sux:sag[good]V/i
+dcclt/P253238,CUSAS 12 3.1.10 [OB Ura],r 12,sux:manu[wood]N sux:muran[tree]N
+dcclt/P253238,CUSAS 12 3.1.10 [OB Ura],r 13,sux:muran[tree]N
+dcclt/P253238,CUSAS 12 3.1.10 [OB Ura],r 14,sux:nurma[pomegranate]N
+dcclt/P253238,CUSAS 12 3.1.10 [OB Ura],r 15,sux:KID.da[twig]N
+dcclt/P253238,CUSAS 12 3.1.10 [OB Ura],r 16,sux:KID.da[twig]N
+dcclt/P253238,CUSAS 12 3.1.10 [OB Ura],r 17,sux:KID.da[twig]N

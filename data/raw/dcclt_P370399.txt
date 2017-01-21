@@ -1,0 +1,150 @@
+id_text,text_name,l_no,text
+dcclt/P370399,LTBA 1 79 [OB Ura],o i 2',sux:ŋešnimbar[palm]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o i 3',sux:ŋešnimbar[palm]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o i 4',sux:ŋešnimbar[palm]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o i 5',sux:ŋešnimbar[palm]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o i 6',sux:ŋešnimbar[palm]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o i 7',sux:ŋešnimbar[palm]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o i 9',sux:ŋešnimbar[palm]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o i 10',sux:da[side-board]N sux:ŋešnimbar[palm]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o i 11',sux:tubala[harness]N sux:ŋešnimbar[palm]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o i 12',sux:ŋešnimbar[palm]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o i 13',sux:ŋešnimbar[palm]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o i 14',sux:hara[shoot]N sux:ŋešnimbar[palm]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o i 15',sux:aʾan[spadix]N sux:ŋešnimbar[palm]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o i 16',sux:ŋešnimbar[palm]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o i 17',sux:ŋešnimbar[palm]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o i 18',sux:ŋešnimbar[palm]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o i 19',sux:ŋešnimbar[palm]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o i 20',sux:ŋešnimbar[palm]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o i 21',sux:ŋešnimbar[palm]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o i 22',sux:ŋešnimbar[palm]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o i 23',sux:ŋešnimbar[palm]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o i 24',sux:ŋešnimbar[palm]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o ii 2',sux:suhuš[foundation]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o ii 15',sux:ŋirigub[footstool]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o ii 16,sux:ŋirigub[footstool]N sux:lammar[deity]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o ii 17',sux:gag[nail]N sux:gar[knob]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o ii 18',sux:murzanum[wooden-object]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o ii 24',sux:emesig[plank]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o ii 25',sux:ŋešnud[bed]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o ii 26',sux:ŋeš.nud.AŠ.nud[bed]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o ii 27',sux:ŋešnud[bed]N sux:kinud[bedroom]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o ii 28',sux:ŋešnud[bed]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o ii 29',sux:ŋešnud[bed]N sux:umbin[nail]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o ii 30',sux:ŋešnud[bed]N sux:umbin[nail]N sux:sal[thin]V/i
+dcclt/P370399,LTBA 1 79 [OB Ura],o ii 31',sux:ŋešnud[bed]N sux:umbin[nail]N sux:gud[ox]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o ii 32',sux:ŋešnud[bed]N sux:garba[knob]N sux:kugsig[gold]N sux:ŋar[place]V/t
+dcclt/P370399,LTBA 1 79 [OB Ura],o ii 33',sux:ŋešnud[bed]N sux:garba[knob]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iii 1',sux:guza[chair]N sux:taškarin[boxwood]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iii 2',sux:guza[chair]N sux:šagkal[tree]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iii 3',sux:guza[chair]N sux:sirda[cnne]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iii 4',sux:guza[chair]N sux:anše[equid]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iii 5',sux:guza[chair]N sux:lugal[king]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iii 6',sux:guza[chair]N sux:malah[sailor]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iii 7',sux:guza[chair]N sux:kimah[grave]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iii 8',sux:guza[chair]N sux:šuniŋin[total]N sux:banda[junior]V/i
+dcclt/P370399,LTBA 1 79 [OB Ura],o iii 9',sux:saŋ[head]N sux:guza[chair]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iii 10',sux:ŋešdi[rung]N sux:guza[chair]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iii 11',sux:izzi[wall]N sux:guza[chair]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iii 12',sux:umbin[base]N sux:guza[chair]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iii 13',sux:banšur[table]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iii 14',sux:banšur[table]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iii 15',sux:banšur[table]N sux:mul[star]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iii 16,sux:banšur[table]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iii 17',sux:banšur[table]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iii 19',sux:banšur[table]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iii 20',sux:banšurzaggula[table]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iii 21,sux:banšurzagŋara[table]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iii 22',sux:kaŋeškarak[table]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iii 23',sux:kaŋeškarak[table]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iii 24',sux:kaŋeškarak[table]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iii 25',sux:kaŋeškarak[table]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iii 27',sux:dilim[spoon]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iii 28',sux:dilim[spoon]N sux:gal[big]V/i
+dcclt/P370399,LTBA 1 79 [OB Ura],o iii 29',sux:dilimbanda[bowl]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iii 30',sux:maštakda[wooden-object]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iii 31',sux:apin[plow]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iii 32',sux:saŋ[head]N sux:apin[plow]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iii 33',sux:saŋ[head]N sux:apin[plow]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iii 34',sux:gag[nail]N sux:saŋ[head]N sux:apin[plow]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iii 35',sux:da[side-board]N sux:apin[plow]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iii 36',sux:a[arm]N sux:apin[plow]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iii 37',sux:leʾum[board]N sux:apin[plow]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iii 38',sux:apin[plow]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iii 39',sux:apin[plow]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iii 40',sux:apin[plow]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iv 2',sux:ŋešdal[crossbar]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iv 3',sux:margida[cart]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iv 4',sux:gagsila[harness]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iv 5',sux:zara[pivot]N sux:gagsila[harness]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iv 6',sux:gag[nail]N sux:zara[pivot]N sux:gagsila[harness]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iv 7',sux:umbin[wheel]N sux:gagsila[harness]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iv 8',sux:DUB.du₃[~vehicle]N sux:ŋar[place]V/t
+dcclt/P370399,LTBA 1 79 [OB Ura],o iv 9',sux:DUB.du₃[~vehicle]N sux:bar[outside]V/t
+dcclt/P370399,LTBA 1 79 [OB Ura],o iv 10',sux:DUB.du₃[~vehicle]N sux:šag[heart]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iv 11',sux:gigir[chariot]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iv 12',sux:e[house]N sux:gigir[chariot]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iv 13',sux:e[house]N sux:usan[whip]N sux:gigir[chariot]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iv 14',sux:gaba[chest]N sux:gigir[chariot]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iv 15',sux:gabaŋal[guard]N sux:gigir[chariot]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iv 16',sux:kun[tail]N sux:gigir[chariot]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iv 17',sux:si[horn]N sux:gigir[chariot]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iv 18',sux:umbin[wheel]N sux:gigir[chariot]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iv 19',sux:gag[nail]N sux:umbin[wheel]N sux:gigir[chariot]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iv 20',sux:gigir[chariot]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iv 21',sux:gigir[chariot]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iv 22',sux:gigir[chariot]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iv 25',sux:mud[tube]N sux:gigir[chariot]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iv 26',sux:ig[door]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iv 27',sux:ig[door]N sux:kigal[platform]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iv 28',sux:ig[door]N sux:kan[gate]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iv 29',sux:ig[door]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iv 30',sux:ig[door]N sux:zena[midrib]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iv 31',sux:ig[door]N sux:barda[crossbar]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iv 32',sux:ig[door]N sux:miriza[plank]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iv 33',sux:ig[door]N sux:uma[triumph]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iv 34',sux:ig[door]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iv 35',sux:ig[door]N sux:lul[false]V/i
+dcclt/P370399,LTBA 1 79 [OB Ura],o iv 36',sux:ig[door]N sux:šinig[tamarisk]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iv 37',sux:ig[door]N sux:egal[palace]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iv 38',sux:ig[door]N sux:sah[mat]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iv 39',sux:suku[pole]N sux:ig[door]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iv 40',sux:ig[door]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o iv 41',sux:ig[door]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o v 3',sux:ŋešdubdim[tool]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o v 4',sux:sumungi[tool]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o v 8',sux:ellag[ball]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o v 9',sux:ŋešellag[tool]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o v 10',sux:ellag[ball]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o v 11',sux:sugin[rot]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o v 12',sux:sugin[rot]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o v 13',sux:sugin[rot]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o v 17',sux:madal[pole]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o v 18',sux:madal[pole]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o v 19',sux:malalum[container]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o v 20',sux:gazinbu[pole]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o v 21',sux:naŋa[mortar]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o v 22',sux:naŋa[mortar]N sux:še[barley]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o v 23',sux:naŋa[mortar]N sux:ŋeši[sesame]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o v 24',sux:naŋa[mortar]N sux:tukul[weapon]N sux:gaz[kill]V/t
+dcclt/P370399,LTBA 1 79 [OB Ura],o v 26',sux:gal[big]V/i
+dcclt/P370399,LTBA 1 79 [OB Ura],o v 27',sux:ebir[vessel-stand]N sux:gub[stand]V/i
+dcclt/P370399,LTBA 1 79 [OB Ura],o v 28',sux:ebir[vessel-stand]N sux:gub[stand]V/i sux:a[water]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o v 29',sux:ebir[vessel-stand]N sux:gub[stand]V/i sux:kaš[beer]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o v 30',sux:garig[comb]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o v 31',sux:garig[comb]N sux:munus[woman]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o v 32',sux:garig[comb]N sux:nita[male]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o v 33',sux:emerah[jug]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o v 34',sux:emerah[jug]N sux:munus[woman]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o v 35',sux:emerah[jug]N sux:nita[male]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o vi 32',sux:harmušen[snare]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o vi 33',sux:ŋidru[scepter]N sux:harmušen[snare]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o vii 1',sux:ma[ship]N sux:niš[twenty]NU sux:gur[unit]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o vii 2',sux:ma[ship]N sux:u[ten]NU sux:gur[unit]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o vii 3',sux:ma[ship]N sux:ya[five]NU sux:gur[unit]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o vii 4',sux:zigan[rudder]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o vii 5',sux:gimuš[pole]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o vii 6',sux:magid[boat]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o vii 7',sux:magid[boatman]N
+dcclt/P370399,LTBA 1 79 [OB Ura],o vii 8',sux:magid[boatman]N

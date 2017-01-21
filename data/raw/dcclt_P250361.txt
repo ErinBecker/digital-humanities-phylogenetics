@@ -1,0 +1,17 @@
+id_text,text_name,l_no,text
+dcclt/P250361,EEN 282 BM 080790 [OB Ura],o 1',sux:saŋ[head]N sux:ŋešnud[bed]N
+dcclt/P250361,EEN 282 BM 080790 [OB Ura],o 2',sux:zid[right]V/i sux:ŋešnud[bed]N
+dcclt/P250361,EEN 282 BM 080790 [OB Ura],o 3',sux:guza[chair]N
+dcclt/P250361,EEN 282 BM 080790 [OB Ura],o 4',sux:guza[chair]N sux:munus[woman]N
+dcclt/P250361,EEN 282 BM 080790 [OB Ura],o 5',sux:guza[chair]N sux:nita[male]N
+dcclt/P250361,EEN 282 BM 080790 [OB Ura],o 6',sux:guza[chair]N sux:ad[log]N
+dcclt/P250361,EEN 282 BM 080790 [OB Ura],o 7',sux:guza[chair]N sux:šuniŋin[total]N
+dcclt/P250361,EEN 282 BM 080790 [OB Ura],o 8',sux:guza[chair]N sux:kaskal[way]N
+dcclt/P250361,EEN 282 BM 080790 [OB Ura],o ii 1',sux:šusaŋ[compressor]N sux:apin[plow]N
+dcclt/P250361,EEN 282 BM 080790 [OB Ura],o ii 2',sux:ninda[seed-funnel]N sux:apin[plow]N
+dcclt/P250361,EEN 282 BM 080790 [OB Ura],o ii 3',sux:muš[snake]N sux:apin[plow]N
+dcclt/P250361,EEN 282 BM 080790 [OB Ura],o ii 4',sux:har[ring]N sux:apin[plow]N
+dcclt/P250361,EEN 282 BM 080790 [OB Ura],o ii 5',sux:a[arm]N sux:apin[plow]N
+dcclt/P250361,EEN 282 BM 080790 [OB Ura],o ii 6',sux:apin[plow]N
+dcclt/P250361,EEN 282 BM 080790 [OB Ura],o ii 7',sux:ama[mother]N sux:apin[plow]N
+dcclt/P250361,EEN 282 BM 080790 [OB Ura],o ii 8',sux:nig[~plow]N sux:apin[plow]N

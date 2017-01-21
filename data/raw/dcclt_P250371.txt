@@ -1,0 +1,10 @@
+id_text,text_name,l_no,text
+dcclt/P250371,EEN 389 NCBT 01891 [ur5-ra],o 1,sux:e[house]N sux:usan[whip]N sux:gigir[chariot]N
+dcclt/P250371,EEN 389 NCBT 01891 [ur5-ra],o 2,sux:gaba[chest]N sux:gigir[chariot]N
+dcclt/P250371,EEN 389 NCBT 01891 [ur5-ra],o 3,sux:gabaŋal[guard]N sux:gigir[chariot]N
+dcclt/P250371,EEN 389 NCBT 01891 [ur5-ra],o 4,sux:sahargi[dust-guard]N sux:gigir[chariot]N
+dcclt/P250371,EEN 389 NCBT 01891 [ur5-ra],o 5,sux:si[horn]N sux:gigir[chariot]N
+dcclt/P250371,EEN 389 NCBT 01891 [ur5-ra],o 6,sux:saŋ[head]N sux:gigir[chariot]N
+dcclt/P250371,EEN 389 NCBT 01891 [ur5-ra],o 7,sux:lirum[strength]N sux:gigir[chariot]N
+dcclt/P250371,EEN 389 NCBT 01891 [ur5-ra],o 8,sux:guza[chair]N sux:gigir[chariot]N
+dcclt/P250371,EEN 389 NCBT 01891 [ur5-ra],r 1,sux:mud[tube]N sux:gigir[chariot]N

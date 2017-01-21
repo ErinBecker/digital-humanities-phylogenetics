@@ -1,0 +1,22 @@
+id_text,text_name,l_no,text
+dcclt/P459226,EEN 279-81 VAT 06588 (EEN 279-81 VAT 06588) [OB Ura],o i 2',sux:halub[tree]N
+dcclt/P459226,EEN 279-81 VAT 06588 (EEN 279-81 VAT 06588) [OB Ura],o i 3',sux:šagkal[tree]N
+dcclt/P459226,EEN 279-81 VAT 06588 (EEN 279-81 VAT 06588) [OB Ura],o i 4',sux:ŋešgana[tree]N
+dcclt/P459226,EEN 279-81 VAT 06588 (EEN 279-81 VAT 06588) [OB Ura],o i 5',sux:ŋešgana[tree]N sux:babbar[white]V/i
+dcclt/P459226,EEN 279-81 VAT 06588 (EEN 279-81 VAT 06588) [OB Ura],o i 6',sux:ŋešgana[tree]N sux:giggi[black]V/i
+dcclt/P459226,EEN 279-81 VAT 06588 (EEN 279-81 VAT 06588) [OB Ura],o i 7',sux:ŋeš[tree]N sux:giggi[black]V/i
+dcclt/P459226,EEN 279-81 VAT 06588 (EEN 279-81 VAT 06588) [OB Ura],o i 8',sux:ŋeš[tree]N sux:babbar[white]V/i
+dcclt/P459226,EEN 279-81 VAT 06588 (EEN 279-81 VAT 06588) [OB Ura],o i 9',sux:peš[fig]N
+dcclt/P459226,EEN 279-81 VAT 06588 (EEN 279-81 VAT 06588) [OB Ura],o i 10',sux:peš[fig]N
+dcclt/P459226,EEN 279-81 VAT 06588 (EEN 279-81 VAT 06588) [OB Ura],o i 11',sux:peš[fig]N sux:šergu[string]N
+dcclt/P459226,EEN 279-81 VAT 06588 (EEN 279-81 VAT 06588) [OB Ura],o i 12',sux:hašhur[apple]N
+dcclt/P459226,EEN 279-81 VAT 06588 (EEN 279-81 VAT 06588) [OB Ura],o i 13',sux:hašhur[apple]N sux:kur[mountain]N
+dcclt/P459226,EEN 279-81 VAT 06588 (EEN 279-81 VAT 06588) [OB Ura],o i 14',sux:hašhur[apple]N sux:armanu[tree]N
+dcclt/P459226,EEN 279-81 VAT 06588 (EEN 279-81 VAT 06588) [OB Ura],o i 15',sux:hašhur[apple]N sux:kurdilum[fruit-tree]N
+dcclt/P459226,EEN 279-81 VAT 06588 (EEN 279-81 VAT 06588) [OB Ura],o i 16',sux:hašhur[apple]N sux:peš[fig]N
+dcclt/P459226,EEN 279-81 VAT 06588 (EEN 279-81 VAT 06588) [OB Ura],o ii 9',sux:manu[wood]N
+dcclt/P459226,EEN 279-81 VAT 06588 (EEN 279-81 VAT 06588) [OB Ura],o ii 10',sux:manu[wood]N
+dcclt/P459226,EEN 279-81 VAT 06588 (EEN 279-81 VAT 06588) [OB Ura],o ii 11',sux:manu[wood]N sux:gibil[firewood]N
+dcclt/P459226,EEN 279-81 VAT 06588 (EEN 279-81 VAT 06588) [OB Ura],o ii 12',sux:manu[wood]N sux:lu[mix]V/t
+dcclt/P459226,EEN 279-81 VAT 06588 (EEN 279-81 VAT 06588) [OB Ura],o ii 13',sux:manu[wood]N sux:kalag[strong]V/i
+dcclt/P459226,EEN 279-81 VAT 06588 (EEN 279-81 VAT 06588) [OB Ura],o ii 14',sux:manu[wood]N sux:šu[hand]N sux:ak[do]V/t

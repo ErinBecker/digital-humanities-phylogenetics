@@ -1,0 +1,94 @@
+id_text,text_name,l_no,text
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o i 11',sux:ig[door]N sux:sah[mat]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o i 12',sux:ig[door]N sux:maštab[twin]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o i 13',sux:ig[door]N sux:miriza[plank]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o i 14',sux:ig[door]N sux:zena[midrib]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o i 15',sux:ig[door]N sux:gal[big]V/i
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o i 16',sux:suku[pole]N sux:ig[door]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o i 17',sux:ig[door]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o i 18',sux:usakar[moon]N sux:ig[door]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o i 19',sux:suhub[bolt]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o i 20',sux:šugi[bolt]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o i 21',sux:nukušu[~door]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o i 22',sux:nukušu[~door]N sux:ana[upper]AJ
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o i 23',sux:nukušu[~door]N sux:kita[lower]AJ
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o i 24',sux:saŋkul[bolt]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o ii 2',sux:ilila[lever]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o ii 3',sux:barbar[shuttle]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o ii 4',sux:tugtug[~loom]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o ii 5',sux:niŋzu[~loom]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o ii 6',sux:ŋešgina[~loom]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o ii 7',sux:niŋmenbulug[~loom]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o ii 10',sux:ilila[lever]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o ii 13',sux:garig[comb]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o ii 14',sux:garig[comb]N sux:šuʾi[barber]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o ii 15',sux:garig[comb]N sux:pamušenak[wing]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o ii 16',sux:garig[comb]N sux:eban[pair]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o ii 17',sux:balak[spindle]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o ii 18',sux:e[house]N sux:balak[spindle]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o ii 19',sux:saŋ[head]N sux:balak[spindle]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o ii 20',sux:mete[appropriate-thing]N sux:balak[spindle]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o ii 21',sux:antibal[sign]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o ii 23',sux:ellag[ball]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o ii 24',sux:ŋešellag[tool]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o ii 25',sux:ellag[ball]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o ii 26',sux:madal[pole]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o ii 27',sux:madal[pole]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o ii 28',sux:malalum[container]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iii 2,sux:ŋešpu[rim]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iii 6,sux:ŋešrin[scales]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iii 7,sux:ŋešrin[scales]N sux:lu[person]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iii 8,sux:ŋešrin[scales]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iii 9,sux:ŋešrin[scales]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iii 10,sux:e[house]N sux:ŋešrin[scales]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iii 11,sux:apin[plow]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iii 12,sux:apin[plow]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iii 13,sux:apin[plow]N sux:šu[hand]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iii 14,sux:apin[plow]N sux:šudu[equipped]AJ
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iii 15,sux:apin[plow]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iii 16,sux:apin[plow]N sux:tugsaga[plow]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iii 17,sux:apin[plow]N sux:saŋ[head]N sux:tuku[acquire]V/t
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iii 18,sux:apin[plow]N sux:šukara[tool]N sux:bir[scatter]V/t
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iii 19,sux:saŋ[head]N sux:apin[plow]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iii 20,sux:gag[nail]N sux:saŋ[head]N sux:apin[plow]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iii 21,sux:kašu[~plow]N sux:apin[plow]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iii 22,sux:ama[mother]N sux:apin[plow]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iii 23,sux:apin[plow]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iii 24,sux:šusaŋ[compressor]N sux:apin[plow]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iii 25,sux:niŋkud[~plowshare]N sux:apin[plow]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iii 26,sux:niŋŋeštug[~plow]N sux:apin[plow]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iii 27,sux:har[ring]N sux:apin[plow]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iii 28,sux:gag[nail]N sux:har[ring]N sux:apin[plow]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iii 29,sux:leʾum[board]N sux:apin[plow]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iii 30,sux:gag[nail]N sux:leʾum[board]N sux:apin[plow]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iii 31,sux:sala[~plow]N sux:apin[plow]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iii 32,sux:gag[nail]N sux:sala[~plow]N sux:apin[plow]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iv 1,sux:damga[~plow]N sux:apin[plow]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iv 2,sux:šudul[yoke]N sux:apin[plow]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iv 3,sux:apin[plow]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iv 4,sux:gaba[chest]N sux:apin[plow]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iv 5,sux:a[arm]N sux:gud[ox]N sux:apin[plow]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iv 17,sux:suhur[tool]N sux:gud[ox]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iv 18,sux:al[hoe]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iv 19,sux:alšub[tool]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iv 20,sux:al[hoe]N sux:saŋ[head]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iv 21,sux:al[hoe]N sux:zu[tooth]N sux:min[two]NU
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iv 22,sux:al[hoe]N sux:zu[tooth]N sux:eš[three]NU
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iv 23,sux:al[hoe]N sux:zu[tooth]N sux:limmu[four]NU
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iv 24,sux:ušub[brick-mold]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iv 25,sux:ušub[brick-mold]N sux:ab[window]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iv 26,sux:ušub[brick-mold]N sux:šeg[brick]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iv 27,sux:ušub[brick-mold]N sux:sal[thin]V/i
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iv 29,sux:tur[small]V/i
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iv 30,sux:gag[nail]N sux:dud[mound]N sux:bal[dig]V/t
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iv 31,sux:gag[nail]N sux:dud[mound]N sux:šum[garlic]N sux:bal[dig]V/t
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iv 32,sux:gag[nail]N sux:šum[garlic]N sux:širdili[~garlic]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],o iv 33,sux:dupsik[basket]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],r i 1,sux:dupsik[basket]N sux:zala[smashed]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],r i 2,sux:zirigum[irrigation-device]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],r i 3,sux:gu[neck]N sux:zirigum[irrigation-device]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],r i 4,sux:kuŋ[stair]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],r i 5,sux:kuŋ[stair]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],r i 6,sux:tukul[weapon]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],r i 7,sux:tukul[weapon]N
+dcclt/P459218,EEN 265-66 IB 1512c + [OB Ura],r i 8,sux:tukul[weapon]N sux:ur[root]N

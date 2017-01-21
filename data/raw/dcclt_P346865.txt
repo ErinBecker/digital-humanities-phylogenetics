@@ -1,0 +1,3 @@
+id_text,text_name,l_no,text
+dcclt/P346865,UET 6 0828 [OB Ura],o 1,sux:suhur[tuft]N sux:ŋešnimbar[palm]N
+dcclt/P346865,UET 6 0828 [OB Ura],o 2,sux:tubala[harness]N sux:ŋešnimbar[palm]N

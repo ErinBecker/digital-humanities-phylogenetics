@@ -1,0 +1,3 @@
+id_text,text_name,l_no,text
+dcclt/P459223,EEN 267 IB 1618 [OB Ura],1,sux:ušub[brick-mold]N sux:ab[window]N
+dcclt/P459223,EEN 267 IB 1618 [OB Ura],2,sux:ušub[brick-mold]N sux:sal[thin]V/i

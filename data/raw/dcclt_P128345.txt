@@ -1,0 +1,3 @@
+id_text,text_name,l_no,text
+dcclt/P128345,Rochester 248 [OB Ura],o 1,sux:garig[comb]N sux:siki[hair]N
+dcclt/P128345,Rochester 248 [OB Ura],o 2,sux:garig[comb]N

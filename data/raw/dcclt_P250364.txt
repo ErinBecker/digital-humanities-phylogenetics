@@ -1,0 +1,89 @@
+id_text,text_name,l_no,text
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o i 1,sux:gigir[chariot]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o i 2,sux:e[house]N sux:gigir[chariot]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o i 3,sux:e[house]N sux:usan[whip]N sux:gigir[chariot]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o i 4,sux:gaba[chest]N sux:gigir[chariot]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o i 5,sux:gabaŋal[guard]N sux:gigir[chariot]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o i 6,sux:sahargi[dust-guard]N sux:gigir[chariot]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o i 7,sux:si[horn]N sux:gigir[chariot]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o i 8,sux:saŋ[head]N sux:gigir[chariot]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o i 9,sux:bad[leg]N sux:gigir[chariot]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o i 10,sux:guza[chair]N sux:gigir[chariot]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o i 11,sux:mud[tube]N sux:gigir[chariot]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o i 12,sux:gag[nail]N sux:mud[tube]N sux:gigir[chariot]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o i 13,sux:izzi[wall]N sux:gigir[chariot]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o i 14,sux:umbin[wheel]N sux:gigir[chariot]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o i 15,sux:gag[nail]N sux:gigir[chariot]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o i 16,sux:zara[pivot]N sux:gigir[chariot]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o i 17,sux:gag[nail]N sux:zara[pivot]N sux:gigir[chariot]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o i 18,sux:gabil[beam]N sux:gigir[chariot]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o i 19,sux:saŋkul[bolt]N sux:gigir[chariot]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o i 20,sux:gigir[chariot]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o ii 2,sux:gag[nail]N sux:umbin[wheel]N sux:margida[cart]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o ii 3,sux:gu[neck]N sux:umbin[wheel]N sux:margida[cart]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o ii 4,sux:a[arm]N sux:umbin[wheel]N sux:margida[cart]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o ii 5,sux:ŋirigub[footstool]N sux:margida[cart]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o ii 6,sux:margida[cart]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o ii 7,sux:endur[navel?]N sux:margida[cart]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o ii 8,sux:DUB.du₃[~vehicle]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o ii 9,sux:DUB.du₃[~vehicle]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o ii 10,sux:DUB.du₃[~vehicle]N sux:ašag[field]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o ii 11,sux:apin[plow]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o ii 12,sux:apin[plow]N sux:šu[hand]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o ii 13,sux:apin[plow]N sux:gud[ox]N sux:limmu[four]NU sux:la[hang]V/t
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o ii 14,sux:apin[plow]N sux:šudu[equipped]AJ
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o ii 15,sux:apin[plow]N sux:šudu[equipped]AJ
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o ii 16,sux:apin[plow]N sux:tugsaga[plow]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o ii 17,sux:apin[plow]N sux:kešed[bind]V/t
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o ii 18,sux:apin[plow]N sux:šukara[tool]N sux:bir[scatter]V/t
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o ii 19,sux:apin[plow]N sux:akar[implement]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o ii 20,sux:saŋ[head]N sux:apin[plow]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o ii 21,sux:gag[nail]N sux:saŋ[head]N sux:apin[plow]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o ii 22,sux:kašu[~plow]N sux:apin[plow]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o iv 2,sux:ŋešrin[scales]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o iv 3,sux:ŋešrin[scales]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o iv 4,sux:ŋešrin[scales]N sux:mana[unit]N sux:la[hang]V/t
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o iv 5,sux:e[house]N sux:ŋešrin[scales]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o iv 6,sux:al[hoe]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o iv 7,sux:al[hoe]N sux:ki[place]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o iv 8,sux:al[hoe]N sux:saŋ[head]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o iv 9,sux:al[hoe]N sux:saŋ[head]N sux:ŋal[be]V/i
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o iv 10,sux:al[hoe]N sux:saŋ[head]N sux:ŋal[be]V/i
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o iv 11,sux:al[hoe]N sux:kun[tail]N sux:saŋ[head]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o iv 12,sux:al[hoe]N sux:ušub[brick-mold]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o iv 13,sux:al[hoe]N sux:zu[tooth]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o iv 14,sux:al[hoe]N sux:zu[tooth]N sux:min[two]NU
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o iv 15,sux:al[hoe]N sux:zu[tooth]N sux:eš[three]NU
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o v 3,sux:sa[net]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o v 4,sux:sadu[net]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o v 5,sux:sa[net]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o v 6,sux:sa[net]N sux:gi[thicket]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o v 7,sux:sašušgal[net]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o v 8,sux:sahir[net]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o v 9,sux:sa[net]N sux:mah[great]V/i
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o v 10,sux:sa[net]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o v 11,sux:sa[net]N sux:dul[cover]V/t
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o v 12,sux:sa[net]N sux:gal[big]V/i
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o v 13,sux:sa[net]N sux:harmušen[snare]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o v 14,sux:pa[branch]N sux:harmušen[snare]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],o v 15,sux:gur[rim]N sux:harmušen[snare]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],r i 3',sux:dimdim[instrument]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],r i 5',sux:sigsig[musical-instrument]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],r i 6',sux:sigsig[musical-instrument]N sux:eban[pair]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],r i 7',sux:gude[lute]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],r i 8',sux:balaŋdi[instrument]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],r ii 4',sux:magaz[bench]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],r ii 5',sux:magaz[bench]N sux:burud[perforate]V/t
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],r ii 6',sux:kunsig[bristle]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],r ii 7',sux:nisiki[comb]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],r ii 14',sux:dih[weed]N sux:kur[mountain]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],r ii 16',sux:ešgiri[staff]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],r ii 17',sux:kur[wood]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],r iii 18',sux:bur[bowl]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],r iii 21',sux:ak[do]V/t
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],r iii 22',sux:šaʾuša[lance]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],r iii 24',sux:argibil[structure]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],r iii 26',sux:ŋeš[tree]N sux:šuniŋin[total]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],r iv 1',sux:šuniŋin[total]N sux:šuši[sixty]NU sux:mu[name]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],r iv 2',sux:Kiŋ-Inana[1]MN sux:ud[sun]N
+dcclt/P250364,BRM 4 29 + 30 [OB Ura],r v 1',sux:mu[year]N sux:Samsuʾiluna[01]RN sux:lugal[king]N

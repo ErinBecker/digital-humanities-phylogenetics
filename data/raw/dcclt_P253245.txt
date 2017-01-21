@@ -1,0 +1,14 @@
+id_text,text_name,l_no,text
+dcclt/P253245,CUSAS 12 3.1.11 [OB Ura],o 1,sux:siŋar[bolt]N
+dcclt/P253245,CUSAS 12 3.1.11 [OB Ura],o 2,sux:kan[gate]N
+dcclt/P253245,CUSAS 12 3.1.11 [OB Ura],o 3,sux:hedu[ornament]N sux:kan[gate]N
+dcclt/P253245,CUSAS 12 3.1.11 [OB Ura],o 4,sux:hedu[ornament]N sux:kan[gate]N
+dcclt/P253245,CUSAS 12 3.1.11 [OB Ura],o 6,sux:aški[rushes]N
+dcclt/P253245,CUSAS 12 3.1.11 [OB Ura],o 9,sux:šukara[tool]N
+dcclt/P253245,CUSAS 12 3.1.11 [OB Ura],o 10,sux:eškiri[rope]N
+dcclt/P253245,CUSAS 12 3.1.11 [OB Ura],o 11,sux:gag[nail]N sux:eškiri[rope]N
+dcclt/P253245,CUSAS 12 3.1.11 [OB Ura],o 12,sux:šibir[staff]N
+dcclt/P253245,CUSAS 12 3.1.11 [OB Ura],o 13,sux:gag[nail]N sux:šibir[staff]N
+dcclt/P253245,CUSAS 12 3.1.11 [OB Ura],o 15,sux:ŋirigub[footstool]N
+dcclt/P253245,CUSAS 12 3.1.11 [OB Ura],r 1,sux:ŋirigub[footstool]N
+dcclt/P253245,CUSAS 12 3.1.11 [OB Ura],r 2,sux:ŋirigub[footstool]N sux:lammar[deity]N

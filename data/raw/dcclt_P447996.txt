@@ -1,0 +1,197 @@
+id_text,text_name,l_no,text
+dcclt/P447996,Anonymous 447996 [OB Ura],o iii 3',sux:lamgal[nut]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o iii 4',sux:lamtur[nut]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o iii 6',sux:allanum[oak]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o iii 7',sux:šenu[tree]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o iii 8',sux:šedug[tree]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o iii 9',sux:šeše[tree]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o iii 10',sux:samana[tree]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o iii 11',sux:samazum[tree]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o iii 12',sux:tulubum[tree]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o iii 13',sux:guruʾuš[tree-trunk]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o iii 14',sux:buzunuma[plant]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o iii 15,sux:dih[weed]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o iii 16,sux:dih[weed]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o iii 17,sux:dih[weed]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o iii 18,sux:kur[wood]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o iii 19,sux:ildag[poplar]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o iii 20,sux:ildag[poplar]N sux:kur[mountain]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o iii 21,sux:ildag[poplar]N sux:šitan[water-channel]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o iii 22,sux:ildag[poplar]N sux:bur[to-spread-out;-cover]V/t
+dcclt/P447996,Anonymous 447996 [OB Ura],o iii 23,sux:ildag[poplar]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o iii 24,sux:ildag[poplar]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o iii 25,sux:ildag[poplar]N sux:tur[small]V/i
+dcclt/P447996,Anonymous 447996 [OB Ura],o iv 3,sux:urzinum[tree]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o iv 4,sux:šinig[tamarisk]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o iv 5,sux:šinig[tamarisk]N sux:kur[mountain]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o iv 6,sux:šinig[tamarisk]N sux:dili[single]V/i
+dcclt/P447996,Anonymous 447996 [OB Ura],o iv 7,sux:šinig[tamarisk]N sux:tur[small]V/i
+dcclt/P447996,Anonymous 447996 [OB Ura],o iv 8,sux:šinig[tamarisk]N sux:ki[place]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o iv 9,sux:šinig[tamarisk]N sux:ud[sun]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o iv 10,sux:KID.da[twig]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o iv 11,sux:KID.da[twig]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o iv 12,sux:KID.da[twig]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o iv 13,sux:KID.da[twig]N sux:sil[split]V/i
+dcclt/P447996,Anonymous 447996 [OB Ura],o iv 14,sux:manu[wood]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o iv 15,sux:manu[wood]N sux:duru[wet]V/i
+dcclt/P447996,Anonymous 447996 [OB Ura],o iv 16,sux:manu[wood]N sux:šu[hand]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o iv 17,sux:manu[wood]N sux:šu[hand]N sux:ak[do]V/t
+dcclt/P447996,Anonymous 447996 [OB Ura],o iv 18,sux:manu[wood]N sux:gibil[firewood]N sux:ak[do]V/t
+dcclt/P447996,Anonymous 447996 [OB Ura],o iv 19,sux:manu[wood]N sux:du[build]V/t
+dcclt/P447996,Anonymous 447996 [OB Ura],o iv 20,sux:manu[wood]N sux:kalag[strong]V/i
+dcclt/P447996,Anonymous 447996 [OB Ura],o iv 21,sux:manu[wood]N sux:muran[tree]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o iv 22,sux:muran[tree]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o iv 23,sux:ŋeštin[vine]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o iv 24,sux:ŋeštinguruma[~vine]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o iv 25,sux:ŋeštin[vine]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o iv 26,sux:ŋeštin[vine]N sux:nim[high]V/i
+dcclt/P447996,Anonymous 447996 [OB Ura],o iv 27,sux:ŋeštin[vine]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o iv 28,sux:ŋeštin[vine]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o iv 29,sux:ŋeštin[vine]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o iv 30,sux:ŋeštin[vine]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o iv 31,sux:ŋeštin[vine]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o iv 32,sux:ŋeštin[vine]N sux:sur[press]V/t
+dcclt/P447996,Anonymous 447996 [OB Ura],o iv 33,sux:ŋeštin[vine]N sux:babbar[white]V/i
+dcclt/P447996,Anonymous 447996 [OB Ura],o iv 34,sux:ŋeštin[vine]N sux:giggi[black]V/i
+dcclt/P447996,Anonymous 447996 [OB Ura],o iv 35,sux:ŋeštin[vine]N sux:duru[wet]V/i
+dcclt/P447996,Anonymous 447996 [OB Ura],o iv 36,sux:ŋeštin[vine]N sux:e[leave]V/i
+dcclt/P447996,Anonymous 447996 [OB Ura],o iv 37,sux:ŋeštin[vine]N sux:garan[bunch]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o iv 38,sux:ŋeštin[vine]N sux:kaʾa[fox]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o iv 39,sux:peš[fig]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o iv 40,sux:peš[fig]N sux:Mari[1]SN
+dcclt/P447996,Anonymous 447996 [OB Ura],o iv 41,sux:peš[fig]N sux:Elam[1]GN
+dcclt/P447996,Anonymous 447996 [OB Ura],o iv 42,sux:peš[fig]N sux:šergu[string]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o iv 43,sux:peš[fig]N sux:babbar[white]V/i
+dcclt/P447996,Anonymous 447996 [OB Ura],o v 1,sux:hašhur[apple]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o v 2,sux:hašhur[apple]N sux:kur[mountain]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o v 3,sux:hašhur[apple]N sux:armanu[tree]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o v 4,sux:hašhur[apple]N sux:damšelum[plant]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o v 5,sux:hašhur[apple]N sux:aʾabak[sea]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o v 6,sux:hašhur[apple]N sux:še[barley]N sux:eštub[carp]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o v 7,sux:hašhur[apple]N sux:šeŋuš[barley]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o v 8,sux:hašhur[apple]N sux:kurdilum[fruit-tree]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o v 9,sux:hašhur[apple]N sux:baza[dwarf]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o v 10,sux:laldar[pomegranate]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o v 11,sux:nurma[pomegranate]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o v 12,sux:nurma[pomegranate]N sux:gal[big]V/i
+dcclt/P447996,Anonymous 447996 [OB Ura],o v 13,sux:nurma[pomegranate]N sux:dili[single]V/i
+dcclt/P447996,Anonymous 447996 [OB Ura],o v 14,sux:nurma[pomegranate]N sux:us[follow]V/t
+dcclt/P447996,Anonymous 447996 [OB Ura],o v 15,sux:nurma[pomegranate]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o v 16,sux:nurma[pomegranate]N sux:dar[split]V/t
+dcclt/P447996,Anonymous 447996 [OB Ura],o v 17,sux:šennur[plum]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o v 18,sux:šennur[plum]N sux:kur[mountain]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o v 19,sux:šennur[plum]N sux:gal[big]V/i
+dcclt/P447996,Anonymous 447996 [OB Ura],o v 20,sux:ŋipar[tree]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o v 21,sux:šagkal[tree]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o v 22,sux:ŠU.KAL[tree]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o v 25,sux:isimu[sprout]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o v 28,sux:ligima[shoot]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o v 30,sux:ŋešnimbar[palm]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o v 31,sux:ŋešnimbar[palm]N sux:kur[mountain]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o v 32,sux:ŋešnimbar[palm]N sux:Dilmun[1]GN
+dcclt/P447996,Anonymous 447996 [OB Ura],o v 33,sux:ŋešnimbar[palm]N sux:suhuš[offshoot]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o v 34,sux:ŋešnimbar[palm]N sux:gun[load]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o v 35,sux:ŋešnimbar[palm]N sux:saŋ[head]N sux:imin[seven]NU
+dcclt/P447996,Anonymous 447996 [OB Ura],o v 36,sux:ŋešnimbar[palm]N sux:saŋ[head]N sux:eš[three]NU
+dcclt/P447996,Anonymous 447996 [OB Ura],o v 37,sux:ŋešnimbar[palm]N sux:sissig[green]V/i sux:šeŋ[cook]V/t
+dcclt/P447996,Anonymous 447996 [OB Ura],o v 38,sux:ŋešnimbar[palm]N
+dcclt/P447996,Anonymous 447996 [OB Ura],o v 39,sux:ŋešnimbar[palm]N sux:Meluhha[1]GN
+dcclt/P447996,Anonymous 447996 [OB Ura],o v 40,sux:ŋešnimbar[palm]N sux:šeŋ[cook]V/t
+dcclt/P447996,Anonymous 447996 [OB Ura],o v 41,sux:ŋešnimbar[palm]N sux:šeŋ[cook]V/t
+dcclt/P447996,Anonymous 447996 [OB Ura],r i 1,sux:ŋešnimbar[palm]N sux:izi[fire]N sux:gu[eat]V/t
+dcclt/P447996,Anonymous 447996 [OB Ura],r i 2,sux:ŋešnimbar[palm]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r i 3,sux:ŋešnimbar[palm]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r i 4,sux:ŋešnimbar[palm]N sux:šab[cut]V/t
+dcclt/P447996,Anonymous 447996 [OB Ura],r i 5,sux:ŋešnimbar[palm]N sux:lipiš[innards]N sux:bur[tear]V/t
+dcclt/P447996,Anonymous 447996 [OB Ura],r i 6,sux:ŋešnimbar[palm]N sux:kud[cut]V/t
+dcclt/P447996,Anonymous 447996 [OB Ura],r i 7,sux:ŋešnimbar[palm]N sux:gighab[disease]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r i 8,sux:ŋešnimbar[palm]N sux:dar[split]V/t
+dcclt/P447996,Anonymous 447996 [OB Ura],r i 9,sux:ŋešnimbar[palm]N sux:ug[die]V/t
+dcclt/P447996,Anonymous 447996 [OB Ura],r i 10,sux:ŋešnimbar[palm]N sux:uš[die]V/i
+dcclt/P447996,Anonymous 447996 [OB Ura],r i 11,sux:lipiš[innard]N sux:ŋešnimbar[palm]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r i 12,sux:šag[heart]N sux:ŋešnimbar[palm]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r i 13,sux:suhur[tuft]N sux:ŋešnimbar[palm]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r i 14,sux:peš[frond]N sux:ŋešnimbar[palm]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r i 15,sux:pešmur[~palm]N sux:ŋešnimbar[palm]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r i 16,sux:pešmur[~palm]N sux:ŋešnimbar[palm]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r i 17,sux:pešbandazi[offshoot]N sux:ŋešnimbar[palm]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r i 18,sux:zena[midrib]N sux:ŋešnimbar[palm]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r i 19,sux:zena[midrib]N sux:ŋešnimbar[palm]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r i 20,sux:ŋešnimbar[palm]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r i 21,sux:pa[branch]N sux:ŋešnimbar[palm]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r i 22,sux:pa[branch]N sux:kud[cut]V/t sux:ŋešnimbar[palm]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r i 23,sux:ŋešnimbar[palm]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r i 24,sux:dala[thorn]N sux:ŋešnimbar[palm]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r i 25,sux:dala[thorn]N sux:tur[small]V/i sux:ŋešnimbar[palm]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r i 26,sux:ligima[shoot]N sux:ŋešnimbar[palm]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r i 27,sux:ŋešnimbar[palm]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r i 28,sux:ŋešnimbar[palm]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r i 29,sux:ŋešnimbar[palm]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r i 30,sux:ŋešnimbar[palm]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r i 31,sux:ŋešnimbar[palm]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r i 32,sux:he₂.BAD[trimmings]N sux:ŋešnimbar[palm]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r i 33,sux:pel[defile]V/t sux:ŋešnimbar[palm]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r i 34,sux:hara[shoot]N sux:ŋešnimbar[palm]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r i 35,sux:aʾan[spadix]N sux:ŋešnimbar[palm]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r i 36,sux:kita[basket]N sux:ŋešnimbar[palm]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r i 37,sux:kita[basket]N sux:zulum[date]N sux:ŋešnimbar[palm]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r i 38,sux:barda[crossbar]N sux:ŋešnimbar[palm]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r i 39,sux:mangaga[fibers]N sux:ŋešnimbar[palm]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r i 40,sux:daldal[stamen]N sux:ŋešnimbar[palm]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r i 41,sux:su[fibers]N sux:ŋešnimbar[palm]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r i 42,sux:mud[stump]N sux:ŋešnimbar[palm]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r i 43,sux:mud[stump]N sux:gaz[kill]V/t sux:ŋešnimbar[palm]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r i 44,sux:mud[stump]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r ii 2,sux:ŋešla[key]N sux:ŋešnimbar[palm]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r ii 3,sux:ŋešnimbar[palm]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r ii 4,sux:ŋešnimbar[palm]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r ii 5,sux:ŋešnimbar[palm]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r ii 6,sux:ma[ship]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r ii 7,sux:Maʾana[1]ON
+dcclt/P447996,Anonymous 447996 [OB Ura],r ii 8,sux:ma[ship]N sux:hili[attractiveness]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r ii 9,sux:Madurahabzu[1]ON
+dcclt/P447996,Anonymous 447996 [OB Ura],r ii 10,sux:Manuri[1]ON
+dcclt/P447996,Anonymous 447996 [OB Ura],r ii 11,sux:Manuri[1]ON sux:banda[junior]V/i
+dcclt/P447996,Anonymous 447996 [OB Ura],r ii 12,sux:ma[ship]N sux:kiʾaŋa[beloved]AJ sux:Urim[1]SN
+dcclt/P447996,Anonymous 447996 [OB Ura],r ii 13,sux:ma[ship]N sux:kiʾaŋa[beloved]AJ
+dcclt/P447996,Anonymous 447996 [OB Ura],r ii 14,sux:ma[ship]N sux:gal[big]V/i
+dcclt/P447996,Anonymous 447996 [OB Ura],r ii 15,sux:Makarnuntaʾea[1]ON sux:e[leave]V/i
+dcclt/P447996,Anonymous 447996 [OB Ura],r ii 16,sux:Mabarmul[1]ON
+dcclt/P447996,Anonymous 447996 [OB Ura],r ii 17,sux:Makarmah[1]ON
+dcclt/P447996,Anonymous 447996 [OB Ura],r ii 18,sux:ma[ship]N sux:ma[ship]N sux:Inana[1]DN
+dcclt/P447996,Anonymous 447996 [OB Ura],r ii 19,sux:Mašaghula[1]ON
+dcclt/P447996,Anonymous 447996 [OB Ura],r ii 20,sux:magur[barge]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r ii 21,sux:Maʾidnirŋal[1]ON
+dcclt/P447996,Anonymous 447996 [OB Ura],r ii 22,sux:Maʾidnirŋal[1]ON
+dcclt/P447996,Anonymous 447996 [OB Ura],r ii 23,sux:ma[ship]N sux:si[horn]N sux:limmu[four]NU
+dcclt/P447996,Anonymous 447996 [OB Ura],r ii 24,sux:ma[ship]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r ii 25,sux:ma[ship]N sux:gur[unit]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r ii 26,sux:ma[ship]N sux:tur[small]V/i
+dcclt/P447996,Anonymous 447996 [OB Ura],r ii 27,sux:maʾu[barge]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r ii 28,sux:ma[ship]N sux:til[live]V/i
+dcclt/P447996,Anonymous 447996 [OB Ura],r ii 29,sux:magurgur[large-boat]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r ii 31,sux:magilum[boat]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r ii 32,sux:magid[boat]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r ii 33,sux:ma[ship]N sux:Mari[1]SN
+dcclt/P447996,Anonymous 447996 [OB Ura],r ii 34,sux:ma[ship]N sux:Dilmun[1]GN
+dcclt/P447996,Anonymous 447996 [OB Ura],r ii 35,sux:ma[ship]N sux:Magan[1]GN
+dcclt/P447996,Anonymous 447996 [OB Ura],r ii 36,sux:mala[boat]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r ii 37,sux:madala[bundle]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r ii 38,sux:ma[ship]N sux:sil[split]V/i
+dcclt/P447996,Anonymous 447996 [OB Ura],r ii 39,sux:ma[ship]N sux:addir[ferry]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r iii 12,sux:ma[ship]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r iii 13,sux:ma[ship]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r iii 14,sux:ma[ship]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r iii 15,sux:ma[ship]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r iii 16,sux:ma[ship]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r iii 17,sux:ma[ship]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r iii 18,sux:ma[ship]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r iii 19,sux:ma[ship]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r iii 20,sux:ma[ship]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r iii 21,sux:antibal[sign]N sux:ma[ship]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r iii 23,sux:e[house]N sux:ma[ship]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r iii 24,sux:bar[outside]V/t sux:šag[heart]N sux:ma[ship]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r iii 25,sux:ti[rib]N sux:ma[ship]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r iii 26,sux:emesig[plank]N sux:ma[ship]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r iii 27,sux:si[horn]N sux:malah[sailor]N
+dcclt/P447996,Anonymous 447996 [OB Ura],r iii 28,sux:malah[sailor]N

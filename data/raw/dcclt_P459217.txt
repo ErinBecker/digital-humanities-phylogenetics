@@ -1,0 +1,139 @@
+id_text,text_name,l_no,text
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],i 3',sux:ŋeštin[vine]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],i 4',sux:ŋeštinkira[berry]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],i 6',sux:ŋeštinguruma[~vine]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],i 7',sux:peš[fig]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],i 8',sux:peš[fig]N sux:Mari[1]SN
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],i 9',sux:hašhur[apple]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],i 10',sux:hašhur[apple]N sux:kur[mountain]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],i 11',sux:hašhur[apple]N sux:armanu[tree]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],i 12',sux:hašhur[apple]N sux:damšelum[plant]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],i 13',sux:hašhur[apple]N sux:baza[dwarf]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],i 14',sux:hašhur[apple]N sux:šeʾeštub[barley]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],i 15',sux:šenu[tree]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],i 16',sux:šedug[tree]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],i 17',sux:šeše[tree]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],i 18',sux:šinig[tamarisk]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],i 19',sux:šinig[tamarisk]N sux:kur[mountain]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],i 20',sux:šinig[tamarisk]N sux:dili[single]V/i
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],i 21',sux:šaršabid[tree]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],i 22',sux:šaršabid[tree]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],ii 2',sux:dih[weed]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],ii 3',sux:lamgal[nut]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],ii 4',sux:lamtur[nut]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],ii 5',sux:allanum[oak]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],ii 6',sux:peškal[tree]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],ii 7',sux:ildag[poplar]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],ii 8',sux:ildag[poplar]N sux:kur[mountain]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],ii 9',sux:ildag[poplar]N sux:bur[spread]V/t
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],ii 10',sux:ildag[poplar]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],ii 11',sux:kur[wood]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],ii 12',sux:ŋešaʾabak[tree]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],ii 13',sux:ŋešaʾabak[tree]N sux:Meluhha[1]GN
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],ii 14',sux:ŋipar[tree]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],ii 15',sux:manu[wood]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],ii 16',sux:manu[wood]N sux:duru[wet]V/i
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],ii 17',sux:manu[wood]N sux:šu[hand]N sux:ak[do]V/t
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],ii 18',sux:manu[wood]N sux:gibil[firewood]N sux:ak[do]V/t
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],ii 19',sux:manu[wood]N sux:muran[tree]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],ii 20',sux:nurma[pomegranate]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],ii 21',sux:KID.da[twig]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],ii 22',sux:KID.da[twig]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],ii 23',sux:KID.da[twig]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],ii 24',sux:mes[tree]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],ii 25',sux:mes[tree]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iii 1,sux:mes[tree]N sux:Meluhha[1]GN
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iii 2,sux:mes[tree]N sux:Kiengir[1]GN
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iii 3,sux:mes[tree]N sux:halub[tree]N sux:harran[route]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iii 4,sux:šennur[plum]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iii 5,sux:eren[cedar]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iii 6,sux:šurmen[cypress]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iii 7,sux:zabalum[juniper]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iii 8,sux:elammakum[tree]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iii 9,sux:girinum[plant]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iii 10,sux:girim[flower]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iii 11,sux:zirdum[olive]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iii 12,sux:tiʾarum[tree]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iii 13,sux:ilianum[tree]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iii 15,sux:urnum[cedar]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iii 16,sux:urzinum[tree]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iii 17,sux:armanu[tree]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iii 18,sux:arganum[conifer]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iii 20,sux:uluh[sapling]N sux:kiri[orchard]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iii 21,sux:kiri[orchard]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iii 22,sux:ŋešnimbar[palm]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iii 23,sux:ŋešnimbar[palm]N sux:kur[mountain]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iii 24,sux:ŋešnimbar[palm]N sux:suhuš[offshoot]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iii 25,sux:ŋešnimbar[palm]N sux:Dilmun[1]GN
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iii 26,sux:ŋešnimbar[palm]N sux:Magan[1]GN
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iii 27,sux:ŋešnimbar[palm]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iii 28,sux:ŋešnimbar[palm]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iv 3,sux:ŋešnimbar[palm]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iv 4,sux:ŋešnimbar[palm]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iv 5,sux:šag[heart]N sux:ŋešnimbar[palm]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iv 6,sux:ŋešnimbar[palm]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iv 7,sux:suhur[tuft]N sux:ŋešnimbar[palm]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iv 8,sux:pa[branch]N sux:ŋešnimbar[palm]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iv 9,sux:pakud[~tree]N sux:ŋešnimbar[palm]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iv 10,sux:dala[thorn]N sux:ŋešnimbar[palm]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iv 11,sux:ligima[shoot]N sux:ŋešnimbar[palm]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iv 12,sux:ŋešnimbar[palm]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iv 13,sux:su[fibers]N sux:ŋešnimbar[palm]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iv 14,sux:zena[midrib]N sux:ŋešnimbar[palm]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iv 15,sux:mud[stump]N sux:ŋešnimbar[palm]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iv 16,sux:ŋešnimbar[palm]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iv 17,sux:ŋešnimbar[palm]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iv 18,sux:he₂.BAD[trimmings]N sux:ŋešnimbar[palm]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iv 19,sux:tubala[harness]N sux:ŋešnimbar[palm]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iv 20,sux:su[fibers]N sux:ŋešnimbar[palm]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iv 21,sux:peš[frond]N sux:ŋešnimbar[palm]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iv 22,sux:pešmur[~palm]N sux:ŋešnimbar[palm]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iv 23,sux:pešbandazi[offshoot]N sux:ŋešnimbar[palm]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iv 24,sux:hara[shoot]N sux:ŋešnimbar[palm]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iv 28,sux:ŋešnimbar[palm]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iv 29,sux:ŋešnimbar[palm]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iv 30,sux:ŋešnimbar[palm]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],iv 31,sux:ŋešnimbar[palm]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],r i 2',sux:šušum[licorice]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],r i 6',sux:antibal[sign]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],r i 10',sux:gizulumma[nettle?]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],r i 11',sux:buzunuma[plant]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],r i 12',sux:tulubum[tree]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],r i 13',sux:anta[tree]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],r i 14',sux:huš[plant]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],r i 15',sux:maš[plant]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],r i 16',sux:mašgurum[plant]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],r i 17',sux:guruʾuš[tree-trunk]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],r i 20',sux:arina[madder]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],r ii 11',sux:šunir[emblem]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],r ii 13',sux:ŋešdubdim[tool]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],r ii 14',sux:sumungi[tool]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],r ii 15',sux:tibala[sign]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],r ii 16',sux:tun[container]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],r ii 17',sux:tun[container]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],r ii 18',sux:tun[container]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],r ii 19',sux:tun[container]N sux:muhaldim[cook]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],r ii 20',sux:tun[container]N sux:šuʾi[barber]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],r ii 21',sux:tun[container]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],r iii 12,sux:guza[chair]N sux:gid[long]V/i
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],r iii 13,sux:guza[chair]N sux:sirda[cnne]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],r iii 14,sux:guza[chair]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],r iii 15,sux:guza[chair]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],r iii 16,sux:guza[chair]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],r iii 17,sux:guza[chair]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],r iii 18,sux:guza[chair]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],r iii 19,sux:guza[chair]N sux:niŋniŋina[assembly]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],r iii 20,sux:guza[chair]N sux:Magan[1]GN
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],r iii 21,sux:guza[chair]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],r iii 22,sux:guza[chair]N sux:gidim[ghost]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],r iii 23,sux:guza[chair]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],r iii 24,sux:guza[chair]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],r iv 5,sux:du[build]V/t
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],r iv 7,sux:guza[chair]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],r iv 8,sux:guza[chair]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],r iv 9,sux:guza[chair]N sux:taškarin[boxwood]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],r iv 10,sux:guza[chair]N sux:mes[tree]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],r iv 11,sux:guza[chair]N sux:halub[tree]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],r iv 12,sux:guza[chair]N sux:gar[knob]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],r iv 13,sux:Gangana[1]MN sux:ud[sun]N
+dcclt/P459217,EEN 263-64 IB 1547 [OB Ura],r iv 14,sux:mu[year]N sux:Samsuʾiluna[01]RN sux:lugal[king]N

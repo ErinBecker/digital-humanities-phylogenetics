@@ -1,0 +1,9 @@
+id_text,text_name,l_no,text
+dcclt/P251649,CUSAS 12 3.1.03 [OB Ura],o 1,sux:ŋeš[tree]N sux:giŋ[unit]N
+dcclt/P251649,CUSAS 12 3.1.03 [OB Ura],o 2,sux:sa[net]N
+dcclt/P251649,CUSAS 12 3.1.03 [OB Ura],o 3,sux:sa[net]N sux:gal[big]V/i
+dcclt/P251649,CUSAS 12 3.1.03 [OB Ura],o 4,sux:sašušgal[net]N
+dcclt/P251649,CUSAS 12 3.1.03 [OB Ura],o 5,sux:sa[net]N sux:gi[thicket]N
+dcclt/P251649,CUSAS 12 3.1.03 [OB Ura],o 6,sux:harmušen[snare]N
+dcclt/P251649,CUSAS 12 3.1.03 [OB Ura],o 7,sux:gur[rim]N sux:harmušen[snare]N
+dcclt/P251649,CUSAS 12 3.1.03 [OB Ura],o 8,sux:ŋidru[scepter]N sux:harmušen[snare]N

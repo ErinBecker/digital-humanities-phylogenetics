@@ -1,0 +1,168 @@
+id_text,text_name,l_no,text
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),a i 3',sux:ig[door]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),a i 4',sux:ig[door]N sux:papah[cella]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),a i 5',sux:ig[door]N sux:e[house]N sux:gal[big]V/i
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),a i 6',sux:ig[door]N sux:gi[reed]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),a i 7',sux:ig[door]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),a i 8',sux:ig[door]N sux:zena[midrib]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),a i 9',sux:ig[door]N sux:miriza[plank]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),a i 10',sux:ig[door]N sux:ul[fruit]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),a i 11',sux:ig[door]N sux:ul[fruit]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),a i 13',sux:barda[crossbar]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),a i 16',sux:ig[door]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),a i 17',sux:ig[door]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),a i 35',sux:saŋkul[bolt]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),a i 36',sux:saŋkul[bolt]N sux:nim[high]V/i
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),a ii 2',sux:balak[spindle]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),a ii 3',sux:balak[spindle]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),a ii 4',sux:e[house]N sux:balak[spindle]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),a ii 5',sux:saŋ[head]N sux:balak[spindle]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),a ii 6',sux:mete[appropriate-thing]N sux:balak[spindle]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),a ii 32',sux:ŋešpu[rim]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),a ii 33',sux:ŋešpu[rim]N sux:mansim[sieve]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),a ii 34',sux:gur[rim]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),a ii 35',sux:gur[rim]N sux:mansim[sieve]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),a ii 36',sux:gur[rim]N sux:bandudu[basket]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),a ii 37',sux:gur[rim]N sux:balaŋ[instrument]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),a ii 38',sux:gur[rim]N sux:balaŋdi[instrument]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),b i 1',sux:apin[plow]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),b i 2',sux:apin[plow]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),b i 3',sux:apin[plow]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),b i 4',sux:apin[plow]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),b i 5',sux:apin[plow]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),b i 6',sux:apin[plow]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),b i 7',sux:anzam[vessel]N sux:apin[plow]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),b i 8',sux:kašu[~plow]N sux:apin[plow]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),b i 9',sux:tugsaga[plow]N sux:apin[plow]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),b i 10',sux:sala[~plow]N sux:apin[plow]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),b i 11',sux:apin[plow]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),b i 12',sux:šusaŋ[compressor]N sux:apin[plow]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),b i 13',sux:niŋkud[~plowshare]N sux:apin[plow]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),b i 14',sux:niŋŋeštug[~plow]N sux:apin[plow]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),b i 15',sux:damga[~plow]N sux:apin[plow]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),b i 16',sux:saŋkul[bolt]N sux:apin[plow]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),b i 17',sux:apin[plow]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),b i 18',sux:apin[plow]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),b i 19',sux:apin[plow]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),b i 20',sux:apin[plow]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),b i 21',sux:apin[plow]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),b i 22',sux:apin[plow]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),b i 23',sux:apin[plow]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),b i 24',sux:apin[plow]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),b i 25',sux:apin[plow]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),b i 37',sux:gag[nail]N sux:šum[garlic]N sux:bal[dig]V/t
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),b i 38',sux:gag[nail]N sux:šum[garlic]N sux:širdili[~garlic]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),b i 41',sux:zirigum[irrigation-device]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),b i 42',sux:namnutare[~irrigation]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),b i 43',sux:gu[neck]N sux:zirigum[irrigation-device]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),b ii 3',sux:harmušen[snare]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),b ii 4',sux:gur[rim]N sux:harmušen[snare]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),b ii 5',sux:ŋidru[scepter]N sux:harmušen[snare]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),b ii 6',sux:ellaŋdu[trap]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),b ii 7',sux:šunir[emblem]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),b ii 10',sux:usakar[moon]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),b ii 11',sux:gag[nail]N sux:usakar[moon]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),b ii 18',sux:zamrutum[lance]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),b ii 19',sux:negipum[tool]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),b ii 20',sux:katapum[object]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),b ii 22',sux:pana[bow]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),b ii 23',sux:e[house]N sux:pana[bow]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),b ii 24',sux:kakpana[arrow]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),b ii 25',sux:gagsisa[arrow]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),b ii 26',sux:dim[post]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),b ii 27',sux:dimmaršu[instrument]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),b ii 28',sux:maršu[spade]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c i 9',sux:ninda[vessel]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c i 10',sux:ninda[vessel]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c i 11',sux:ninda[vessel]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c i 12',sux:gimuš[pole]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c i 13',sux:gimuš[pole]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c i 14',sux:zigan[rudder]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c i 15',sux:dilim[spoon]N sux:zigan[rudder]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c i 16',sux:ŋisal[rudder]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c i 17',sux:ŋisal[rudder]N sux:šu[hand]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c i 18',sux:ŋisal[rudder]N sux:ŋiri[foot]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c i 19',sux:šukara[tool]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c i 20',sux:guru[store]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c i 21',sux:dada[tree]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c i 22',sux:namra[booty]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c i 23',sux:ebir[vessel-stand]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c i 24',sux:ganum[stand]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c i 25',sux:ganum[stand]N sux:a[water]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c i 26',sux:ganum[stand]N sux:kaš[beer]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c i 29',sux:zabar[bronze]N sux:gub[stand]V/i
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c i 30',sux:suhur[tool]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c i 31',sux:suhur[tool]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c i 32',sux:al[hoe]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c i 33',sux:al[hoe]N sux:sa[sinew]N sux:la[hang]V/t
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c i 34',sux:al[hoe]N sux:zu[tooth]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c i 35',sux:al[hoe]N sux:zu[tooth]N sux:min[two]NU
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c i 36',sux:al[hoe]N sux:zu[tooth]N sux:eš[three]NU
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c i 37',sux:al[hoe]N sux:zu[tooth]N sux:limmu[four]NU
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c i 38',sux:alšub[tool]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c i 39',sux:ušub[brick-mold]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c i 40',sux:ušub[brick-mold]N sux:šeg[brick]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c i 41',sux:ušub[brick-mold]N sux:šeg[brick]N sux:alura[baked]AJ
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c i 42',sux:ušub[brick-mold]N sux:ab[window]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c i 43',sux:dur[board]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c i 44',sux:dur[board]N sux:šeg[brick]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c i 45',sux:dur[board]N sux:šeg[brick]N sux:alura[baked]AJ
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c i 46',sux:dur[board]N sux:ab[window]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c i 47',sux:dur[board]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c ii 2',sux:ŋeš[tree]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c ii 3',sux:ŋeš[tree]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c ii 4',sux:ŋeš[tree]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c ii 5',sux:ŋeš[tree]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c ii 6',sux:ŋeš[tree]N sux:min[two]NU
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c ii 7,sux:ŋeš[tree]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c ii 8,sux:niŋ[thing]N sux:ya[five]NU sux:sila[unit]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c ii 9,sux:niŋ[thing]N sux:eš[three]NU sux:sila[unit]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c ii 10,sux:niŋ[thing]N sux:min[two]NU sux:sila[unit]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c ii 11,sux:niŋ[thing]N sux:diš[one]NU sux:sila[unit]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c ii 12,sux:niŋ[thing]N sux:sila[unit]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c ii 13,sux:niŋ[thing]N sux:sila[unit]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c ii 14,sux:niŋ[thing]N sux:u[ten]NU sux:giŋ[unit]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c ii 15,sux:niŋ[thing]N sux:ya[five]NU sux:giŋ[unit]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c ii 16,sux:niŋ[thing]N sux:eš[three]NU sux:giŋ[unit]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c ii 17,sux:niŋ[thing]N sux:min[two]NU sux:giŋ[unit]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c ii 18,sux:niŋ[thing]N sux:diš[one]NU sux:giŋ[unit]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c ii 19,sux:niŋ[thing]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c ii 20',sux:mar[shovel]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c ii 21',sux:maršebad[winnowing-shovel]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c ii 22',sux:mar[shovel]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c ii 23',sux:mar[shovel]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c ii 24',sux:mar[shovel]N sux:ninda[bread]N sux:gur[thick]V/i
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c ii 25',sux:mar[shovel]N sux:niŋsur[beer]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c ii 26',sux:mar[shovel]N sux:udun[kiln]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c ii 27',sux:mar[shovel]N sux:ninda[bread]N sux:sag[rare]V/i
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c ii 28',sux:mar[shovel]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c ii 29',sux:mar[shovel]N sux:im[clay]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c ii 30',sux:eme[tongue]N sux:mar[shovel]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c ii 31',sux:kul[handle]N sux:mar[shovel]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c ii 32',sux:mar[shovel]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c ii 33',sux:dupsik[basket]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c ii 34',sux:dupsik[basket]N sux:zala[smashed]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c ii 35',sux:alŋar[instrument]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c ii 36',sux:alŋarsur[drumstick]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c ii 37',sux:sabitum[instrument]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c ii 38',sux:miritum[instrument]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c ii 40',sux:zamiritum[instrument]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c ii 41',sux:zamin[lyre]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c ii 42',sux:kul[handle]N sux:zamin[lyre]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c ii 43',sux:dub[tablet]N sux:zamin[lyre]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c ii 45',sux:dimdim[instrument]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c ii 46',sux:dimdim[instrument]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),c ii 47',sux:dimlumagurak[instrument]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),d i 4',sux:šaŋanla[trader]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),d i 5',sux:gam[crook]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),d i 8',sux:šul[youth]V/i sux:katar[praise]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),d i 9',sux:šul[youth]V/i sux:tur[small]V/i
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),d i 10',sux:ŋešŋiri[fetters]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),d i 11',sux:ŋirigub[footstool]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),d i 14',sux:si[horn]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),d i 17',sux:sigsig[musical-instrument]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),d i 18',sux:sigsig[musical-instrument]N sux:eban[pair]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),d i 19',sux:šu[handle]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),d i 20',sux:dur[balk]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),d ii 6',sux:alan[statue]N
+dcclt/P347814,Ashm 1923-0402 (MSL SS 1 096),d ii 7',sux:alan[statue]N

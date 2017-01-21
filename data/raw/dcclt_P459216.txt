@@ -1,0 +1,159 @@
+id_text,text_name,l_no,text
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],i 1,sux:taškarin[boxwood]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],i 2,sux:esi[tree]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],i 3,sux:ŋešnu[tree]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],i 4,sux:ŋešgana[tree]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],i 5,sux:ŋešgana[tree]N sux:babbar[white]V/i
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],i 6,sux:ŋešgana[tree]N sux:giggi[black]V/i
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],i 7,sux:halub[tree]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],i 8,sux:šagkal[tree]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],i 9,sux:ŋeš[tree]N sux:giggi[black]V/i
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],i 10,sux:ŋeštin[vine]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],i 11,sux:ŋeštinkira[berry]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],i 12,sux:ŋeštinkaʾa[grape]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],i 13,sux:ŋeštinguruma[~vine]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],i 14,sux:peš[fig]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],i 15,sux:peš[fig]N sux:Mari[1]SN
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],i 16,sux:hašhur[apple]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],i 17,sux:hašhur[apple]N sux:kur[mountain]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],i 18,sux:hašhur[apple]N sux:armanu[tree]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],i 19,sux:hašhur[apple]N sux:damšelum[plant]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],i 20,sux:hašhur[apple]N sux:baza[dwarf]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],i 21,sux:hašhur[apple]N sux:šeʾeštub[barley]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],i 22,sux:šenu[tree]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],i 23,sux:šedug[tree]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],i 24,sux:šeše[tree]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],i 25,sux:šinig[tamarisk]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],i 26,sux:šinig[tamarisk]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],i 27,sux:šinig[tamarisk]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],i 28,sux:šaršabid[tree]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],ii 1,sux:ŋešaʾabak[tree]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],ii 2,sux:ŋešaʾabak[tree]N sux:Meluhha[1]GN
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],ii 3,sux:ŋipar[tree]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],ii 4,sux:manu[wood]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],ii 5,sux:manu[wood]N sux:duru[wet]V/i
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],ii 6,sux:manu[wood]N sux:šu[hand]N sux:ak[do]V/t
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],ii 7,sux:manu[wood]N sux:gibil[firewood]N sux:ak[do]V/t
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],ii 8,sux:manu[wood]N sux:muran[tree]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],ii 9,sux:nurma[pomegranate]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],ii 10,sux:KID.da[twig]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],ii 11,sux:KID.da[twig]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],ii 12,sux:KID.da[twig]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],ii 13,sux:mes[tree]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],ii 14,sux:mes[tree]N sux:Magan[1]GN
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],ii 15,sux:mes[tree]N sux:Meluhha[1]GN
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],ii 16,sux:mes[tree]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],ii 17,sux:mes[tree]N sux:Kiengir[1]GN
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],ii 18,sux:mes[tree]N sux:halub[tree]N sux:harran[route]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],ii 19,sux:šennur[plum]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],ii 20,sux:eren[cedar]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],ii 21,sux:šurmen[cypress]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],ii 22,sux:zabalum[juniper]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],ii 23,sux:elammakum[tree]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],ii 24,sux:girinum[plant]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],ii 25,sux:girim[flower]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],ii 26,sux:zirdum[olive]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],ii 27,sux:tiʾarum[tree]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],iii 1,sux:ŋešnimbar[palm]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],iii 2,sux:šag[heart]N sux:ŋešnimbar[palm]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],iii 3,sux:šag[heart]N sux:ŋešnimbar[palm]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],iii 4,sux:suhur[tuft]N sux:ŋešnimbar[palm]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],iii 5,sux:pa[branch]N sux:ŋešnimbar[palm]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],iii 6,sux:pakud[~tree]N sux:ŋešnimbar[palm]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],iii 7,sux:ŋešnimbar[palm]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],iii 8,sux:dala[thorn]N sux:ŋešnimbar[palm]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],iii 9,sux:su[fibers]N sux:ŋešnimbar[palm]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],iii 10,sux:ŋešnimbar[palm]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],iii 11,sux:kiri[orchard]N sux:ŋešnimbar[palm]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],iii 12,sux:ŋešnimbar[palm]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],iii 13,sux:mud[stump]N sux:ŋešnimbar[palm]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],iii 14,sux:ŋešnimbar[palm]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],iii 15,sux:ŋešnimbar[palm]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],iii 16,sux:he₂.BAD[trimmings]N sux:ŋešnimbar[palm]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],iii 17,sux:tubala[harness]N sux:ŋešnimbar[palm]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],iii 18,sux:ŋešnimbar[palm]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],iii 19,sux:peš[frond]N sux:ŋešnimbar[palm]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],iii 20,sux:pešmur[~palm]N sux:ŋešnimbar[palm]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],iii 21,sux:pešbandazi[offshoot]N sux:ŋešnimbar[palm]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],iii 22,sux:hara[shoot]N sux:ŋešnimbar[palm]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],iii 23,sux:aʾan[spadix]N sux:ŋešnimbar[palm]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r i 4',sux:guza[chair]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r i 5',sux:guza[chair]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r i 6',sux:guza[chair]N sux:gar[knob]N sux:kugsig[gold]N sux:ŋar[place]V/t
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r i 7',sux:guza[chair]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r i 8',sux:guza[chair]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r i 9',sux:guza[chair]N sux:zabar[bronze]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r i 10',sux:guza[chair]N sux:mes[tree]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r i 11',sux:ŋešdi[rung]N sux:guza[chair]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r i 12',sux:saŋ[head]N sux:guza[chair]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r i 13',sux:izzi[wall]N sux:guza[chair]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r i 16',sux:šuʾa[stool]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r i 17',sux:šuʾa[stool]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r i 18',sux:šuʾa[stool]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r i 19',sux:šuʾa[stool]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r ii 2',sux:maltum[bowl]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r ii 3',sux:dilim[spoon]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r ii 4',sux:dilim[spoon]N sux:gal[big]V/i
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r ii 5',sux:gal[big]V/i
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r ii 8',sux:umbin[base]N sux:banšur[table]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r ii 9',sux:banšurzaggula[table]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r ii 10',sux:banšurzagŋara[table]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r ii 11',sux:banšur[table]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r ii 12',sux:banšur[table]N sux:zu[tooth]N sux:amsi[elephant]N sux:sig[put]V/t
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r ii 13',sux:emerah[jug]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iii 1',sux:ma[ship]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iii 2',sux:ma[ship]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iii 3',sux:ma[ship]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iii 4',sux:ma[ship]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iii 5',sux:ma[ship]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iii 6',sux:magid[boat]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iii 7',sux:u[ride]V/t sux:ma[ship]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iii 8',sux:murgu[shoulder]N sux:ma[ship]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iii 9',sux:murgu[shoulder]N sux:ma[ship]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iii 10',sux:ad[log]N sux:ma[ship]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iii 11',sux:adus[plank]N sux:ma[ship]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iii 12',sux:si[horn]N sux:ma[ship]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iii 13',sux:ma[ship]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iii 14',sux:pešeš[~boat]N sux:ma[ship]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iii 16',sux:dim[post]N sux:ma[ship]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iii 17',sux:anše[equid]N sux:ma[ship]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iii 18',sux:u[ride]V/t sux:zipah[unit]N sux:ma[ship]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iii 19',sux:madu[~boat]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iii 20',sux:madu[~boat]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iii 21',sux:madu[~boat]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iii 24',sux:ma[ship]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iii 25',sux:ma[ship]N sux:gur[unit]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iii 26',sux:ma[ship]N sux:gur[unit]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iii 27',sux:ma[ship]N sux:niš[twenty]NU sux:gur[unit]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iii 28',sux:ma[ship]N sux:gur[unit]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iii 29',sux:ma[ship]N sux:u[ten]NU sux:gur[unit]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iii 30',sux:gur[basket]N sux:ma[ship]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iii 31',sux:te[~boat]N sux:ma[ship]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iii 32',sux:šibir[shepherd´s-staff]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iii 33',sux:eškiri[rope]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iv 2',sux:umbin[wheel]N sux:gigir[chariot]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iv 3',sux:kag[mouth]N sux:umbin[wheel]N sux:gigir[chariot]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iv 4',sux:maš[~wheel]N sux:umbin[wheel]N sux:gigir[chariot]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iv 5',sux:da[side-board]N sux:umbin[wheel]N sux:gigir[chariot]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iv 6',sux:gagsila[harness]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iv 7',sux:zara[pivot]N sux:gagsila[harness]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iv 8',sux:gagsila[harness]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iv 9',sux:DUB.du₃[~vehicle]N sux:bar[outside]V/t
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iv 10',sux:DUB.du₃[~vehicle]N sux:šag[heart]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iv 11',sux:DUB.du₃[~vehicle]N sux:ŋar[place]V/t
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iv 12',sux:margida[cart]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iv 13',sux:margida[cart]N sux:Subir[1]GN
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iv 14',sux:HI.MAŠ[~chariot]N sux:margida[cart]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iv 15',sux:ŋešdal[crossbar]N sux:margida[cart]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iv 16',sux:endur[navel?]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iv 17',sux:usan[whip]N sux:margida[cart]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iv 18',sux:umbin[wheel]N sux:margida[cart]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iv 19',sux:kag[mouth]N sux:umbin[wheel]N sux:margida[cart]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iv 20',sux:maš[~wheel]N sux:umbin[wheel]N sux:margida[cart]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iv 21',sux:da[side-board]N sux:umbin[wheel]N sux:margida[cart]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iv 22',sux:ŋirigub[footstool]N sux:margida[cart]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iv 23',sux:šudul[yoke]N sux:margida[cart]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iv 24',sux:gag[nail]N sux:šudul[yoke]N sux:margida[cart]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iv 25',sux:zara[pivot]N sux:margida[cart]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iv 26',sux:margida[cart]N
+dcclt/P459216,EEN 264-265 IB 1535+ [OB Ura],r iv 27',sux:margida[cart]N

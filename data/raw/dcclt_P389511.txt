@@ -1,0 +1,15 @@
+id_text,text_name,l_no,text
+dcclt/P389511,EEN 287-288 [OB Ura],o 1,sux:ŋešaʾabak[tree]N
+dcclt/P389511,EEN 287-288 [OB Ura],o 2,sux:ŋešaʾabak[tree]N sux:Meluhha[1]GN
+dcclt/P389511,EEN 287-288 [OB Ura],o 3,sux:mes[blackness]N sux:šagkal[tree]N
+dcclt/P389511,EEN 287-288 [OB Ura],o 4,sux:elammakum[tree]N
+dcclt/P389511,EEN 287-288 [OB Ura],o 5,sux:gizilum[tree]N
+dcclt/P389511,EEN 287-288 [OB Ura],o 6,sux:zirdum[olive]N
+dcclt/P389511,EEN 287-288 [OB Ura],o 7,sux:šiqdum[almond]N
+dcclt/P389511,EEN 287-288 [OB Ura],o 8,sux:šagkal[tree]N
+dcclt/P389511,EEN 287-288 [OB Ura],o 9,sux:šaršabid[tree]N
+dcclt/P389511,EEN 287-288 [OB Ura],o 10,sux:suhuš[offshoot]N
+dcclt/P389511,EEN 287-288 [OB Ura],o 11,sux:kamisarru[pear-tree]N
+dcclt/P389511,EEN 287-288 [OB Ura],o 12,sux:urzinum[tree]N
+dcclt/P389511,EEN 287-288 [OB Ura],o 13,sux:urnum[cedar]N
+dcclt/P389511,EEN 287-288 [OB Ura],o 14,sux:ilianum[tree]N
