@@ -35,9 +35,9 @@ different parameters.
 Index numbers distinguish between homphones. The system has a long history and is far from consistent. It does, however, allow one to identify which signs were used in the original text.
 
 
-&#12000; sign name A; may be read [a = water](http://psd.museum.upenn.edu/epsd/e4.html) or [duru₅ = wet](http://psd.museum.upenn.edu/epsd/epsd/e1154.html); or can be used as the syllable -a-.
+𒀀 sign name A; may be read [a = water](http://psd.museum.upenn.edu/epsd/e4.html) or [duru₅ = wet](http://psd.museum.upenn.edu/epsd/epsd/e1154.html); or can be used as the syllable -a-.
 
-&#12009; sign name A2; may be read [a₂ = arm, power, time](http://psd.museum.upenn.edu/epsd/e1.html). Is not regularly used as a syllabic value.
+𒀉 sign name A2; may be read [a₂ = arm, power, time](http://psd.museum.upenn.edu/epsd/e1.html). Is not regularly used as a syllabic value.
 
 etc. [the cuneiform signs do not render here].
 
