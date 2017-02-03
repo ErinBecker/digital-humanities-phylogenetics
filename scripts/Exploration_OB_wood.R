@@ -33,7 +33,19 @@ summary(entry_frequency)
 ## Some exploratory analysis
 ## Note that some entries DO appear more than once in a single document,
 ## (eg. dcclt/P370399 ŋešnimbar.palm.n)
+## Talk with Niek: These multiple entries represent instances where 
+## there was a preceeding/succeeding word attached which is not preserved.
+## Need to re-figure out how to scrape data.
 ## so we need to convert dtm_df to presence/absence for the following to work.
+## http://oracc.museum.upenn.edu/dcclt/P370399
+
+## Also need to preserve non-lematized information 
+## (eg. oiii13-17 http://oracc.museum.upenn.edu/dcclt/P370399)
+
+## There are also lines which are completely unlematized. 
+## How do we deal with "traces of" lines? Not consistently noted. Sometimes unknown.
+## Line numbers are preserved - add line numbers to data structure
+## Last line missing from at least some documents in scraped data
 
 dtm_df = read.table("dtm_df.csv", sep = ",", header = TRUE, row.names = 1)
 # currently "variables" (entries) are sorted alphabetically, would like sorted by frequency
@@ -46,6 +58,9 @@ for(row in 1:nrow(melted_dtm_df)) {
   if(melted_dtm_df$value[row] >= 1) melted_dtm_df$value_bin[row] = 1
   else melted_dtm_df$value_bin[row] = melted_dtm_df$value[row]
 }
+#tm package to create dtm, use binary option
+
+write.csv(melted_dtm_df, file = "melted_dtm_df.csv", quote = FALSE, row.names = FALSE)
 
 # This also works, I think, to convert to binary presence/absence data.
 # as.matrix((melted_dtm_df > 0) + 0)
@@ -60,10 +75,13 @@ qplot(data=melted_dtm_df, x=variable,y=document, fill=factor(value_bin),
     geom="tile")+scale_fill_manual(values=c("0"="lightblue", "1"="red")) +
   theme(axis.text.x = element_text(angle = 90, hjust = 1, size = 1), axis.text.y = element_text(size = 3))
 
+## Currently sorted by frequency of entries, not #documents entries in
+## ŋešnimbar.palm.n is found 93 times across corpus, but in only 8 documents!
 qplot(data=melted_dtm_df[1:100,], x=variable,y=document, fill=factor(value_bin),
       geom="tile")+scale_fill_manual(values=c("0"="lightblue", "1"="red")) +
   theme(axis.text.x = element_text(angle = 90, hjust = 1, size = 5), axis.text.y = element_text(size = 5))
 
-## Currently sorted by frequency of entries, not #documents entries in
-## ŋešnimbar.palm.n is found 93 times across corpus, but in only 8 documents!
+
+
+
 
