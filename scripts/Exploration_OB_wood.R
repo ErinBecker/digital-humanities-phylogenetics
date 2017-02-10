@@ -1,5 +1,5 @@
-## Continuation of DTM analysis in R. Moved to RStudio due to issues with running R magic in 
-## Jupyter notebook. I promise to convert back to notebook format!!
+## This script is deprecated as of 2/10/17. See Jupyter notebook for updated R code. 
+## Erin Becker
 
 ## Load in DTM data frame.
 setwd("Box Sync/digital-humanities-phylogenetics/data")
