@@ -1,0 +1,9 @@
+{
+    "path" : "~/GitHub/digital-humanities-phylogenetics/data",
+    "sortOrder" : [
+        {
+            "ascending" : true,
+            "columnIndex" : 2
+        }
+    ]
+}
