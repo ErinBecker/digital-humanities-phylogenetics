@@ -4,12 +4,24 @@
 
 # Needs bioconductor and having difficulty installing on Jupyter notebook
 # Want to test and make sure it works before I go through all the trouble
-# setwd("~/Box Sync/digital-humanities-phylogenetics/data/")
+
+setwd("~/Box Sync/digital-humanities-phylogenetics/data/composite_texts/")
 
 library(Rlibstree)
 
-df_composite = read.csv(file = "composite_df.csv", stringsAsFactors = FALSE)
-# remove rows representing missing lines
+# separate data from composites.csv into one csv for each composite text
+composites = read.csv(file = "composites.csv", stringsAsFactors = FALSE)
+composites$X = NULL
+composites$document = gsub("(.*)\\..*", "\\1", composites$id_line)
+unique_docs = unique(composites$document)
+sapply(unique_docs, function(x) {
+  lines = which(composites$document == x)
+  write.csv(composites[lines,], file = paste0(x, ".csv"), quote = FALSE, row.names = FALSE)
+})
+
+
+df_composite = read.csv(file = "Q000039.csv", stringsAsFactors = FALSE)
+# still need to remove rows representing missing lines
 
 df_kmers = data.frame(line_a = character(nrow(df_composite)), 
                       line_b = character(nrow(df_composite)),

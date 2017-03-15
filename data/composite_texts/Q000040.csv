@@ -1,0 +1,704 @@
+id_line,label,lemma,base,extent,scope,document
+Q000040.1,1,gašam[reed]N,{gi}gašam,,,Q000040
+Q000040.10,9,ig[door]N sal[thin]V/i,{gi}ig sal,,,Q000040
+Q000040.100,93,mansim[sieve]N il[raise]V/t,{gi}ma-an-sim il₂,,,Q000040
+Q000040.101,94,šem[drum]N ak[do]V/t,{gi}šem₃ ak,,,Q000040
+Q000040.102,95,hal[basket]N,{gi}hal,,,Q000040
+Q000040.103,96,halzig[container]N,{gi}hal-zi-ig,,,Q000040
+Q000040.104,97,hal[basket]N kud[fish]N,{gi}hal ku₆,,,Q000040
+Q000040.105,98,hal[basket]N mušen[bird]N,{gi}hal mušen,,,Q000040
+Q000040.106,99,hal[basket]N uzu[flesh]N,{gi}hal uzu,,,Q000040
+Q000040.107,100,gihan[basket]N,gi-ha-an,,,Q000040
+Q000040.108,101,gihan[basket]N siki[hair]N,gi-ha-an siki,,,Q000040
+Q000040.109,101a,gihan[basket]N mušen[bird]N,gi-ha-an mušen,,,Q000040
+Q000040.11,10,ig[door]N guruš[cut]V/t,{gi}ig guru₅,,,Q000040
+Q000040.110,101b,gihan[basket]N kud[fish]N,gi-ha-an ku₆,,,Q000040
+Q000040.111,101c,gihan[basket]N gud[ox]N,gi-ha-an gud,,,Q000040
+Q000040.112,102,guhšu[altar]N,{gi}gum₂-gum₂-šu₂,,,Q000040
+Q000040.113,103,niŋesir[wash-basin]N,{gi}niŋ₂-esir₂-ra,,,Q000040
+Q000040.114,104,niŋ[thing]N kuš[skin]N sig[put]V/t,{gi}niŋ₂ kuš sig₉,,,Q000040
+Q000040.115,105,buniŋ[trough]N,{gi}buniŋₓ(|A.LAGAB×A|),,,Q000040
+Q000040.116,106,buniŋ[trough]N sah[mat]N,{gi}buniŋₓ(|A.LAGAB×A|) sah,,,Q000040
+Q000040.117,107,buniŋ[trough]N zulum[date]N,{gi}buniŋₓ(|A.LAGAB×A|) zu₂-lum,,,Q000040
+Q000040.118,108,buniŋ[trough]N lu[person]N im[run]V/i,{gi}buniŋₓ(|A.LAGAB×A|) lu₂ im₂,,,Q000040
+Q000040.119,109,buniŋ[trough]N LU₂[NA]NA RA[NA]NA,{gi}buniŋₓ(|A.LAGAB×A|) LU₂ RA,,,Q000040
+Q000040.12,11,ig[door]N sah[mat]N,{gi}ig sah,,,Q000040
+Q000040.120,110,buniŋ[trough]N pel[defile]V/t,{gi}buniŋₓ(|A.LAGAB×A|) pe-el,,,Q000040
+Q000040.121,111,buniŋ[trough]N igidu[gift]N,{gi}buniŋₓ(|A.LAGAB×A|) igi-du₈,,,Q000040
+Q000040.122,112,buniŋ[trough]N bur[grass]N,{gi}buniŋₓ(|A.LAGAB×A|) {u₂}bur₂,,,Q000040
+Q000040.123,113,bandudu[basket]N,{gi}ba-an-du,,,Q000040
+Q000040.124,114,bandudu[basket]N sah[mat]N,{gi}ba-an-du sah,,,Q000040
+Q000040.125,114a,bandudu[basket]N x[NA]NA,{gi}ba-an-du x,,,Q000040
+Q000040.126,115,bandudu[basket]N zu[tooth]N kešed[bind]V/t,{gi}ba-an-du zu₂ keš₂,,,Q000040
+Q000040.127,115a,bandudu[basket]N x-ra[NA]NA,{gi}ba-an-du x-ra,,,Q000040
+Q000040.128,116,bandudu[basket]N,{gi}ba-an-du-du₈,,,Q000040
+Q000040.129,117,bandudu[basket]N,{gi}ba-an-du-du₈,,,Q000040
+Q000040.13,11a,ig[door]N ak[do]V/t,{gi}ig ak,,,Q000040
+Q000040.130,117a,{gi}da-x-min₃-la₂[NA]NA,{gi}da-x-min₃-la₂,,,Q000040
+Q000040.131,118,gigid[reed]N,gi-gid₂,,,Q000040
+Q000040.132,119,gi-x[NA]NA,gi-x,,,Q000040
+Q000040.133,120,{gi}AŠ-BU[NA]NA,{gi}AŠ-BU,,,Q000040
+Q000040.134,121,su[sprinkle]V/t,{gi}su₃-su₃,,,Q000040
+Q000040.135,122,amam[jar]N,{gi}am-ma-am,,,Q000040
+Q000040.136,123,amamsab[jar]N,{gi}am-ma-am-sab,,,Q000040
+Q000040.137,124,gakkul[mash-tub]N,{gi}gakkul,,,Q000040
+Q000040.138,125,gakkul[mash-tub]N abba[father]N,{gi}gakkul ab-ba,,,Q000040
+Q000040.139,126,gakkul[mash-tub]N kaš[beer]N,{gi}gakkul kaš,,,Q000040
+Q000040.14,12,kid[mat]N,{gi}kid,,,Q000040
+Q000040.140,127,gidubak[stylus]N,gi-dub-ba,,,Q000040
+Q000040.141,128,gi[reed]N girgi[reed-strip]N,gi gir-gi₄,,,Q000040
+Q000040.142,129,gi[reed]N diš[one]NU nindan[pole]N,gi diš nindan,,,Q000040
+Q000040.143,130,gi[reed]N diš[one]NU kuš[unit]N,gi diš kuš₃,,,Q000040
+Q000040.144,131,gi[reed]N sa[half]N kuš[unit]N,gi sa₉ kuš₃,,,Q000040
+Q000040.145,132,gi[reed]N šušana[fraction]N kuš[unit]N,gi šušana kuš₃,,,Q000040
+Q000040.146,133,gi[reed]N šanabi[two-thirds]N kuš[unit]N,gi šanabi kuš₃,,,Q000040
+Q000040.147,134,durtaba[ax]N,{gi}dur₁₀-tab-ba,,,Q000040
+Q000040.148,135,dur[ax]N bar[outside]V/t,{gi}dur₁₀ bar,,,Q000040
+Q000040.149,136,durgag[ax]N šibir[staff]N,{gi}dur₁₀-gag šibir,,,Q000040
+Q000040.15,13,muru[mat]N,{gi}muruₓ(|KID.MAH|),,,Q000040
+Q000040.150,136a,dur[ax]N lu[person]N gid[long]V/i,{gi}dur₁₀ lu₂ gid₂,,,Q000040
+Q000040.151,137,gi[reed]N šuš[cover]V/t,gi šuš₂,,,Q000040
+Q000040.152,138,šuʾa[stool]N,{gi}šu₂-a,,,Q000040
+Q000040.153,139,{gi}e[NA]NA,{gi}e,,,Q000040
+Q000040.154,139a,{gi}sud[NA]NA,{gi}sud,,,Q000040
+Q000040.155,140,urin[standard]N,{gi}urin,,,Q000040
+Q000040.156,141,enbar[reed]N,{gi}en₃-bar,,,Q000040
+Q000040.157,142,enbar[reed]N dug[good]V/i,{gi}en₃-bar dug₃,,,Q000040
+Q000040.158,143,enbar[reed]N numun[grass]N,{gi}en₃-bar {u₂}numun₂,,,Q000040
+Q000040.159,144,gug[grass]N,{gi}{u₂}gug₄(|ZI&ZI.LAGAB|),,,Q000040
+Q000040.16,14,kidmašua[mat]N,{gi}kid-ma₂-šuš₂-a,,,Q000040
+Q000040.160,145,kun[tail]N gug[grass]N,{gi}kun gug₄(|ZI&ZI.LAGAB|),,,Q000040
+Q000040.161,146,gi[reed]N dirig[exceed]V/i,gi dirig,,,Q000040
+Q000040.162,147,gi[reed]N pela[reed]N,gi pe-el-la₂,,,Q000040
+Q000040.163,148,gi[reed]N kalag[strong]V/i,gi kalag,,,Q000040
+Q000040.164,149,al.PI.na[reed-fence]N,{gi}al-PI-na,,,Q000040
+Q000040.165,150,gi[reed]N pad[break]V/t,gi pad,,,Q000040
+Q000040.166,151,gi[reed]N ša[snap]V/t,gi ša₅-ša₅,,,Q000040
+Q000040.167,152,gi[reed]N ak[do]V/t,gi ak,,,Q000040
+Q000040.168,153,gi[reed]N šu[hand]N ak[do]V/t,gi šu ak,,,Q000040
+Q000040.169,154,gibil[firewood]N ak[do]V/t,{gi}gibil₂ ak,,,Q000040
+Q000040.17,15,kid[mat]N ma[ship]N šag[heart]N,{gi}kid ma₂ šag₄,,,Q000040
+Q000040.170,155,agir[reed]N,{gi}a-gir₅,,,Q000040
+Q000040.171,156,agirgir[reed]N,{gi}a-gir₅-gir₅,,,Q000040
+Q000040.172,157,adagir[container]N,{gi}a-da-gir₅,,,Q000040
+Q000040.173,158,gi[reed]N gal[big]V/i,gi gal,,,Q000040
+Q000040.174,159,gi[reed]N gal[big]V/i,gi gal-gal,,,Q000040
+Q000040.175,160,gi[reed]N niŋ[thing]N gal[big]V/i,gi niŋ₂ gal-gal,,,Q000040
+Q000040.176,161,gi[reed]N tur[small]V/i,gi tur,,,Q000040
+Q000040.177,162,gi[reed]N tur[small]V/i,gi tur-tur,,,Q000040
+Q000040.178,163,gi[reed]N niŋ[thing]N tur[small]V/i,gi niŋ₂ tur-tur,,,Q000040
+Q000040.179,164,saŋ[head]N gal[big]V/i,{gi}saŋ gal,,,Q000040
+Q000040.18,16,kid[mat]N ma[ship]N šag[heart]N niŋin[encircle]V/t,{gi}kid ma₂ šag₄ niŋin₂,,,Q000040
+Q000040.180,165,saŋkud[pipe]N,{gi}saŋ-kud,,,Q000040
+Q000040.181,166,{gi}da-buru₃[NA]NA,{gi}da-buru₃,,,Q000040
+Q000040.182,167,aŋarin[matrix]N sig[tie]V/t,{gi}aŋarin₄ sa₂,,,Q000040
+Q000040.183,168,adag[raft]N,{gi}a-dag,,,Q000040
+Q000040.184,169,gi[reed]N namsipad[shepherdship]N,gi nam-sipad,,,Q000040
+Q000040.185,170,šutug[reed-hut]N šub[fall]V/t,{gi}šutug šub,,,Q000040
+Q000040.186,171,anzalub[pith]N,{gi}anzalub,,,Q000040
+Q000040.187,172,pa[branch]N gi[reed]N,{gi}pa gi,,,Q000040
+Q000040.188,173,ur[root]N gi[reed]N,{gi}ur₂ gi,,,Q000040
+Q000040.189,174,suhuš[foundation]N gi[reed]N,{gi}suhuš gi,,,Q000040
+Q000040.19,17,kid[mat]N si[horn]N ma[ship]N,{gi}kid si ma₂,,,Q000040
+Q000040.190,175,gi-x-DU[NA]NA,gi-x-DU,,,Q000040
+Q000040.191,176,gi-x-gi₄-en[NA]NA,gi-x-gi₄-en,,,Q000040
+Q000040.192,177,x[NA]NA,x,,,Q000040
+Q000040.193,178,gi-x-ga[NA]NA,gi-x-ga,,,Q000040
+Q000040.194,179,gi[reed]N niŋsiga[weak]AJ,gi niŋ₂-sig-ga,,,Q000040
+Q000040.195,180,mala[boat]N,{gi}ma₂-la₂,,,Q000040
+Q000040.196,181,ma[ship]N sil[split]V/i,{gi}ma₂ zil,,,Q000040
+Q000040.197,182,ubzal[reeds]N,{gi}ub-zal,,,Q000040
+Q000040.198,183,ubzal[reeds]N,{gi}ub-zal,,,Q000040
+Q000040.199,184,zi.DU[~levee]AJ,{gi}zid-DU,,,Q000040
+Q000040.2,2,gišulhi[reed]N,gi-šul-hi,,,Q000040
+Q000040.20,18,kid[mat]N URU-DI[NA]NA,{gi}kid URU-DI,,,Q000040
+Q000040.200,185,ŋešzukešda[dam]N,{gi}ŋeš-zu₂-keš₂-da,,,Q000040
+Q000040.201,186,kunzida[weir]N,{gi}kun-zid-da,,,Q000040
+Q000040.202,187,ŋeš[tree]N gi[turn]V/i,{gi}ŋeš gi₄-gi₄,,,Q000040
+Q000040.203,188,dur[bond]N,{gi}dur,,,Q000040
+Q000040.204,188a,dur[bond]N su[NA]NA,{gi}dur su,,,Q000040
+Q000040.205,189,dur[bond]N gal[big]V/i,{gi}dur gal,,,Q000040
+Q000040.206,190,dur[bond]N sig[weak]V/i,{gi}dur sig,,,Q000040
+Q000040.207,191,niŋgilima[rope]N,{gi}niŋ₂-gilim-ma,,,Q000040
+Q000040.208,192,x[NA]NA gilim-DU[NA]NA,x gilim-DU,,,Q000040
+Q000040.209,193,gi[reed]N hi[mix]V/t,gi hi,,,Q000040
+Q000040.21,19,kid[mat]N DI-URU[NA]NA,{gi}kid DI-URU,,,Q000040
+Q000040.210,194,niŋ[thing]N hi[mix]V/t,{gi}niŋ₂ hi,,,Q000040
+Q000040.211,195,gi[reed]N dug[good]V/i,gi dug₃,,,Q000040
+Q000040.212,196,gi[reed]N zid[right]V/i,gi zid,,,Q000040
+Q000040.213,197,gi[reed]N NE@s-x[NA]NA,gi NE@s-x,,,Q000040
+Q000040.214,198,{gi}x-x[NA]NA,{gi}x-x,,,Q000040
+Q000040.215,,,,5,line,Q000040
+Q000040.216,203,bun[bellows]N,{gi}bun₂,,,Q000040
+Q000040.217,204,bun[bellows]N šu[hand]N,{gi}bun₂ šu,,,Q000040
+Q000040.218,205,gabil[basket]N,{gi}gab₂-il₂,,,Q000040
+Q000040.219,206,zu[tooth]N,{gi}zu₂,,,Q000040
+Q000040.22,20,kid[mat]N ašrinna[object]N,{gi}kid aš-rin-na,,,Q000040
+Q000040.220,207,umbin[implement]N,{gi}umbin-na,,,Q000040
+Q000040.221,208,sun[reed-shoot]N umbin[implement]N,{gi}sun umbin-na,,,Q000040
+Q000040.222,209,gisab[basket]N,gi-sab,,,Q000040
+Q000040.223,210,sun[reed-shoot]N,{gi}sun(BAD),,,Q000040
+Q000040.224,211,sun[reed-shoot]N,{gi}sun(BAD),,,Q000040
+Q000040.225,212,uš[reed]N,{gi}uš₂(BAD),,,Q000040
+Q000040.226,213,ušub[~reed]N,{gi}u₃-šub,,,Q000040
+Q000040.227,214,henbur[stalk]N,{gi}henbur(KAK),,,Q000040
+Q000040.228,215,lugal[plant]N,{gi}lugal,,,Q000040
+Q000040.229,216,lahtan[vat]N,{dug}lahtan(|NUNUZ.AB₂×LA|),,,Q000040
+Q000040.23,21,kid[mat]N andul[shade]N,{gi}kid an-dul₃,,,Q000040
+Q000040.230,217,lahtan[vat]N gid[long]V/i,{dug}lahtan(|NUNUZ.AB₂×LA|) gid₂,,,Q000040
+Q000040.231,218,kurkudu[container]N,{dug}ku-kur-du₃,,,Q000040
+Q000040.232,219,dur[buttocks]N lahtan[vat]N,{dug}dur₂ lahtan,,,Q000040
+Q000040.233,220,dur[buttocks]N lahtan[vat]N,{dug}dur₂ lahtan,,,Q000040
+Q000040.234,221,mud[jar]N,{dug}mud₄,,,Q000040
+Q000040.235,222,dug[pot]N a[water]N naŋ[drink]V/t,dug a naŋ,,,Q000040
+Q000040.236,223,dug[pot]N a[water]N naŋ[drink]V/t mah[great]V/i,dug a naŋ mah,,,Q000040
+Q000040.237,224,dug[pot]N a[water]N naŋ[drink]V/t,dug a naŋ-naŋ,,,Q000040
+Q000040.238,225,kabduga[checked]N,{dug}kab-dug₄-ga,,,Q000040
+Q000040.239,226,šaggig[vessel]N,{dug}šag₄-ki,,,Q000040
+Q000040.24,22,kid[mat]N antadul[cloak]N,{gi}kid an-ta-dul,,,Q000040
+Q000040.240,227,šaggub[container]N,{dug}šag₄-gub,,,Q000040
+Q000040.241,228,lamdre[vat]N,{dug}lam-di,,,Q000040
+Q000040.242,,,,5,line,Q000040
+Q000040.243,234,dug[pot]N x-x[NA]NA,dug x-x,,,Q000040
+Q000040.244,235,dug[pot]N x-x[NA]NA,dug x-x,,,Q000040
+Q000040.245,236,dug[pot]N x-x[NA]NA,dug x-x,,,Q000040
+Q000040.246,237,dug[pot]N niŋ₂-x-x[NA]NA,dug niŋ₂-x-x,,,Q000040
+Q000040.247,238,dug[pot]N niŋ₂-x-x[NA]NA,dug niŋ₂-x-x,,,Q000040
+Q000040.248,239,ubur[breast]N maštab[twin]N,{dug}ubur maš-tab,,,Q000040
+Q000040.249,240,ubur[breast]N imin[seven]NU,{dug}ubur imin,,,Q000040
+Q000040.25,23,kid[mat]N titab[~beer]N,{gi}kid titab₂,,,Q000040
+Q000040.250,241,niŋdurburu[vat]N,{dug}niŋ₂-dur₂-buru₃,,,Q000040
+Q000040.251,242,niŋdurburu[vat]N,{dug}niŋ₂-dur₂-buru₃-buru₃,,,Q000040
+Q000040.252,243,dug[pot]N titab[~beer]N,dug titab₂,,,Q000040
+Q000040.253,244,sumun[vessel]N,{dug}sumun₂,,,Q000040
+Q000040.254,245,dida[wort]N,{dug}dida(|BI.U₂.SA|),,,Q000040
+Q000040.255,246,dug[pot]N a[water]N kum[hot]V/i,dug a kum₂,,,Q000040
+Q000040.256,247,dug[pot]N a[water]N sed[cold]V/i,dug a sed₄,,,Q000040
+Q000040.257,248,dug[pot]N gal[big]V/i,dug gal,,,Q000040
+Q000040.258,249,sahar[vessel]N,{dug}sahar₂,,,Q000040
+Q000040.259,250,zagšela[container]N,{dug}zag-še-la₂,,,Q000040
+Q000040.26,24,kid[mat]N kuš[skin]N sig[put]V/t,{gi}kid kuš sig₉,,,Q000040
+Q000040.260,251,ban[unit]N,{dug}ban₂,,,Q000040
+Q000040.261,252,banmin[vessel]N,{dug}banmin,,,Q000040
+Q000040.262,253,baneš[container]N,{dug}baneš,,,Q000040
+Q000040.263,254,kag[mouth]N daŋal[wide]V/i,{dug}ka daŋal,,,Q000040
+Q000040.264,254a,{dug}ZA-SU-LAGAB[NA]NA,{dug}ZA-SU-LAGAB,,,Q000040
+Q000040.265,254b,kunrim[vessel]N,{dug}kun-ri,,,Q000040
+Q000040.266,254c,kunrim[vessel]N,{dug}kun-du₃,,,Q000040
+Q000040.267,255,tilimda[vessel]N,{dug}ti-lim-da,,,Q000040
+Q000040.268,256,gir[jar]N,{dug}gir₁₆,,,Q000040
+Q000040.269,257,gir[jar]N ga[milk]N,{dug}gir₁₆ ga,,,Q000040
+Q000040.27,25,kid[mat]N kaš[beer]N,{gi}kid kaš,,,Q000040
+Q000040.270,258,gir[jar]N šag[heart]N sig[weak]V/i,{dug}gir₁₆ šag₄ sig,,,Q000040
+Q000040.271,259,zahum[basin]N,{dug}za-hu-um,,,Q000040
+Q000040.272,260,lahan[flask]N,{dug}la-ha-nu-um,,,Q000040
+Q000040.273,261,zandara[object]N,{dug}za-ad-ru-um,,,Q000040
+Q000040.274,262,dug[pot]N ŋeštin[vine]N,dug ŋeštin,,,Q000040
+Q000040.275,263,dug[pot]N gibil[new]V/i,dug gibil,,,Q000040
+Q000040.276,264,sab[jar]N,{dug}sab,,,Q000040
+Q000040.277,265,sab[jar]N lal[syrup]N,{dug}sab lal₃,,,Q000040
+Q000040.278,266,sab[jar]N iŋeš[oil]N,{dug}sab i₃-ŋeš,,,Q000040
+Q000040.279,267,sab[jar]N inun[ghee]N,{dug}sab i₃-nun,,,Q000040
+Q000040.28,26,kid[mat]N dida[wort]N hi[mix]V/t,{gi}kid {dug}didaₓ(|U₂.SA|) hi,,,Q000040
+Q000040.280,268,sab[jar]N i[oil]N saŋ[head]N,{dug}sab i₃ saŋ,,,Q000040
+Q000040.281,269,sab[jar]N i[oil]N šah[pig]N,{dug}sab i₃ šah,,,Q000040
+Q000040.282,270,sab[jar]N i[oil]N dug[good]V/i,{dug}sab i₃ dug₃,,,Q000040
+Q000040.283,271,gurgur[vessel]N,{dug}gur₄-gur₄,,,Q000040
+Q000040.284,272,gurgur[vessel]N lal[syrup]N,{dug}gur₄-gur₄ lal₃,,,Q000040
+Q000040.285,273,gurgur[vessel]N iŋeš[oil]N,{dug}gur₄-gur₄ i₃-ŋeš,,,Q000040
+Q000040.286,274,gurgur[vessel]N inun[ghee]N,{dug}gur₄-gur₄ i₃-nun,,,Q000040
+Q000040.287,275,gurgur[vessel]N i[oil]N saŋ[head]N,{dug}gur₄-gur₄ i₃ saŋ,,,Q000040
+Q000040.288,276,gurgur[vessel]N i[oil]N šah[pig]N,{dug}gur₄-gur₄ i₃ šah,,,Q000040
+Q000040.289,277,gurgur[vessel]N i[oil]N dug[good]V/i,{dug}gur₄-gur₄ i₃ dug₃,,,Q000040
+Q000040.29,27,gigur[container]N,gi-gur,,,Q000040
+Q000040.290,278,šaŋan[flask]N,{dug}šaŋan,,,Q000040
+Q000040.291,279,šaŋan[flask]N kuš[skin]N sig[put]V/t,{dug}šaŋan kuš sig₉,,,Q000040
+Q000040.292,280,tisa[unmng]N,{dug}ti-sar,,,Q000040
+Q000040.293,281,dug[pot]N gaz[kill]V/t,dug gaz,,,Q000040
+Q000040.294,282,{dug}ga-ba-ba[NA]NA sal[thin]V/i,{dug}ga-ba-ba sal,,,Q000040
+Q000040.295,283,barsud[pot]N,{dug}bar-sud,,,Q000040
+Q000040.296,284,{dug}x-im-TAR[NA]NA,{dug}x-im-TAR,,,Q000040
+Q000040.297,285,dug[pot]N nimur[ashes]N,dug ne-mur,,,Q000040
+Q000040.298,286,utul[tureen]N,{dug}utul₂,,,Q000040
+Q000040.299,287,utul[tureen]N gal[big]V/i,{dug}utul₂ gal,,,Q000040
+Q000040.3,3,gizi[reed]N,gi-zi,,,Q000040
+Q000040.30,28,gigurda[basket]N,gi-gur-da,,,Q000040
+Q000040.300,288,utul[tureen]N tur[small]V/i,{dug}utul₂ tur,,,Q000040
+Q000040.301,289,utul[tureen]N na[stone]N,{dug}utul₂ na₄,,,Q000040
+Q000040.302,290,utul[tureen]N gub[stand]V/i,{dug}utul₂ gub,,,Q000040
+Q000040.303,,,,2,line,Q000040
+Q000040.304,293,burzi[bowl]N,{dug}bur-zi,,,Q000040
+Q000040.305,293a,burzi[bowl]N še[barley]N,{dug}bur-zi še,,,Q000040
+Q000040.306,294,burzi[bowl]N gal[big]V/i,{dug}bur-zi gal,,,Q000040
+Q000040.307,295,burzi[bowl]N tur[small]V/i,{dug}bur-zi tur,,,Q000040
+Q000040.308,296,burzi[bowl]N sila[unit]N banda[junior]V/i,{dug}bur-zi sila₃ banda₃{da},,,Q000040
+Q000040.309,297,burzi[bowl]N mud[blood]N,{dug}bur-zi mud,,,Q000040
+Q000040.31,29,gigurda[basket]N,gi-gur-da,,,Q000040
+Q000040.310,297a,burzi[bowl]N utu[~cereal]N,{dug}bur-zi utu₂,,,Q000040
+Q000040.311,298,burzi[bowl]N niŋna[incense]N,{dug}bur-zi niŋ₂-na,,,Q000040
+Q000040.312,299,burzi[bowl]N nindaʾidea[bread]N,{dug}bur-zi ninda-i₃-de₂-a,,,Q000040
+Q000040.313,300,epig[vessel]N,{dug}epigₓ(|A.SIG|),,,Q000040
+Q000040.314,301,epig[vessel]N gud[ox]N,{dug}epigₓ(|A.SIG|) gud,,,Q000040
+Q000040.315,302,epig[vessel]N udu[sheep]N,{dug}epigₓ(|A.SIG|) udu,,,Q000040
+Q000040.316,303,epig[vessel]N šah[pig]N,{dug}epigₓ(|A.SIG|) šah₂,,,Q000040
+Q000040.317,304,arandu[pipe]N,{dug}a-ra-an-du₇,,,Q000040
+Q000040.318,305,arutum[pipe]N,{dug}a-ru-tum,,,Q000040
+Q000040.319,306,apap[pipe]N hal[divide]V/t,{dug}a-pap hal,,,Q000040
+Q000040.32,30,gigur[container]N ur[roof]N,gi-gur ur₃,,,Q000040
+Q000040.320,307,apap[pipe]N,{dug}a-pap,,,Q000040
+Q000040.321,308,ugur[pot]N bala[turn]V/t,{dug}ugur₂ bala,,,Q000040
+Q000040.322,309,lum[vessel]N,{dug}lum₃,,,Q000040
+Q000040.323,310,lud[tableware]N,{dug}lud,,,Q000040
+Q000040.324,311,sikin[container]N,{dug}šikin₂,,,Q000040
+Q000040.325,312,urrub[vessel]N,{dug}urrub(KAL),,,Q000040
+Q000040.326,313,zurzub[vessel]N,{dug}zurzub₂(KAL),,,Q000040
+Q000040.327,314,silim[vessel]N,{dug}silim₂,,,Q000040
+Q000040.328,315,sila[unit]N GAR[NA]NA,{dug}sila₃ GAR,,,Q000040
+Q000040.329,316,sila[unit]N gaz[kill]V/t,{dug}sila₃ gaz,,,Q000040
+Q000040.33,31,gigur[container]N sahar[dust]N,gi-gur sahar,,,Q000040
+Q000040.330,317,udun[kiln]N,udun(|U.MU|),,,Q000040
+Q000040.331,318,udun[kiln]N še[barley]N sa[roast]V/t,udun še sa,,,Q000040
+Q000040.332,319,udun[kiln]N bappir[~beer]N,udun bappir,,,Q000040
+Q000040.333,320,udun[kiln]N mah[great]V/i,udun mah,,,Q000040
+Q000040.334,321,udun[kiln]N titab[~beer]N,udun titab₂,,,Q000040
+Q000040.335,322,udun[kiln]N bahar[potter]N,udun bahar₂,,,Q000040
+Q000040.336,323,udun[kiln]N i[oil]N sur[press]V/t,udun i₃ sur,,,Q000040
+Q000040.337,324,gir[oven]N,{dug}gir₄,,,Q000040
+Q000040.338,324a,gir[oven]N malah[sailor]N,{dug}gir₄ ma₂-lah₅,,,Q000040
+Q000040.339,324b,gir[oven]N ad.KID[weaver]N,{dug}gir₄ ad-KID,,,Q000040
+Q000040.34,32,gigur[container]N nisig[greenery]N,gi-gur nisig,,,Q000040
+Q000040.340,324c,ne[brazier]N,{dug}ne,,,Q000040
+Q000040.341,324d,NE.DU.DU[crucible]N,NE-DU-DU,,,Q000040
+Q000040.342,325,šurin[oven]N,{im}šu-GAR-rin-na,,,Q000040
+Q000040.343,326,katab[lid]N šurin[oven]N,ka-tab {im}šu-GAR-rin-na,,,Q000040
+Q000040.344,326a,kadu[cover]N GAR{im}[NA]NA,ka-du₃ GAR{im},,,Q000040
+Q000040.345,326b,niŋtab[fire-box]N udun[kiln]N,niŋ₂-tab udun,,,Q000040
+Q000040.346,326c,x[NA]NA KID[NA]NA,x KID,,,Q000040
+Q000040.347,326d,x[NA]NA im[clay]N,x im,,,Q000040
+Q000040.348,327,im[clay]N,im,,,Q000040
+Q000040.349,328,im[clay]N su[red]V/i,im su₄,,,Q000040
+Q000040.35,33,gigur[container]N šagha[cloth]N,gi-gur šag₄-ha,,,Q000040
+Q000040.350,329,im[clay]N sissig[green]V/i,im sig₇-sig₇,,,Q000040
+Q000040.351,330,im[clay]N zid[right]V/i,im zid,,,Q000040
+Q000040.352,331,im[clay]N babbar[white]V/i,im babbar,,,Q000040
+Q000040.353,332,im[clay]N giggi[black]V/i,im giggi,,,Q000040
+Q000040.354,333,im[clay]N kal[rare]V/i,im kal,,,Q000040
+Q000040.355,334,im[clay]N kalag[strong]V/i,im kalag,,,Q000040
+Q000040.356,335,im[clay]N dug[pot]N,im dug,,,Q000040
+Q000040.357,335a,imdug[shot]N,im-dug,,,Q000040
+Q000040.358,336,im[clay]N dugud[heavy]V/i,im dugud,,,Q000040
+Q000040.359,337,im[clay]N guʾena[silt]N,im gu₂-en-na,,,Q000040
+Q000040.36,34,gigur[container]N šag[heart]N rah[beat]V/t,gi-gur šag₄ ra-ah,,,Q000040
+Q000040.360,338,im[clay]N gu[neck]N niŋ[thing]N ŋar[place]V/t,im gu₂ niŋ₂ ŋar-ŋar,,,Q000040
+Q000040.361,338a,im[clay]N hab[malodorous]V/i,im hab₂,,,Q000040
+Q000040.362,338b,im[clay]N lu[mix]V/t,im lu₃,,,Q000040
+Q000040.363,339,kuš[skin]N,kuš,,,Q000040
+Q000040.364,340,kuš[skin]N gud[ox]N,kuš gud,,,Q000040
+Q000040.365,341,kuš[skin]N udu[sheep]N,kuš udu,,,Q000040
+Q000040.366,342,kuš[skin]N gukkal[sheep]N,kuš gukkal(|LU.HUL₂|),,,Q000040
+Q000040.367,343,kuš[skin]N maš[goat]N,kuš maš₂,,,Q000040
+Q000040.368,344,kuš[skin]N uzud[goat]N,kuš uzud,,,Q000040
+Q000040.369,345,kuš[skin]N ašgar[kid]N,kuš {munus}aš₂-gar₃,,,Q000040
+Q000040.37,35,gigur[container]N x[NA]NA,gi-gur x,,,Q000040
+Q000040.370,346,kuš[skin]N am[bull]N,kuš am,,,Q000040
+Q000040.371,347,kuš[skin]N amsi[elephant]N,kuš am-si,,,Q000040
+Q000040.372,348,kuš[skin]N amsi[elephant]N kur[mountain]N,kuš am-si kur,,,Q000040
+Q000040.373,349,kuš[skin]N sumun[cow]N,kuš sumun₂,,,Q000040
+Q000040.374,350,kuš[skin]N kir[hyena]N,kuš kir₄,,,Q000040
+Q000040.375,350a,kuš[skin]N ugubi[monkey]N,kuš {+ugu}ugu₄-bi,,,Q000040
+Q000040.376,351,kuš[skin]N durah[goat]N,kuš durah,,,Q000040
+Q000040.377,352,kuš[skin]N durahmaš[ram]N,kuš durah-maš,,,Q000040
+Q000040.378,353,kuš[skin]N šeg[animal]N,kuš šeg₉,,,Q000040
+Q000040.379,354,kuš[skin]N šeŋbar[animal]N,kuš šeŋ₉-bar,,,Q000040
+Q000040.38,36,gi.gur.DU[basket]N,gi-gur-DU,,,Q000040
+Q000040.380,355,kuš[skin]N lulim[stag]N,kuš lu-lim,,,Q000040
+Q000040.381,356,kuš[skin]N udutil[sheep]N,kuš udu-til,,,Q000040
+Q000040.382,357,kuš[skin]N mašda[gazelle]N,kuš maš-da₃,,,Q000040
+Q000040.383,358,kuš[skin]N amar[young]N mašda[gazelle]N,kuš amar maš-da₃,,,Q000040
+Q000040.384,359,kuš[skin]N sua[cat]N,kuš su-a,,,Q000040
+Q000040.385,360,kuš[skin]N suari[cat]N,kuš su-a-ri,,,Q000040
+Q000040.386,361,kuš[skin]N kaʾa[fox]N,kuš ka₅-a,,,Q000040
+Q000040.387,362,kuš[skin]N kuda[animal]N,kuš kud-da,,,Q000040
+Q000040.388,363,kuš[skin]N ban₂.HU[animal]N,kuš ban₂-HU-nu,,,Q000040
+Q000040.389,364,kuš[skin]N urmah[lion]N,kuš ur-mah,,,Q000040
+Q000040.39,37,gigur[container]N utul[tureen]N,gi-gur {dug}utul₂,,,Q000040
+Q000040.390,365,kuš[skin]N urnig[lioness]N,kuš ur-nig,,,Q000040
+Q000040.391,366,kuš[skin]N urbara[wolf]N,kuš ur-bar-ra,,,Q000040
+Q000040.392,367,kuš[skin]N urgir[dog]N,kuš ur-gir₁₅,,,Q000040
+Q000040.393,368,kuš[skin]N urki[dog]N,kuš ur-ki,,,Q000040
+Q000040.394,369,kuš[skin]N urdib[cub]N,kuš ur-dib,,,Q000040
+Q000040.395,370,kuš[skin]N urtur[puppy]N,kuš ur-tur,,,Q000040
+Q000040.396,371,kuš[skin]N uršub[tiger]N,kuš ur-šub₅,,,Q000040
+Q000040.397,372,kuš[skin]N uršubkuda[wild-animal]N,kuš ur-šub₅-kud-da,,,Q000040
+Q000040.398,373,kuš[skin]N peš[mouse]N,kuš peš₂,,,Q000040
+Q000040.399,374,kuš[skin]N pešgi[rodent]N,kuš peš₂-{ŋeš}gi-e,,,Q000040
+Q000040.4,4,GI.NE[reed]N,GI-NE,,,Q000040
+Q000040.40,38,gigur[container]N su[fibers]N sig[put]V/t,gi-gur su₁₁ sig₁₀,,,Q000040
+Q000040.400,375,kuš[skin]N pešgigua[rodent]N,kuš peš₂-{ŋeš}gi-e-gu₇-a,,,Q000040
+Q000040.401,376,kuš[skin]N pešašaga[rodent]N,kuš peš₂-a-šag₄-ga,,,Q000040
+Q000040.402,377,kuš[skin]N pešigigunu[rodent]N,kuš peš₂-igi-gun₃,,,Q000040
+Q000040.403,378,kuš[skin]N pešniŋgilima[rodent]N,kuš peš₂-niŋ₂-gilim-ma,,,Q000040
+Q000040.404,379,kuš[skin]N pešniŋgilima[rodent]N,kuš peš₂-niŋ₂-gilim-gilim-ma,,,Q000040
+Q000040.405,380,kuš[skin]N pešsilagaz[rodent]N,kuš peš₂-{dug}sila₃-gaz-gaz,,,Q000040
+Q000040.406,381,kuš[skin]N ninka[mongoose]N,kuš {d}nin-ka₆,,,Q000040
+Q000040.407,382,kuš[skin]N ninkamašmaš[rodent]N,kuš {d}nin-ka₆-maš-maš,,,Q000040
+Q000040.408,383,lala[straps]N,{kuš}la₂-la₂,,,Q000040
+Q000040.409,384,har[ring]N lala[straps]N,{kuš}har la₂-la₂,,,Q000040
+Q000040.41,39,gigur[container]N ku-ud-da[NA]NA,gi-gur ku-ud-da,,,Q000040
+Q000040.410,385,murub[middle]N lala[straps]N,{kuš}murub₄ la₂-la₂,,,Q000040
+Q000040.411,385a,šeršer[chain]N,{kuš}šir₃-šir₃,,,Q000040
+Q000040.412,385b,har[ring]N šeršer[chain]N,{kuš}har šir₃-šir₃,,,Q000040
+Q000040.413,385c,murub[middle]N šeršer[chain]N,{kuš}murub₄ šir₃-šir₃,,,Q000040
+Q000040.414,386,aŋala[sack]N,{kuš}a-ŋa₂-la₂,,,Q000040
+Q000040.415,387,ummud[waterskin]N,{kuš}ummud,,,Q000040
+Q000040.416,388,lub[bag]N,{kuš}lu-ub₂,,,Q000040
+Q000040.417,389,lub[bag]N sumun[vessel]N,{kuš}lu-ub₂ {dug}sumun₂,,,Q000040
+Q000040.418,390,lub[bag]N iŋeš[oil]N,{kuš}lu-ub₂ i₃-ŋeš,,,Q000040
+Q000040.419,391,mašlum[bucket]N,{kuš}maš-lum,,,Q000040
+Q000040.42,40,gigur[container]N zid[flour]N,gi-gur zid₂,,,Q000040
+Q000040.420,391a,{kuš}PA-NAM[NA]NA x[NA]NA,{kuš}PA-NAM x,,,Q000040
+Q000040.421,392,duggan[bag]N,{kuš}dug₃-gan,,,Q000040
+Q000040.422,393,duggan[bag]N kug[metal]N,{kuš}dug₃-gan kug,,,Q000040
+Q000040.423,394,duggan[bag]N kugan[metal]N,{kuš}dug₃-gan kug-an,,,Q000040
+Q000040.424,395,duggan[bag]N mun[salt]V/i,{kuš}dug₃-gan mun,,,Q000040
+Q000040.425,396,duggan[bag]N naŋa[potash]N,{kuš}dug₃-gan naŋa,,,Q000040
+Q000040.426,397,duggan[bag]N gazi[condiment]N,{kuš}dug₃-gan gazi,,,Q000040
+Q000040.427,398,duggan[bag]N zid[flour]N,{kuš}dug₃-gan zid₂,,,Q000040
+Q000040.428,399,duggan[bag]N gidubak[stylus]N,{kuš}dug₃-gan gi-dub-ba,,,Q000040
+Q000040.429,400,niŋna[bag]N,{kuš}niŋ₂-na₄,,,Q000040
+Q000040.43,41,gigur[container]N a[water]N bala[turn]V/t,gi-gur a bala,,,Q000040
+Q000040.430,401,kadu[cover]N niŋna[bag]N,{kuš}ka-dug₃ niŋ₂-na₄,,,Q000040
+Q000040.431,402,kadu[cover]N,{kuš}ka-dug₃,,,Q000040
+Q000040.432,403,tun[container]N,{kuš}tun₃,,,Q000040
+Q000040.433,404,tun[container]N šuʾi[barber]N,{kuš}tun₃ šu-i,,,Q000040
+Q000040.434,405,tun[container]N muhaldim[cook]N,{kuš}tun₃ muhaldim,,,Q000040
+Q000040.435,406,tun[container]N azu[doctor]N,{kuš}tun₃ a-zu,,,Q000040
+Q000040.436,407,tun[container]N gidubak[stylus]N,{kuš}tun₃ gi-dub-ba,,,Q000040
+Q000040.437,408,suhub[boots]N,{kuš}suhub₂,,,Q000040
+Q000040.438,409,suhub[boots]N munus[woman]N,{kuš}suhub₂ munus,,,Q000040
+Q000040.439,410,suhub[boots]N eban[pair]N,{kuš}suhub₂ e-pa-na,,,Q000040
+Q000040.44,42,gigur[container]N IGI.ESIR₂[~bitumen]N,gi-gur igi-esir,,,Q000040
+Q000040.440,411,esir[shoe]N,{kuš}e-sir₂,,,Q000040
+Q000040.441,412,esir[shoe]N munus[woman]N,{kuš}e-sir₂ munus,,,Q000040
+Q000040.442,413,esir[shoe]N duh[loosen]V/t,{kuš}e-sir₂ duh,,,Q000040
+Q000040.443,414,esir[shoe]N eban[pair]N,{kuš}e-sir₂ e-pa-na,,,Q000040
+Q000040.444,415,guru[shield]N,{kuš}gur₂₁(|E.TUM|),,,Q000040
+Q000040.445,416,guru[shield]N da-GUD[NA]NA,{kuš}gur₂₁ da-GUD,,,Q000040
+Q000040.446,417,guru[shield]N kun[tail]N,{kuš}gur₂₁ kun,,,Q000040
+Q000040.447,418,guru[shield]N huduš[status]N,{kuš}gur₂₁ huduš(TU),,,Q000040
+Q000040.448,419,guru[shield]N siki[hair]N zid[right]V/i,{kuš}gur₂₁ siki zid,,,Q000040
+Q000040.449,420,guru[shield]N ur[roof]N,{kuš}gur₂₁ ur₃,,,Q000040
+Q000040.45,43,gigur[container]N šuniŋin[total]N,gi-gur šu-niŋin,,,Q000040
+Q000040.450,421,šikum[leather-object]N kuš[skin]N su[red]V/i sig[put]V/t,{kuš}ši-kum kuš su₁₃ sig₉,,,Q000040
+Q000040.451,422,šikum[leather-object]N kuš[skin]N dušia[stone]N sig[put]V/t,{kuš}ši-kum kuš du₈-ši-a sig₉,,,Q000040
+Q000040.452,423,marinum[screen]N,{kuš}ma-ri-nu-um,,,Q000040
+Q000040.453,424,garig[comb]N,{kuš}ga-rig₂,,,Q000040
+Q000040.454,425,baranše[goad]N,{kuš}bar-anše,,,Q000040
+Q000040.455,426,zagbar[scraps]N,{kuš}zag-bar,,,Q000040
+Q000040.456,427,ibla[belt]N,{kuš}ib₂-la₂,,,Q000040
+Q000040.457,428,ibla[belt]N su[red]V/i,{kuš}ib₂-la₂ su₄,,,Q000040
+Q000040.458,429,ibla[belt]N gunu[speckled]V/i,{kuš}ib₂-la₂ gun₃,,,Q000040
+Q000040.459,430,{kuš}x[NA]NA gunu[speckled]V/i,{kuš}x gun₃,,,Q000040
+Q000040.46,44,gigur[container]N sal[thin]V/i,gi-gur sal,,,Q000040
+Q000040.460,431,dalu[object]N,{kuš}da-lu-uš₂,,,Q000040
+Q000040.461,432,e[house]N dalu[object]N,{kuš}e₂ da-lu-uš₂,,,Q000040
+Q000040.462,433,dabašin[object]N,{kuš}dabašin,,,Q000040
+Q000040.463,434,e[house]N dabašin[object]N,{kuš}e₂ dabašin,,,Q000040
+Q000040.464,435,hululum[object]N,{kuš}hu-lu-lu-um,,,Q000040
+Q000040.465,436,e[house]N hululum[object]N,{kuš}e₂ hu-lu-lu-um,,,Q000040
+Q000040.466,437,kababum[shield]N,{kuš}ka-ba-bu-um,,,Q000040
+Q000040.467,438,e[house]N kababum[shield]N,{kuš}e₂ ka-ba-bu-um,,,Q000040
+Q000040.468,439,katab[lid]N anše[equid]N,{kuš}ka-tab anše,,,Q000040
+Q000040.469,440,gutab[collar]N anše[equid]N,{kuš}gu₂-tab anše,,,Q000040
+Q000040.47,45,gigur[container]N bisaŋ[basket]N,gi-gur bisaŋ,,,Q000040
+Q000040.470,441,igitab[blinkers]N anše[equid]N,{kuš}igi-tab anše,,,Q000040
+Q000040.471,442,kiritab[bridle]N anše[equid]N,{kuš}kiri₃-tab anše,,,Q000040
+Q000040.472,443,usan[whip]N,{kuš}usan₃,,,Q000040
+Q000040.473,444,usan[whip]N la[hang]V/t,{kuš}usan₃ la₂,,,Q000040
+Q000040.474,445,KA.usan₃[~whip]N,{kuš}KA-usan₃,,,Q000040
+Q000040.475,446,amaʾusan[~whip]N,{kuš}ama-usan₃,,,Q000040
+Q000040.476,447,heše[oppressed]V/i de[bring]V/t,{kuš}heš₅(|LU₂×GAN₂@t|) de₆(DU),,,Q000040
+Q000040.477,448,imkid[piece]N,{kuš}im-kid₂,,,Q000040
+Q000040.478,449,sa[binding]N ur[root]N,{kuš}sa ur₃,,,Q000040
+Q000040.479,450,sa[binding]N pa[branch]N,{kuš}sa ab,,,Q000040
+Q000040.48,46,bisaŋ[basket]N,{gi}bisaŋ,,,Q000040
+Q000040.480,451,saŋkešed[strap]N,{kuš}saŋ-keš₂,,,Q000040
+Q000040.481,452,bareda[strap]N,{kuš}bar-ed₃-de₃,,,Q000040
+Q000040.482,453,daba[strap]N,{kuš}da-ba,,,Q000040
+Q000040.483,454,asi[strap]N,{kuš}a₂-si,,,Q000040
+Q000040.484,455,asi[strap]N gal[big]V/i,{kuš}a₂-si gal,,,Q000040
+Q000040.485,456,kuš-|AB₂×ŠE|[NA]NA,kuš-|AB₂×ŠE|,,,Q000040
+Q000040.486,457,ub[drum]N,{kuš}ub,,,Q000040
+Q000040.487,458,{kuš}bar-sim(NAM)[NA]NA,{kuš}bar-sim(NAM),,,Q000040
+Q000040.488,459,nunuz[egg]N,{kuš}nunuz,,,Q000040
+Q000040.489,459a,{kuš}x[NA]NA la[hang]V/t,{kuš}x la₂,,,Q000040
+Q000040.49,47,bisaŋ[basket]N šu[hand]N,{gi}bisaŋ šu,,,Q000040
+Q000040.490,460,kuš[skin]N arina[madder]N gu[eat]V/t,kuš arinaₓ(|I.LU₂@s.NA|) gu₇,,,Q000040
+Q000040.491,461,kuš[skin]N arina[madder]N gu[eat]V/t,kuš arinaₓ(|I.LU₂@s.NA|) gu₇,,,Q000040
+Q000040.492,462,kuš[skin]N aŋarak[fluid]N gu[eat]V/t,kuš ŋar gu₇,,,Q000040
+Q000040.493,463,kuš[skin]N aŋarak[fluid]N gu[eat]V/t,kuš ŋar gu₇,,,Q000040
+Q000040.494,464,kuš[skin]N hi[mix]V/t,kuš hi,,,Q000040
+Q000040.495,465,kuš[skin]N hi[mix]V/t,kuš hi,,,Q000040
+Q000040.496,466,niŋŋala[possessions]N,{kuš}niŋ₂-ŋal₂-la,,,Q000040
+Q000040.497,467,kuš[skin]N siki[hair]N mu[grow]V/t,kuš siki mu₂,,,Q000040
+Q000040.498,468,balaŋ[instrument]N,{kuš}balaŋ,,,Q000040
+Q000040.499,469,balaŋdi[instrument]N,{kuš}balaŋ-balaŋ-di,,,Q000040
+Q000040.5,5,gi[reed]N bar[burn]V/t,gi bar₇,,,Q000040
+Q000040.50,48,bisaŋ[basket]N ninda[bread]N,{gi}bisaŋ ninda,,,Q000040
+Q000040.500,470,ala[drum]N,{kuš}a₂-la₂,,,Q000040
+Q000040.501,471,zamin[lyre]N,{kuš}zag-mi₂,,,Q000040
+Q000040.502,472,zimaharu[leather-object]N,{kuš}zi-ma-ha-ru,,,Q000040
+Q000040.503,473,sim[swallow]N,{kuš}sim,,,Q000040
+Q000040.504,474,{kuš}bar-sim[NA]NA,{kuš}bar-sim,,,Q000040
+Q000040.505,475,ellaŋ[bead]N kuš[skin]N,{kuš}ellaŋ₂(|HI×ŠE|) kuš,,,Q000040
+Q000040.506,476,anna[metal]N,an,,,Q000040
+Q000040.507,477,anna[metal]N,an-na,,,Q000040
+Q000040.508,478,anzah[glass]N,an-zah(NE),,,Q000040
+Q000040.509,479,anzah[glass]N giggi[black]V/i,an-zah giggi,,,Q000040
+Q000040.51,49,bisaŋ[basket]N ninda[bread]N sag[good]V/i,{gi}bisaŋ ninda sag₁₀,,,Q000040
+Q000040.510,480,anzah[glass]N babbar[white]V/i,an-zah babbar,,,Q000040
+Q000040.511,481,sudaŋ[metal]N,sud-ra₂-aŋ₂,,,Q000040
+Q000040.512,482,sudaŋ[metal]N,sud-ra₂-aŋ₂,,,Q000040
+Q000040.513,483,šembizida[kohl]N,šim-bi-zid-da,,,Q000040
+Q000040.514,484,šim[aromatics]N kugsig[gold]N,šim kug-sig₁₇,,,Q000040
+Q000040.515,485,šim[aromatics]N arina[madder]N,šim arinaₓ(|I.LU₂@s.NA|),,,Q000040
+Q000040.516,485a,x[NA]NA x-x-x[NA]NA,x x-x-x,,,Q000040
+Q000040.517,486,šim[aromatics]N sissig[green]V/i,šim sig₇-sig₇,,,Q000040
+Q000040.518,487,šim[aromatics]N sahar[dust]N,šim {na₄}sahar,,,Q000040
+Q000040.519,488,piš[bank]N idlurugu[ordeal-river]N,piš₁₀ id₂-lu₂-ru-gu₂,,,Q000040
+Q000040.52,50,bisaŋ[basket]N kug[metal]N,{gi}bisaŋ kug,,,Q000040
+Q000040.520,489,agar[lead]N,a-gar₅,,,Q000040
+Q000040.521,490,x[NA]NA agar[lead]N,x a-gar₅,,,Q000040
+Q000040.522,490a,im[clay]N sahar[dust]N giggi[black]V/i kur[mountain]N,im sahar giggi kur,,,Q000040
+Q000040.523,490b,im[clay]N sahar[dust]N babbar[white]V/i kur[mountain]N,im sahar babbar kur,,,Q000040
+Q000040.524,491,urud[copper]N,urud,,,Q000040
+Q000040.525,492,urud[copper]N niŋkalaga[strong]AJ,urud niŋ₂-kalag-ga,,,Q000040
+Q000040.526,493,urud[copper]N zarin[low-quality]N,urud za-ri₂-in,,,Q000040
+Q000040.527,494,urud[copper]N luh[clean]V/t,urud luh,,,Q000040
+Q000040.528,495,šen[cauldron]N,{urud}šen,,,Q000040
+Q000040.529,496,šen[cauldron]N kug[metal]N,{urud}šen kug,,,Q000040
+Q000040.53,51,bisaŋ[basket]N kugan[metal]N,{gi}bisaŋ kug-an,,,Q000040
+Q000040.530,497,šendili[ewer]N,{urud}šen-dili₂,,,Q000040
+Q000040.531,498,šen[cauldron]N utul[tureen]N,{urud}šen utul₂,,,Q000040
+Q000040.532,499,šen[cauldron]N zahum[basin]N,{urud}šen za-hu-um,,,Q000040
+Q000040.533,500,šen[cauldron]N zir[slip]N,{urud}šen zi-ir,,,Q000040
+Q000040.534,501,zir[slip]N ŋar[place]V/t,{urud}zi-ir ŋar,,,Q000040
+Q000040.535,501a,šen[cauldron]N da-hum[NA]NA,{urud}šen da-hum,,,Q000040
+Q000040.536,502,lubi[ax]N,{urud}lib-bi-da,,,Q000040
+Q000040.537,503,habuda[hoe]N,{urud}ha-bu-da,,,Q000040
+Q000040.538,504,igiŋal[weapon]N,{urud}igi-mar,,,Q000040
+Q000040.539,505,tun[ax]N,{urud}tun₃,,,Q000040
+Q000040.54,52,bisaŋ[basket]N nuʾešak[priest]N,{gi}bisaŋ nu-eš₃,,,Q000040
+Q000040.540,506,tun[ax]N sal[thin]V/i,{urud}tun₃ sal,,,Q000040
+Q000040.541,506a,tun[ax]N eme[tongue]N sal[thin]V/i,{urud}tun₃ eme sal,,,Q000040
+Q000040.542,507,aga[ax]N,{urud}aga,,,Q000040
+Q000040.543,508,aga.DUN₃@g.ma[ax]N,{urud}aga-DUN₃@g-ma,,,Q000040
+Q000040.544,509,agasilig[ax]N,{urud}aga-silig,,,Q000040
+Q000040.545,510,aga[ax]N aʾašŋar[ax]N,{urud}aga a₂-aš-ŋar,,,Q000040
+Q000040.546,511,kušedim[tool]N,{urud}kuš₃-e-dim₂,,,Q000040
+Q000040.547,512,gidim[fork]N,{urud}gi₂-dim,,,Q000040
+Q000040.548,513,gidim[fork]N tur[small]V/i,{urud}gi₂-dim tur,,,Q000040
+Q000040.549,514,kin[sickle]N,{urud}kin,,,Q000040
+Q000040.55,53,bisaŋ[basket]N nushu[container]N,{gi}bisaŋ nu-us-hu,,,Q000040
+Q000040.550,515,kin[sickle]N gal[big]V/i,{urud}kin gal,,,Q000040
+Q000040.551,515a,kin[sickle]N aʾašŋar[ax]N,{urud}kin aš-ŋar,,,Q000040
+Q000040.552,516,niŋdea[mould]N,{urud}niŋ₂-de₂,,,Q000040
+Q000040.553,517,niŋsua[object]N,{urud}niŋ₂-sud-a,,,Q000040
+Q000040.554,518,niŋhia[alloy?]N,{urud}niŋ₂-hi-a,,,Q000040
+Q000040.555,519,niŋgida[rod?]N,{urud}niŋ₂-gid₂-da,,,Q000040
+Q000040.556,520,niŋul[everlasting]N tag[touch]V/t,{urud}niŋ₂-ul tag-ga,,,Q000040
+Q000040.557,521,niŋdim[object]N,{urud}niŋ₂-dim₂,,,Q000040
+Q000040.558,522,niŋdimdima[form]N,{urud}niŋ₂-dim₂-dim₂-ma,,,Q000040
+Q000040.559,523,niŋdim[object]N gul[destroy]V/t,{urud}niŋ₂-dim₂ gul,,,Q000040
+Q000040.56,53a,bisaŋ[basket]N sar[write]V/t,{gi}bisaŋ sar,,,Q000040
+Q000040.560,524,niŋ[thing]N izi[fire]N sig[cast]V/t,{urud}niŋ₂ izi sig₉,,,Q000040
+Q000040.561,524a,urud-x-NE[NA]NA,urud-x-NE,,,Q000040
+Q000040.562,524b,urud-x-NE-KIN[NA]NA,urud-x-NE-KIN,,,Q000040
+Q000040.563,525,šeršer[chain]N,{urud}šir₃-šir₃,,,Q000040
+Q000040.564,526,har[ring]N šeršer[chain]N,{urud}har šir₃-šir₃,,,Q000040
+Q000040.565,527,murub[middle]N šeršer[chain]N,{urud}murub₄ šir₃-šir₃,,,Q000040
+Q000040.566,527a,hemegina[fetters]N,{urud}he₂-me-gin₆-na,,,Q000040
+Q000040.567,527b,{urud}x-gi-na[NA]NA,{urud}x-gi-na,,,Q000040
+Q000040.568,528,namzaqum[key]N,{urud}nam-za-qum,,,Q000040
+Q000040.569,529,gag[nail]N namzaqum[key]N,{urud}gag nam-za-qum,,,Q000040
+Q000040.57,54,bisaŋ[basket]N ninda[bread]N lukur[priestess]N,{gi}bisaŋ ninda lukur,,,Q000040
+Q000040.570,529a,mud[stump]N,{urud}mud,,,Q000040
+Q000040.571,529b,gag[nail]N mud[stump]N,{urud}gag mud,,,Q000040
+Q000040.572,530,gag.SUH[nail]N,{urud}gag-MUŠ₃@g,,,Q000040
+Q000040.573,531,KI.LUGAL.DU[locus]N,{urud}KI-LUGAL-DU,,,Q000040
+Q000040.574,532,kigal[platform]N,{urud}ki-gal,,,Q000040
+Q000040.575,532a,niŋdimdima[form]N,{urud}niŋ₂-dim₂-dim₂,,,Q000040
+Q000040.576,533,ki.en.DU[watercourse]N,{urud}ki-en-DU,,,Q000040
+Q000040.577,534,zabar[bronze]N,zabar,,,Q000040
+Q000040.578,535,zabaršu[mirror]N,zabar-šu,,,Q000040
+Q000040.579,536,dug[pot]N,{zabar}dug,,,Q000040
+Q000040.58,55,bisaŋ[basket]N ninda[bread]N gur[thick]V/i,{gi}bisaŋ ninda gur₄,,,Q000040
+Q000040.580,536a,zabar[bronze]N ga[milk]N,zabar ga,,,Q000040
+Q000040.581,537,mud[jar]N,{zabar}{dug}mud₃(|NUNUZ.AB₂×BI|),,,Q000040
+Q000040.582,538,magur[barge]N,{zabar}ma₂-gur₈,,,Q000040
+Q000040.583,539,zabar[bronze]N hi[mix]V/t,zabar hi,,,Q000040
+Q000040.584,540,šaʾuša[lance]N,ša-u₁₉(URU)-ša{zabar},,,Q000040
+Q000040.585,541,šušŋar[vessel]N,šu₂-uš-ŋar{zabar},,,Q000040
+Q000040.586,542,šu-IM-ba{zabar}[NA]NA,šu-IM-ba{zabar},,,Q000040
+Q000040.587,543,amam[jar]N,am-ma-am{zabar},,,Q000040
+Q000040.588,544,anzam[vessel]N,an-za-am{zabar},,,Q000040
+Q000040.589,545,ub[drum]N,ubₓ(|AB₂.ŠA₃|){zabar},,,Q000040
+Q000040.59,56,bisaŋ[basket]N dima[object]N,{gi}bisaŋ dim₃-ma,,,Q000040
+Q000040.590,546,ub[drum]N ama[chamber]N,ubₓ(|AB₂.ŠA₃|) ama₅{zabar},,,Q000040
+Q000040.591,547,hazin[ax]N,ha-zi-in{zabar},,,Q000040
+Q000040.592,548,hazin[ax]N arhuš[womb]N,ha-zi-in arhuš{zabar},,,Q000040
+Q000040.593,549,hazin[ax]N gu[neck]N tum[dove]N,ha-zi-in gu₂ tum₁₂{mušen}-ma{zabar},,,Q000040
+Q000040.594,550,hazin[ax]N gu[neck]N bir[locust]N,ha-zi-in gu₂ bir₅(NAM)-ra{mušen}{zabar},,,Q000040
+Q000040.595,551,maqtarum[object]N,ma-aq-ta-ru-um{zabar},,,Q000040
+Q000040.596,552,zahada[ax]N,za-ha-da{zabar},,,Q000040
+Q000040.597,553,šumme[saw]N,šum-me{zabar},,,Q000040
+Q000040.598,554,šumme[saw]N tur[small]V/i,šum-me tur{zabar},,,Q000040
+Q000040.599,555,bulug[needle]N,bulug{zabar},,,Q000040
+Q000040.6,6,giʾizila[torch]N,gi-izi-la₂,,,Q000040
+Q000040.60,57,bisaŋ[basket]N niŋsaha[fruit]N,{gi}bisaŋ niŋ₂-sa-ha,,,Q000040
+Q000040.600,556,bulug[needle]N šu[hand]N,bulug šu{zabar},,,Q000040
+Q000040.601,557,bulug.KIN.gur₄[lancet]N,bulug-KIN-gur₄{zabar},,,Q000040
+Q000040.602,558,bulug[needle]N harran[tool]N,bulug har-ra-an{zabar},,,Q000040
+Q000040.603,559,bulug[needle]N gigir[chariot]N,bulug {ŋeš}gigir{zabar},,,Q000040
+Q000040.604,560,bulug[needle]N šu[hand]N SUD₂-a{zabar}[NA]NA,bulug šu SUD₂-a{zabar},,,Q000040
+Q000040.605,561,niŋ[thing]N bur[grass]N,niŋ₂ {u₂}bur₂{zabar},,,Q000040
+Q000040.606,562,ir[peg]N,ir{zabar},,,Q000040
+Q000040.607,563,nun[object]N,nun{zabar},,,Q000040
+Q000040.608,564,dim[post]N,dim{zabar},,,Q000040
+Q000040.609,565,šem[drum]N,šem₅{zabar},,,Q000040
+Q000040.61,58,bisaŋ[basket]N eša[flour]N,{gi}bisaŋ eša,,,Q000040
+Q000040.610,566,meze[drum]N,me-ze₂{zabar},,,Q000040
+Q000040.611,567,lilis[instrument]N,li-li-is₃{zabar},,,Q000040
+Q000040.612,568,ŋiri[dagger]N,ŋir₂{zabar},,,Q000040
+Q000040.613,569,ŋiri[dagger]N šuʾi[barber]N,ŋiri₂ šu-i{zabar},,,Q000040
+Q000040.614,569a,ŋiri[dagger]N ad.KID[weaver]N,ŋiri₂ ad-KID{zabar},,,Q000040
+Q000040.615,570,ŋiri[dagger]N ašgab[leatherworker]N,ŋiri₂ ašgab{zabar},,,Q000040
+Q000040.616,571,ŋiri[dagger]N gi[reed]N zu[tooth]N,ŋiri₂ gi zu₂{zabar},,,Q000040
+Q000040.617,572,ŋiri[dagger]N sumun[old]V/i,ŋiri₂ sumun{zabar},,,Q000040
+Q000040.618,573,ŋiri[dagger]N ur[root]N,ŋiri₂ ur₃-ra{zabar},,,Q000040
+Q000040.619,574,ŋiri[dagger]N gud[ox]N gaz[kill]V/t,ŋiri₂ gud gaz{zabar},,,Q000040
+Q000040.62,59,bisaŋ[basket]N zid[flour]N,{gi}bisaŋ zid₂,,,Q000040
+Q000040.620,574a,ŋiri[dagger]N zu[tooth]N x{zabar}[NA]NA,ŋiri₂ zu₂ x{zabar},,,Q000040
+Q000040.621,575,tuditum[toggle-pin]N,tu-di-tum{zabar},,,Q000040
+Q000040.622,576,kamkammatum[earring]N,kam-kam-ma-tum{zabar},,,Q000040
+Q000040.623,577,ašme[radiance]N,aš-me{zabar},,,Q000040
+Q000040.624,578,ugunu[decoration]N,u-gun₃{zabar},,,Q000040
+Q000040.625,579,ubur[breast]N ugunu[decoration]N,ubur u-gun₃{zabar},,,Q000040
+Q000040.626,580,lammar[deity]N,{d}lamma{zabar},,,Q000040
+Q000040.627,581,alan[statue]N,alan{zabar},,,Q000040
+Q000040.628,582,šukur[lance]N,šukur{zabar},,,Q000040
+Q000040.629,583,dala[thorn]N,dala₂(|IGI.NI|){zabar},,,Q000040
+Q000040.63,59a,bisaŋ[basket]N x-ga[NA]NA,{gi}bisaŋ x-ga,,,Q000040
+Q000040.630,584,šugur[ring]N,šu-gur{zabar},,,Q000040
+Q000040.631,585,ešgur[ring]N,eš-gur{zabar},,,Q000040
+Q000040.632,586,har[ring]N,har{zabar},,,Q000040
+Q000040.633,587,har[ring]N šu[hand]N,har šu{zabar},,,Q000040
+Q000040.634,588,har[ring]N ŋiri[foot]N,har ŋiri₃{zabar},,,Q000040
+Q000040.635,589,har[ring]N gal[big]V/i,har gal{zabar},,,Q000040
+Q000040.636,590,har[ring]N ib[hips]N,har ib₂-ba{zabar},,,Q000040
+Q000040.637,591,hubdum[object]N,hub₂-du-um{zabar},,,Q000040
+Q000040.638,592,kugbabbar[silver]N,kug-babbar,,,Q000040
+Q000040.639,593,kugbabbar[silver]N kalag[strong]V/i,kug-babbar kalag,,,Q000040
+Q000040.64,60,bisaŋ[basket]N šu-rum[NA]NA,{gi}bisaŋ šu-rum,,,Q000040
+Q000040.640,594,kugbabbar[silver]N agar[lead]N,kug-babbar a-gar₅,,,Q000040
+Q000040.641,595,kugbabbar[silver]N utud[bear]V/t,kug-babbar u₃-tud,,,Q000040
+Q000040.642,596,kugbabbar[silver]N gurum[inspection]N ak[do]V/t,kug-babbar gurum₂ ak,,,Q000040
+Q000040.643,597,kugbabbar[silver]N pad[break]V/t,kug-babbar pad,,,Q000040
+Q000040.644,598,tuditum[toggle-pin]N kugbabbar[silver]N,tud-di-tum kug-babbar,,,Q000040
+Q000040.645,599,kamkammatum[earring]N kugbabbar[silver]N,kam-kam-ma-tum kug-babbar,,,Q000040
+Q000040.646,600,ašme[radiance]N kugbabbar[silver]N,aš-me kug-babbar,,,Q000040
+Q000040.647,601,usakar[moon]N kugbabbar[silver]N,u₄-sakar kug-babbar,,,Q000040
+Q000040.648,602,ugunu[decoration]N kugbabbar[silver]N,u-gun₃ kug-babbar,,,Q000040
+Q000040.649,603,ubur[breast]N ugunu[decoration]N kugbabbar[silver]N,ubur u-gun₃ kug-babbar,,,Q000040
+Q000040.65,61,bisaŋ[basket]N šu[hand]N,{gi}bisaŋ šu,,,Q000040
+Q000040.650,604,lammar[deity]N kugbabbar[silver]N,{d}lamma kug-babbar,,,Q000040
+Q000040.651,605,alan[statue]N kugbabbar[silver]N,alan kug-babbar,,,Q000040
+Q000040.652,606,šugur[ring]N kugbabbar[silver]N,šu-gur kug-babbar,,,Q000040
+Q000040.653,607,ešgur[ring]N kugbabbar[silver]N,eš-gur kug-babbar,,,Q000040
+Q000040.654,608,šukur[lance]N kugbabbar[silver]N,šukur kug-babbar,,,Q000040
+Q000040.655,609,dala[thorn]N kugbabbar[silver]N,dala₂(|IGI.NI|) kug-babbar,,,Q000040
+Q000040.656,610,har[ring]N kugbabbar[silver]N,har kug-babbar,,,Q000040
+Q000040.657,611,har[ring]N šu[hand]N kugbabbar[silver]N,har šu kug-babbar,,,Q000040
+Q000040.658,612,har[ring]N ŋiri[foot]N kugbabbar[silver]N,har ŋiri₃ kug-babbar,,,Q000040
+Q000040.659,613,har[ring]N gal[big]V/i kugbabbar[silver]N,har gal kug-babbar,,,Q000040
+Q000040.66,61a,bisaŋ[basket]N imbabbar[gypsum]N,{gi}bisaŋ im-babbar₂,,,Q000040
+Q000040.660,614,hubdum[object]N kugbabbar[silver]N,hub₂-du-um kug-babbar,,,Q000040
+Q000040.661,615,šita[priest]N kugbabbar[silver]N,šita kug-babbar,,,Q000040
+Q000040.662,616,niŋluh[basin]N kugbabbar[silver]N,niŋ₂-luh kug-babbar,,,Q000040
+Q000040.663,617,kugsig[gold]N,kug-sig₁₇,,,Q000040
+Q000040.664,618,kugsig[gold]N huš[reddish]V/i,kug-sig₁₇ huš,,,Q000040
+Q000040.665,619,kugsig[gold]N sisa[fair]AJ,kug-sig₁₇ si-sa₂,,,Q000040
+Q000040.666,620,kugsig[gold]N sahar[dust]N,kug-sig₁₇ sahar,,,Q000040
+Q000040.667,621,kugsig[gold]N sahar[dust]N kur[mountain]N,kug-sig₁₇ sahar kur,,,Q000040
+Q000040.668,622,kugsig[gold]N lub[bag]N šar[mix]V/t,kug-sig₁₇ lu-ub₂ SAR-da,,,Q000040
+Q000040.669,623,kugsig[gold]N u[ten]NU,kug-sig₁₇ u,,,Q000040
+Q000040.67,61b,bisaŋ[basket]N im[clay]N su[red]V/i,{gi}bisaŋ im su₄,,,Q000040
+Q000040.670,624,kugsig[gold]N ilimmu[nine]NU,kug-sig₁₇ ilimmu,,,Q000040
+Q000040.671,625,kugsig[gold]N ussu[eight]NU,kug-sig₁₇ ussu,,,Q000040
+Q000040.672,626,kugsig[gold]N imin[seven]NU,kug-sig₁₇ imin,,,Q000040
+Q000040.673,627,kugsig[gold]N aš[six]NU,kug-sig₁₇ aš₃,,,Q000040
+Q000040.674,628,kugsig[gold]N ya[five]NU,kug-sig₁₇ ia₂,,,Q000040
+Q000040.675,629,kugsig[gold]N limmu[four]NU,kug-sig₁₇ limmu₅,,,Q000040
+Q000040.676,630,kugsig[gold]N eš[three]NU,kug-sig₁₇ eš₅,,,Q000040
+Q000040.677,631,kugsig[gold]N min[two]NU,kug-sig₁₇ min,,,Q000040
+Q000040.678,632,tuditum[toggle-pin]N kugsig[gold]N,tud-di-tum kug-sig₁₇,,,Q000040
+Q000040.679,633,kamkammatum[earring]N kugsig[gold]N,kam-kam-ma-tum kug-sig₁₇,,,Q000040
+Q000040.68,61c,bisaŋ[basket]N im[clay]N sar[write]V/t,{gi}bisaŋ im sar,,,Q000040
+Q000040.680,634,ašme[radiance]N kugsig[gold]N,aš-me kug-sig₁₇,,,Q000040
+Q000040.681,635,ugunu[decoration]N kugsig[gold]N,u-gun₃ kug-sig₁₇,,,Q000040
+Q000040.682,636,ubur[breast]N ugunu[decoration]N kugsig[gold]N,ubur u-gun₃ kug-sig₁₇,,,Q000040
+Q000040.683,637,šugur[ring]N kugsig[gold]N,šu-gur kug-sig₁₇,,,Q000040
+Q000040.684,638,ešgur[ring]N kugsig[gold]N,eš-gur kug-sig₁₇,,,Q000040
+Q000040.685,639,har[ring]N kugsig[gold]N,har kug-sig₁₇,,,Q000040
+Q000040.686,640,har[ring]N šu[hand]N kugsig[gold]N,har šu kug-sig₁₇,,,Q000040
+Q000040.687,641,har[ring]N ŋiri[foot]N kugsig[gold]N,har ŋiri₃ kug-sig₁₇,,,Q000040
+Q000040.688,642,har[ring]N gal[big]V/i kugsig[gold]N,har gal kug-sig₁₇,,,Q000040
+Q000040.689,643,har[ring]N ib[hips]N kugsig[gold]N,har ib₂ kug-sig₁₇,,,Q000040
+Q000040.69,62,bisaŋ[basket]N bur[grass]N,{gi}bisaŋ {u₂}bur₂,,,Q000040
+Q000040.690,644,hubdum[object]N kugsig[gold]N,hub₂-du-um kug-sig₁₇,,,Q000040
+Q000040.691,645,lammar[deity]N kugsig[gold]N,{d}lamma kug-sig₁₇,,,Q000040
+Q000040.692,645a,gudalim[bovid]N kugsig[gold]N,gud-alim kug-sig₁₇,,,Q000040
+Q000040.693,646,alan[statue]N kugsig[gold]N,alan kug-sig₁₇,,,Q000040
+Q000040.694,647,huwawa[monster]N kugsig[gold]N,hu-wa-wa kug-sig₁₇,,,Q000040
+Q000040.695,648,bizaza[frog]N kugsig[gold]N,bi₂-za-za kug-sig₁₇,,,Q000040
+Q000040.696,649,abzaza[zebu]N kugsig[gold]N,ab₂-za-za kug-sig₁₇,,,Q000040
+Q000040.697,650,udug[demon]N kugsig[gold]N,{d}udug kug-sig₁₇,,,Q000040
+Q000040.698,651,anzabtum[ring]N kugsig[gold]N,an-za-ab-tum kug-sig₁₇,,,Q000040
+Q000040.699,652,niŋŋeštug[earring]N kugsig[gold]N,niŋ₂-ŋeštug kug-sig₁₇,,,Q000040
+Q000040.7,7,gisal[screen]N,gi-sal,,,Q000040
+Q000040.70,63,bisaŋ[basket]N ninni[reeds]N,{gi}bisaŋ {u₂}ninni₅,,,Q000040
+Q000040.700,653,gurun[fruit]N kugsig[gold]N,gurun kug-sig₁₇,,,Q000040
+Q000040.701,654,endur[navel?]N kugsig[gold]N,en₃-dur kug-sig₁₇,,,Q000040
+Q000040.702,655,x-LI-x[NA]NA kugsig[gold]N,x-LI-x kug-sig₁₇,,,Q000040
+Q000040.703,,,,1,line,Q000040
+Q000040.704,657,x-x-x[NA]NA,x-x-x,,,Q000040
+Q000040.705,658,{d}nisaba[NA]NA zamin[lyre]N,{d}nisaba za₃-mi₂,,,Q000040
+Q000040.71,64,bisaŋ[basket]N zu[tooth]N kešed[bind]V/t,{gi}bisaŋ zu₂ keš₂,,,Q000040
+Q000040.72,65,bisaŋ[basket]N šagha[cloth]N,{gi}bisaŋ šag₄-ha,,,Q000040
+Q000040.73,66,bisaŋ[basket]N šag[heart]N rah[beat]V/t,{gi}bisaŋ šag₄ ra-ah,,,Q000040
+Q000040.74,67,bisaŋ[basket]N igidu[gift]N,{gi}bisaŋ igi-du₈,,,Q000040
+Q000040.75,68,bisaŋ[basket]N kuš[skin]N sig[put]V/t,{gi}bisaŋ kuš sig₉,,,Q000040
+Q000040.76,69,bisaŋ[basket]N gidubak[stylus]N,{gi}bisaŋ gi-dub-ba,,,Q000040
+Q000040.77,70,bisaŋ[basket]N gid[long]V/i,{gi}bisaŋ gid₂,,,Q000040
+Q000040.78,71,bisaŋ[basket]N e[house]N kud[cut]V/t,{gi}bisaŋ e₂ kud,,,Q000040
+Q000040.79,72,bisaŋ[basket]N sig[tie]V/t,{gi}bisaŋ sa₂,,,Q000040
+Q000040.8,8,gisal[screen]N,gi-sal,,,Q000040
+Q000040.80,73,masab[basket]N,{gi}ma-sa₂-ab,,,Q000040
+Q000040.81,74,masab[basket]N šu[hand]N,{gi}ma-sa₂-ab šu,,,Q000040
+Q000040.82,75,masab[basket]N ninda[bread]N,{gi}ma-sa₂-ab ninda,,,Q000040
+Q000040.83,76,masab[basket]N ninda[bread]N sag[good]V/i,{gi}ma-sa₂-ab ninda sag₁₀,,,Q000040
+Q000040.84,77,masab[basket]N kug[metal]N,{gi}ma-sa₂-ab kug,,,Q000040
+Q000040.85,78,masab[basket]N za-na-x[NA]NA,{gi}ma-sa₂-ab za-na-x,,,Q000040
+Q000040.86,79,masab[basket]N kugan[metal]N,{gi}ma-sa₂-ab kug-an,,,Q000040
+Q000040.87,80,masab[basket]N šuʾi[barber]N,{gi}ma-sa₂-ab šu-u,,,Q000040
+Q000040.88,81,masab[basket]N mah[great]V/i,{gi}ma-sa₂-ab mah,,,Q000040
+Q000040.89,82,masab[basket]N zid[flour]N,{gi}ma-sa₂-ab zid₂,,,Q000040
+Q000040.9,8a,gi-x-ig[NA]NA,gi-x-ig,,,Q000040
+Q000040.90,83,masab[basket]N gid[long]V/i,{gi}ma-sa₂-ab gid₂,,,Q000040
+Q000040.91,84,masab[basket]N e[house]N kud[cut]V/t,{gi}ma-sa₂-ab e₂ kud,,,Q000040
+Q000040.92,85,masab[basket]N esir[bitumen]N šub[fall]V/t,{gi}ma-sa₂-ab esir šub,,,Q000040
+Q000040.93,86,mansim[sieve]N,{gi}ma-an-sim,,,Q000040
+Q000040.94,87,mansim[sieve]N dim₃[NA]NA,{gi}ma-an-sim dim₃,,,Q000040
+Q000040.96,89,mansim[sieve]N sig[weak]V/i,{gi}ma-an-sim si,,,Q000040
+Q000040.98,91,mansim[sieve]N niŋara[groats]N,{gi}ma-an-sim niŋ₂-ar₃-ra,,,Q000040
+Q000040.99,92,mansim[sieve]N niŋmurgu[fodder]N,{gi}ma-an-sim niŋ₂-mur-gud,,,Q000040
