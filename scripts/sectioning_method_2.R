@@ -8,12 +8,14 @@
 setwd("~/Box Sync/digital-humanities-phylogenetics/data/composite_texts/")
 
 library(Rlibstree)
+library(stringr)
 
-# # separate data from composites.csv into one csv for each composite text
+## separate data from composites.csv into one csv for each composite text
 # composites = read.csv(file = "composites.csv", stringsAsFactors = FALSE)
 # composites$X = NULL
 # composites$document = gsub("(.*)\\..*", "\\1", composites$id_line)
 # composites$entry = composites$lemma
+# composites$entry = gsub(" ", "_", composites$entry) #replace spaces with underscore
 # unique_docs = unique(composites$document)
 # sapply(unique_docs, function(x) {
 #   lines = which(composites$document == x)
@@ -25,28 +27,30 @@ create_kmers_df = function(file) {
   df_kmers = data.frame(line_a = character(nrow(df_composite)), 
                         line_b = character(nrow(df_composite)),
                         kmer = character(nrow(df_composite)),
-                        kmer2 = character(nrow(df_composite)),
-                        kmer3 = character(nrow(df_composite)),
                         k = numeric(nrow(df_composite)),
                         stringsAsFactors=FALSE)
+  
+  # get rid of part of speech (follows each ])
+  df_composite$entry = gsub("(\\])[a-zA-Z/]*_", paste0("\\1", "_"), df_composite$entry) #for all but last word
+  df_composite$entry = gsub("(_.*\\])[a-zA-Z/]*", "\\1", df_composite$entry) #for last word
+  
+  # get rid of punctuation (but only {}[]_.)
+ df_composite$entry = gsub("\\]", "", df_composite$entry)
+ df_composite$entry = gsub("\\[", "", df_composite$entry)
+ df_composite$entry = gsub("\\{", "", df_composite$entry)
+ df_composite$entry = gsub("\\}", "", df_composite$entry)
+ df_composite$entry = gsub("_", "", df_composite$entry)
+ df_composite$entry = gsub("\\.", "", df_composite$entry)
   
   for(i in 1:nrow(df_composite)-1) {
     line_a = tolower(df_composite$entry[i])
     line_b = tolower(df_composite$entry[i +1])
     kmer = getLongestCommonSubstring(c(line_a, line_b))
     kmer2 = gsub("[\x80-\xFF]", "", kmer)  # what other special characters?
-    kmer3 = gsub("\\]", "", kmer2) # get rid of punctuation (but only {}[]_.)
-    kmer3 = gsub("\\[", "", kmer3)
-    kmer3 = gsub("\\{", "", kmer3)
-    kmer3 = gsub("\\}", "", kmer3)
-    kmer3 = gsub("_", "", kmer3)
-    kmer3 = gsub("\\.", "", kmer3)
-    k = nchar(kmer3)
+    k = nchar(kmer2)
     df_kmers$line_a[i] = line_a
     df_kmers$line_b[i] = line_b
-    df_kmers$kmer[i] = kmer
-    df_kmers$kmer2[i] = kmer2
-    df_kmers$kmer3[i] = kmer3
+    df_kmers$kmer[i] = kmer2
     df_kmers$k[i] = k
     df_kmers
   }
@@ -55,13 +59,11 @@ create_kmers_df = function(file) {
   df_kmers
 }
 
-
-# Get changepoints to determine section breaks
-# install.packages("changepoint")
-# library(changepoint)
-
-# section_boundaries = cpt.var(df_kmers$k, penalty = "None",
-#                              Q = 20)
+Q1 = create_kmers_df("Q000001.csv")
+# Q39 = create_kmers_df("Q000039.csv")
+# Q40 = create_kmers_df("Q000040.csv")
+# Q41 = create_kmers_df("Q000041.csv")
+# Q42 = create_kmers_df("Q000042.csv")
 
 # Things to check:
 
@@ -73,7 +75,7 @@ create_kmers_df = function(file) {
 # character onto the end of the uncovered string.
 # sometimes these characters are multibyte strings and can't be
 # handled by nchar
-# Fixed this by gsubing out multibyte characters
+# (mostly) Fixed this by gsubing out multibyte characters
 # View(df_kmers[which(df_kmers$kmer != df_kmers$kmer2),])
 
 #3) Even after fixing #2, kmer length is not reproducible
@@ -84,5 +86,8 @@ create_kmers_df = function(file) {
 #4) Remove punctuation and set cutoff to 3 (anything below 3 is a section break)
 #5) If entire guide word (between []) or the entire citation form (everything before [) matches, keep as part of section
 #6) take out "nana" kmers
-#7) take out part of speech?
 
+#For plotting with words as labels (e.g. length of sections with section names)
+#plot.new()
+#plot.window(xlim=c(1,10), ylim=c(1,10))
+#text(x = 1:5, y = 1:5, labels = stuff, cex = 0.5)
