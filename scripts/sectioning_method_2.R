@@ -8,7 +8,6 @@
 setwd("~/Box Sync/digital-humanities-phylogenetics/data/composite_texts/")
 
 library(Rlibstree)
-library(stringr)
 
 ## separate data from composites.csv into one csv for each composite text
 # composites = read.csv(file = "composites.csv", stringsAsFactors = FALSE)
@@ -34,23 +33,25 @@ create_kmers_df = function(file) {
   df_composite$entry = gsub("(\\])[a-zA-Z/]*_", paste0("\\1", "_"), df_composite$entry) #for all but last word
   df_composite$entry = gsub("(_.*\\])[a-zA-Z/]*", "\\1", df_composite$entry) #for last word
   
-  # get rid of punctuation (but only {}[]_.)
- df_composite$entry = gsub("\\]", "", df_composite$entry)
- df_composite$entry = gsub("\\[", "", df_composite$entry)
- df_composite$entry = gsub("\\{", "", df_composite$entry)
- df_composite$entry = gsub("\\}", "", df_composite$entry)
- df_composite$entry = gsub("_", "", df_composite$entry)
- df_composite$entry = gsub("\\.", "", df_composite$entry)
+ #  # get rid of punctuation (but only {}[]_.)
+ # df_composite$entry = gsub("\\]", "", df_composite$entry)
+ # df_composite$entry = gsub("\\[", "", df_composite$entry)
+ # df_composite$entry = gsub("\\{", "", df_composite$entry)
+ # df_composite$entry = gsub("\\}", "", df_composite$entry)
+ # df_composite$entry = gsub("_", "", df_composite$entry)
+ # df_composite$entry = gsub("\\.", "", df_composite$entry)
   
   for(i in 1:nrow(df_composite)-1) {
     line_a = tolower(df_composite$entry[i])
+    guidewords_a = get_guidewords(line_a)
     line_b = tolower(df_composite$entry[i +1])
+    guidewords_b = get_guidewords(line_b)
     kmer = getLongestCommonSubstring(c(line_a, line_b))
-    kmer2 = gsub("[\x80-\xFF]", "", kmer)  # what other special characters?
-    k = nchar(kmer2)
+    kmer = gsub("[\x80-\xFF]", "", kmer) # get rid of multibyte strings introduced by Rlibstree
+    k = nchar(kmer)
     df_kmers$line_a[i] = line_a
     df_kmers$line_b[i] = line_b
-    df_kmers$kmer[i] = kmer2
+    df_kmers$kmer[i] = kmer
     df_kmers$k[i] = k
     df_kmers
   }
@@ -64,6 +65,37 @@ Q1 = create_kmers_df("Q000001.csv")
 # Q40 = create_kmers_df("Q000040.csv")
 # Q41 = create_kmers_df("Q000041.csv")
 # Q42 = create_kmers_df("Q000042.csv")
+
+# cutoff is minimum length of kmer defining a real section
+def_section_breaks = function(df_kmers, cutoff) {
+  df_kmers$section = NA
+  first_section_start = which(df_kmers$k >= cutoff)[1]
+  df_kmers$section[first_section_start] = TRUE
+  for(i in first_section_start:nrow(df_kmers)) {
+    if(df_kmers$k[i] >= cutoff) { df_kmers$section[i] = TRUE}
+    else(df_kmers$section[i] = FALSE)
+  }
+  df_kmers
+}
+
+Q1 = def_section_breaks(Q1, 3)
+
+# add_section_numbers = function(df_kmers) {
+#   df_kmers$sect_num = NA
+#   counter = 1
+#   for(i in nrow(df_kmers)) {
+#     if(df_kmers$section[i] == FALSE) { counter = counter + 1 }
+#     
+#   }
+# }
+
+get_guidewords = function(line) {
+  # extract all guidewords for a line into character vector
+  line = unlist(strsplit(line, "_"))
+  line = gsub(".*\\[", "", line)
+  line = gsub("\\]", "", line)
+  guidewords = line
+}
 
 # Things to check:
 
@@ -83,7 +115,6 @@ Q1 = create_kmers_df("Q000001.csv")
 # produces slight differences
 # look into this
 
-#4) Remove punctuation and set cutoff to 3 (anything below 3 is a section break)
 #5) If entire guide word (between []) or the entire citation form (everything before [) matches, keep as part of section
 #6) take out "nana" kmers
 
