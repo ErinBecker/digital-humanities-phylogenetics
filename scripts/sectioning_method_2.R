@@ -22,7 +22,6 @@ library(Rlibstree)
 # })
 
 ## Functions
-
 get_guidewords = function(line) {
   # extract all guidewords for a line into character vector
   line = unlist(strsplit(line, "_"))
@@ -39,14 +38,14 @@ get_citation_forms = function(line) {
   citation_form
 }
 
-# cutoff is minimum length of kmer defining a real section
 def_section_breaks = function(df_kmers, cutoff) {
+  # cutoff is minimum length of kmer defining a real section
   df_kmers$section = NA
   first_section_start = which(df_kmers$k >= cutoff)[1]
   df_kmers$section[first_section_start] = TRUE
-  for(i in first_section_start:nrow(df_kmers)) {
-    if(df_kmers$k[i] >= cutoff) { df_kmers$section[i] = TRUE}
-    else(df_kmers$section[i] = FALSE)
+  for (i in first_section_start:nrow(df_kmers)) {
+    if (df_kmers$k[i] >= cutoff) { df_kmers$section[i] = TRUE}
+    else (df_kmers$section[i] = FALSE)
   }
   df_kmers
 }
@@ -68,40 +67,42 @@ clean_kmer = function(x) {
 
 create_kmers_df = function(file, cutoff) {
   df_composite = read.csv(file, stringsAsFactors = FALSE)
+  # initialize empty data frame for storing results
   df_kmers = data.frame(line_a = character(nrow(df_composite)), 
                         line_b = character(nrow(df_composite)),
                         kmer = character(nrow(df_composite)),
                         k = numeric(nrow(df_composite)),
-                        stringsAsFactors=FALSE)
+                        stringsAsFactors = FALSE)
   
-  for(i in 1:nrow(df_composite)-1) {
+  for (i in 1:nrow(df_composite) - 1) {
     line_a = tolower(df_composite$entry[i])
     guidewords_a = get_guidewords(line_a)
     citation_form_a = get_citation_forms(line_a)
     
-    line_b = tolower(df_composite$entry[i +1])
+    line_b = tolower(df_composite$entry[i + 1])
     guidewords_b = get_guidewords(line_b)
     citation_form_b = get_citation_forms(line_b)
     
-    kmer = getLongestCommonSubstring(c(line_a, line_b))
-    kmer = clean_kmer(kmer)
+    line_a_clean = clean_kmer(line_a)
+    line_b_clean = clean_kmer(line_b)
+    kmer = getLongestCommonSubstring(c(line_a_clean, line_b_clean))
     kmer = gsub("[\x80-\xFF]", "", kmer) # get rid of multibyte strings introduced by Rlibstree
     k = nchar(kmer)
     
-    #if there is any whole word overlap and k < cutoff, set k to length of cutoff
-    if (k < cutoff) {
-      if(sum(citation_form_a %in% citation_form_b) + sum(guidewords_a %in% guidewords_b) > 0) {
-        k = cutoff
-      }
-      if(sum(citation_form_a %in% citation_form_b) + sum(guidewords_a %in% guidewords_b) == 0) {
-        k = k
-      } }
+    # #if there is any whole word overlap and k < cutoff, set k to length of cutoff
+    # if (k < cutoff) {
+    #   if (sum(citation_form_a %in% citation_form_b) + sum(guidewords_a %in% guidewords_b) > 0) {
+    #     k = cutoff
+    #   }
+    #   if (sum(citation_form_a %in% citation_form_b) + sum(guidewords_a %in% guidewords_b) == 0) {
+    #     k = k
+    #   } }
       
     df_kmers$line_a[i] = line_a
     df_kmers$line_b[i] = line_b
     df_kmers$kmer[i] = kmer
     df_kmers$k[i] = k
-    df_kmers
+#    df_kmers = def_section_breaks(df_kmers, cutoff)
   }
   
   plot(df_kmers$k, type = "l")
@@ -116,7 +117,6 @@ Q1 = create_kmers_df("Q000001.csv", cutoff = 3)
 # Q41 = create_kmers_df("Q000041.csv")
 # Q42 = create_kmers_df("Q000042.csv")
 
-#Q1 = def_section_breaks(Q1, 3)
 
 # add_section_numbers = function(df_kmers) {
 #   df_kmers$sect_num = NA
