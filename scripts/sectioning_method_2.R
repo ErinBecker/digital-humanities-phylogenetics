@@ -21,50 +21,23 @@ library(Rlibstree)
 #   write.csv(composites[lines,], file = paste0(x, ".csv"), quote = FALSE, row.names = FALSE)
 # })
 
-create_kmers_df = function(file) {
-  df_composite = read.csv(file, stringsAsFactors = FALSE)
-  df_kmers = data.frame(line_a = character(nrow(df_composite)), 
-                        line_b = character(nrow(df_composite)),
-                        kmer = character(nrow(df_composite)),
-                        k = numeric(nrow(df_composite)),
-                        stringsAsFactors=FALSE)
-  
-  # get rid of part of speech (follows each ])
-  df_composite$entry = gsub("(\\])[a-zA-Z/]*_", paste0("\\1", "_"), df_composite$entry) #for all but last word
-  df_composite$entry = gsub("(_.*\\])[a-zA-Z/]*", "\\1", df_composite$entry) #for last word
-  
- #  # get rid of punctuation (but only {}[]_.)
- # df_composite$entry = gsub("\\]", "", df_composite$entry)
- # df_composite$entry = gsub("\\[", "", df_composite$entry)
- # df_composite$entry = gsub("\\{", "", df_composite$entry)
- # df_composite$entry = gsub("\\}", "", df_composite$entry)
- # df_composite$entry = gsub("_", "", df_composite$entry)
- # df_composite$entry = gsub("\\.", "", df_composite$entry)
-  
-  for(i in 1:nrow(df_composite)-1) {
-    line_a = tolower(df_composite$entry[i])
-    guidewords_a = get_guidewords(line_a)
-    line_b = tolower(df_composite$entry[i +1])
-    guidewords_b = get_guidewords(line_b)
-    kmer = getLongestCommonSubstring(c(line_a, line_b))
-    kmer = gsub("[\x80-\xFF]", "", kmer) # get rid of multibyte strings introduced by Rlibstree
-    k = nchar(kmer)
-    df_kmers$line_a[i] = line_a
-    df_kmers$line_b[i] = line_b
-    df_kmers$kmer[i] = kmer
-    df_kmers$k[i] = k
-    df_kmers
-  }
-  plot(df_kmers$k, type = "l")
-  plot(df_kmers$k, pch = ".")
-  df_kmers
+## Functions
+
+get_guidewords = function(line) {
+  # extract all guidewords for a line into character vector
+  line = unlist(strsplit(line, "_"))
+  line = gsub(".*\\[", "", line)
+  line = gsub("\\].*", "", line)
+  guidewords = line
+  guidewords
 }
 
-Q1 = create_kmers_df("Q000001.csv")
-# Q39 = create_kmers_df("Q000039.csv")
-# Q40 = create_kmers_df("Q000040.csv")
-# Q41 = create_kmers_df("Q000041.csv")
-# Q42 = create_kmers_df("Q000042.csv")
+get_citation_forms = function(line) {
+  line = unlist(strsplit(line, "_"))
+  line = gsub("(.*)\\[.*", "\\1", line)
+  citation_form = line
+  citation_form
+}
 
 # cutoff is minimum length of kmer defining a real section
 def_section_breaks = function(df_kmers, cutoff) {
@@ -78,7 +51,72 @@ def_section_breaks = function(df_kmers, cutoff) {
   df_kmers
 }
 
-Q1 = def_section_breaks(Q1, 3)
+clean_kmer = function(x) {
+  # get rid of part of speech (follows each ])
+  x = gsub("(\\])[a-zA-Z/]*_", paste0("\\1", "_"), x) #for all but last word
+  x = gsub("(_.*\\])[a-zA-Z/]*", "\\1", x) #for last word
+  
+  # get rid of punctuation (but only {}[]_.)
+  x = gsub("\\]", "", x)
+  x = gsub("\\[", "", x)
+  x = gsub("\\{", "", x)
+  x = gsub("\\}", "", x)
+  x = gsub("_", "", x)
+  x = gsub("\\.", "", x)
+  x
+}
+
+create_kmers_df = function(file, cutoff) {
+  df_composite = read.csv(file, stringsAsFactors = FALSE)
+  df_kmers = data.frame(line_a = character(nrow(df_composite)), 
+                        line_b = character(nrow(df_composite)),
+                        kmer = character(nrow(df_composite)),
+                        k = numeric(nrow(df_composite)),
+                        stringsAsFactors=FALSE)
+  
+  for(i in 1:nrow(df_composite)-1) {
+    line_a = tolower(df_composite$entry[i])
+    guidewords_a = get_guidewords(line_a)
+    citation_form_a = get_citation_forms(line_a)
+    
+    line_b = tolower(df_composite$entry[i +1])
+    guidewords_b = get_guidewords(line_b)
+    citation_form_b = get_citation_forms(line_b)
+    
+    kmer = getLongestCommonSubstring(c(line_a, line_b))
+    kmer = clean_kmer(kmer)
+    kmer = gsub("[\x80-\xFF]", "", kmer) # get rid of multibyte strings introduced by Rlibstree
+    k = nchar(kmer)
+    
+    #if there is any whole word overlap and k < cutoff, set k to length of cutoff
+    if (k < cutoff) {
+      if(sum(citation_form_a %in% citation_form_b) + sum(guidewords_a %in% guidewords_b) > 0) {
+        k = cutoff
+      }
+      if(sum(citation_form_a %in% citation_form_b) + sum(guidewords_a %in% guidewords_b) == 0) {
+        k = k
+      } }
+      
+    df_kmers$line_a[i] = line_a
+    df_kmers$line_b[i] = line_b
+    df_kmers$kmer[i] = kmer
+    df_kmers$k[i] = k
+    df_kmers
+  }
+  
+  plot(df_kmers$k, type = "l")
+  plot(df_kmers$k, pch = ".")
+  df_kmers
+  
+}
+
+Q1 = create_kmers_df("Q000001.csv", cutoff = 3)
+# Q39 = create_kmers_df("Q000039.csv")
+# Q40 = create_kmers_df("Q000040.csv")
+# Q41 = create_kmers_df("Q000041.csv")
+# Q42 = create_kmers_df("Q000042.csv")
+
+#Q1 = def_section_breaks(Q1, 3)
 
 # add_section_numbers = function(df_kmers) {
 #   df_kmers$sect_num = NA
@@ -89,13 +127,6 @@ Q1 = def_section_breaks(Q1, 3)
 #   }
 # }
 
-get_guidewords = function(line) {
-  # extract all guidewords for a line into character vector
-  line = unlist(strsplit(line, "_"))
-  line = gsub(".*\\[", "", line)
-  line = gsub("\\]", "", line)
-  guidewords = line
-}
 
 # Things to check:
 
@@ -115,10 +146,7 @@ get_guidewords = function(line) {
 # produces slight differences
 # look into this
 
-#5) If entire guide word (between []) or the entire citation form (everything before [) matches, keep as part of section
 #6) take out "nana" kmers
 
-#For plotting with words as labels (e.g. length of sections with section names)
-#plot.new()
-#plot.window(xlim=c(1,10), ylim=c(1,10))
-#text(x = 1:5, y = 1:5, labels = stuff, cex = 0.5)
+#7) due to ordering, longest substring is sometimes 0 (because taking out punct and part of speech is after kmer)
+# this ordering is probably a problem - sometimes kmer is eg "v/i"
