@@ -99,8 +99,8 @@ create_kmers_df = function(file, cutoff) {
   
 }
 
-Q1 = create_kmers_df("Q000001.csv", cutoff = 3)
-Q39 = create_kmers_df("Q000039.csv", cutoff = 3)
+Q1_1 = create_kmers_df("Q000001.csv", cutoff = 3)
+Q39_1 = create_kmers_df("Q000039.csv", cutoff = 3)
 # Q40 = create_kmers_df("Q000040.csv")
 # Q41 = create_kmers_df("Q000041.csv")
 # Q42 = create_kmers_df("Q000042.csv")
@@ -138,3 +138,6 @@ Q39 = create_kmers_df("Q000039.csv", cutoff = 3)
 
 #7) due to ordering, longest substring is sometimes 0 (because taking out punct and part of speech is after kmer)
 # this ordering is probably a problem - sometimes kmer is eg "v/i"
+
+#8) Best to do kmer matching after spliting English and Sumerian (not allow matching over language boundaries)
+#9) Figure out a way to have word order not matter for kmer approach
