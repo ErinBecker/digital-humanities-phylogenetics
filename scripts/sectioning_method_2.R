@@ -9,18 +9,6 @@ setwd("~/Box Sync/digital-humanities-phylogenetics/data/composite_texts/")
 
 library(Rlibstree)
 
-## separate data from composites.csv into one csv for each composite text
-# composites = read.csv(file = "composites.csv", stringsAsFactors = FALSE)
-# composites$X = NULL
-# composites$document = gsub("(.*)\\..*", "\\1", composites$id_line)
-# composites$entry = composites$lemma
-# composites$entry = gsub(" ", "_", composites$entry) #replace spaces with underscore
-# unique_docs = unique(composites$document)
-# sapply(unique_docs, function(x) {
-#   lines = which(composites$document == x)
-#   write.csv(composites[lines,], file = paste0(x, ".csv"), quote = FALSE, row.names = FALSE)
-# })
-
 ## Functions
 get_guidewords = function(line) {
   # extract all guidewords for a line into character vector
@@ -112,7 +100,7 @@ create_kmers_df = function(file, cutoff) {
 }
 
 Q1 = create_kmers_df("Q000001.csv", cutoff = 3)
-# Q39 = create_kmers_df("Q000039.csv")
+Q39 = create_kmers_df("Q000039.csv", cutoff = 3)
 # Q40 = create_kmers_df("Q000040.csv")
 # Q41 = create_kmers_df("Q000041.csv")
 # Q42 = create_kmers_df("Q000042.csv")

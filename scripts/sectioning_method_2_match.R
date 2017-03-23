@@ -51,7 +51,7 @@ compare_entries = function(file) {
 }
 
 Q1 = compare_entries("Q000001.csv")
-# Q39 = create_kmers_df("Q000039.csv")
+Q39 = create_kmers_df("Q000039.csv")
 # Q40 = create_kmers_df("Q000040.csv")
 # Q41 = create_kmers_df("Q000041.csv")
 # Q42 = create_kmers_df("Q000042.csv")
