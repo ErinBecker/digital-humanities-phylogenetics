@@ -39,7 +39,7 @@ Index numbers distinguish between homphones. The system has a long history and i
 
 𒀉 sign name A2; may be read [a₂ = arm, power, time](http://psd.museum.upenn.edu/epsd/e1.html). Is not regularly used as a syllabic value.
 
-etc. [the cuneiform signs do not render here].
+etc.
 
 Note that some scholars will use accents instead of the subscript numbers 2 and 3: á = a₂ and è = e₃ - these are identical.
 
