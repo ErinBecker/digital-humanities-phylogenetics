@@ -1,4 +1,5 @@
 # separate data from composites.csv into one csv for each composite text
+setwd("/Users/ebecker/Box Sync/digital-humanities-phylogenetics/data/composite_texts/")
 composites = read.csv(file = "composites.csv", stringsAsFactors = FALSE)
 composites$X = NULL
 composites$document = gsub("(.*)\\..*", "\\1", composites$id_line)
@@ -9,3 +10,4 @@ sapply(unique_docs, function(x) {
   lines = which(composites$document == x)
   write.csv(composites[lines,], file = paste0(x, ".csv"), quote = FALSE, row.names = FALSE)
 })
+
