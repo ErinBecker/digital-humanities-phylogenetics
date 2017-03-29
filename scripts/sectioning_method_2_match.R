@@ -1,7 +1,7 @@
 # A simplified method that looks for overlap in citation form and/or guideword
 # in order to define section boundaries.
 
-setwd("~/Box Sync/digital-humanities-phylogenetics/data/composite_texts/")
+setwd("/Users/ebecker/Box Sync/digital-humanities-phylogenetics/data/composite_texts/")
 
 ## Functions
 get_guidewords = function(line) {
@@ -25,10 +25,15 @@ get_citation_forms = function(line) {
 
 compare_entries = function(file) {
   df_composite = read.csv(file, stringsAsFactors = FALSE)
+  # remove lines in df representing missing lines or sections
+  empty_lines = which(df_composite$entry == "")
+  if (length(empty_lines) != 0) {df_composite = df_composite[-empty_lines,] }
+  
   # initialize empty data frame for storing results
-  df_compare = data.frame(line_a = character(nrow(df_composite)), 
-                        line_b = character(nrow(df_composite)),
-                        overlap = numeric(nrow(df_composite)),
+  num_rows = nrow(df_composite)-1
+  df_compare = data.frame(line_a = character(num_rows), 
+                        line_b = character(num_rows),
+                        overlap = numeric(num_rows),
                         stringsAsFactors = FALSE)
   
   for (i in 1:nrow(df_composite) - 1) {
@@ -67,11 +72,4 @@ Q39 = compare_entries("Q000039.csv")
 # }
 
 
-# Things to check:
-
-# 1) There are lines in the composite text which represent 
-# missing lines. Remove these. 
-# which(df_composite$entry == "")
-
-#2 ) lines 330-400 appear to be a section about sacrifices? But lots of 0s in overlap interspersed
-
+# Remove part of speech before calculating kmer
