@@ -30,14 +30,22 @@ get_citation_forms = function(line) {
 }
 
 def_section_breaks = function(df, cutoff) {
-  # cutoff is minimum length of kmer defining a real section
+  # a section ends anytime overlap is zero and k is below the defined cutoff
   df$section = NA
-  first_section_start = which(df$k >= cutoff)[1]
-  df$section[first_section_start] = TRUE
-  for (i in first_section_start:nrow(df)) {
-    if (df$k[i] >= cutoff) { df$section[i] = TRUE}
-    else (df$section[i] = FALSE)
-  }
+  sect_num = 1
+  first_section_start = which(df$overlap > 0 | df$k >= cutoff)[1]
+  df$section[first_section_start] = sect_num
+  
+  for (i in (first_section_start):nrow(df)) {
+    if (df$overlap[i] > 0 | df$k[i] >= cutoff) {
+#      last_non_NA = tail(which(is.na(df$section) == FALSE))[1]
+#      sect_num = df$section[last_non_NA] + 1
+      df$section[i] = sect_num
+      } 
+    else { 
+      df$section[i] = NA
+      sect_num = sect_num + 1
+    }}
   df
 }
 
@@ -57,7 +65,7 @@ clean_kmer = function(x) {
   x
 }
 
-compare_entries = function(file) {
+compare_entries = function(file, cutoff) {
   df_composite = read.csv(file, stringsAsFactors = FALSE)
   # remove lines in df representing missing lines or sections
   empty_lines = which(df_composite$entry == "")
@@ -96,28 +104,18 @@ compare_entries = function(file) {
     df_compare$k[i] = k
   }
   plot(df_compare$overlap, pch = ".")
+  df_compare = def_section_breaks(df_compare, cutoff = cutoff)
   df_compare
 }
 
 
 #######
 
-Q1 = compare_entries("Q000001.csv")
-Q39 = compare_entries("Q000039.csv")
+Q1 = compare_entries("Q000001.csv", cutoff = 3)
+Q39 = compare_entries("Q000039.csv", cutoff = 3)
 # Q40 = compare_entries("Q000040.csv")
 # Q41 = compare_entries("Q000041.csv")
 # Q42 = compare_entries("Q000042.csv")
-
-
-# add_section_numbers = function(df_kmers) {
-#   df_kmers$sect_num = NA
-#   counter = 1
-#   for(i in nrow(df_kmers)) {
-#     if(df_kmers$section[i] == FALSE) { counter = counter + 1 }
-#     
-#   }
-# }
-
 
 # Things to check:
 
