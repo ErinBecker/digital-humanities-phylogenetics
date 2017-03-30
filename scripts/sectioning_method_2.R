@@ -29,26 +29,6 @@ get_citation_forms = function(line) {
   citation_form
 }
 
-def_section_breaks = function(df, cutoff) {
-  # a section ends anytime overlap is zero and k is below the defined cutoff
-  df$section = NA
-  sect_num = 1
-  first_section_start = which(df$overlap > 0 | df$k >= cutoff)[1]
-  df$section[first_section_start] = sect_num
-  
-  for (i in (first_section_start):nrow(df)) {
-    if (df$overlap[i] > 0 | df$k[i] >= cutoff) {
-#      last_non_NA = tail(which(is.na(df$section) == FALSE))[1]
-#      sect_num = df$section[last_non_NA] + 1
-      df$section[i] = sect_num
-      } 
-    else { 
-      df$section[i] = NA
-      sect_num = sect_num + 1
-    }}
-  df
-}
-
 clean_kmer = function(x) {
   # get rid of part of speech (follows each ])
 #  x = gsub("(\\])[a-zA-Z/]*_", paste0("\\1", "_"), x) #for all but last word
@@ -63,6 +43,26 @@ clean_kmer = function(x) {
   x = gsub("_", "", x)
   x = gsub("\\.", "", x)
   x
+}
+
+def_section_breaks = function(df, cutoff) {
+  # a section ends anytime overlap is zero and k is below the defined cutoff
+  df$section = NA
+  sect_num = 1
+  first_section_start = which(df$overlap > 0 | df$k >= cutoff)[1]
+  df$section[first_section_start] = sect_num
+  
+  for (i in (first_section_start):nrow(df)) {
+    if (df$overlap[i] > 0 | df$k[i] >= cutoff) {
+      #      last_non_NA = tail(which(is.na(df$section) == FALSE))[1]
+      #      sect_num = df$section[last_non_NA] + 1
+      df$section[i] = sect_num
+    } 
+    else { 
+      df$section[i] = NA
+      sect_num = sect_num + 1
+    }}
+  df
 }
 
 compare_entries = function(file, cutoff) {
@@ -94,6 +94,9 @@ compare_entries = function(file, cutoff) {
     kmer = getLongestCommonSubstring(c(line_a_clean, line_b_clean))
     kmer = gsub("[\x80-\xFF]", "", kmer) # get rid of multibyte strings introduced by Rlibstree
     k = nchar(kmer)
+    if (length(kmer) == 0) {
+        kmer = NA
+        k = 0 }
     
     overlap = sum(citation_form_a %in% citation_form_b) + sum(guidewords_a %in% guidewords_b)
     
@@ -105,6 +108,7 @@ compare_entries = function(file, cutoff) {
   }
   plot(df_compare$overlap, pch = ".")
   df_compare = def_section_breaks(df_compare, cutoff = cutoff)
+  plot(table(df_compare$section))
   df_compare
 }
 
@@ -113,11 +117,14 @@ compare_entries = function(file, cutoff) {
 
 Q1 = compare_entries("Q000001.csv", cutoff = 3)
 Q39 = compare_entries("Q000039.csv", cutoff = 3)
-# Q40 = compare_entries("Q000040.csv")
-# Q41 = compare_entries("Q000041.csv")
-# Q42 = compare_entries("Q000042.csv")
+Q40 = compare_entries("Q000040.csv", cutoff = 3)
+Q41 = compare_entries("Q000041.csv", cutoff = 3)
+Q42 = compare_entries("Q000042.csv", cutoff = 3)
 
 # Things to check:
 
 # kmer length is not reproducible
 # Best to do kmer matching after spliting English and Sumerian (not allow matching over language boundaries)
+
+# section1 = unique(c(Q39[which(Q39$section == 1),]$line_a, Q39[which(Q39$section == 1),]$line_b))
+# which sections are present? 
