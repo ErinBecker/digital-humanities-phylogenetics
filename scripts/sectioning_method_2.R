@@ -51,21 +51,23 @@ def_section_breaks = function(df, cutoff) {
   sect_num = 1
   first_section_start = which(df$overlap > 0 | df$k >= cutoff)[1]
   df$section[first_section_start] = sect_num
+  section_break = FALSE
   
   for (i in (first_section_start):nrow(df)) {
     if (df$overlap[i] > 0 | df$k[i] >= cutoff) {
-      #      last_non_NA = tail(which(is.na(df$section) == FALSE))[1]
-      #      sect_num = df$section[last_non_NA] + 1
+      if (section_break == TRUE) { sect_num = sect_num + 1 }
       df$section[i] = sect_num
+      section_break = FALSE
     } 
     else { 
       df$section[i] = NA
-      sect_num = sect_num + 1
+      section_break = TRUE
     }}
   df
 }
 
 compare_entries = function(file, cutoff) {
+  name = strsplit(file, "\\.")[[1]][1]
   df_composite = read.csv(file, stringsAsFactors = FALSE)
   # remove lines in df representing missing lines or sections
   empty_lines = which(df_composite$entry == "")
@@ -106,9 +108,9 @@ compare_entries = function(file, cutoff) {
     df_compare$kmer[i] = kmer
     df_compare$k[i] = k
   }
-  plot(df_compare$overlap, pch = ".")
+  plot(df_compare$overlap, pch = ".", main = name, ylab = "# matching words", xlab = "line number")
   df_compare = def_section_breaks(df_compare, cutoff = cutoff)
-  plot(table(df_compare$section))
+  plot(table(df_compare$section), main = name, ylab = "# entries in section", xlab = "section")
   df_compare
 }
 
@@ -124,7 +126,14 @@ Q42 = compare_entries("Q000042.csv", cutoff = 3)
 # Things to check:
 
 # kmer length is not reproducible
+
 # Best to do kmer matching after spliting English and Sumerian (not allow matching over language boundaries)
 
+# run which sections are present in each of our documents
 # section1 = unique(c(Q39[which(Q39$section == 1),]$line_a, Q39[which(Q39$section == 1),]$line_b))
-# which sections are present? 
+
+# some kmers include "na" from NA (eg "{ŋeš}uri[na]na" "{ŋeš}uri[na]na" "ŋešurina")
+
+
+
+
