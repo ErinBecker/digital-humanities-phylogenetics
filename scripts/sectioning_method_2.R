@@ -66,9 +66,24 @@ def_section_breaks = function(df, cutoff) {
   df
 }
 
-compare_entries = function(file, cutoff) {
-  name = strsplit(file, "\\.")[[1]][1]
-  df_composite = read.csv(file, stringsAsFactors = FALSE)
+extract_sections = function(df, file) {
+  # writes all entries present in each section to a file
+  section_nums = unique(df$section[!is.na(df$section)])
+  sections = data.frame(sapply(section_nums, function(x) x = character(max(table(df$section)))))
+  
+  for (i in section_nums) {
+    elements = unique(c(df[which(df$section == i),]$line_a, df[which(df$section == i),]$line_b))
+    missing = max(table(df$section)) - length(elements)
+    elements = c(elements, rep(NA, missing))
+    sections[,i] = elements 
+    colnames(sections)[i] = paste(get_guidewords(sections[1,i]), collapse = "_")
+  }
+  write.csv(sections, file, row.names = FALSE, quote = FALSE)
+}
+
+compare_entries = function(infile, cutoff, outfile) {
+  name = strsplit(infile, "\\.")[[1]][1]
+  df_composite = read.csv(infile, stringsAsFactors = FALSE)
   # remove lines in df representing missing lines or sections
   empty_lines = which(df_composite$entry == "")
   if (length(empty_lines) != 0) {df_composite = df_composite[-empty_lines,] }
@@ -111,26 +126,25 @@ compare_entries = function(file, cutoff) {
   plot(df_compare$overlap, pch = ".", main = name, ylab = "# matching words", xlab = "line number")
   df_compare = def_section_breaks(df_compare, cutoff = cutoff)
   plot(table(df_compare$section), main = name, ylab = "# entries in section", xlab = "section")
+  extract_sections(df_compare, outfile)
   df_compare
 }
 
-
 #######
 
-Q1 = compare_entries("Q000001.csv", cutoff = 3)
-Q39 = compare_entries("Q000039.csv", cutoff = 3)
-Q40 = compare_entries("Q000040.csv", cutoff = 3)
-Q41 = compare_entries("Q000041.csv", cutoff = 3)
-Q42 = compare_entries("Q000042.csv", cutoff = 3)
+Q1 = compare_entries("Q000001.csv", cutoff = 3, "Q000001_sections.csv")
+Q39 = compare_entries("Q000039.csv", cutoff = 3, "Q000039_sections.csv")
+Q40 = compare_entries("Q000040.csv", cutoff = 3, "Q000040_sections.csv")
+Q41 = compare_entries("Q000041.csv", cutoff = 3, "Q000041_sections.csv")
+Q42 = compare_entries("Q000042.csv", cutoff = 3, "Q000042_sections.csv")
+
+#######
 
 # Things to check:
 
 # kmer length is not reproducible
 
 # Best to do kmer matching after spliting English and Sumerian (not allow matching over language boundaries)
-
-# run which sections are present in each of our documents
-# section1 = unique(c(Q39[which(Q39$section == 1),]$line_a, Q39[which(Q39$section == 1),]$line_b))
 
 # some kmers include "na" from NA (eg "{ŋeš}uri[na]na" "{ŋeš}uri[na]na" "ŋešurina")
 
