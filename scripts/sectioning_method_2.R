@@ -166,36 +166,36 @@ for (j in unique(doc_list)) {
   entries = as.character(ob_lists_wood_w_id_text[which(ob_lists_wood_w_id_text$id_text == j),]$entry)
   for (i in 1:ncol(Q39_sections)) {
     presence = sum(Q39_sections[,i] %in% tolower(entries))
-    if (presence > 0) presence = 1
+#    if (presence > 0) presence = 1
     section_matrix[i, j] = presence
   }
   section_matrix
 }
 
 
-#section_matrix$section_name = row.names(section_matrix)
+section_matrix$section_name = row.names(section_matrix)
 
+# Put data into form that can be plotted by geom_tile in ggplot2
+#install.packages("reshape")
+library(reshape)
+melted_df = melt(section_matrix)
+head(melted_df)
 
-# # #install.packages("reshape")
-#  library(reshape)
-# # 
-# melted_df = melt(section_matrix)
-# head(melted_df)
-# 
-# for (i in 1:nrow(melted_df)) {
-#   if(melted_df$value[i] > 0) melted_df$value[i] = 1
-# }
+melted_df_binary = melted_df
+for (i in 1:nrow(melted_df_binary)) {
+  if (melted_df_binary$value[i] > 0) melted_df_binary$value[i] = 1
+}
 
-# 
+# Make heatmaps
 #install.packages("ggplot2")
 library(ggplot2)
 ggplot(data = melted_df, aes(y = variable, x = section_name)) +
   geom_tile(aes(fill = value)) +
-  theme(axis.text.x = element_text(angle = 90, hjust = 1, size = 5))
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, size = 3), axis.text.y = element_text(size = 3))
 
-qplot(data = melted_df, x = section_name, y = variable, fill = factor(value),
-   geom = "tile") + scale_fill_manual(values=c("0"="lightblue", "1"="red")) +
- theme(axis.text.x = element_text(angle = 90, hjust = 1, size = 1), axis.text.y = element_text(size = 3))
+qplot(data = melted_df_binary, x = section_name, y = variable, fill = factor(value),
+   geom = "tile") + scale_fill_manual(values = c("0"="lightblue", "1"="red")) +
+ theme(axis.text.x = element_text(angle = 90, hjust = 1, size = 3), axis.text.y = element_text(size = 3))
 
 install.packages("superheat")
 library("superheat")
