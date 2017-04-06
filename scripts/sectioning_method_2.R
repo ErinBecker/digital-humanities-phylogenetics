@@ -194,7 +194,7 @@ ggplot(data = melted_df, aes(y = variable, x = section_name)) +
   theme(axis.text.x = element_text(angle = 90, hjust = 1, size = 3), axis.text.y = element_text(size = 3))
 
 qplot(data = melted_df_binary, x = section_name, y = variable, fill = factor(value),
-   geom = "tile") + scale_fill_manual(values = c("0"="lightblue", "1"="red")) +
+   geom = "tile") + scale_fill_manual(values = c("0"="lightblue", "1" = "red")) +
  theme(axis.text.x = element_text(angle = 90, hjust = 1, size = 3), axis.text.y = element_text(size = 3))
 
 install.packages("superheat")
