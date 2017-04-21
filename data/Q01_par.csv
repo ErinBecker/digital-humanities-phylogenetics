@@ -1,0 +1,285 @@
+,id_line,label,lemma,base,extent,scope,id_text,line
+0,P225009.3,o 1,udu[sheep]N urmah[lion]N gu[eat]V/t,udu ur-mah gu₇,,,P225009,3
+1,P225009.4,o 2,udu[sheep]N urbara[wolf]N gu[eat]V/t,udu ur-bar-ra gu₇,,,P225009,4
+2,P225009.5,o 3,udu[sheep]N diŋir[deity]N gu[eat]V/t,udu diŋir gu₇,,,P225009,5
+3,P235800.3,o 1,muš[snake]N,muš,,,P235800,3
+4,P235800.4,o 2,muš[snake]N huš[reddish]V/i,muš huš,,,P235800,4
+5,P235800.5,o 3,muš[snake]N ušum[snake]N,muš ušum,,,P235800,5
+6,P235800.6,o 4,muš[snake]N a[water]N,muš a,,,P235800,6
+7,P247526.3,,,,2,line,P247526,3
+8,P247526.4,a i 03',udu[sheep]N kudkudra[disabled]N,udu kud-kud-ra₂,,,P247526,4
+9,P247526.5,a i 04',udu[sheep]N niga[fattened]V/i,udu niga,,,P247526,5
+10,P247526.6,a i 05',udu[sheep]N niga[fattened]V/i sag[rare]V/i,udu niga sag₁₀,,,P247526,6
+11,P247526.7,a i 06',udu[sheep]N niga[fattened]V/i gudus[cowherd]N,udu niga gud-us₂,,,P247526,7
+12,P247526.8,a i 07',udu[sheep]N ŋešdu[breeder]N,udu ŋeš-du₃-a,,,P247526,8
+13,P247526.9,a i 08',udu[sheep]N ur[roof]N,udu ur₃,,,P247526,9
+14,P247526.10,a i 09',udu[sheep]N šu[hand]N ur[roof]N,udu šu ur₃,,,P247526,10
+15,P247526.11,a i 10',udu[sheep]N mašdarea[payment]N,udu maš₂-da-ri,,,P247526,11
+16,P247526.12,a i 11',udu[sheep]N maššugidgid[diviner]N,udu maš₂-šu-gid₂-gid₂,,,P247526,12
+17,P247526.13,a i 12',udu[sheep]N zulumhi[sheep]N,udu zulumhi,,,P247526,13
+18,P247526.14,a i 13',udu[sheep]N deg[collect]V/t,udu degₓ(RI)-degₓ(RI),,,P247526,14
+19,P247526.15,a i 14',udu[sheep]N na[cvne]N deg[collect]V/t,udu na degₓ(RI),,,P247526,15
+20,P247526.16,a i 15',udu[sheep]N diŋir[deity]N gu[eat]V/t,udu diŋir gu₇,,,P247526,16
+21,P247526.17,a i 16',udu[sheep]N urmah[lion]N gu[eat]V/t,udu ur-mah gu₇,,,P247526,17
+22,P247526.18,a i 17',udu[sheep]N te-x[NA]NA,udu te-x,,,P247526,18
+23,P247526.19,a i 18',udu[sheep]N zig[rise]V/t,udu zig₃,,,P247526,19
+24,P247526.20,a i 19',udu-x[NA]NA,udu-x,,,P247526,20
+25,P247526.21,a i 20',udu[sheep]N namuruna[~herd]N,udu nam-urunₓ(EN)-na,,,P247526,21
+26,P247526.22,a i 21',udu[sheep]N namerim[oath]N,udu nam-erim₂,,,P247526,22
+27,P247526.23,,,,3,line,P247526,23
+28,P247526.24,a i 25',udu[sheep]N x-ra[NA]NA,udu x-ra,,,P247526,24
+29,P247526.25,a i 26',udu[sheep]N x-ra[NA]NA,udu x-ra,,,P247526,25
+30,P247526.26,a i 27',udu[sheep]N x-ra[NA]NA,udu x-ra,,,P247526,26
+31,P247526.27,a i 28,udu[sheep]N x-x-ra[NA]NA,udu x-x-ra,,,P247526,27
+32,P247526.28,a i 29',udu[sheep]N x-ra[NA]NA,udu x-ra,,,P247526,28
+33,P247526.29,a i 30',udu[sheep]N x[NA]NA diŋir[deity]N,udu x diŋir,,,P247526,29
+34,P247526.30,a i 31',udu[sheep]N x-ra[NA]NA,udu x-ra,,,P247526,30
+35,P247526.31,,,,0,fragment,P247526,31
+36,P247526.33,,,,3,line,P247526,33
+37,P247526.34,ii 04,udu[sheep]N x[NA]NA,udu x,,,P247526,34
+38,P247526.35,ii 05,udu[sheep]N x[NA]NA,udu x,,,P247526,35
+39,P247526.36,ii 06,udu[sheep]N du[push]V/t,udu du₇-du₇,,,P247526,36
+40,P247526.37,ii 07,udu[sheep]N sig₅-x[NA]NA,udu sig₅-x,,,P247526,37
+41,P247526.38,ii 08,udu[sheep]N gur[thick]V/i,udu gur₄-gur₄,,,P247526,38
+42,P247526.39,ii 09,udu[sheep]N gur[thick]V/i,udu gur₄-gur₄,,,P247526,39
+43,P247526.40,ii 10,udu[sheep]N x-x-x[NA]NA,udu x-x-x,,,P247526,40
+44,P247526.41,ii 11,udu[sheep]N terzum[presentation]N,udu ti-ri₂-zum,,,P247526,41
+45,P247526.42,ii 12,udu[sheep]N UŠ-x[NA]NA,udu UŠ-x,,,P247526,42
+46,P247526.43,ii 13,udu[sheep]N zusiga[~sheep]N,udu zu₂-si-ga,,,P247526,43
+47,P247526.44,ii 14,udu[sheep]N zusiga[~sheep]N kur[mountain]N,udu zu₂-si-ga kur,,,P247526,44
+48,P247526.45,ii 15,udu[sheep]N zu₂-si-ga-x-x[NA]NA,udu zu₂-si-ga-x-x,,,P247526,45
+49,P247526.46,ii 16,udu[sheep]N x[NA]NA ga[milk]N x[NA]NA,udu x ga x,,,P247526,46
+50,P247526.47,ii 17,udu[sheep]N x[NA]NA gig-x[NA]NA,udu x gig-x,,,P247526,47
+51,P247526.48,ii 18,udu[sheep]N x[NA]NA diŋir[deity]N,udu x diŋir,,,P247526,48
+52,P247526.49,,,,7,line,P247526,49
+53,P247526.50,ii 26,udu[sheep]N ki[place]N Suen[1]DN,udu ki {d}suen,,,P247526,50
+54,P247526.51,ii 27,udu[sheep]N saŋ[head]N,udu saŋ,,,P247526,51
+55,P247526.52,ii 28,udu[sheep]N barŋal[~sheep]N,udu bar-ŋal₂,,,P247526,52
+56,P247526.53,ii 29,udu[sheep]N min[two]NU a₂-x[NA]NA,udu min a₂-x,,,P247526,53
+57,P247526.54,ii 30,udu[sheep]N gal-x[NA]NA,udu gal-x,,,P247526,54
+58,P247526.55,,,,n,line,P247526,55
+59,P247526.56,,,,1,line,P247526,56
+60,P247526.57,ii 2',udu[sheep]N x-x[NA]NA,udu x-x,,,P247526,57
+61,P247526.58,ii 3',udu[sheep]N ŋeš[tree]N tag[touch]V/t,udu ŋeš tag-ga,,,P247526,58
+62,P247526.59,,,,1,line,P247526,59
+63,P247526.60,ii 5',x[NA]NA x[NA]NA x[NA]NA,x x x,,,P247526,60
+64,P247526.61,ii 6',x[NA]NA A₂[NA]NA,x A₂,,,P247526,61
+65,P247526.63,,,,1,column,P247526,63
+66,P247526.64,iii 2',x[NA]NA x[NA]NA x[NA]NA x[NA]NA,x x x x,,,P247526,64
+67,P247526.65,iii 3',kir[lamb]N,kir₁₁,,,P247526,65
+68,P247526.66,iii 4',x[NA]NA ŋal[be]V/i,x ŋal₂,,,P247526,66
+69,P247526.67,iii 5',kir[lamb]N ŋeš[penis]N zu[know]V/t,kir₁₁ ŋeš₃ zu,,,P247526,67
+70,P247526.68,iii 6',kir[lamb]N dili[single]V/i ur[pluck]V/t,kir₁₁ dili ur₄,,,P247526,68
+71,P247526.71,,,,n,line,P247526,71
+72,P247526.72,b i 2',kuš[skin]N urbara[wolf]N,kuš ur-bar-ra,,,P247526,72
+73,P247526.73,b i 3',kuš[skin]N urgir[dog]N,kuš ur-gir₁₅,,,P247526,73
+74,P247526.74,b i 4',kuš[skin]N kir[hyena]N,kuš kir₄,,,P247526,74
+75,P247526.75,b i 5',kuš[skin]N uršub[tiger]N,kuš ur-šub₅,,,P247526,75
+76,P247526.76,b i 6',kuš[skin]N uršubkuda[wild-animal]N,kuš ur-šub₅-gud,,,P247526,76
+77,P247526.77,b i 7',kuš[skin]N mašda[gazelle]N,kuš maš-da₃,,,P247526,77
+78,P247526.78,b i 8',kuš[skin]N amar[young]N mašda[gazelle]N,kuš amar maš-da₃,,,P247526,78
+79,P247526.79,b i 9',kuš[skin]N piriŋ[lion]N,kuš piriŋ,,,P247526,79
+80,P247526.80,b i 10',kuš[skin]N nemur[leopard]N,kuš nemurₓ(|PIRIG.TUR|),,,P247526,80
+81,P247526.81,b i 11',kuš[skin]N kaʾa[fox]N,kuš ka₅-a,,,P247526,81
+82,P247526.82,b i 12',kuš[skin]N x[NA]NA kaʾa[fox]N,kuš x ka₅-a,,,P247526,82
+83,P247526.84,,,,n,line,P247526,84
+84,P247526.85,b ii 2',usan[whip]N,{kuš}usan₃,,,P247526,85
+85,P247526.86,b ii 3',usan[whip]N zi-um[NA]NA,{kuš}usan₃ zi-um,,,P247526,86
+86,P247526.87,b ii 4',dalu[object]N,{kuš}dal-uš₂,,,P247526,87
+87,P247526.88,b ii 5',a[arm]N dalu[object]N,{kuš}a₂ dal-uš₂,,,P247526,88
+88,P247526.89,b ii 6',saŋ[head]N si[horn]N,{kuš}saŋ si,,,P247526,89
+89,P247526.90,b ii 7',saŋ[head]N sisa[fair]AJ,{kuš}saŋ si-sa₂,,,P247526,90
+90,P247526.91,b ii 8',{kuš}a-gan[NA]NA,{kuš}a-gan,,,P247526,91
+91,P247526.92,b ii 9',kuš[skin]N balaŋ[instrument]N,kuš balaŋ,,,P247526,92
+92,P247526.93,b ii 10',kuš[skin]N balaŋ[instrument]N Nanše[1]DN,kuš balaŋ {d}na-zi,,,P247526,93
+93,P247526.94,b ii 11',{kuš}sag-ti[NA]NA,{kuš}sag-ti,,,P247526,94
+94,P247526.95,b ii 12',ul[fruit]N,{kuš}ul,,,P247526,95
+95,P247526.96,b ii 13',ul[fruit]N šu-numun-na-ab[NA]NA,{kuš}ul šu-numun-na-ab,,,P247526,96
+96,P247526.97,b ii 14',asi[strap]N,{kuš}a₂-si,,,P247526,97
+97,P247526.98,b ii 15',asi[strap]N daba[strap]N,{kuš}a₂-si da-ba,,,P247526,98
+98,P247526.99,b ii 16',{kuš}LU₂-KI[NA]NA,{kuš}LU₂-KI,,,P247526,99
+99,P247526.100,b ii 17',guru[shield]N erin[people]N,{kuš}gur₂₁ erin₂,,,P247526,100
+100,P247526.101,b ii 18',guru[shield]N x[NA]NA,{kuš}gur₂₁ x,,,P247526,101
+101,P247526.102,b ii 19',guru[shield]N x[NA]NA,{kuš}gur₂₁ x,,,P247526,102
+102,P247526.103,b ii 20',guru[shield]N x[NA]NA,{kuš}gur₂₁ x,,,P247526,103
+103,P247526.104,b ii 21',guru[shield]N x[NA]NA,{kuš}gur₂₁ x,,,P247526,104
+104,P247526.105,,,,n,line,P247526,105
+105,P247526.106,,,,n,line,P247526,106
+106,P247526.107,b ii 24',kuš[skin]N x-x-šu-x[NA]NA,kuš x-x-šu-x,,,P247526,107
+107,P247526.108,b ii 25',kuš[skin]N šegin[glue]N,kuš še-gin₂,,,P247526,108
+108,P247526.109,b ii 26',kuš[skin]N šegin[glue]N kugsig[gold]N,kuš še-gin₂ kug-sig₁₇,,,P247526,109
+109,P247526.110,b ii 27',gababum[shield]N,{kuš}ga-ba-bu-um,,,P247526,110
+110,P247526.111,b ii 28',patihatum[container]N,{kuš}pa-ti-ha-tum,,,P247526,111
+111,P247526.112,b ii 29',{kuš}GIŠ-LU-x[NA]NA,{kuš}GIŠ-LU-x,,,P247526,112
+112,P247526.113,b ii 30',marinum[screen]N,{kuš}ma-ri-nu-um,,,P247526,113
+113,P247526.115,,,,n,line,P247526,115
+114,P247526.116,b iii 2',gud[ox]N x[NA]NA,gud x,,,P247526,116
+115,P247526.117,b iii 3',gud[ox]N x[NA]NA,gud x,,,P247526,117
+116,P247526.118,b iii 4',gud[ox]N x-x[NA]NA,gud x-x,,,P247526,118
+117,P247526.119,b iii 5',gud[ox]N x[NA]NA,gud x,,,P247526,119
+118,P247526.120,b iii 6',gud[ox]N x[NA]NA,gud x,,,P247526,120
+119,P247526.121,b iii 7',gud[ox]N babbar[white]V/i,gud babbar,,,P247526,121
+120,P247526.122,b iii 8',gud[ox]N giggi[black]V/i,gud giggi,,,P247526,122
+121,P247526.123,b iii 9',gud[ox]N su[red]V/i,gud su₁₃,,,P247526,123
+122,P247526.124,b iii 10',gud[ox]N gunu[speckled]V/i,gud gun₃,,,P247526,124
+123,P247526.125,b iii 11',gud[ox]N sissig[green]V/i,gud sig₇-sig₇,,,P247526,125
+124,P247526.126,b iii 12',gud[ox]N šugi[senior]N,gud šu-gi₄,,,P247526,126
+125,P247526.127,b iii 13',gud[ox]N x-x[NA]NA,gud x-x,,,P247526,127
+126,P247526.128,b iii 14',gud[ox]N KA-min[NA]NA,gud KA-min,,,P247526,128
+127,P247526.129,b iii 15',gud[ox]N ba-da[NA]NA,gud ba-da,,,P247526,129
+128,P247526.130,b iii 16',gud[ox]N x-BU[NA]NA,gud x-BU,,,P247526,130
+129,P247526.131,b iii 17',gud[ox]N si[horn]N min[two]NU ŋal[be]V/i,gud si min ŋal₂,,,P247526,131
+130,P247526.132,b iii 18',gud[ox]N al-ŋeš-ra[NA]NA,gud al-ŋeš-ra,,,P247526,132
+131,P247526.133,b iii 19',gud[ox]N hulu[bad]V/i,gud hul,,,P247526,133
+132,P247526.134,b iii 20',gud[ox]N x-x[NA]NA,gud x-x,,,P247526,134
+133,P247526.135,b iii 21',ab[cow]N x-x[NA]NA,ab₂ x-x,,,P247526,135
+134,P247526.136,b iii 22',ab[cow]N us₂-saŋ-x[NA]NA,ab₂ us₂-saŋ-x,,,P247526,136
+135,P247526.137,b iii 23',ab[cow]N tur[ill]V/i,ab₂ tur₅,,,P247526,137
+136,P247526.138,b iii 24',ab[cow]N namra[booty]N,ab₂ nam-ra,,,P247526,138
+137,P247526.139,b iii 25',ab[cow]N babbar[white]V/i,ab₂ babbar,,,P247526,139
+138,P247526.140,b iii 26',ab[cow]N giggi[black]V/i,ab₂ giggi,,,P247526,140
+139,P247526.141,b iii 27',ab[cow]N su[red]V/i,ab₂ su₁₃,,,P247526,141
+140,P247526.142,b iii 28',ab[cow]N gunu[speckled]V/i,ab₂ gun₃,,,P247526,142
+141,P247526.143,b iii 29',ab[cow]N sissig[green]V/i,ab₂ sig₇-sig₇,,,P247526,143
+142,P247526.144,b iii 30',ab[cow]N gud[ox]N,ab₂ gud,,,P247526,144
+143,P247526.145,b iii 31',ab[cow]N x-x[NA]NA,ab₂ x-x,,,P247526,145
+144,P247526.146,b iii 32',ab[cow]N x-x[NA]NA,ab₂ x-x,,,P247526,146
+145,P247526.147,b iii 33',ab[cow]N x-x[NA]NA,ab₂ x-x,,,P247526,147
+146,P247526.148,b iii 34',ab[cow]N utud[bear]V/t,ab₂ u₃-tud,,,P247526,148
+147,P247526.149,b iii 35',amar[young]N,amar,,,P247526,149
+148,P247526.150,b iii 36',amar[young]N x[NA]NA,amar x,,,P247526,150
+149,P247526.151,b iii 37',amar[young]N x[NA]NA,amar x,,,P247526,151
+150,P247526.152,b iii 38',amar[young]N x[NA]NA,amar x,,,P247526,152
+151,P247526.153,b iii 39',amar[young]N x[NA]NA,amar x,,,P247526,153
+152,P247526.155,,,,1,column,P247526,155
+153,P247526.157,,,,1,column,P247526,157
+154,P247526.159,,,,1,line,P247526,159
+155,P247526.160,b iii frg.e 2',uzud[goat]N,uzud,,,P247526,160
+156,P247526.161,b iii frg.e 3',uzud[goat]N maš[goat]N nud[lie]V/t,uzud maš₂ nud,,,P247526,161
+157,P247526.162,b iii frg.e 4',uzud[goat]N maš[goat]N du[build]V/t,uzud maš₂ du₃,,,P247526,162
+158,P247526.163,b iii frg.e 5',uzud[goat]N utud[bear]V/t,uzud u₃-tud,,,P247526,163
+159,P247526.164,b iii frg.e 6',uzud[goat]N utud[bear]V/t,uzud tud,,,P247526,164
+160,P247526.165,b iii frg.e 7',uzud[goat]N KA-gal[NA]NA,uzud KA-gal,,,P247526,165
+161,P247526.166,b iii frg.e 8',uzud[goat]N babbar[white]V/i,uzud babbar,,,P247526,166
+162,P247526.167,b iii frg.e 9',uzud[goat]N giggi[black]V/i,uzud giggi,,,P247526,167
+163,P247526.168,b iii frg.e 10',uzud[goat]N su[red]V/i,uzud su₁₃,,,P247526,168
+164,P247533.3,,,,n,line,P247533,3
+165,P247533.5,ii 1',maš[goat]N babbar[white]V/i,maš₂ babbar₂,,,P247533,5
+166,P247533.6,ii 2',maš[goat]N giggi[black]V/i,maš₂ giggi,,,P247533,6
+167,P247533.7,ii 3',maš[goat]N sissig[green]V/i,maš₂ zi,,,P247533,7
+168,P247533.8,ii 4',maš[goat]N su[red]V/i,maš₂ su,,,P247533,8
+169,P247533.9,ii 5',maš[goat]N hursaŋ[mountain]N,maš₂ hur-saŋ,,,P247533,9
+170,P247533.10,ii 6',maš[goat]N kug[pure]V/i,maš₂ kug,,,P247533,10
+171,P247533.11,ii 7',maš[goat]N KU-MA[NA]NA,maš₂ KU-MA,,,P247533,11
+172,P247533.12,ii 8',maš[goat]N ŋešdu[breeder]N,maš₂ ŋeš-du₃-a,,,P247533,12
+173,P247533.13,ii 9',maš[goat]N deg[collect]V/t,maš₂ degₓ(RI)-degₓ(RI),,,P247533,13
+174,P247533.15,iii 1',udu[sheep]N Simurru[1]SN,udu si-mu-ru-um,,,P247533,15
+175,P247533.16,iii 2',udu[sheep]N Elam[1]GN,udu elam-ma,,,P247533,16
+176,P247533.17,iii 3',udu[sheep]N Aškubu[1]GN,udu aš-gu-bu-um,,,P247533,17
+177,P247533.18,iii 4',udu[sheep]N Martu[1]GN,udu mar-tu,,,P247533,18
+178,P247533.19,iii 5',udu[sheep]N šu[hand]N bal[dig]V/t,udu šu bal,,,P247533,19
+179,P247533.20,iii 6',udu[sheep]N KI-GA₂[NA]NA,udu KI-GA₂,,,P247533,20
+180,P247533.21,iii 7',udu[sheep]N x[NA]NA,udu x,,,P247533,21
+181,P247533.22,iii 8',udu[sheep]N x[NA]NA x[NA]NA,udu x x,,,P247533,22
+182,P247533.23,iii 9',udu[sheep]N x[NA]NA,udu x,,,P247533,23
+183,P247533.25,iv 1',sila[lamb]N x[NA]NA,sila₄ x,,,P247533,25
+184,P247533.26,iv 2',sila[lamb]N x[NA]NA,sila₄ x,,,P247533,26
+185,P247533.28,,,,n,line,P247533,28
+186,P247533.30,ii frg.b 1',amar[young]N x[NA]NA,amar x,,,P247533,30
+187,P247533.31,ii frg.b 2',amar[young]N x[NA]NA,amar x,,,P247533,31
+188,P247533.32,ii frg.b 3',amar[young]N ab[cow]N x[NA]NA,amar ab₂ x,,,P247533,32
+189,P247533.33,ii frg.b 4',amar[young]N ab[cow]N x[NA]NA,amar ab₂ x,,,P247533,33
+190,P247533.34,ii frg.b 5',anše[equid]N,anše,,,P247533,34
+191,P247533.35,ii frg.b 6',dur[donkey]N,dur₃,,,P247533,35
+192,P247533.36,ii frg.b 7',dusu[equid]N,dusu₂,,,P247533,36
+193,P247533.37,ii frg.b 8',anše[equid]N amagan[mother]N,anše ama-gan,,,P247533,37
+194,P247533.38,ii frg.b 9',anše[equid]N ama[mother]N,anše ama,,,P247533,38
+195,P247533.39,ii frg.b 10',kunga[equid]N amagan[mother]N,{anše}kunga₂ ama-gan,,,P247533,39
+196,P247533.40,ii frg.b 11',anšeʾedenak[equid]N,anše-eden-na,,,P247533,40
+197,P247533.41,ii frg.b 12',dur[donkey]N ama[mother]N,dur₃ ama,,,P247533,41
+198,P247533.42,ii frg.b 13',anšeŋirnun[equid]N,anše-ŋir₂-nun,,,P247533,42
+199,P247533.43,ii frg.b 14',anše[equid]N x[NA]NA,anše x,,,P247533,43
+200,P247533.44,ii frg.b 15',anše[equid]N x[NA]NA,anše x,,,P247533,44
+201,P247533.46,,,,n,line,P247533,46
+202,P247533.48,,,,n,line,P247533,48
+203,P247533.50,ii frg.c 1',kir[lamb]N,kir₁₁,,,P247533,50
+204,P247533.51,ii frg.c 2',kir[lamb]N ga[milk]N,kir₁₁ ga,,,P247533,51
+205,P247533.52,ii frg.c 3',kir[lamb]N imma[last-year]MA,kir₁₁ im-ma,,,P247533,52
+206,P247533.53,ii frg.c 4',kir[lamb]N ŋiri[dagger]N ak[do]V/t,kir₁₁ ŋiri₂ ak,,,P247533,53
+207,P247533.54,ii frg.c 5',uzud[goat]N,uzud,,,P247533,54
+208,P247533.55,ii frg.c 6',uzud[goat]N maš[goat]N nud[lie]V/t,uzud maš₂ nud,,,P247533,55
+209,P247533.56,ii frg.c 7',uzud[goat]N maš[goat]N tur[ill]V/i,uzud maš₂ tur₅,,,P247533,56
+210,P247533.57,ii frg.c 8',uzud[goat]N x[NA]NA,uzud x,,,P247533,57
+211,P247533.58,ii frg.c 9',uzud[goat]N kug[pure]V/i,uzud kug,,,P247533,58
+212,P247533.59,ii frg.c 10',uzud[goat]N niŋ₂.ŠID[account]N ak[do]V/t,uzud niŋ₂-kas₇ ak,,,P247533,59
+213,P247533.61,iii frg.c 1',gud[ox]N x[NA]NA,gud x,,,P247533,61
+214,P247533.62,iii frg.c 2',gud[ox]N x[NA]NA,gud x,,,P247533,62
+215,P247533.63,iii frg.c 3',ab[cow]N,ab₂,,,P247533,63
+216,P247533.64,iii frg.c 4',ab[cow]N x[NA]NA,ab₂ x,,,P247533,64
+217,P247533.65,iii frg.c 5',ab[cow]N x[NA]NA,ab₂ x,,,P247533,65
+218,P247533.66,iii frg.c 6',ab[cow]N x[NA]NA,ab₂ x,,,P247533,66
+219,P247533.67,iii frg.c 7',ab[cow]N x[NA]NA,ab₂ x,,,P247533,67
+220,P247533.68,,,,n,line,P247533,68
+221,P247533.70,i frg.e 1'',x-da-x[NA]NA,x-da-x,,,P247533,70
+222,P247533.71,i frg.e 2'',x-he-en-na-x[NA]NA,x-he-en-na-x,,,P247533,71
+223,P247533.73,,,,n,line,P247533,73
+224,P247533.75,ii frg.f 1'',sila[lamb]N x[NA]NA,sila₄ x,,,P247533,75
+225,P247533.76,ii frg.f 2'',sila[lamb]N TU[sheep]N,sila₄ TU,,,P247533,76
+226,P247541.3,o 1,amar[young]N babbar[white]V/i,amar babbar,,,P247541,3
+227,P247541.4,o 2,amar[young]N giggi[black]V/i,amar giggi,,,P247541,4
+228,P247541.5,o 3,amar[young]N su[red]V/i,amar su₁₃,,,P247541,5
+229,P247541.7,r 1,amar[young]N babbar[white]V/i,amar babbar,,,P247541,7
+230,P247541.8,r 2,amar[young]N giggi[black]V/i,amar giggi,,,P247541,8
+231,P247541.9,r 3,amar[young]N su[red]V/i,amar su₁₃,,,P247541,9
+232,P247545.2,o 1,uzu[flesh]N kun[tail]N,uzu kun,,,P247545,2
+233,P247545.3,o 2,uzu[flesh]N murgu[shoulder]N,uzu murgu,,,P247545,3
+234,P247545.4,o 3,uzu[flesh]N ŋeš-ib₂[NA]NA,uzu ŋeš-ib₂,,,P247545,4
+235,P249377.1,1,u[ewe]N,u₈,,,P249377,1
+236,P249377.2,2,u[ewe]N sila[lamb]N du[build]V/t,u₈ sila₄ du₃,,,P249377,2
+237,P249377.3,3,u[ewe]N sila[lamb]N nud[lie]V/t,u₈ sila₄ nu,,,P249377,3
+238,P249381.1,1,ab[cow]N utud[bear]V/t,ab₂ u₃-tud,,,P249381,1
+239,P249381.2,2,ab[cow]N utud[bear]V/t,ab₂ tud,,,P249381,2
+240,P249381.3,3,ab[cow]N ŋeš[penis]N zu[know]V/t,ab₂ ŋeš₃ zu,,,P249381,3
+241,P253246.4,o 1,u[ewe]N,u₈,,,P253246,4
+242,P253246.5,o 2,u[ewe]N peš[thick]V/i,u₈ peš₄,,,P253246,5
+243,P253246.6,o 3,u[ewe]N sila[lamb]N nud[lie]V/t,u₈ sila₄ nu,,,P253246,6
+244,P253246.7,o 4,u[ewe]N sila[lamb]N du[build]V/t,u₈ sila₄ du₃,,,P253246,7
+245,P253246.8,o 5,u[ewe]N gukkal[sheep]N,u₈ gukkal,,,P253246,8
+246,P253246.9,o 6,kir[lamb]N gub[~sheep]V/t,kir₁₁ gub,,,P253246,9
+247,P253246.10,o 7,kir[lamb]N uzud[goat]N,kir₁₁ uzud,,,P253246,10
+248,P253246.11,o 8,sila[lamb]N gub[~sheep]V/t,sila₄ gub,,,P253246,11
+249,P253246.12,o 9,sila[lamb]N nim[high]V/i,sila₄ nim,,,P253246,12
+250,P253246.13,o 10,sila[lamb]N ur[pluck]V/t,sila₄ ur₄,,,P253246,13
+251,P253246.14,o 11,sila[lamb]N uzud[goat]N,sila₄ uzud,,,P253246,14
+252,P253246.15,o 12,uzud[goat]N,uzud,,,P253246,15
+253,P253246.16,o 13,uzud[goat]N gub[stand]V/i,uzud gub,,,P253246,16
+254,P253246.17,o 14,uzud[goat]N mah[mature]V/i,uzud mah₂,,,P253246,17
+255,P253246.18,o 15,maš[goat]N gaba[chest]N,maš₂ gaba,,,P253246,18
+256,P253246.19,o 16,maš[goat]N x[NA]NA,maš₂ x,,,P253246,19
+257,P253246.20,o 17,maš[goat]N x[NA]NA,maš₂ x,,,P253246,20
+258,P253246.22,r 1,maš[goat]N x-x[NA]NA,maš₂ x-x,,,P253246,22
+259,P253246.23,r 2,udu[sheep]N x[NA]NA,udu x,,,P253246,23
+260,P253246.24,r 3,udu[sheep]N gukkal[sheep]N,udu gukkal,,,P253246,24
+261,P253246.25,r 4,udu[sheep]N gukkal[sheep]N mah[mature]V/i,udu gukkal mah₂,,,P253246,25
+262,P253246.26,r 5,udu[sheep]N A-IGI-x[NA]NA,udu A-IGI-x,,,P253246,26
+263,P253246.27,r 6,udu[sheep]N gabaria[offering]N,udu gaba-ri-a,,,P253246,27
+264,P253246.28,r 7,udu[sheep]N mašdarea[payment]N,udu maš₂-da-ri,,,P253246,28
+265,P253246.29,r 8,udu[sheep]N a-x[NA]NA,udu a-x,,,P253246,29
+266,P253879.2,o 1,udu[sheep]N niga[fattened]V/i ŋirgul[~wool]N,udu niga ŋir₂-gu-la,,,P253879,2
+267,P253879.3,o 2,udu[sheep]N nita[male]N,udu nita,,,P253879,3
+268,P253879.4,o 3,udu[sheep]N nita[male]N ŋešdu[breeder]N,udu nita ŋeš-du₃-a,,,P253879,4
+269,P253902.4,o 1,sila[lamb]N ud[sun]N buru[harvest]N,sila₄ ud buru₁₄,,,P253902,4
+270,P253902.5,o 2,sila[lamb]N peš[thick]V/i kurušda[fattener]N,sila₄ peš kurušda,,,P253902,5
+271,P253902.6,o 3,sila[lamb]N ama[mother]N tuku[acquire]V/t,sila₄ ama tuku,,,P253902,6
+272,P254359.3,o 1,udu[sheep]N niŋzuha[stolen-goods]N,udu niŋ₂-zuh,,,P254359,3
+273,P254359.4,o 2,udu[sheep]N ŋeštaga[sacrifice]N,udu ŋeš-tag-ga,,,P254359,4
+274,P254359.5,o 3,udu[sheep]N mu[name]N pad[find]V/t,udu mu pad₃,,,P254359,5
+275,P272557.3,o 1,uzu[flesh]N lipiš[innards]N,uzu lipiš(|AB₂.ŠA₃|),,,P272557,3
+276,P272557.4,o 2,uzu[flesh]N endur[navel?]N,uzu en₃-dur,,,P272557,4
+277,P272557.5,o 3,uzu[flesh]N hala[share]N,uzu ha-la,,,P272557,5
+278,P272557.7,r 1,uzu[flesh]N lipiš[innards]N,uzu lipiš(|AB₂.ŠA₃|),,,P272557,7
+279,P272557.8,r 2,uzu[flesh]N endur[navel?]N,uzu en₃-dur,,,P272557,8
+280,P272557.9,r 3,uzu[flesh]N hala[share]N,uzu ha-la,,,P272557,9
+281,P388082.3,o 1,uzu[flesh]N lipiš[innards]N,uzu lipiš(|AB₂.ŠA₃|),,,P388082,3
+282,P388082.4,o 2,uzu[flesh]N endur[navel?]N,uzu en₃-dur,,,P388082,4
+283,P388082.5,o 3,uzu[flesh]N hala[share]N,uzu ha-la,,,P388082,5
