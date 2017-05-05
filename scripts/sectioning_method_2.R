@@ -144,11 +144,11 @@ Q42 = compare_entries("Q000042.csv", cutoff = 3, "Q000042_sections.csv")
 
 ####### Read in section definitions from file #######
 
-Q1_sections = read.csv("Q000001_sections.csv")
+Q1_sections = read.csv("Q000001_sections.csv", stringsAsFactors = FALSE)
 Q39_sections = read.csv("Q000039_sections.csv", stringsAsFactors = FALSE)
-Q40_sections = read.csv("Q000040_sections.csv")
-Q41_sections = read.csv("Q000040_sections.csv")
-Q42_sections = read.csv("Q000042_sections.csv")
+Q40_sections = read.csv("Q000040_sections.csv", stringsAsFactors = FALSE)
+Q41_sections = read.csv("Q000040_sections.csv", stringsAsFactors = FALSE)
+Q42_sections = read.csv("Q000042_sections.csv", stringsAsFactors = FALSE)
 
 ####### Read in documents dealing with trees and wooden objects #######
 
@@ -196,10 +196,6 @@ ggplot(data = melted_df, aes(y = variable, x = section_name)) +
 qplot(data = melted_df_binary, x = section_name, y = variable, fill = factor(value),
    geom = "tile") + scale_fill_manual(values = c("0"="lightblue", "1" = "red")) +
  theme(axis.text.x = element_text(angle = 90, hjust = 1, size = 3), axis.text.y = element_text(size = 3))
-
-install.packages("superheat")
-library("superheat")
-
 
 # Things to check:
 
