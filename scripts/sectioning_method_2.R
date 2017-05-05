@@ -7,7 +7,7 @@
 
 setwd("/Users/ebecker/Box Sync/digital-humanities-phylogenetics/data/composite_texts/")
 
-library(Rlibstree)
+
 
 ## Functions
 get_guidewords = function(line) {
