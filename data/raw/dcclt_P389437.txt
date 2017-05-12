@@ -1,3 +1,0 @@
-id_text,text_name,l_no,text
-dcclt/P389437,EEN 290 LB 0998 [OB Ura],o 1,sux:ŋeš[tree]N sux:u[ten]NU sux:giŋ[unit]N
-dcclt/P389437,EEN 290 LB 0998 [OB Ura],o 2,sux:ŋeš[tree]N sux:ya[five]NU sux:giŋ[unit]N

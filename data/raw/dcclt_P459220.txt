@@ -1,3 +1,0 @@
-id_text,text_name,l_no,text
-dcclt/P459220,EEN 267 IB 1620 [OB Ura],1,sux:ig[door]N
-dcclt/P459220,EEN 267 IB 1620 [OB Ura],2,sux:ig[door]N sux:gal[big]V/i

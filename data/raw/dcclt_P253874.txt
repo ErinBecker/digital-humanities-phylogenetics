@@ -1,9 +1,0 @@
-id_text,text_name,l_no,text
-dcclt/P253874,CUSAS 12 3.1.14 [OB Ura],o 1,sux:gigir[chariot]N
-dcclt/P253874,CUSAS 12 3.1.14 [OB Ura],o 2,sux:mud[tube]N sux:gigir[chariot]N
-dcclt/P253874,CUSAS 12 3.1.14 [OB Ura],o 3,sux:zara[pivot]N sux:gigir[chariot]N
-dcclt/P253874,CUSAS 12 3.1.14 [OB Ura],o 4,sux:gag[nail]N sux:zara[pivot]N sux:gigir[chariot]N
-dcclt/P253874,CUSAS 12 3.1.14 [OB Ura],o 5,sux:šudul[yoke]N sux:gigir[chariot]N
-dcclt/P253874,CUSAS 12 3.1.14 [OB Ura],o 6,sux:gag[nail]N sux:šudul[yoke]N sux:gigir[chariot]N
-dcclt/P253874,CUSAS 12 3.1.14 [OB Ura],o 7,sux:umbin[wheel]N sux:gigir[chariot]N
-dcclt/P253874,CUSAS 12 3.1.14 [OB Ura],o 8,sux:gaba[chest]N sux:gigir[chariot]N

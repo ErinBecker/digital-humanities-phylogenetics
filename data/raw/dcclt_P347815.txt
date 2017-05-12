@@ -1,8 +1,0 @@
-id_text,text_name,l_no,text
-dcclt/P347815,Ashm 1923-0417 (MSL SS 1 097) [OB Ura],o 1,sux:kuŋ[stair]N
-dcclt/P347815,Ashm 1923-0417 (MSL SS 1 097) [OB Ura],o 2,sux:kuŋ[stair]N sux:bad[wall]N
-dcclt/P347815,Ashm 1923-0417 (MSL SS 1 097) [OB Ura],o 3,sux:kuŋ[stair]N sux:us₂[lean]V/t
-dcclt/P347815,Ashm 1923-0417 (MSL SS 1 097) [OB Ura],o 4,sux:kuŋ[stair]N
-dcclt/P347815,Ashm 1923-0417 (MSL SS 1 097) [OB Ura],o 5,sux:kuŋ[stair]N
-dcclt/P347815,Ashm 1923-0417 (MSL SS 1 097) [OB Ura],o 6,sux:buniŋ[trough]N
-dcclt/P347815,Ashm 1923-0417 (MSL SS 1 097) [OB Ura],o 7,sux:buniŋ[trough]N sux:tur[small]V/i

@@ -1,3 +1,0 @@
-id_text,text_name,l_no,text
-dcclt/P253899,CUSAS 12 3.1.17 [OB Ura],o 1,sux:lamgal[nut]N
-dcclt/P253899,CUSAS 12 3.1.17 [OB Ura],o 2,sux:lamtur[nut]N

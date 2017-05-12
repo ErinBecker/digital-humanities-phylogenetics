@@ -1,3 +1,0 @@
-id_text,text_name,l_no,text
-dcclt/P250368,YBC 08936 (EEN 393 YBC 08936) [OB Ura],o 1,sux:mud[stump]N sux:ŋešnimbar[palm]N
-dcclt/P250368,YBC 08936 (EEN 393 YBC 08936) [OB Ura],o 2,sux:mud[stump]N sux:gaz[kill]V/t sux:ŋešnimbar[palm]N

@@ -1,7 +1,0 @@
-id_text,text_name,l_no,text
-dcclt/P250362,YBC 06717 (EEN 391 YBC 06717) [OB Ura],1,sux:ba[tool]N sux:šab[cut]V/t
-dcclt/P250362,YBC 06717 (EEN 391 YBC 06717) [OB Ura],2,sux:ba[tool]N sux:še[barley]N
-dcclt/P250362,YBC 06717 (EEN 391 YBC 06717) [OB Ura],4,sux:ŋešnaruak[~stele]N
-dcclt/P250362,YBC 06717 (EEN 391 YBC 06717) [OB Ura],5,sux:šibir[staff]N sux:šudu[equipped]AJ
-dcclt/P250362,YBC 06717 (EEN 391 YBC 06717) [OB Ura],6,sux:niŋna[incense]N
-dcclt/P250362,YBC 06717 (EEN 391 YBC 06717) [OB Ura],7,sux:guza[chair]N

@@ -1,3 +1,0 @@
-id_text,text_name,l_no,text
-dcclt/P254360,HSAO 9 59 1 [OB Ura],o 1,sux:e[house]N sux:šudul[yoke]N sux:apin[plow]N
-dcclt/P254360,HSAO 9 59 1 [OB Ura],o 2,sux:gag[nail]N sux:šudul[yoke]N sux:apin[plow]N

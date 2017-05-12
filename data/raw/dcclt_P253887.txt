@@ -1,4 +1,0 @@
-id_text,text_name,l_no,text
-dcclt/P253887,CUSAS 12 3.1.15 [OB Ura],o 1,sux:ma[ship]N sux:u[ten]NU sux:gur[unit]N
-dcclt/P253887,CUSAS 12 3.1.15 [OB Ura],o 2,sux:ma[ship]N sux:niš[twenty]NU sux:gur[unit]N
-dcclt/P253887,CUSAS 12 3.1.15 [OB Ura],o 3,sux:ma[ship]N sux:ŋeš[sixty]NU sux:gur[unit]N

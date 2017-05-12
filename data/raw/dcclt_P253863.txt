@@ -1,6 +1,0 @@
-id_text,text_name,l_no,text
-dcclt/P253863,CUSAS 12 3.1.12 [OB Ura],o 1,sux:ŋušur[harrow]N
-dcclt/P253863,CUSAS 12 3.1.12 [OB Ura],o 2,sux:zu[tooth]N sux:ŋušur[harrow]N
-dcclt/P253863,CUSAS 12 3.1.12 [OB Ura],o 3,sux:zara[pivot]N sux:ŋušur[harrow]N
-dcclt/P253863,CUSAS 12 3.1.12 [OB Ura],o 4,akk-x-oldbab:Ipqu-Suen[1]PN
-dcclt/P253863,CUSAS 12 3.1.12 [OB Ura],o 5,akk-x-oldbab:māru[son]N akk-x-oldbab:Ili-iddinaššu[1]PN

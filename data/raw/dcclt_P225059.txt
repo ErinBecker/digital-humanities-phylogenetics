@@ -1,3 +1,0 @@
-id_text,text_name,l_no,text
-dcclt/P225059,TIM 10 083 [exercise],o i 1,sux:emerah[jug]N
-dcclt/P225059,TIM 10 083 [exercise],o i 2,sux:emerah[jug]N

@@ -1,8 +1,0 @@
-id_text,text_name,l_no,text
-dcclt/P250370,YBC 06702 (EEN 389 YBC 06702) [ur5-ra],1,sux:ad[bush]N
-dcclt/P250370,YBC 06702 (EEN 389 YBC 06702) [ur5-ra],2,sux:kišig[acacia]N
-dcclt/P250370,YBC 06702 (EEN 389 YBC 06702) [ur5-ra],3,sux:kišighar[accacia]N
-dcclt/P250370,YBC 06702 (EEN 389 YBC 06702) [ur5-ra],4,sux:kišighar[accacia]N sux:kur[mountain]N
-dcclt/P250370,YBC 06702 (EEN 389 YBC 06702) [ur5-ra],5,sux:samana[tree]N
-dcclt/P250370,YBC 06702 (EEN 389 YBC 06702) [ur5-ra],6,sux:samazum[tree]N
-dcclt/P250370,YBC 06702 (EEN 389 YBC 06702) [ur5-ra],7,sux:zarsi[plant]N

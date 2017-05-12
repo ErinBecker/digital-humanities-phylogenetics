@@ -1,4 +1,0 @@
-id_text,text_name,l_no,text
-dcclt/P250369,YBC 09907 (EEN 396 YBC 09907) [ur5-ra],1,sux:peš[frond]N sux:ŋešnimbar[palm]N
-dcclt/P250369,YBC 09907 (EEN 396 YBC 09907) [ur5-ra],2,sux:pešmur[~palm]N sux:ŋešnimbar[palm]N
-dcclt/P250369,YBC 09907 (EEN 396 YBC 09907) [ur5-ra],3,sux:peš[frond]N sux:ŋešnimbar[palm]N

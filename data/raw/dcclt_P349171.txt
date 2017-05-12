@@ -1,4 +1,0 @@
-id_text,text_name,l_no,text
-dcclt/P349171,AUWE 23 174 [OB Ura],o ii 2',sux:ŋešnud[bed]N sux:šatuku[mattress]N sux:siki[hair]N sux:uzud[goat]N
-dcclt/P349171,AUWE 23 174 [OB Ura],o ii 3',sux:ŋešnud[bed]N sux:Uri[Akkad]GN
-dcclt/P349171,AUWE 23 174 [OB Ura],o ii 4',sux:ŋešnud[bed]N sux:umbin[nail]N

@@ -1,3 +1,0 @@
-id_text,text_name,l_no,text
-dcclt/P272532,LoC 004 [OB Ura],o 1,sux:guza[chair]N sux:gar[knob]N sux:urud[copper]N sux:ŋar[place]V/t
-dcclt/P272532,LoC 004 [OB Ura],o 2,sux:guza[chair]N sux:esi[tree]N

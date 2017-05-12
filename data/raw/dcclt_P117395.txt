@@ -1,3 +1,0 @@
-id_text,text_name,l_no,text
-dcclt/P117395,MVN 13 622 [OB Ura],o 1,sux:ŋešed[key]N
-dcclt/P117395,MVN 13 622 [OB Ura],o 2,sux:pakud[~tree]N
