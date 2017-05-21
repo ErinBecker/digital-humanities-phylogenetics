@@ -1,0 +1,496 @@
+{
+"type": "cdl",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-05-19T18:25:54",
+"project": "dcclt",
+"textid": "P332949",
+"cdl": [
+{
+"node": "c",
+"type": "text",
+"id": "P332949.U0",
+"cdl": [
+{
+"node": "d",
+"subtype": "tablet",
+"type": "object",
+"ref": "P332949.x1312.1",
+"type": "tablet",
+"label": "x1312"}
+,
+{
+"node": "d",
+"subtype": "obverse",
+"type": "surface",
+"ref": "P332949.o.2",
+"type": "obverse",
+"label": "o"}
+,
+{
+"node": "d",
+"subtype": "column 1o",
+"type": "column",
+"ref": "P332949.o.i.3",
+"n": "1",
+"label": "o i"}
+,
+{
+"node": "c",
+"type": "discourse",
+"subtype": "body",
+"id": "P332949.U1",
+"cdl": [
+{
+"node": "c",
+"type": "sentence",
+"id": "P332949.U2",
+"label": "o i 1' - o i 6'",
+"cdl": [
+{
+"node": "d",
+"type": "line-start",
+"ref": "P332949.4",
+"n": "1'",
+"label": "o i 1'"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "sg"}
+,
+{
+"node": "d",
+"frag": "⸢*",
+"type": "nonw",
+"ref": "P332949.4.1",
+"lang": "sux",
+"type": "punct",
+"gdl_delim": " "}
+,
+{
+"node": "l",
+"frag": "TA⸣",
+"id": "P332949.l31f94",
+"ref": "P332949.4.2",
+"inst": "%sux:TA=",
+"f": {"lang": "sux",
+"form": "TA"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "sg"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "eq"}
+,
+{
+"node": "l",
+"frag": "[...]",
+"id": "P332949.l31f95",
+"ref": "P332949.4.3",
+"inst": "%akk-x-mbperi:x=",
+"f": {"lang": "akk-x-mbperi",
+"form": "x"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "eq"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P332949.5",
+"n": "2'",
+"label": "o i 2'"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "sg"}
+,
+{
+"node": "d",
+"frag": "*",
+"type": "nonw",
+"ref": "P332949.5.1",
+"lang": "sux",
+"type": "punct",
+"gdl_delim": " "}
+,
+{
+"node": "l",
+"frag": "TA",
+"id": "P332949.l31f96",
+"ref": "P332949.5.2",
+"inst": "%sux:TA=",
+"f": {"lang": "sux",
+"form": "TA"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "sg"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "eq"}
+,
+{
+"node": "l",
+"frag": "[...]",
+"id": "P332949.l31f97",
+"ref": "P332949.5.3",
+"inst": "%akk-x-mbperi:x=",
+"f": {"lang": "akk-x-mbperi",
+"form": "x"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "eq"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P332949.6",
+"n": "3'",
+"label": "o i 3'"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "sg"}
+,
+{
+"node": "d",
+"frag": "*",
+"type": "nonw",
+"ref": "P332949.6.1",
+"lang": "sux",
+"type": "punct",
+"gdl_delim": " "}
+,
+{
+"node": "l",
+"frag": "TA",
+"id": "P332949.l31f98",
+"ref": "P332949.6.2",
+"inst": "%sux:TA=",
+"f": {"lang": "sux",
+"form": "TA"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "sg"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "eq"}
+,
+{
+"node": "l",
+"frag": "⸢x⸣",
+"id": "P332949.l31f99",
+"ref": "P332949.6.3",
+"inst": "%akk-x-mbperi:x=",
+"f": {"lang": "akk-x-mbperi",
+"form": "x"}
+}
+,
+{
+"node": "l",
+"frag": "[...]",
+"id": "P332949.l31f9a",
+"ref": "P332949.6.4",
+"inst": "%akk-x-mbperi:x=",
+"f": {"lang": "akk-x-mbperi",
+"form": "x"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "eq"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P332949.7",
+"n": "4'",
+"label": "o i 4'"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "sg"}
+,
+{
+"node": "d",
+"frag": "⸢*⸣",
+"type": "nonw",
+"ref": "P332949.7.1",
+"lang": "sux",
+"type": "punct",
+"gdl_delim": " "}
+,
+{
+"node": "l",
+"frag": "TI",
+"id": "P332949.l31f9b",
+"ref": "P332949.7.2",
+"inst": "%sux:TI=",
+"f": {"lang": "sux",
+"form": "TI"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "sg"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "eq"}
+,
+{
+"node": "l",
+"frag": "[...]",
+"id": "P332949.l31f9c",
+"ref": "P332949.7.3",
+"inst": "%akk-x-mbperi:x=",
+"f": {"lang": "akk-x-mbperi",
+"form": "x"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "eq"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P332949.8",
+"n": "5'",
+"label": "o i 5'"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "sg"}
+,
+{
+"node": "d",
+"frag": "[*]",
+"type": "nonw",
+"ref": "P332949.8.1",
+"lang": "sux",
+"type": "punct",
+"gdl_delim": " "}
+,
+{
+"node": "l",
+"frag": "UM",
+"id": "P332949.l31f9d",
+"ref": "P332949.8.2",
+"inst": "%sux:UM=",
+"f": {"lang": "sux",
+"form": "UM"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "sg"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "eq"}
+,
+{
+"node": "l",
+"frag": "[...]",
+"id": "P332949.l31f9e",
+"ref": "P332949.8.3",
+"inst": "%akk-x-mbperi:x=",
+"f": {"lang": "akk-x-mbperi",
+"form": "x"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "eq"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P332949.9",
+"n": "6'",
+"label": "o i 6'"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "sg"}
+,
+{
+"node": "d",
+"frag": "[*]",
+"type": "nonw",
+"ref": "P332949.9.1",
+"lang": "sux",
+"type": "punct",
+"gdl_delim": " "}
+,
+{
+"node": "l",
+"frag": "⸢DUB⸣",
+"id": "P332949.l31f9f",
+"ref": "P332949.9.2",
+"inst": "%sux:DUB=",
+"f": {"lang": "sux",
+"form": "DUB"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "sg"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "eq"}
+,
+{
+"node": "l",
+"frag": "[...]",
+"id": "P332949.l31fa0",
+"ref": "P332949.9.3",
+"inst": "%akk-x-mbperi:x=",
+"f": {"lang": "akk-x-mbperi",
+"form": "x"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "eq"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+]}
+]}
+]}
+]}

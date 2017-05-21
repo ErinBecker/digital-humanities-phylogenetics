@@ -1,0 +1,181 @@
+{
+"type": "cdl",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-05-19T18:24:19",
+"project": "dcclt",
+"textid": "P225070",
+"cdl": [
+{
+"node": "c",
+"type": "text",
+"id": "P225070.U0",
+"cdl": [
+{
+"node": "d",
+"subtype": "tablet",
+"type": "object",
+"ref": "P225070.x961.1",
+"type": "tablet",
+"label": "x961"}
+,
+{
+"node": "d",
+"subtype": "obverse",
+"type": "surface",
+"ref": "P225070.o.2",
+"type": "obverse",
+"label": "o"}
+,
+{
+"node": "c",
+"type": "discourse",
+"subtype": "body",
+"id": "P225070.U1",
+"cdl": [
+{
+"node": "c",
+"type": "sentence",
+"id": "P225070.U2",
+"label": "o 1 - o 3",
+"cdl": [
+{
+"node": "d",
+"type": "line-start",
+"ref": "P225070.3",
+"n": "1",
+"label": "o 1"}
+,
+{
+"node": "l",
+"frag": "{⸢na₄⸣}kišib",
+"id": "P225070.l23b79",
+"ref": "P225070.3.1",
+"inst": "kišib[seal]",
+"sig": "@dcclt%sux:{na₄}kišib=kišib[seal//cylinder seal, sealed tablet]N'N$kišib/{na₄}kišib#~",
+"f": {"lang": "sux",
+"form": "{na₄}kišib",
+"cf": "kišib",
+"gw": "seal",
+"sense": "cylinder seal, sealed tablet",
+"norm0": "kišib",
+"pos": "N",
+"epos": "N",
+"base": "{na₄}kišib",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "za-gin₃",
+"id": "P225070.l23b7a",
+"ref": "P225070.3.2",
+"inst": "zagin[lapis]",
+"sig": "@dcclt%sux:za-gin₃=zagin[lapis//lapis lazuli]N'N$zagin/za-gin₃#~",
+"f": {"lang": "sux",
+"form": "za-gin₃",
+"cf": "zagin",
+"gw": "lapis",
+"sense": "lapis lazuli",
+"norm0": "zagin",
+"pos": "N",
+"epos": "N",
+"base": "za-gin₃",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P225070.4",
+"n": "2",
+"label": "o 2"}
+,
+{
+"node": "l",
+"frag": "{⸢na₄⸣}lagab",
+"id": "P225070.l23b7b",
+"ref": "P225070.4.1",
+"inst": "lagab[block]",
+"sig": "@dcclt%sux:{na₄}lagab=lagab[block//block]N'N$lagab/{na₄}lagab#~",
+"f": {"lang": "sux",
+"form": "{na₄}lagab",
+"cf": "lagab",
+"gw": "block",
+"sense": "block",
+"norm0": "lagab",
+"pos": "N",
+"epos": "N",
+"base": "{na₄}lagab",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "za-gin₃",
+"id": "P225070.l23b7c",
+"ref": "P225070.4.2",
+"inst": "zagin[lapis]",
+"sig": "@dcclt%sux:za-gin₃=zagin[lapis//lapis lazuli]N'N$zagin/za-gin₃#~",
+"f": {"lang": "sux",
+"form": "za-gin₃",
+"cf": "zagin",
+"gw": "lapis",
+"sense": "lapis lazuli",
+"norm0": "zagin",
+"pos": "N",
+"epos": "N",
+"base": "za-gin₃",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P225070.5",
+"n": "3",
+"label": "o 3"}
+,
+{
+"node": "l",
+"frag": "{⸢na₄⸣}ellaŋ₂(|HI×AŠ₂|)",
+"id": "P225070.l23b7d",
+"ref": "P225070.5.1",
+"inst": "ellaŋ[bead]",
+"sig": "@dcclt%sux:{na₄}ellaŋ₂=ellaŋ[bead//bead]N'N$ellaŋ/{na₄}ellaŋ₂#~",
+"f": {"lang": "sux",
+"form": "{na₄}ellaŋ₂",
+"cf": "ellaŋ",
+"gw": "bead",
+"sense": "bead",
+"norm0": "ellaŋ",
+"pos": "N",
+"epos": "N",
+"base": "{na₄}ellaŋ₂",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "za-gin₃",
+"id": "P225070.l23b7e",
+"ref": "P225070.5.2",
+"inst": "zagin[lapis]",
+"sig": "@dcclt%sux:za-gin₃=zagin[lapis//lapis lazuli]N'N$zagin/za-gin₃#~",
+"f": {"lang": "sux",
+"form": "za-gin₃",
+"cf": "zagin",
+"gw": "lapis",
+"sense": "lapis lazuli",
+"norm0": "zagin",
+"pos": "N",
+"epos": "N",
+"base": "za-gin₃",
+"morph": "~"}
+}
+]}
+]}
+]}
+]}

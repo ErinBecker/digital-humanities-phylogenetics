@@ -1,0 +1,1331 @@
+{
+"type": "cdl",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-05-19T18:28:29",
+"project": "dcclt",
+"textid": "P450780",
+"cdl": [
+{
+"node": "c",
+"type": "text",
+"id": "P450780.U0",
+"cdl": [
+{
+"node": "d",
+"subtype": "tablet",
+"type": "object",
+"ref": "P450780.x1971.1",
+"type": "tablet",
+"label": "x1971"}
+,
+{
+"node": "d",
+"subtype": "obverse",
+"type": "surface",
+"ref": "P450780.o.2",
+"type": "obverse",
+"label": "o"}
+,
+{
+"node": "d",
+"type": "nonx",
+"ref": "P450780.3",
+"strict": "1",
+"extent": "beginning",
+"scope": "line",
+"state": "missing"}
+,
+{
+"node": "c",
+"type": "discourse",
+"subtype": "body",
+"id": "P450780.U1",
+"cdl": [
+{
+"node": "c",
+"type": "sentence",
+"id": "P450780.U2",
+"label": "o 1' - o 13'",
+"cdl": [
+{
+"node": "d",
+"type": "line-start",
+"ref": "P450780.4",
+"n": "1'",
+"label": "o 1'"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "wp"}
+,
+{
+"node": "l",
+"frag": "⸢ki⸣",
+"id": "P450780.l4e5f6",
+"ref": "P450780.4.1",
+"inst": "ki[ground, earth, land]N",
+"sig": "@dcclt%sux:ki=ki[place//ground, earth, land]N'N$ki/ki#~",
+"f": {"lang": "sux",
+"form": "ki",
+"cf": "ki",
+"gw": "place",
+"sense": "ground, earth, land",
+"norm0": "ki",
+"pos": "N",
+"epos": "N",
+"base": "ki",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "[kalag]",
+"id": "P450780.l4e5f7",
+"ref": "P450780.4.2",
+"inst": "kalag[strong]V/i",
+"sig": "@dcclt%sux:kalag=kalag[strong//strong]V/i'V/i$kalag/kalag#~",
+"f": {"lang": "sux",
+"form": "kalag",
+"cf": "kalag",
+"gw": "strong",
+"sense": "strong",
+"norm0": "kalag",
+"pos": "V/i",
+"epos": "V/i",
+"base": "kalag",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "wp"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "eq"}
+,
+{
+"node": "l",
+"frag": "[...]",
+"id": "P450780.l4e5f8",
+"ref": "P450780.4.3",
+"inst": "u",
+"f": {"lang": "akk",
+"form": "x",
+"pos": "u"}
+}
+,
+{
+"node": "d",
+"type": "nonw",
+"ref": ""}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "eq"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P450780.5",
+"n": "2'",
+"label": "o 2'"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "wp"}
+,
+{
+"node": "l",
+"frag": "ki",
+"id": "P450780.l4e5f9",
+"ref": "P450780.5.1",
+"inst": "ki[ground, earth, land]N",
+"sig": "@dcclt%sux:ki=ki[place//ground, earth, land]N'N$ki/ki#~",
+"f": {"lang": "sux",
+"form": "ki",
+"cf": "ki",
+"gw": "place",
+"sense": "ground, earth, land",
+"norm0": "ki",
+"pos": "N",
+"epos": "N",
+"base": "ki",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "⸢kalag⸣",
+"id": "P450780.l4e5fa",
+"ref": "P450780.5.2",
+"inst": "kalag[strong]V/i",
+"sig": "@dcclt%sux:kalag=kalag[strong//strong]V/i'V/i$kalag/kalag#~",
+"f": {"lang": "sux",
+"form": "kalag",
+"cf": "kalag",
+"gw": "strong",
+"sense": "strong",
+"norm0": "kalag",
+"pos": "V/i",
+"epos": "V/i",
+"base": "kalag",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "wp"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "eq"}
+,
+{
+"node": "l",
+"frag": "[...]",
+"id": "P450780.l4e5fb",
+"ref": "P450780.5.3",
+"inst": "u",
+"f": {"lang": "akk",
+"form": "x",
+"pos": "u"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "eq"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P450780.6",
+"n": "3'",
+"label": "o 3'"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "wp"}
+,
+{
+"node": "l",
+"frag": "⸢ki⸣",
+"id": "P450780.l4e5fc",
+"ref": "P450780.6.1",
+"inst": "ki[ground, earth, land]N",
+"sig": "@dcclt%sux:ki=ki[place//ground, earth, land]N'N$ki/ki#~",
+"f": {"lang": "sux",
+"form": "ki",
+"cf": "ki",
+"gw": "place",
+"sense": "ground, earth, land",
+"norm0": "ki",
+"pos": "N",
+"epos": "N",
+"base": "ki",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "kalag",
+"id": "P450780.l4e5fd",
+"ref": "P450780.6.2",
+"inst": "kalag[strong]V/i",
+"sig": "@dcclt%sux:kalag=kalag[strong//strong]V/i'V/i$kalag/kalag#~",
+"f": {"lang": "sux",
+"form": "kalag",
+"cf": "kalag",
+"gw": "strong",
+"sense": "strong",
+"norm0": "kalag",
+"pos": "V/i",
+"epos": "V/i",
+"base": "kalag",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "wp"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "eq"}
+,
+{
+"node": "l",
+"frag": "[...]",
+"id": "P450780.l4e5fe",
+"ref": "P450780.6.3",
+"inst": "u",
+"f": {"lang": "akk",
+"form": "x",
+"pos": "u"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "eq"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P450780.7",
+"n": "4'",
+"label": "o 4'"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "wp"}
+,
+{
+"node": "l",
+"frag": "ki",
+"id": "P450780.l4e5ff",
+"ref": "P450780.7.1",
+"inst": "ki[ground, earth, land]N",
+"sig": "@dcclt%sux:ki=ki[place//ground, earth, land]N'N$ki/ki#~",
+"f": {"lang": "sux",
+"form": "ki",
+"cf": "ki",
+"gw": "place",
+"sense": "ground, earth, land",
+"norm0": "ki",
+"pos": "N",
+"epos": "N",
+"base": "ki",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "kalag",
+"id": "P450780.l4e600",
+"ref": "P450780.7.2",
+"inst": "kalag[strong]V/i",
+"sig": "@dcclt%sux:kalag=kalag[strong//strong]V/i'V/i$kalag/kalag#~",
+"f": {"lang": "sux",
+"form": "kalag",
+"cf": "kalag",
+"gw": "strong",
+"sense": "strong",
+"norm0": "kalag",
+"pos": "V/i",
+"epos": "V/i",
+"base": "kalag",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "wp"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "eq"}
+,
+{
+"node": "l",
+"frag": "⸢tur⸣-[ba-lu-u₂]",
+"id": "P450780.l4e601",
+"ref": "P450780.7.3",
+"inst": "turballû[bare ground]N",
+"sig": "@dcclt%akk:tur-ba-lu-u₂=turballû[bare ground//bare ground]N'N$turballû",
+"f": {"lang": "akk",
+"form": "tur-ba-lu-u₂",
+"cf": "turballû",
+"gw": "bare ground",
+"sense": "bare ground",
+"norm": "turballû",
+"pos": "N",
+"epos": "N"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "eq"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P450780.8",
+"n": "5'",
+"label": "o 5'"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "wp"}
+,
+{
+"node": "l",
+"frag": "ki",
+"id": "P450780.l4e602",
+"ref": "P450780.8.1",
+"inst": "ki[ground, earth, land]N",
+"sig": "@dcclt%sux:ki=ki[place//ground, earth, land]N'N$ki/ki#~",
+"f": {"lang": "sux",
+"form": "ki",
+"cf": "ki",
+"gw": "place",
+"sense": "ground, earth, land",
+"norm0": "ki",
+"pos": "N",
+"epos": "N",
+"base": "ki",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "kalag",
+"id": "P450780.l4e603",
+"ref": "P450780.8.2",
+"inst": "kalag[strong]V/i",
+"sig": "@dcclt%sux:kalag=kalag[strong//strong]V/i'V/i$kalag/kalag#~",
+"f": {"lang": "sux",
+"form": "kalag",
+"cf": "kalag",
+"gw": "strong",
+"sense": "strong",
+"norm0": "kalag",
+"pos": "V/i",
+"epos": "V/i",
+"base": "kalag",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "wp"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "eq"}
+,
+{
+"node": "d",
+"type": "nonw",
+"ref": "P450780.8.3",
+"lang": "akk",
+"type": "surro"}
+,
+{
+"node": "l",
+"id": "P450780.l4e604",
+"ref": "P450780.8.4",
+"inst": "+kikallû[hard ground]N$",
+"sig": "@dcclt%akk-949:*=kikallû[hard ground//hard ground]N'N$kikallû",
+"f": {"lang": "akk-949",
+"form": "*",
+"cf": "kikallû",
+"gw": "hard ground",
+"sense": "hard ground",
+"norm": "kikallû",
+"pos": "N",
+"epos": "N"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "eq"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P450780.9",
+"n": "6'",
+"label": "o 6'"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "wp"}
+,
+{
+"node": "l",
+"frag": "⸢ki⸣",
+"id": "P450780.l4e605",
+"ref": "P450780.9.1",
+"inst": "ki[ground, earth, land]N",
+"sig": "@dcclt%sux:ki=ki[place//ground, earth, land]N'N$ki/ki#~",
+"f": {"lang": "sux",
+"form": "ki",
+"cf": "ki",
+"gw": "place",
+"sense": "ground, earth, land",
+"norm0": "ki",
+"pos": "N",
+"epos": "N",
+"base": "ki",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "kalag",
+"id": "P450780.l4e606",
+"ref": "P450780.9.2",
+"inst": "kalag[strong]V/i",
+"sig": "@dcclt%sux:kalag=kalag[strong//strong]V/i'V/i$kalag/kalag#~",
+"f": {"lang": "sux",
+"form": "kalag",
+"cf": "kalag",
+"gw": "strong",
+"sense": "strong",
+"norm0": "kalag",
+"pos": "V/i",
+"epos": "V/i",
+"base": "kalag",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "wp"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "eq"}
+,
+{
+"node": "l",
+"frag": "a-⸢pi⸣-[tum]",
+"id": "P450780.l4e607",
+"ref": "P450780.9.3",
+"inst": "apītum[(a kind of fallow land)]N",
+"sig": "@dcclt%akk:a-pi-tum=apītu[(a kind of fallow land)//(a kind of fallow land)]N'N$apītum",
+"f": {"lang": "akk",
+"form": "a-pi-tum",
+"cf": "apītu",
+"gw": "(a kind of fallow land)",
+"sense": "(a kind of fallow land)",
+"norm": "apītum",
+"pos": "N",
+"epos": "N"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "eq"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P450780.10",
+"n": "7'",
+"label": "o 7'"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "wp"}
+,
+{
+"node": "l",
+"frag": "ki",
+"id": "P450780.l4e608",
+"ref": "P450780.10.1",
+"inst": "ki[ground, earth, land]N",
+"sig": "@dcclt%sux:ki=ki[place//ground, earth, land]N'N$ki/ki#~",
+"f": {"lang": "sux",
+"form": "ki",
+"cf": "ki",
+"gw": "place",
+"sense": "ground, earth, land",
+"norm0": "ki",
+"pos": "N",
+"epos": "N",
+"base": "ki",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "kalag",
+"id": "P450780.l4e609",
+"ref": "P450780.10.2",
+"inst": "kalag[strong]V/i",
+"sig": "@dcclt%sux:kalag=kalag[strong//strong]V/i'V/i$kalag/kalag#~",
+"f": {"lang": "sux",
+"form": "kalag",
+"cf": "kalag",
+"gw": "strong",
+"sense": "strong",
+"norm0": "kalag",
+"pos": "V/i",
+"epos": "V/i",
+"base": "kalag",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "wp"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "eq"}
+,
+{
+"node": "l",
+"frag": "e-⸢x⸣-[x]",
+"id": "P450780.l4e60a",
+"ref": "P450780.10.3",
+"inst": "u",
+"f": {"lang": "akk",
+"form": "e-x-x",
+"pos": "u"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "eq"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P450780.11",
+"n": "8'",
+"label": "o 8'"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "wp"}
+,
+{
+"node": "l",
+"frag": "ki",
+"id": "P450780.l4e60b",
+"ref": "P450780.11.1",
+"inst": "ki[ground, earth, land]N",
+"sig": "@dcclt%sux:ki=ki[place//ground, earth, land]N'N$ki/ki#~",
+"f": {"lang": "sux",
+"form": "ki",
+"cf": "ki",
+"gw": "place",
+"sense": "ground, earth, land",
+"norm0": "ki",
+"pos": "N",
+"epos": "N",
+"base": "ki",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "kalag",
+"id": "P450780.l4e60c",
+"ref": "P450780.11.2",
+"inst": "kalag[strong]V/i",
+"sig": "@dcclt%sux:kalag=kalag[strong//strong]V/i'V/i$kalag/kalag#~",
+"f": {"lang": "sux",
+"form": "kalag",
+"cf": "kalag",
+"gw": "strong",
+"sense": "strong",
+"norm0": "kalag",
+"pos": "V/i",
+"epos": "V/i",
+"base": "kalag",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "wp"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "eq"}
+,
+{
+"node": "l",
+"frag": "dan-[na-tum]",
+"id": "P450780.l4e60d",
+"ref": "P450780.11.3",
+"inst": "dannatum[difficult]AJ",
+"sig": "@dcclt%akk:dan-na-tum=dannu[strong//difficult]AJ'AJ$dannatum",
+"f": {"lang": "akk",
+"form": "dan-na-tum",
+"cf": "dannu",
+"gw": "strong",
+"sense": "difficult",
+"norm": "dannatum",
+"pos": "AJ",
+"epos": "AJ"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "eq"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P450780.12",
+"n": "9'",
+"label": "o 9'"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "wp"}
+,
+{
+"node": "l",
+"frag": "ud",
+"id": "P450780.l4e60e",
+"ref": "P450780.12.1",
+"inst": "ud[day]N",
+"sig": "@dcclt%sux:ud=ud[sun//day]N'N$ud/ud#~",
+"f": {"lang": "sux",
+"form": "ud",
+"cf": "ud",
+"gw": "sun",
+"sense": "day",
+"norm0": "ud",
+"pos": "N",
+"epos": "N",
+"base": "ud",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "wp"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "eq"}
+,
+{
+"node": "l",
+"frag": "u₄-[mu]",
+"id": "P450780.l4e60f",
+"ref": "P450780.12.2",
+"inst": "ūmu[day]N",
+"sig": "@dcclt%akk:u₄-mu=ūmu[day//day]N'N$ūmu",
+"f": {"lang": "akk",
+"form": "u₄-mu",
+"cf": "ūmu",
+"gw": "day",
+"sense": "day",
+"norm": "ūmu",
+"pos": "N",
+"epos": "N"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "eq"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P450780.13",
+"n": "10'",
+"label": "o 10'"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "wp"}
+,
+{
+"node": "l",
+"frag": "⸢ud⸣",
+"id": "P450780.l4e610",
+"ref": "P450780.13.1",
+"inst": "ud[day]N",
+"sig": "@dcclt%sux:ud=ud[sun//day]N'N$ud/ud#~",
+"f": {"lang": "sux",
+"form": "ud",
+"cf": "ud",
+"gw": "sun",
+"sense": "day",
+"norm0": "ud",
+"pos": "N",
+"epos": "N",
+"base": "ud",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "sa₉-am₃",
+"id": "P450780.l4e611",
+"ref": "P450780.13.2",
+"inst": "sa[half]N",
+"sig": "@dcclt%sux:sa₉-am₃=sa[half//half]N'N$sa,am/sa₉#~,am",
+"f": {"lang": "sux",
+"form": "sa₉-am₃",
+"cf": "sa",
+"gw": "half",
+"sense": "half",
+"norm0": "sa,am",
+"pos": "N",
+"epos": "N",
+"base": "sa₉",
+"morph": "~,am"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "wp"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "eq"}
+,
+{
+"node": "l",
+"frag": "⸢mi⸣-[šil",
+"id": "P450780.l4e612",
+"ref": "P450780.13.3",
+"inst": "mišil[half]NU",
+"sig": "@dcclt%akk:mi-šil=mišlu[half//half]NU'NU$mišil",
+"f": {"lang": "akk",
+"form": "mi-šil",
+"cf": "mišlu",
+"gw": "half",
+"sense": "half",
+"norm": "mišil",
+"pos": "NU",
+"epos": "NU"}
+}
+,
+{
+"node": "l",
+"frag": "u₄-mu]",
+"id": "P450780.l4e613",
+"ref": "P450780.13.4",
+"inst": "ūmu[day]N",
+"sig": "@dcclt%akk:u₄-mu=ūmu[day//day]N'N$ūmu",
+"f": {"lang": "akk",
+"form": "u₄-mu",
+"cf": "ūmu",
+"gw": "day",
+"sense": "day",
+"norm": "ūmu",
+"pos": "N",
+"epos": "N"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "eq"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P450780.14",
+"n": "11'",
+"label": "o 11'"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "wp"}
+,
+{
+"node": "l",
+"frag": "ud",
+"id": "P450780.l4e614",
+"ref": "P450780.14.1",
+"inst": "ud[day]N",
+"sig": "@dcclt%sux:ud=ud[sun//day]N'N$ud/ud#~",
+"f": {"lang": "sux",
+"form": "ud",
+"cf": "ud",
+"gw": "sun",
+"sense": "day",
+"norm0": "ud",
+"pos": "N",
+"epos": "N",
+"base": "ud",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "1-kam",
+"id": "P450780.l4e615",
+"ref": "P450780.14.2",
+"inst": "n",
+"f": {"lang": "sux",
+"form": "1-kam",
+"pos": "n"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "wp"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "eq"}
+,
+{
+"node": "l",
+"frag": "⸢u₄⸣-[mu",
+"id": "P450780.l4e616",
+"ref": "P450780.14.3",
+"inst": "ūmu[day]N",
+"sig": "@dcclt%akk:u₄-mu=ūmu[day//day]N'N$ūmu",
+"f": {"lang": "akk",
+"form": "u₄-mu",
+"cf": "ūmu",
+"gw": "day",
+"sense": "day",
+"norm": "ūmu",
+"pos": "N",
+"epos": "N"}
+}
+,
+{
+"node": "l",
+"frag": "...]",
+"id": "P450780.l4e617",
+"ref": "P450780.14.4",
+"inst": "u",
+"f": {"lang": "akk",
+"form": "x",
+"pos": "u"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "eq"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P450780.15",
+"n": "12'",
+"label": "o 12'"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "wp"}
+,
+{
+"node": "l",
+"frag": "ud",
+"id": "P450780.l4e618",
+"ref": "P450780.15.1",
+"inst": "ud[day]N",
+"sig": "@dcclt%sux:ud=ud[sun//day]N'N$ud/ud#~",
+"f": {"lang": "sux",
+"form": "ud",
+"cf": "ud",
+"gw": "sun",
+"sense": "day",
+"norm0": "ud",
+"pos": "N",
+"epos": "N",
+"base": "ud",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "2-⸢kam⸣",
+"id": "P450780.l4e619",
+"ref": "P450780.15.2",
+"inst": "n",
+"f": {"lang": "sux",
+"form": "2-kam",
+"pos": "n"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "wp"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "eq"}
+,
+{
+"node": "l",
+"frag": "[...]",
+"id": "P450780.l4e61a",
+"ref": "P450780.15.3",
+"inst": "u",
+"f": {"lang": "akk",
+"form": "x",
+"pos": "u"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "eq"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P450780.16",
+"n": "13'",
+"label": "o 13'"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "wp"}
+,
+{
+"node": "l",
+"frag": "⸢ud⸣",
+"id": "P450780.l4e61b",
+"ref": "P450780.16.1",
+"inst": "ud[day]N",
+"sig": "@dcclt%sux:ud=ud[sun//day]N'N$ud/ud#~",
+"f": {"lang": "sux",
+"form": "ud",
+"cf": "ud",
+"gw": "sun",
+"sense": "day",
+"norm0": "ud",
+"pos": "N",
+"epos": "N",
+"base": "ud",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "3-[kam]",
+"id": "P450780.l4e61c",
+"ref": "P450780.16.2",
+"inst": "n",
+"f": {"lang": "sux",
+"form": "3-kam",
+"pos": "n"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "wp"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "eq"}
+,
+{
+"node": "l",
+"frag": "[...]",
+"id": "P450780.l4e61d",
+"ref": "P450780.16.3",
+"inst": "u",
+"f": {"lang": "akk",
+"form": "x",
+"pos": "u"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "eq"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "nonx",
+"ref": "P450780.17",
+"strict": "1",
+"extent": "rest",
+"scope": "line",
+"state": "missing"}
+,
+{
+"node": "d",
+"subtype": "reverse",
+"type": "surface",
+"ref": "P450780.r.18",
+"type": "reverse",
+"label": "r"}
+,
+{
+"node": "d",
+"type": "nonx",
+"ref": "P450780.19",
+"strict": "1",
+"extent": "beginning",
+"scope": "line",
+"state": "missing"}
+,
+{
+"node": "d",
+"type": "nonx",
+"ref": "P450780.20",
+"strict": "0",
+"state": "other"}
+,
+{
+"node": "d",
+"type": "nonx",
+"ref": "P450780.21",
+"strict": "1",
+"extent": "rest",
+"scope": "line",
+"state": "missing"}
+]}
+]}
+]}
+]}

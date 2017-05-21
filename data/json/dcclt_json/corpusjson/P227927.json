@@ -1,0 +1,343 @@
+{
+"type": "cdl",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-05-19T18:24:25",
+"project": "dcclt",
+"textid": "P227927",
+"cdl": [
+{
+"node": "c",
+"type": "text",
+"id": "P227927.U0",
+"cdl": [
+{
+"node": "d",
+"subtype": "tablet",
+"type": "object",
+"ref": "P227927.x1143.1",
+"type": "tablet",
+"label": "x1143"}
+,
+{
+"node": "d",
+"subtype": "obverse",
+"type": "surface",
+"ref": "P227927.o.2",
+"type": "obverse",
+"label": "o"}
+,
+{
+"node": "d",
+"subtype": "column 1o",
+"type": "column",
+"ref": "P227927.o.i.3",
+"n": "1",
+"label": "o i"}
+,
+{
+"node": "c",
+"type": "discourse",
+"subtype": "body",
+"id": "P227927.U1",
+"cdl": [
+{
+"node": "c",
+"type": "sentence",
+"id": "P227927.U2",
+"label": "o i 1' - o i 7'",
+"cdl": [
+{
+"node": "d",
+"type": "line-start",
+"ref": "P227927.4",
+"n": "1'",
+"label": "o i 1'"}
+,
+{
+"node": "l",
+"frag": "[šu]-⸢gur₅⸣",
+"id": "P227927.l270ac",
+"ref": "P227927.4.1",
+"inst": "šuguru[product]",
+"sig": "@dcclt%sux:šu-gur₅=šuguru[~dates//a product or container of dates]N'N$šuguru/šu-guru₅#~",
+"f": {"lang": "sux",
+"form": "šu-gur₅",
+"cf": "šuguru",
+"gw": "~dates",
+"sense": "a product or container of dates",
+"norm0": "šuguru",
+"pos": "N",
+"epos": "N",
+"base": "šu-guru₅",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "[...]",
+"id": "P227927.l270ad",
+"ref": "P227927.4.2",
+"inst": "u",
+"f": {"lang": "sux",
+"form": "x",
+"pos": "u"}
+}
+,
+{
+"node": "d",
+"type": "nonx",
+"ref": "P227927.5",
+"strict": "1",
+"extent": "2",
+"scope": "line",
+"state": "ruling"}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P227927.6",
+"n": "2'",
+"label": "o i 2'"}
+,
+{
+"node": "l",
+"frag": "[u₄]-hi-[in]",
+"id": "P227927.l270ae",
+"ref": "P227927.6.1",
+"inst": "uhin[date]",
+"sig": "@dcclt%sux:u₄-hi-in=uhin[date//fresh date]N'N$uhin/u₄-hi-in#~",
+"f": {"lang": "sux",
+"form": "u₄-hi-in",
+"cf": "uhin",
+"gw": "date",
+"sense": "fresh date",
+"norm0": "uhin",
+"pos": "N",
+"epos": "N",
+"base": "u₄-hi-in",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P227927.7",
+"n": "3'",
+"label": "o i 3'"}
+,
+{
+"node": "l",
+"frag": "[u₄]-hi-in",
+"id": "P227927.l270af",
+"ref": "P227927.7.1",
+"inst": "uhin[date]",
+"sig": "@dcclt%sux:u₄-hi-in=uhin[date//fresh date]N'N$uhin/u₄-hi-in#~",
+"f": {"lang": "sux",
+"form": "u₄-hi-in",
+"cf": "uhin",
+"gw": "date",
+"sense": "fresh date",
+"norm0": "uhin",
+"pos": "N",
+"epos": "N",
+"base": "u₄-hi-in",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "[babbar]",
+"id": "P227927.l270b0",
+"ref": "P227927.7.2",
+"inst": "babbar[white]",
+"sig": "@dcclt%sux:babbar=babbar[white//(to be) white]V/i'V/i$babbar/babbar#~",
+"f": {"lang": "sux",
+"form": "babbar",
+"cf": "babbar",
+"gw": "white",
+"sense": "(to be) white",
+"norm0": "babbar",
+"pos": "V/i",
+"epos": "V/i",
+"base": "babbar",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P227927.8",
+"n": "4'",
+"label": "o i 4'"}
+,
+{
+"node": "l",
+"frag": "[u₄]-hi-in",
+"id": "P227927.l270b1",
+"ref": "P227927.8.1",
+"inst": "uhin[date]",
+"sig": "@dcclt%sux:u₄-hi-in=uhin[date//fresh date]N'N$uhin/u₄-hi-in#~",
+"f": {"lang": "sux",
+"form": "u₄-hi-in",
+"cf": "uhin",
+"gw": "date",
+"sense": "fresh date",
+"norm0": "uhin",
+"pos": "N",
+"epos": "N",
+"base": "u₄-hi-in",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "⸢kukku₅⸣",
+"id": "P227927.l270b2",
+"ref": "P227927.8.2",
+"inst": "kukkug[dark]",
+"sig": "@dcclt%sux:kukku₅=kukkug[dark//(to be) dark]V/i'V/i$kukkug/kukku₅#~",
+"f": {"lang": "sux",
+"form": "kukku₅",
+"cf": "kukkug",
+"gw": "dark",
+"sense": "(to be) dark",
+"norm0": "kukkug",
+"pos": "V/i",
+"epos": "V/i",
+"base": "kukku₅",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P227927.9",
+"n": "5'",
+"label": "o i 5'"}
+,
+{
+"node": "l",
+"frag": "[u₄]-hi-in",
+"id": "P227927.l270b3",
+"ref": "P227927.9.1",
+"inst": "uhin[date]",
+"sig": "@dcclt%sux:u₄-hi-in=uhin[date//fresh date]N'N$uhin/u₄-hi-in#~",
+"f": {"lang": "sux",
+"form": "u₄-hi-in",
+"cf": "uhin",
+"gw": "date",
+"sense": "fresh date",
+"norm0": "uhin",
+"pos": "N",
+"epos": "N",
+"base": "u₄-hi-in",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "su₄-⸢a⸣",
+"id": "P227927.l270b4",
+"ref": "P227927.9.2",
+"inst": "su[red]",
+"sig": "@dcclt%sux:su₄-a=su[red//red]V/i'V/i$su;a/su₄#~;a",
+"f": {"lang": "sux",
+"form": "su₄-a",
+"cf": "su",
+"gw": "red",
+"sense": "red",
+"norm0": "su;a",
+"pos": "V/i",
+"epos": "V/i",
+"base": "su₄",
+"morph": "~;a"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P227927.10",
+"n": "6'",
+"label": "o i 6'"}
+,
+{
+"node": "l",
+"frag": "[u₄]-hi-in",
+"id": "P227927.l270b5",
+"ref": "P227927.10.1",
+"inst": "uhin[date]",
+"sig": "@dcclt%sux:u₄-hi-in=uhin[date//fresh date]N'N$uhin/u₄-hi-in#~",
+"f": {"lang": "sux",
+"form": "u₄-hi-in",
+"cf": "uhin",
+"gw": "date",
+"sense": "fresh date",
+"norm0": "uhin",
+"pos": "N",
+"epos": "N",
+"base": "u₄-hi-in",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "⸢sig₇⸣-[sig₇]",
+"id": "P227927.l270b6",
+"ref": "P227927.10.2",
+"inst": "sissig[green]",
+"sig": "@dcclt%sux:sig₇-sig₇=sissig[green//green]V/i'V/i$sissig/sig₇-sig₇#~",
+"f": {"lang": "sux",
+"form": "sig₇-sig₇",
+"cf": "sissig",
+"gw": "green",
+"sense": "green",
+"norm0": "sissig",
+"pos": "V/i",
+"epos": "V/i",
+"base": "sig₇-sig₇",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P227927.11",
+"n": "7'",
+"label": "o i 7'"}
+,
+{
+"node": "l",
+"frag": "[u₄-hi]-in",
+"id": "P227927.l270b7",
+"ref": "P227927.11.1",
+"inst": "uhin[date]",
+"sig": "@dcclt%sux:u₄-hi-in=uhin[date//fresh date]N'N$uhin/u₄-hi-in#~",
+"f": {"lang": "sux",
+"form": "u₄-hi-in",
+"cf": "uhin",
+"gw": "date",
+"sense": "fresh date",
+"norm0": "uhin",
+"pos": "N",
+"epos": "N",
+"base": "u₄-hi-in",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "[...]",
+"id": "P227927.l270b8",
+"ref": "P227927.11.2",
+"inst": "u",
+"f": {"lang": "sux",
+"form": "x",
+"pos": "u"}
+}
+]}
+]}
+]}
+]}

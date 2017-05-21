@@ -1,0 +1,157 @@
+{
+"type": "cdl",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-05-19T18:25:19",
+"project": "dcclt",
+"textid": "P253856",
+"cdl": [
+{
+"node": "c",
+"type": "text",
+"id": "P253856.U0",
+"cdl": [
+{
+"node": "d",
+"subtype": "tablet",
+"type": "object",
+"ref": "P253856.x1054.1",
+"type": "tablet",
+"label": "x1054"}
+,
+{
+"node": "d",
+"type": "surface",
+"ref": ""}
+,
+{
+"node": "d",
+"type": "nonx",
+"ref": "P253856.2",
+"strict": "0",
+"extent": "1",
+"state": "ruling"}
+,
+{
+"node": "d",
+"subtype": "obverse",
+"type": "surface",
+"ref": "P253856.o.3",
+"type": "obverse",
+"label": "o"}
+,
+{
+"node": "c",
+"type": "discourse",
+"subtype": "body",
+"id": "P253856.U1",
+"cdl": [
+{
+"node": "c",
+"type": "sentence",
+"id": "P253856.U2",
+"label": "o 1 - o 3",
+"cdl": [
+{
+"node": "d",
+"type": "line-start",
+"ref": "P253856.4",
+"n": "1",
+"label": "o 1"}
+,
+{
+"node": "l",
+"frag": "{id₂}šu-mu-dar",
+"id": "P253856.l2585d",
+"ref": "P253856.4.1",
+"inst": "Šumundar[1]WN/{id₂}šu-mu-dar#~",
+"sig": "@dcclt%sux:{id₂}šu-mu-dar=Šumundar[1//1]WN'WN$Šumundar/{id₂}šu-mu-dar#~",
+"f": {"lang": "sux",
+"form": "{id₂}šu-mu-dar",
+"cf": "Šumundar",
+"gw": "1",
+"sense": "1",
+"norm0": "Šumundar",
+"pos": "WN",
+"epos": "WN",
+"base": "{id₂}šu-mu-dar",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P253856.5",
+"n": "2",
+"label": "o 2"}
+,
+{
+"node": "l",
+"frag": "{id₂}muš₂-bi-an-na",
+"id": "P253856.l2585e",
+"ref": "P253856.5.1",
+"inst": "Mušbiʾana[1]WN/{id₂}muš₂-bi-an-na#~",
+"sig": "@dcclt%sux:{id₂}muš₂-bi-an-na=Mušbiʾana[1//1]WN'WN$Mušbiʾana/{id₂}muš₂-bi-an-na#~",
+"f": {"lang": "sux",
+"form": "{id₂}muš₂-bi-an-na",
+"cf": "Mušbiʾana",
+"gw": "1",
+"sense": "1",
+"norm0": "Mušbiʾana",
+"pos": "WN",
+"epos": "WN",
+"base": "{id₂}muš₂-bi-an-na",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"type": "nonw",
+"ref": ""}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P253856.6",
+"n": "3",
+"label": "o 3"}
+,
+{
+"node": "l",
+"frag": "{id₂}me-kal-kal",
+"id": "P253856.l2585f",
+"ref": "P253856.6.1",
+"inst": "Mekalkal[1]WN/{id₂}me-kal-kal#~",
+"sig": "@dcclt%sux:{id₂}me-kal-kal=Mekalkal[1//1]WN'WN$Mekalkal/{id₂}me-kal-kal#~",
+"f": {"lang": "sux",
+"form": "{id₂}me-kal-kal",
+"cf": "Mekalkal",
+"gw": "1",
+"sense": "1",
+"norm0": "Mekalkal",
+"pos": "WN",
+"epos": "WN",
+"base": "{id₂}me-kal-kal",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"subtype": "reverse",
+"type": "surface",
+"ref": "P253856.r.7",
+"type": "reverse",
+"label": "r"}
+,
+{
+"node": "d",
+"type": "nonx",
+"ref": "P253856.8",
+"strict": "0",
+"state": "missing"}
+]}
+]}
+]}
+]}

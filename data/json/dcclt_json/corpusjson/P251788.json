@@ -1,0 +1,121 @@
+{
+"type": "cdl",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-05-19T18:25:14",
+"project": "dcclt",
+"textid": "P251788",
+"cdl": [
+{
+"node": "c",
+"type": "text",
+"id": "P251788.U0",
+"cdl": [
+{
+"node": "d",
+"type": "object",
+"ref": ""}
+,
+{
+"node": "d",
+"subtype": "obverse",
+"type": "surface",
+"ref": "P251788.o.1",
+"type": "obverse",
+"label": "o"}
+,
+{
+"node": "c",
+"type": "discourse",
+"subtype": "body",
+"id": "P251788.U1",
+"cdl": [
+{
+"node": "c",
+"type": "sentence",
+"id": "P251788.U2",
+"label": "o 1 - o 3",
+"cdl": [
+{
+"node": "d",
+"type": "line-start",
+"ref": "P251788.2",
+"n": "1",
+"label": "o 1"}
+,
+{
+"node": "l",
+"frag": "{d}iškur",
+"id": "P251788.l0f0a4",
+"ref": "P251788.2.1",
+"inst": "Iškur[1]DN",
+"sig": "@dcclt%sux:{d}iškur=Iškur[1//1]DN'DN$Iškur/{d}iškur#~",
+"f": {"lang": "sux",
+"form": "{d}iškur",
+"cf": "Iškur",
+"gw": "1",
+"sense": "1",
+"norm0": "Iškur",
+"pos": "DN",
+"epos": "DN",
+"base": "{d}iškur",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P251788.3",
+"n": "2",
+"label": "o 2"}
+,
+{
+"node": "l",
+"frag": "{d}ša-a-la",
+"id": "P251788.l0f0a5",
+"ref": "P251788.3.1",
+"inst": "Šala[]",
+"sig": "@dcclt%sux:{d}ša-a-la=Šala[1//1]DN'DN$Šala/{d}ša-a-la#~",
+"f": {"lang": "sux",
+"form": "{d}ša-a-la",
+"cf": "Šala",
+"gw": "1",
+"sense": "1",
+"norm0": "Šala",
+"pos": "DN",
+"epos": "DN",
+"base": "{d}ša-a-la",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P251788.4",
+"n": "3",
+"label": "o 3"}
+,
+{
+"node": "l",
+"frag": "{d}nin-ŋeš-zid-da",
+"id": "P251788.l0f0a6",
+"ref": "P251788.4.1",
+"inst": "Ninŋešzidak[1]DN",
+"sig": "@dcclt%sux:{d}nin-ŋeš-zid-da=Ninŋešzidak[1//1]DN'DN$Ninŋešzidak/{d}nin-ŋeš-zid-da#~",
+"f": {"lang": "sux",
+"form": "{d}nin-ŋeš-zid-da",
+"cf": "Ninŋešzidak",
+"gw": "1",
+"sense": "1",
+"norm0": "Ninŋešzidak",
+"pos": "DN",
+"epos": "DN",
+"base": "{d}nin-ŋeš-zid-da",
+"morph": "~"}
+}
+]}
+]}
+]}
+]}

@@ -1,0 +1,239 @@
+{
+"type": "cdl",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-05-19T18:24:53",
+"project": "dcclt",
+"textid": "P231456",
+"cdl": [
+{
+"node": "c",
+"type": "text",
+"id": "P231456.U0",
+"cdl": [
+{
+"node": "d",
+"subtype": "tablet",
+"type": "object",
+"ref": "P231456.x1171.1",
+"type": "tablet",
+"label": "x1171"}
+,
+{
+"node": "d",
+"subtype": "obverse",
+"type": "surface",
+"ref": "P231456.o.2",
+"type": "obverse",
+"label": "o"}
+,
+{
+"node": "c",
+"type": "discourse",
+"subtype": "body",
+"id": "P231456.U1",
+"cdl": [
+{
+"node": "c",
+"type": "sentence",
+"id": "P231456.U2",
+"label": "o 1 - r 4",
+"cdl": [
+{
+"node": "d",
+"type": "line-start",
+"ref": "P231456.3",
+"n": "1",
+"label": "o 1"}
+,
+{
+"node": "l",
+"frag": "{d}gilgameš",
+"id": "P231456.l2c321",
+"ref": "P231456.3.1",
+"inst": "+Gilgameš[]DN",
+"sig": "@dcclt%akk:{d}gilgameš=Gilgameš[1//1]DN'DN$Gilgameš",
+"f": {"lang": "akk",
+"form": "{d}gilgameš",
+"cf": "Gilgameš",
+"gw": "1",
+"sense": "1",
+"norm": "Gilgameš",
+"pos": "DN",
+"epos": "DN"}
+}
+,
+{
+"node": "l",
+"frag": "i-ša₂-sa-šu",
+"id": "P231456.l2c322",
+"ref": "P231456.3.2",
+"inst": "+šasû[shout]V$išassâšu",
+"sig": "@dcclt%akk:i-ša₂-sa-šu=šasû[shout//shout]V'V$išassâšu",
+"f": {"lang": "akk",
+"form": "i-ša₂-sa-šu",
+"cf": "šasû",
+"gw": "shout",
+"sense": "shout",
+"norm": "išassâšu",
+"pos": "V",
+"epos": "V"}
+}
+,
+{
+"node": "d",
+"subtype": "reverse",
+"type": "surface",
+"ref": "P231456.r.4",
+"type": "reverse",
+"label": "r"}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P231456.5",
+"n": "1",
+"label": "r 1"}
+,
+{
+"node": "l",
+"frag": "pu₂",
+"id": "P231456.l2c323",
+"ref": "P231456.5.1",
+"inst": "pu[well]",
+"sig": "@dcclt%sux:pu₂=pu[well//well]N'N$pu/pu₂#~",
+"f": {"lang": "sux",
+"form": "pu₂",
+"cf": "pu",
+"gw": "well",
+"sense": "well",
+"norm0": "pu",
+"pos": "N",
+"epos": "N",
+"base": "pu₂",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P231456.6",
+"n": "2",
+"label": "r 2"}
+,
+{
+"node": "l",
+"frag": "šub-ba",
+"id": "P231456.l2c324",
+"ref": "P231456.6.1",
+"inst": "szub[fall]",
+"sig": "@dcclt%sux:šub-ba=šub[fall//fall]V/t'V/t$šub;a/šub+-ba=b.a#~;a",
+"f": {"lang": "sux",
+"form": "šub-ba",
+"cf": "šub",
+"gw": "fall",
+"sense": "fall",
+"norm0": "šub;a",
+"pos": "V/t",
+"epos": "V/t",
+"base": "šub",
+"cont": "-ba=b.a",
+"morph": "~;a"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P231456.7",
+"n": "3",
+"label": "r 3"}
+,
+{
+"node": "l",
+"frag": "pu₂-ta",
+"id": "P231456.l2c325",
+"ref": "P231456.7.1",
+"inst": "pu[well]",
+"sig": "@dcclt%sux:pu₂-ta=pu[well//well]N'N$pu,ta/pu₂#~,ta",
+"f": {"lang": "sux",
+"form": "pu₂-ta",
+"cf": "pu",
+"gw": "well",
+"sense": "well",
+"norm0": "pu,ta",
+"pos": "N",
+"epos": "N",
+"base": "pu₂",
+"morph": "~,ta"}
+}
+,
+{
+"node": "l",
+"frag": "pad₃-du",
+"id": "P231456.l2c326",
+"ref": "P231456.7.2",
+"inst": "pad[find]",
+"sig": "@dcclt%sux:pad₃-du=pad[find//find]V/t'V/t$pad!u/pad₃#~!u",
+"f": {"lang": "sux",
+"form": "pad₃-du",
+"cf": "pad",
+"gw": "find",
+"sense": "find",
+"norm0": "pad!u",
+"pos": "V/t",
+"epos": "V/t",
+"base": "pad₃",
+"morph": "~!u"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P231456.8",
+"n": "4",
+"label": "r 4"}
+,
+{
+"node": "l",
+"frag": "sila-ta",
+"id": "P231456.l2c327",
+"ref": "P231456.8.1",
+"inst": "sila[street]",
+"sig": "@dcclt%sux:sila-ta=sila[street//street]N'N$sila,ta/sila#~,ta",
+"f": {"lang": "sux",
+"form": "sila-ta",
+"cf": "sila",
+"gw": "street",
+"sense": "street",
+"norm0": "sila,ta",
+"pos": "N",
+"epos": "N",
+"base": "sila",
+"morph": "~,ta"}
+}
+,
+{
+"node": "l",
+"frag": "kur₉-ra",
+"id": "P231456.l2c328",
+"ref": "P231456.8.2",
+"inst": "kur[enter]",
+"sig": "@dcclt%sux:kur₉-ra=kur[enter//enter]V/i'V/i$kur;a/kur₉+-ra=r.a#~;a",
+"f": {"lang": "sux",
+"form": "kur₉-ra",
+"cf": "kur",
+"gw": "enter",
+"sense": "enter",
+"norm0": "kur;a",
+"pos": "V/i",
+"epos": "V/i",
+"base": "kur₉",
+"cont": "-ra=r.a",
+"morph": "~;a"}
+}
+]}
+]}
+]}
+]}

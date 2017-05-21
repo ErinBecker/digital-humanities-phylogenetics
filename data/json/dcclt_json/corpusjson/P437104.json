@@ -1,0 +1,418 @@
+{
+"type": "cdl",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-05-19T18:28:20",
+"project": "dcclt",
+"textid": "P437104",
+"cdl": [
+{
+"node": "c",
+"type": "text",
+"id": "P437104.U0",
+"cdl": [
+{
+"node": "d",
+"subtype": "tablet",
+"type": "object",
+"ref": "P437104.x1251.1",
+"type": "tablet",
+"label": "x1251"}
+,
+{
+"node": "d",
+"type": "surface",
+"ref": ""}
+,
+{
+"node": "d",
+"subtype": "column 1",
+"type": "column",
+"ref": "P437104.i.2",
+"n": "1",
+"label": "i"}
+,
+{
+"node": "d",
+"type": "nonx",
+"ref": "P437104.3",
+"strict": "1",
+"extent": "beginning",
+"scope": "column",
+"state": "missing"}
+,
+{
+"node": "c",
+"type": "discourse",
+"subtype": "body",
+"id": "P437104.U1",
+"cdl": [
+{
+"node": "c",
+"type": "sentence",
+"id": "P437104.U2",
+"label": "i 1' - i 13'",
+"cdl": [
+{
+"node": "d",
+"type": "line-start",
+"ref": "P437104.4",
+"n": "1'",
+"label": "i 1'"}
+,
+{
+"node": "l",
+"frag": "⸢ŋeš⸣-[...]",
+"id": "P437104.l2e43c",
+"ref": "P437104.4.1",
+"inst": "u",
+"f": {"lang": "sux",
+"form": "ŋeš-x",
+"pos": "u"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P437104.5",
+"n": "2'",
+"label": "i 2'"}
+,
+{
+"node": "l",
+"frag": "⸢ŋeš⸣-AŠ-[...]",
+"id": "P437104.l2e43d",
+"ref": "P437104.5.1",
+"inst": "u",
+"f": {"lang": "sux",
+"form": "ŋeš-AŠ-x",
+"pos": "u"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P437104.6",
+"n": "3'",
+"label": "i 3'"}
+,
+{
+"node": "l",
+"frag": "⸢ŋeš⸣-AŠ-si",
+"id": "P437104.l2e43e",
+"ref": "P437104.6.1",
+"inst": "X",
+"f": {"lang": "sux",
+"form": "ŋeš-AŠ-si",
+"pos": "X"}
+}
+,
+{
+"node": "l",
+"frag": "[(...)]",
+"id": "P437104.l2e43f",
+"ref": "P437104.6.2",
+"inst": "u",
+"f": {"lang": "sux",
+"form": "x",
+"pos": "u"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P437104.7",
+"n": "4'",
+"label": "i 4'"}
+,
+{
+"node": "l",
+"frag": "⸢ŋeš⸣-AŠ-si",
+"id": "P437104.l2e440",
+"ref": "P437104.7.1",
+"inst": "X",
+"f": {"lang": "sux",
+"form": "ŋeš-AŠ-si",
+"pos": "X"}
+}
+,
+{
+"node": "l",
+"frag": "[(...)]",
+"id": "P437104.l2e441",
+"ref": "P437104.7.2",
+"inst": "u",
+"f": {"lang": "sux",
+"form": "x",
+"pos": "u"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P437104.8",
+"n": "5'",
+"label": "i 5'"}
+,
+{
+"node": "l",
+"frag": "⸢ŋeš⸣-AŠ-si",
+"id": "P437104.l2e442",
+"ref": "P437104.8.1",
+"inst": "X",
+"f": {"lang": "sux",
+"form": "ŋeš-AŠ-si",
+"pos": "X"}
+}
+,
+{
+"node": "l",
+"frag": "[(...)]",
+"id": "P437104.l2e443",
+"ref": "P437104.8.2",
+"inst": "u",
+"f": {"lang": "sux",
+"form": "x",
+"pos": "u"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P437104.9",
+"n": "6'",
+"label": "i 6'"}
+,
+{
+"node": "l",
+"frag": "⸢ŋeš⸣-AŠ-si",
+"id": "P437104.l2e444",
+"ref": "P437104.9.1",
+"inst": "X",
+"f": {"lang": "sux",
+"form": "ŋeš-AŠ-si",
+"pos": "X"}
+}
+,
+{
+"node": "l",
+"frag": "[(...)]",
+"id": "P437104.l2e445",
+"ref": "P437104.9.2",
+"inst": "u",
+"f": {"lang": "sux",
+"form": "x",
+"pos": "u"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P437104.10",
+"n": "7'",
+"label": "i 7'"}
+,
+{
+"node": "l",
+"frag": "ŋeš-kiŋ₂",
+"id": "P437104.l2e446",
+"ref": "P437104.10.1",
+"inst": "X",
+"f": {"lang": "sux",
+"form": "ŋeš-kiŋ₂",
+"pos": "X"}
+}
+,
+{
+"node": "l",
+"frag": "AŠ",
+"id": "P437104.l2e447",
+"ref": "P437104.10.2",
+"inst": "u",
+"f": {"lang": "sux",
+"form": "AŠ",
+"pos": "u"}
+}
+,
+{
+"node": "l",
+"frag": "[(...)]",
+"id": "P437104.l2e448",
+"ref": "P437104.10.3",
+"inst": "u",
+"f": {"lang": "sux",
+"form": "x",
+"pos": "u"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P437104.11",
+"n": "8'",
+"label": "i 8'"}
+,
+{
+"node": "l",
+"frag": "ŋeš-dim₂",
+"id": "P437104.l2e449",
+"ref": "P437104.11.1",
+"inst": "ŋešdim[wood carver]N",
+"sig": "@dcclt%sux:ŋeš-dim₂=ŋešdim[carver//wood carver]N'N$ŋešdim/ŋeš-dim₂#~",
+"f": {"lang": "sux",
+"form": "ŋeš-dim₂",
+"cf": "ŋešdim",
+"gw": "carver",
+"sense": "wood carver",
+"norm0": "ŋešdim",
+"pos": "N",
+"epos": "N",
+"base": "ŋeš-dim₂",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "[(...)]",
+"id": "P437104.l2e44a",
+"ref": "P437104.11.2",
+"inst": "u",
+"f": {"lang": "sux",
+"form": "x",
+"pos": "u"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P437104.12",
+"n": "9'",
+"label": "i 9'"}
+,
+{
+"node": "l",
+"frag": "ŋeš-al-⸢di⸣-[di",
+"id": "P437104.l2e44b",
+"ref": "P437104.12.1",
+"inst": "X",
+"f": {"lang": "sux",
+"form": "ŋeš-al-di-di",
+"pos": "X"}
+}
+,
+{
+"node": "l",
+"frag": "(...)]",
+"id": "P437104.l2e44c",
+"ref": "P437104.12.2",
+"inst": "u",
+"f": {"lang": "sux",
+"form": "x",
+"pos": "u"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P437104.13",
+"n": "10'",
+"label": "i 10'"}
+,
+{
+"node": "l",
+"frag": "⸢ŋeš-IG⸣-[...]",
+"id": "P437104.l2e44d",
+"ref": "P437104.13.1",
+"inst": "u",
+"f": {"lang": "sux",
+"form": "ŋeš-IG-x",
+"pos": "u"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P437104.14",
+"n": "11'",
+"label": "i 11'"}
+,
+{
+"node": "l",
+"frag": "⸢iz-zi⸣",
+"id": "P437104.l2e44e",
+"ref": "P437104.14.1",
+"inst": "izzi[wall]N",
+"sig": "@dcclt%sux:iz-zi=izzi[wall//wall]N'N$izzi/iz-zi#~",
+"f": {"lang": "sux",
+"form": "iz-zi",
+"cf": "izzi",
+"gw": "wall",
+"sense": "wall",
+"norm0": "izzi",
+"pos": "N",
+"epos": "N",
+"base": "iz-zi",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "[(...)]",
+"id": "P437104.l2e44f",
+"ref": "P437104.14.2",
+"inst": "u",
+"f": {"lang": "sux",
+"form": "x",
+"pos": "u"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P437104.15",
+"n": "12'",
+"label": "i 12'"}
+,
+{
+"node": "l",
+"frag": "[ŋeš]-bar-[ra]",
+"id": "P437104.l2e450",
+"ref": "P437104.15.1",
+"inst": "X",
+"f": {"lang": "sux",
+"form": "ŋeš-bar-ra",
+"pos": "X"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P437104.16",
+"n": "13'",
+"label": "i 13'"}
+,
+{
+"node": "l",
+"frag": "[ŋeš]-⸢x⸣-[...]",
+"id": "P437104.l2e451",
+"ref": "P437104.16.1",
+"inst": "u",
+"f": {"lang": "sux",
+"form": "ŋeš-x-x",
+"pos": "u"}
+}
+,
+{
+"node": "d",
+"type": "nonx",
+"ref": "P437104.17",
+"strict": "1",
+"extent": "rest",
+"scope": "column",
+"state": "missing"}
+]}
+]}
+]}
+]}

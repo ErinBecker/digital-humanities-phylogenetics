@@ -1,0 +1,534 @@
+{
+"type": "cdl",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-05-19T18:26:12",
+"project": "dcclt",
+"textid": "P347326",
+"cdl": [
+{
+"node": "c",
+"type": "text",
+"id": "P347326.U0",
+"cdl": [
+{
+"node": "d",
+"subtype": "tablet",
+"type": "object",
+"ref": "P347326.x1300.1",
+"type": "tablet",
+"label": "x1300"}
+,
+{
+"node": "d",
+"type": "surface",
+"ref": ""}
+,
+{
+"node": "d",
+"subtype": "column 1",
+"type": "column",
+"ref": "P347326.i.2",
+"n": "1",
+"label": "i"}
+,
+{
+"node": "d",
+"type": "nonx",
+"ref": "P347326.3",
+"strict": "1",
+"extent": "5",
+"scope": "line",
+"state": "traces"}
+,
+{
+"node": "c",
+"type": "discourse",
+"subtype": "body",
+"id": "P347326.U1",
+"cdl": [
+{
+"node": "c",
+"type": "sentence",
+"id": "P347326.U2",
+"label": "i 6' - i 11'",
+"cdl": [
+{
+"node": "d",
+"type": "line-start",
+"ref": "P347326.4",
+"n": "6'",
+"label": "i 6'"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "wp"}
+,
+{
+"node": "l",
+"frag": "[gal]-zu",
+"id": "P347326.l31577",
+"ref": "P347326.4.1",
+"inst": "galanzu[wise, knowing]AJ",
+"sig": "@dcclt%sux:gal-zu=galanzu[wise//wise, knowing]AJ'AJ$galanzu/gal-zu#~",
+"f": {"lang": "sux",
+"form": "gal-zu",
+"cf": "galanzu",
+"gw": "wise",
+"sense": "wise, knowing",
+"norm0": "galanzu",
+"pos": "AJ",
+"epos": "AJ",
+"base": "gal-zu",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "wp"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "eq"}
+,
+{
+"node": "l",
+"frag": "em-qum",
+"id": "P347326.l31578",
+"ref": "P347326.4.2",
+"inst": "emqum[wise]AJ",
+"sig": "@dcclt%akk:em-qum=emqu[wise//wise]AJ'AJ$emqum",
+"f": {"lang": "akk",
+"form": "em-qum",
+"cf": "emqu",
+"gw": "wise",
+"sense": "wise",
+"norm": "emqum",
+"pos": "AJ",
+"epos": "AJ"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "eq"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P347326.5",
+"n": "7'",
+"label": "i 7'"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "wp"}
+,
+{
+"node": "l",
+"frag": "[gal]-zu",
+"id": "P347326.l31579",
+"ref": "P347326.5.1",
+"inst": "galanzu[wise, knowing]AJ",
+"sig": "@dcclt%sux:gal-zu=galanzu[wise//wise, knowing]AJ'AJ$galanzu/gal-zu#~",
+"f": {"lang": "sux",
+"form": "gal-zu",
+"cf": "galanzu",
+"gw": "wise",
+"sense": "wise, knowing",
+"norm0": "galanzu",
+"pos": "AJ",
+"epos": "AJ",
+"base": "gal-zu",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "wp"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "eq"}
+,
+{
+"node": "l",
+"frag": "mu-du-u₂",
+"id": "P347326.l3157a",
+"ref": "P347326.5.2",
+"inst": "mūdû[expert]N",
+"sig": "@dcclt%akk:mu-du-u₂=mūdû[knower//expert]N'N$mūdû",
+"f": {"lang": "akk",
+"form": "mu-du-u₂",
+"cf": "mūdû",
+"gw": "knower",
+"sense": "expert",
+"norm": "mūdû",
+"pos": "N",
+"epos": "N"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "eq"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P347326.6",
+"n": "8'",
+"label": "i 8'"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "wp"}
+,
+{
+"node": "l",
+"frag": "[kug]-zu",
+"id": "P347326.l3157b",
+"ref": "P347326.6.1",
+"inst": "kugzu[wise]AJ",
+"sig": "@dcclt%sux:kug-zu=kugzu[wise//wise]AJ'AJ$kugzu/kug-zu#~",
+"f": {"lang": "sux",
+"form": "kug-zu",
+"cf": "kugzu",
+"gw": "wise",
+"sense": "wise",
+"norm0": "kugzu",
+"pos": "AJ",
+"epos": "AJ",
+"base": "kug-zu",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "wp"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "eq"}
+,
+{
+"node": "l",
+"frag": "em-qum",
+"id": "P347326.l3157c",
+"ref": "P347326.6.2",
+"inst": "emqum[wise]AJ",
+"sig": "@dcclt%akk:em-qum=emqu[wise//wise]AJ'AJ$emqum",
+"f": {"lang": "akk",
+"form": "em-qum",
+"cf": "emqu",
+"gw": "wise",
+"sense": "wise",
+"norm": "emqum",
+"pos": "AJ",
+"epos": "AJ"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "eq"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P347326.7",
+"n": "9'",
+"label": "i 9'"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "wp"}
+,
+{
+"node": "l",
+"frag": "[mas]-su",
+"id": "P347326.l3157d",
+"ref": "P347326.7.1",
+"inst": "massu[leader]N",
+"sig": "@dcclt%sux:mas-su=massu[leader//leader, expert]N'N$massu/mas-su#~",
+"f": {"lang": "sux",
+"form": "mas-su",
+"cf": "massu",
+"gw": "leader",
+"sense": "leader, expert",
+"norm0": "massu",
+"pos": "N",
+"epos": "N",
+"base": "mas-su",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "wp"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "eq"}
+,
+{
+"node": "l",
+"frag": "ma-an-su₂-u₂",
+"id": "P347326.l3157e",
+"ref": "P347326.7.2",
+"inst": "+massû[leader]N$mansû",
+"sig": "@dcclt%akk:ma-an-su₂-u₂=massû[leader//leader]N'N$mansû",
+"f": {"lang": "akk",
+"form": "ma-an-su₂-u₂",
+"cf": "massû",
+"gw": "leader",
+"sense": "leader",
+"norm": "mansû",
+"pos": "N",
+"epos": "N"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "eq"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P347326.8",
+"n": "10'",
+"label": "i 10'"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "wp"}
+,
+{
+"node": "l",
+"frag": "⸢kindagal{kin⸣-da-gal}",
+"id": "P347326.l3157f",
+"ref": "P347326.8.1",
+"inst": "+kindagal[official//barber]N'N/kindagal{+kin-da-gal}",
+"sig": "@dcclt%sux:kindagal{+kin-da-gal}=kindagal[official//barber]N'N$kindagal/kindagal{+kin-da-gal}#~",
+"f": {"lang": "sux",
+"form": "kindagal{+kin-da-gal}",
+"cf": "kindagal",
+"gw": "official",
+"sense": "barber",
+"norm0": "kindagal",
+"pos": "N",
+"epos": "N",
+"base": "kindagal{+kin-da-gal}",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "wp"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "eq"}
+,
+{
+"node": "l",
+"frag": "gal-la-bu",
+"id": "P347326.l31580",
+"ref": "P347326.8.2",
+"inst": "gallābu[barber]N",
+"sig": "@dcclt%akk:gal-la-bu=gallābu[barber//barber]N'N$gallābu",
+"f": {"lang": "akk",
+"form": "gal-la-bu",
+"cf": "gallābu",
+"gw": "barber",
+"sense": "barber",
+"norm": "gallābu",
+"pos": "N",
+"epos": "N"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "eq"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P347326.9",
+"n": "11'",
+"label": "i 11'"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "wp"}
+,
+{
+"node": "l",
+"frag": "⸢kindagal⸣",
+"id": "P347326.l31581",
+"ref": "P347326.9.1",
+"inst": "kindagal[leader]",
+"sig": "@dcclt%sux:kindagal=kindagal[official//leader, expert]N'N$kindagal/kindagal#~",
+"f": {"lang": "sux",
+"form": "kindagal",
+"cf": "kindagal",
+"gw": "official",
+"sense": "leader, expert",
+"norm0": "kindagal",
+"pos": "N",
+"epos": "N",
+"base": "kindagal",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "wp"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "eq"}
+,
+{
+"node": "l",
+"frag": "mu-er-rum",
+"id": "P347326.l31582",
+"ref": "P347326.9.2",
+"inst": "+muʾerru[leader (of an assembly)]N$muʾerrum",
+"sig": "@dcclt%akk:mu-er-rum=muʾerru[leader (of an assembly)//leader (of an assembly)]N'N$muʾerrum",
+"f": {"lang": "akk",
+"form": "mu-er-rum",
+"cf": "muʾerru",
+"gw": "leader (of an assembly)",
+"sense": "leader (of an assembly)",
+"norm": "muʾerrum",
+"pos": "N",
+"epos": "N"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "eq"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+]}
+]}
+]}
+]}

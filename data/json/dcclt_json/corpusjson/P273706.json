@@ -1,0 +1,138 @@
+{
+"type": "cdl",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-05-19T18:25:36",
+"project": "dcclt",
+"textid": "P273706",
+"cdl": [
+{
+"node": "c",
+"type": "text",
+"id": "P273706.U0",
+"cdl": [
+{
+"node": "d",
+"type": "object",
+"ref": ""}
+,
+{
+"node": "d",
+"subtype": "obverse",
+"type": "surface",
+"ref": "P273706.o.1",
+"type": "obverse",
+"label": "o"}
+,
+{
+"node": "c",
+"type": "discourse",
+"subtype": "body",
+"id": "P273706.U1",
+"cdl": [
+{
+"node": "c",
+"type": "sentence",
+"id": "P273706.U2",
+"label": "o 1 - o 3",
+"cdl": [
+{
+"node": "d",
+"type": "line-start",
+"ref": "P273706.2",
+"n": "1",
+"label": "o 1"}
+,
+{
+"node": "l",
+"frag": "{[ŋeš]}dilim₂",
+"id": "P273706.l1ac29",
+"ref": "P273706.2.1",
+"inst": "dilim[spoon]",
+"sig": "@dcclt%sux:{ŋeš}dilim₂=dilim[spoon//spoon]N'N$dilim/{ŋeš}dilim₂#~",
+"f": {"lang": "sux",
+"form": "{ŋeš}dilim₂",
+"cf": "dilim",
+"gw": "spoon",
+"sense": "spoon",
+"norm0": "dilim",
+"pos": "N",
+"epos": "N",
+"base": "{ŋeš}dilim₂",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P273706.3",
+"n": "2",
+"label": "o 2"}
+,
+{
+"node": "l",
+"frag": "{[ŋeš]}dilim₂-gal",
+"id": "P273706.l1ac2a",
+"ref": "P273706.3.1",
+"inst": "dilimgal[dish]",
+"sig": "@dcclt%sux:{ŋeš}dilim₂-gal=dilimgal[dish//dish, shallow bowl]N'N$dilimgal/{ŋeš}dilim₂-gal#~",
+"f": {"lang": "sux",
+"form": "{ŋeš}dilim₂-gal",
+"cf": "dilimgal",
+"gw": "dish",
+"sense": "dish, shallow bowl",
+"norm0": "dilimgal",
+"pos": "N",
+"epos": "N",
+"base": "{ŋeš}dilim₂-gal",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P273706.4",
+"n": "3",
+"label": "o 3"}
+,
+{
+"node": "l",
+"frag": "{⸢ŋeš⸣}ma-al-tum₂",
+"id": "P273706.l1ac2b",
+"ref": "P273706.4.1",
+"inst": "maltum[bowl]N",
+"sig": "@dcclt%sux:{ŋeš}ma-al-tum₂=maltum[bowl//a bowl]N'N$maltum/{ŋeš}ma-al-tum₂#~",
+"f": {"lang": "sux",
+"form": "{ŋeš}ma-al-tum₂",
+"cf": "maltum",
+"gw": "bowl",
+"sense": "a bowl",
+"norm0": "maltum",
+"pos": "N",
+"epos": "N",
+"base": "{ŋeš}ma-al-tum₂",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"subtype": "reverse",
+"type": "surface",
+"ref": "P273706.r.5",
+"type": "reverse",
+"label": "r"}
+,
+{
+"node": "d",
+"type": "nonx",
+"ref": "P273706.6",
+"strict": "0",
+"extent": "0",
+"scope": "obverse",
+"state": "other"}
+]}
+]}
+]}
+]}

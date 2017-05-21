@@ -1,0 +1,143 @@
+{
+"type": "cdl",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-05-19T18:25:53",
+"project": "dcclt",
+"textid": "P332942",
+"cdl": [
+{
+"node": "c",
+"type": "text",
+"id": "P332942.U0",
+"cdl": [
+{
+"node": "d",
+"subtype": "tablet",
+"type": "object",
+"ref": "P332942.x959.1",
+"type": "tablet",
+"label": "x959"}
+,
+{
+"node": "d",
+"subtype": "obverse",
+"type": "surface",
+"ref": "P332942.o.2",
+"type": "obverse",
+"label": "o"}
+,
+{
+"node": "c",
+"type": "discourse",
+"subtype": "body",
+"id": "P332942.U1",
+"cdl": [
+{
+"node": "c",
+"type": "sentence",
+"id": "P332942.U2",
+"label": "o 1 - o 3",
+"cdl": [
+{
+"node": "d",
+"type": "line-start",
+"ref": "P332942.3",
+"n": "1",
+"label": "o 1"}
+,
+{
+"node": "l",
+"frag": "{na₄}šaŋan",
+"id": "P332942.l23b3d",
+"ref": "P332942.3.1",
+"inst": "šaŋan[flask]",
+"sig": "@dcclt%sux:{na₄}šaŋan=šaŋan[flask//a flask]N'N$šaŋan/{na₄}šaŋan#~",
+"f": {"lang": "sux",
+"form": "{na₄}šaŋan",
+"cf": "šaŋan",
+"gw": "flask",
+"sense": "a flask",
+"norm0": "šaŋan",
+"pos": "N",
+"epos": "N",
+"base": "{na₄}šaŋan",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "algamešₓ(|SAL.HUB₂|)",
+"id": "P332942.l23b3e",
+"ref": "P332942.3.2",
+"inst": "algameš[steatite]",
+"sig": "@dcclt%sux:algamešₓ(|SAL.HUB₂|)=algameš[stone//steatite]N'N$algameš/algamešₓ(|SAL.HUB₂|)#~",
+"f": {"lang": "sux",
+"form": "algamešₓ(|SAL.HUB₂|)",
+"cf": "algameš",
+"gw": "stone",
+"sense": "steatite",
+"norm0": "algameš",
+"pos": "N",
+"epos": "N",
+"base": "algamešₓ(|SAL.HUB₂|)",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P332942.4",
+"n": "2",
+"label": "o 2"}
+,
+{
+"node": "l",
+"frag": "{na₄}ka-gi-na",
+"id": "P332942.l23b3f",
+"ref": "P332942.4.1",
+"inst": "kagina[haematite]",
+"sig": "@dcclt%sux:{na₄}ka-gi-na=kagina[stone//haematite]N'N$kagina/{na₄}ka-gi-na#~",
+"f": {"lang": "sux",
+"form": "{na₄}ka-gi-na",
+"cf": "kagina",
+"gw": "stone",
+"sense": "haematite",
+"norm0": "kagina",
+"pos": "N",
+"epos": "N",
+"base": "{na₄}ka-gi-na",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P332942.5",
+"n": "3",
+"label": "o 3"}
+,
+{
+"node": "l",
+"frag": "{na₄}haš₂(|TUM×(U.U.U)|)tum",
+"id": "P332942.l23b40",
+"ref": "P332942.5.1",
+"inst": "haštum[stone]",
+"sig": "@dcclt%sux:{na₄}haš₂(|TUM×(U.U.U)|)-tum=haštum[stone//stone]N'N$haštum/{na₄}haš₂(|TUM×(U.U.U)|)-tum#~",
+"f": {"lang": "sux",
+"form": "{na₄}haš₂(|TUM×(U.U.U)|)-tum",
+"cf": "haštum",
+"gw": "stone",
+"sense": "stone",
+"norm0": "haštum",
+"pos": "N",
+"epos": "N",
+"base": "{na₄}haš₂(|TUM×(U.U.U)|)-tum",
+"morph": "~"}
+}
+]}
+]}
+]}
+]}

@@ -1,0 +1,655 @@
+{
+	"type": "index",
+	"project":"dcclt",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-05-19T18:30:04",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-05-19T18:21:23",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-05-17T05:09:35",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-05-17T05:01:00",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-05-13T01:07:01",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-05-13T00:58:40",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-05-11T19:34:57",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-05-11T19:26:25",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-05-10T20:41:30",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-05-10T20:33:05",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-05-06T00:40:21",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-05-06T00:32:09",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-04-28T19:23:48",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-04-28T19:14:58",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-04-27T19:10:05",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-04-27T19:01:21",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-04-27T01:57:48",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-04-27T01:49:05",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-03-20T20:38:34",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-03-20T19:37:16",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-03-16T19:40:10",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-03-16T18:45:37",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-03-16T17:12:44",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-03-16T16:58:39",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-03-16T02:07:16",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-03-16T01:48:36",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-03-07T00:07:20",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-03-06T23:58:31",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-03-04T01:00:24",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-03-04T00:51:39",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-02-28T20:10:49",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-02-28T20:01:18",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-02-14T22:49:50",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-02-14T22:40:23",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-02-14T22:10:19",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-02-14T02:59:56",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-02-14T02:50:41",
+	"name": "cbd/qpn-x-months",
+	"keys": [{
+		"key": "d",
+		"count": "4",
+		"instances": [
+			"d","d","d","d"
+		]},{
+		"key": "x",
+		"count": "4",
+		"instances": [
+			"x","x","x","x"
+		]},{
+		"key": "Gud-sisa[1]",
+		"count": "1",
+		"instances": [
+			"Gud-sisa[1]"
+		]},{
+		"key": "Šabaṭu[1]",
+		"count": "1",
+		"instances": [
+			"Šabaṭu[1]"
+		]},{
+		"key": "Apinduʾa[1]",
+		"count": "1",
+		"instances": [
+			"Apinduʾa[1]"
+		]},{
+		"key": "apin",
+		"count": "10",
+		"instances": [
+			"apin","apin","apin","apin","apin","apin","apin","apin","apin","apin"
+		]},{
+		"key": "kug",
+		"count": "4",
+		"instances": [
+			"kug","kug","kug","kug"
+		]},{
+		"key": "kud",
+		"count": "8",
+		"instances": [
+			"kud","kud","kud","kud","kud","kud","kud","kud"
+		]},{
+		"key": "udduru",
+		"count": "2",
+		"instances": [
+			"udduru","udduru"
+		]},{
+		"key": "apinduʾa",
+		"count": "2",
+		"instances": [
+			"apinduʾa","apinduʾa"
+		]},{
+		"key": "Šegurkud[1]",
+		"count": "1",
+		"instances": [
+			"Šegurkud[1]"
+		]},{
+		"key": "Barag-zagŋar[1]",
+		"count": "1",
+		"instances": [
+			"Barag-zagŋar[1]"
+		]},{
+		"key": "ab",
+		"count": "8",
+		"instances": [
+			"ab","ab","ab","ab","ab","ab","ab","ab"
+		]},{
+		"key": "an",
+		"count": "2",
+		"instances": [
+			"an","an"
+		]},{
+		"key": "du",
+		"count": "6",
+		"instances": [
+			"du","du","du","du","du","du"
+		]},{
+		"key": "Šunumuna[1]",
+		"count": "1",
+		"instances": [
+			"Šunumuna[1]"
+		]},{
+		"key": "ŋeš",
+		"count": "4",
+		"instances": [
+			"ŋeš","ŋeš","ŋeš","ŋeš"
+		]},{
+		"key": "na",
+		"count": "4",
+		"instances": [
+			"na","na","na","na"
+		]},{
+		"key": "ni",
+		"count": "2",
+		"instances": [
+			"ni","ni"
+		]},{
+		"key": "nu",
+		"count": "2",
+		"instances": [
+			"nu","nu"
+		]},{
+		"key": "ru",
+		"count": "6",
+		"instances": [
+			"ru","ru","ru","ru","ru","ru"
+		]},{
+		"key": "su",
+		"count": "4",
+		"instances": [
+			"su","su","su","su"
+		]},{
+		"key": "si",
+		"count": "8",
+		"instances": [
+			"si","si","si","si","si","si","si","si"
+		]},{
+		"key": "sa",
+		"count": "2",
+		"instances": [
+			"sa","sa"
+		]},{
+		"key": "ud",
+		"count": "5",
+		"instances": [
+			"ud","ud","ud","ud","ud"
+		]},{
+		"key": "Kislimu[1]",
+		"count": "1",
+		"instances": [
+			"Kislimu[1]"
+		]},{
+		"key": "oldbabud",
+		"count": "1",
+		"instances": [
+			"oldbabud"
+		]},{
+		"key": "šega",
+		"count": "2",
+		"instances": [
+			"šega","šega"
+		]},{
+		"key": "neneŋar",
+		"count": "2",
+		"instances": [
+			"neneŋar","neneŋar"
+		]},{
+		"key": "abu",
+		"count": "2",
+		"instances": [
+			"abu","abu"
+		]},{
+		"key": "stdbab",
+		"count": "2",
+		"instances": [
+			"stdbab","stdbab"
+		]},{
+		"key": "akk",
+		"count": "4",
+		"instances": [
+			"akk","akk","akk","akk"
+		]},{
+		"key": "Kiŋ-Inana[1]",
+		"count": "1",
+		"instances": [
+			"Kiŋ-Inana[1]"
+		]},{
+		"key": "sig₄",
+		"count": "1",
+		"instances": [
+			"sig₄"
+		]},{
+		"key": "Abu[1]",
+		"count": "1",
+		"instances": [
+			"Abu[1]"
+		]},{
+		"key": "Udduru[1]",
+		"count": "1",
+		"instances": [
+			"Udduru[1]"
+		]},{
+		"key": "Nisannu[1]",
+		"count": "1",
+		"instances": [
+			"Nisannu[1]"
+		]},{
+		"key": "sisa",
+		"count": "2",
+		"instances": [
+			"sisa","sisa"
+		]},{
+		"key": "stdbabsig₄",
+		"count": "1",
+		"instances": [
+			"stdbabsig₄"
+		]},{
+		"key": "nisannu",
+		"count": "2",
+		"instances": [
+			"nisannu","nisannu"
+		]},{
+		"key": "du₆",
+		"count": "4",
+		"instances": [
+			"du₆","du₆","du₆","du₆"
+		]},{
+		"key": "du₈",
+		"count": "8",
+		"instances": [
+			"du₈","du₈","du₈","du₈","du₈","du₈","du₈","du₈"
+		]},{
+		"key": "kiŋ₂",
+		"count": "4",
+		"instances": [
+			"kiŋ₂","kiŋ₂","kiŋ₂","kiŋ₂"
+		]},{
+		"key": "inana",
+		"count": "6",
+		"instances": [
+			"inana","inana","inana","inana","inana","inana"
+		]},{
+		"key": "Gangana[1]",
+		"count": "1",
+		"instances": [
+			"Gangana[1]"
+		]},{
+		"key": "Arahsamnu[1]",
+		"count": "1",
+		"instances": [
+			"Arahsamnu[1]"
+		]},{
+		"key": "šu",
+		"count": "4",
+		"instances": [
+			"šu","šu","šu","šu"
+		]},{
+		"key": "še",
+		"count": "8",
+		"instances": [
+			"še","še","še","še","še","še","še","še"
+		]},{
+		"key": "u₂",
+		"count": "2",
+		"instances": [
+			"u₂","u₂"
+		]},{
+		"key": "duru₅",
+		"count": "8",
+		"instances": [
+			"duru₅","duru₅","duru₅","duru₅","duru₅","duru₅","duru₅","duru₅"
+		]},{
+		"key": "ziz₂",
+		"count": "2",
+		"instances": [
+			"ziz₂","ziz₂"
+		]},{
+		"key": "šeg₁₂",
+		"count": "4",
+		"instances": [
+			"šeg₁₂","šeg₁₂","šeg₁₂","šeg₁₂"
+		]},{
+		"key": "gu₄",
+		"count": "2",
+		"instances": [
+			"gu₄","gu₄"
+		]},{
+		"key": "NE.NE.ŋar[1]",
+		"count": "1",
+		"instances": [
+			"NE.NE.ŋar[1]"
+		]},{
+		"key": "Šega[1]",
+		"count": "1",
+		"instances": [
+			"Šega[1]"
+		]},{
+		"key": "gur₁₀",
+		"count": "8",
+		"instances": [
+			"gur₁₀","gur₁₀","gur₁₀","gur₁₀","gur₁₀","gur₁₀","gur₁₀","gur₁₀"
+		]},{
+		"key": "ayyaru",
+		"count": "2",
+		"instances": [
+			"ayyaru","ayyaru"
+		]},{
+		"key": "zag",
+		"count": "4",
+		"instances": [
+			"zag","zag","zag","zag"
+		]},{
+		"key": "arahsamnu",
+		"count": "2",
+		"instances": [
+			"arahsamnu","arahsamnu"
+		]},{
+		"key": "gangana",
+		"count": "2",
+		"instances": [
+			"gangana","gangana"
+		]},{
+		"key": "sa₂",
+		"count": "4",
+		"instances": [
+			"sa₂","sa₂","sa₂","sa₂"
+		]},{
+		"key": "Dukug[1]",
+		"count": "1",
+		"instances": [
+			"Dukug[1]"
+		]},{
+		"key": "numun",
+		"count": "4",
+		"instances": [
+			"numun","numun","numun","numun"
+		]},{
+		"key": "Abbaʾe[1]",
+		"count": "1",
+		"instances": [
+			"Abbaʾe[1]"
+		]},{
+		"key": "kislimu",
+		"count": "2",
+		"instances": [
+			"kislimu","kislimu"
+		]},{
+		"key": "dukug",
+		"count": "2",
+		"instances": [
+			"dukug","dukug"
+		]},{
+		"key": "gud",
+		"count": "12",
+		"instances": [
+			"gud","gud","gud","gud","gud","gud","gud","gud","gud","gud","gud","gud"
+		]},{
+		"key": "Simanu[1]",
+		"count": "1",
+		"instances": [
+			"Simanu[1]"
+		]},{
+		"key": "abbaʾe",
+		"count": "2",
+		"instances": [
+			"abbaʾe","abbaʾe"
+		]},{
+		"key": "šabaṭu",
+		"count": "2",
+		"instances": [
+			"šabaṭu","šabaṭu"
+		]},{
+		"key": "kiŋ",
+		"count": "2",
+		"instances": [
+			"kiŋ","kiŋ"
+		]},{
+		"key": "ud₂",
+		"count": "8",
+		"instances": [
+			"ud₂","ud₂","ud₂","ud₂","ud₂","ud₂","ud₂","ud₂"
+		]},{
+		"key": "zagŋar",
+		"count": "2",
+		"instances": [
+			"zagŋar","zagŋar"
+		]},{
+		"key": "barag",
+		"count": "6",
+		"instances": [
+			"barag","barag","barag","barag","barag","barag"
+		]},{
+		"key": "simanu",
+		"count": "2",
+		"instances": [
+			"simanu","simanu"
+		]},{
+		"key": "Ayyaru[1]",
+		"count": "1",
+		"instances": [
+			"Ayyaru[1]"
+		]},{
+		"key": "šegurkud",
+		"count": "2",
+		"instances": [
+			"šegurkud","šegurkud"
+		]},{
+		"key": "šunumuna",
+		"count": "2",
+		"instances": [
+			"šunumuna","šunumuna"
+		]},{
+		"key": "ŋar",
+		"count": "8",
+		"instances": [
+			"ŋar","ŋar","ŋar","ŋar","ŋar","ŋar","ŋar","ŋar"
+		]},{
+		"key": "1",
+		"count": "38",
+		"instances": [
+			"1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1"
+		]},{
+		"key": "#",
+		"count": "96",
+		"instances": [
+			"#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#"
+		]},{
+		"key": "iti",
+		"count": "88",
+		"instances": [
+			"iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti","iti"
+		]},{
+		"key": "e₃",
+		"count": "16",
+		"instances": [
+			"e₃","e₃","e₃","e₃","e₃","e₃","e₃","e₃","e₃","e₃","e₃","e₃","e₃","e₃","e₃","e₃"
+		]},{
+		"key": "a",
+		"count": "24",
+		"instances": [
+			"a","a","a","a","a","a","a","a","a","a","a","a","a","a","a","a","a","a","a","a","a","a","a","a"
+		]},{
+		"key": "ne",
+		"count": "22",
+		"instances": [
+			"ne","ne","ne","ne","ne","ne","ne","ne","ne","ne","ne","ne","ne","ne","ne","ne","ne","ne","ne","ne","ne","ne"
+		]},{
+		"key": "gan",
+		"count": "34",
+		"instances": [
+			"gan","gan","gan","gan","gan","gan","gan","gan","gan","gan","gan","gan","gan","gan","gan","gan","gan","gan","gan","gan","gan","gan","gan","gan","gan","gan","gan","gan","gan","gan","gan","gan","gan","gan"
+		]}
+	],
+	"map": {
+		"%akk": "akk",
+		"APIN": "apin",
+		"Abbaʾe": "abbaʾe",
+		"Abu": "abu",
+		"Apinduʾa": "apinduʾa",
+		"Arahsamnu": "arahsamnu",
+		"Ayyaru": "ayyaru",
+		"Barag": "barag",
+		"Dukug": "dukug",
+		"GAN": "gan",
+		"GUD": "gud",
+		"GU₄": "gu₄",
+		"Gangana": "gangana",
+		"Gud": "gud",
+		"Inana": "inana",
+		"Kislimu": "kislimu",
+		"Kiŋ": "kiŋ",
+		"NE": "ne",
+		"NE.NE.ŋar": "neneŋar",
+		"Nisannu": "nisannu",
+		"SIG₄": "sig₄",
+		"Simanu": "simanu",
+		"Udduru": "udduru",
+		"ZIZ₂": "ziz₂",
+		"oldbab:ud": "oldbabud",
+		"stdbab:": "stdbab",
+		"stdbab:SIG₄": "stdbabsig₄",
+		"Šabaṭu": "šabaṭu",
+		"Šega": "šega",
+		"Šegurkud": "šegurkud",
+		"Šunumuna": "šunumuna"
+	}
+}

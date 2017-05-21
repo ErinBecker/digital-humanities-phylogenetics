@@ -1,0 +1,133 @@
+{
+"type": "cdl",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-05-19T18:28:49",
+"project": "dcclt",
+"textid": "P467603",
+"cdl": [
+{
+"node": "c",
+"type": "text",
+"id": "P467603.U0",
+"cdl": [
+{
+"node": "d",
+"subtype": "tablet",
+"type": "object",
+"ref": "P467603.x210.1",
+"type": "tablet",
+"label": "x210"}
+,
+{
+"node": "d",
+"subtype": "obverse",
+"type": "surface",
+"ref": "P467603.o.2",
+"type": "obverse",
+"label": "o"}
+,
+{
+"node": "d",
+"subtype": "column 1o",
+"type": "column",
+"ref": "P467603.o.i.3",
+"n": "1",
+"label": "o i"}
+,
+{
+"node": "c",
+"type": "discourse",
+"subtype": "body",
+"id": "P467603.U1",
+"cdl": [
+{
+"node": "c",
+"type": "sentence",
+"id": "P467603.U2",
+"label": "o i 1 - o i 3",
+"cdl": [
+{
+"node": "d",
+"type": "line-start",
+"ref": "P467603.4",
+"n": "1",
+"label": "o i 1"}
+,
+{
+"node": "l",
+"frag": "ib₂-ta-ba-ba-e",
+"id": "P467603.l0b07a",
+"ref": "P467603.4.1",
+"inst": "ba[allot]",
+"sig": "@dcclt%sux:ib₂-ta-ba-ba-e=ba[allot//allot]V/t'V/t$V.b.ta:ba;e/ba-ba#V.b.ta:~;e",
+"f": {"lang": "sux",
+"form": "ib₂-ta-ba-ba-e",
+"cf": "ba",
+"gw": "allot",
+"sense": "allot",
+"norm0": "V.b.ta:ba;e",
+"pos": "V/t",
+"epos": "V/t",
+"base": "ba-ba",
+"morph": "V.b.ta:~;e"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P467603.5",
+"n": "2",
+"label": "o i 2"}
+,
+{
+"node": "l",
+"frag": "ib₂-ta-tur-tur-re",
+"id": "P467603.l0b07b",
+"ref": "P467603.5.1",
+"inst": "tur[small]",
+"sig": "@dcclt%sux:ib₂-ta-tur-tur-re=tur[small//small]V/i'V/i$V.b.ta:tur;e/tur-tur+-re=r.e#V.b.ta:~;e",
+"f": {"lang": "sux",
+"form": "ib₂-ta-tur-tur-re",
+"cf": "tur",
+"gw": "small",
+"sense": "small",
+"norm0": "V.b.ta:tur;e",
+"pos": "V/i",
+"epos": "V/i",
+"base": "tur-tur",
+"cont": "-re=r.e",
+"morph": "V.b.ta:~;e"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P467603.6",
+"n": "3",
+"label": "o i 3"}
+,
+{
+"node": "l",
+"frag": "ku₃-ku₃-da",
+"id": "P467603.l0b07c",
+"ref": "P467603.6.1",
+"inst": "kug[pure]",
+"sig": "@dcclt%sux:ku₃-ku₃-da=kug[pure//pure]V/i'V/i$kug/ku₃-ku₃-da#~",
+"f": {"lang": "sux",
+"form": "ku₃-ku₃-da",
+"cf": "kug",
+"gw": "pure",
+"sense": "pure",
+"norm0": "kug",
+"pos": "V/i",
+"epos": "V/i",
+"base": "ku₃-ku₃-da",
+"morph": "~"}
+}
+]}
+]}
+]}
+]}

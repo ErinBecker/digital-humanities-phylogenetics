@@ -1,0 +1,117 @@
+{
+"type": "cdl",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-05-19T18:29:11",
+"project": "dcclt",
+"textid": "X499083",
+"cdl": [
+{
+"node": "c",
+"type": "text",
+"id": "X499083.U0",
+"cdl": [
+{
+"node": "d",
+"subtype": "tablet",
+"type": "object",
+"ref": "X499083.x296.1",
+"type": "tablet",
+"label": "x296"}
+,
+{
+"node": "d",
+"subtype": "obverse",
+"type": "surface",
+"ref": "X499083.o.2",
+"type": "obverse",
+"label": "o"}
+,
+{
+"node": "c",
+"type": "discourse",
+"subtype": "body",
+"id": "X499083.U1",
+"cdl": [
+{
+"node": "c",
+"type": "sentence",
+"id": "X499083.U2",
+"label": "o 1 - o 2",
+"cdl": [
+{
+"node": "d",
+"type": "line-start",
+"ref": "X499083.3",
+"n": "1",
+"label": "o 1"}
+,
+{
+"node": "l",
+"frag": "lu₂-ni₂-su-ub-ba",
+"id": "X499083.l122a8",
+"ref": "X499083.3.1",
+"inst": "lunisub[ecstatic]",
+"sig": "@dcclt%sux:lu₂-ni₂-su-ub-ba=lunisub[ecstatic//an ecstatic]N'N$lunisub,bi.ak/lu₂-ni₂-su-ub#~,bi.ak",
+"f": {"lang": "sux",
+"form": "lu₂-ni₂-su-ub-ba",
+"cf": "lunisub",
+"gw": "ecstatic",
+"sense": "an ecstatic",
+"norm0": "lunisub,bi.ak",
+"pos": "N",
+"epos": "N",
+"base": "lu₂-ni₂-su-ub",
+"morph": "~,bi.ak"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "X499083.4",
+"n": "2",
+"label": "o 2"}
+,
+{
+"node": "l",
+"frag": "munus",
+"id": "X499083.l122a9",
+"ref": "X499083.4.1",
+"inst": "munus[woman]",
+"sig": "@dcclt%sux:munus=munus[woman//woman]N'N$munus/munus#~",
+"f": {"lang": "sux",
+"form": "munus",
+"cf": "munus",
+"gw": "woman",
+"sense": "woman",
+"norm0": "munus",
+"pos": "N",
+"epos": "N",
+"base": "munus",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "lu₂-ni₂-su-ub-ba",
+"id": "X499083.l122aa",
+"ref": "X499083.4.2",
+"inst": "lunisub[ecstatic]",
+"sig": "@dcclt%sux:lu₂-ni₂-su-ub-ba=lunisub[ecstatic//an ecstatic]N'N$lunisub,bi.ak/lu₂-ni₂-su-ub#~,bi.ak",
+"f": {"lang": "sux",
+"form": "lu₂-ni₂-su-ub-ba",
+"cf": "lunisub",
+"gw": "ecstatic",
+"sense": "an ecstatic",
+"norm0": "lunisub,bi.ak",
+"pos": "N",
+"epos": "N",
+"base": "lu₂-ni₂-su-ub",
+"morph": "~,bi.ak"}
+}
+]}
+]}
+]}
+]}

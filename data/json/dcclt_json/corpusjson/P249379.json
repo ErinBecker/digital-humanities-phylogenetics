@@ -1,0 +1,179 @@
+{
+"type": "cdl",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-05-19T18:25:09",
+"project": "dcclt",
+"textid": "P249379",
+"cdl": [
+{
+"node": "c",
+"type": "text",
+"id": "P249379.U0",
+"cdl": [
+{
+"node": "d",
+"subtype": "tablet",
+"type": "object",
+"ref": "P249379.x636.1",
+"type": "tablet",
+"label": "x636"}
+,
+{
+"node": "d",
+"subtype": "obverse",
+"type": "surface",
+"ref": "P249379.o.2",
+"type": "obverse",
+"label": "o"}
+,
+{
+"node": "c",
+"type": "discourse",
+"subtype": "body",
+"id": "P249379.U1",
+"cdl": [
+{
+"node": "c",
+"type": "sentence",
+"id": "P249379.U2",
+"label": "o 1 - o 3",
+"cdl": [
+{
+"node": "d",
+"type": "line-start",
+"ref": "P249379.3",
+"n": "1",
+"label": "o 1"}
+,
+{
+"node": "l",
+"frag": "bulug{⸢zabar⸣}",
+"id": "P249379.l1f177",
+"ref": "P249379.3.1",
+"inst": "bulug[needle]",
+"sig": "@dcclt%sux:bulug{zabar}=bulug[needle//needle]N'N$bulug/bulug{zabar}#~",
+"f": {"lang": "sux",
+"form": "bulug{zabar}",
+"cf": "bulug",
+"gw": "needle",
+"sense": "needle",
+"norm0": "bulug",
+"pos": "N",
+"epos": "N",
+"base": "bulug{zabar}",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P249379.4",
+"n": "2",
+"label": "o 2"}
+,
+{
+"node": "l",
+"frag": "bulug",
+"id": "P249379.l1f178",
+"ref": "P249379.4.1",
+"inst": "bulug[needle]",
+"sig": "@dcclt%sux:bulug=bulug[needle//needle]N'N$bulug/bulug#~",
+"f": {"lang": "sux",
+"form": "bulug",
+"cf": "bulug",
+"gw": "needle",
+"sense": "needle",
+"norm0": "bulug",
+"pos": "N",
+"epos": "N",
+"base": "bulug",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "har-ra-an-na{zabar}",
+"id": "P249379.l1f179",
+"ref": "P249379.4.2",
+"inst": "harran[tool]",
+"sig": "@dcclt%sux:har-ra-an-na{zabar}=harran[tool//carpenter's tool]N'N$harran/har-ra-an-na{zabar}#~",
+"f": {"lang": "sux",
+"form": "har-ra-an-na{zabar}",
+"cf": "harran",
+"gw": "tool",
+"sense": "carpenter's tool",
+"norm0": "harran",
+"pos": "N",
+"epos": "N",
+"base": "har-ra-an-na{zabar}",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P249379.5",
+"n": "3",
+"label": "o 3"}
+,
+{
+"node": "l",
+"frag": "bulug",
+"id": "P249379.l1f17a",
+"ref": "P249379.5.1",
+"inst": "bulug[needle]",
+"sig": "@dcclt%sux:bulug=bulug[needle//needle]N'N$bulug/bulug#~",
+"f": {"lang": "sux",
+"form": "bulug",
+"cf": "bulug",
+"gw": "needle",
+"sense": "needle",
+"norm0": "bulug",
+"pos": "N",
+"epos": "N",
+"base": "bulug",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "kaskal{zabar}",
+"id": "P249379.l1f17b",
+"ref": "P249379.5.2",
+"inst": "kaskal[road]",
+"sig": "@dcclt%sux:kaskal{zabar}=kaskal[way//way, road]N'N$kaskal/kaskal{zabar}#~",
+"f": {"lang": "sux",
+"form": "kaskal{zabar}",
+"cf": "kaskal",
+"gw": "way",
+"sense": "way, road",
+"norm0": "kaskal",
+"pos": "N",
+"epos": "N",
+"base": "kaskal{zabar}",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"subtype": "reverse",
+"type": "surface",
+"ref": "P249379.r.6",
+"type": "reverse",
+"label": "r"}
+,
+{
+"node": "d",
+"type": "nonx",
+"ref": "P249379.7",
+"strict": "0",
+"extent": "0",
+"scope": "obverse",
+"state": "other"}
+]}
+]}
+]}
+]}

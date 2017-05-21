@@ -1,0 +1,121 @@
+{
+"type": "cdl",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-05-19T18:25:14",
+"project": "dcclt",
+"textid": "P251888",
+"cdl": [
+{
+"node": "c",
+"type": "text",
+"id": "P251888.U0",
+"cdl": [
+{
+"node": "d",
+"type": "object",
+"ref": ""}
+,
+{
+"node": "d",
+"subtype": "obverse",
+"type": "surface",
+"ref": "P251888.o.1",
+"type": "obverse",
+"label": "o"}
+,
+{
+"node": "c",
+"type": "discourse",
+"subtype": "body",
+"id": "P251888.U1",
+"cdl": [
+{
+"node": "c",
+"type": "sentence",
+"id": "P251888.U2",
+"label": "o 1 - o 3",
+"cdl": [
+{
+"node": "d",
+"type": "line-start",
+"ref": "P251888.2",
+"n": "1",
+"label": "o 1"}
+,
+{
+"node": "l",
+"frag": "ur-mah{zabar}",
+"id": "P251888.l1f165",
+"ref": "P251888.2.1",
+"inst": "urmah[figurine of a lion]",
+"sig": "@dcclt%sux:ur-mah{zabar}=urmah[lion//figurine of a lion]N'N$urmah/ur-mah{zabar}#~",
+"f": {"lang": "sux",
+"form": "ur-mah{zabar}",
+"cf": "urmah",
+"gw": "lion",
+"sense": "figurine of a lion",
+"norm0": "urmah",
+"pos": "N",
+"epos": "N",
+"base": "ur-mah{zabar}",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P251888.3",
+"n": "2",
+"label": "o 2"}
+,
+{
+"node": "l",
+"frag": "{d}anzud{mušen}{zabar}",
+"id": "P251888.l1f166",
+"ref": "P251888.3.1",
+"inst": "anzud[figurine of lion-headed eagle]",
+"sig": "@dcclt%sux:{d}anzud{mušen}{zabar}=anzud[eagle//figurine of lion-headed eagle]N'N$anzud/{d}anzud{mušen}{zabar}#~",
+"f": {"lang": "sux",
+"form": "{d}anzud{mušen}{zabar}",
+"cf": "anzud",
+"gw": "eagle",
+"sense": "figurine of lion-headed eagle",
+"norm0": "anzud",
+"pos": "N",
+"epos": "N",
+"base": "{d}anzud{mušen}{zabar}",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P251888.4",
+"n": "3",
+"label": "o 3"}
+,
+{
+"node": "l",
+"frag": "durah{zabar}",
+"id": "P251888.l1f167",
+"ref": "P251888.4.1",
+"inst": "durah[figurine of a goat]",
+"sig": "@dcclt%sux:durah{zabar}=durah[goat//figurine of a goat]N'N$durah/durah{zabar}#~",
+"f": {"lang": "sux",
+"form": "durah{zabar}",
+"cf": "durah",
+"gw": "goat",
+"sense": "figurine of a goat",
+"norm0": "durah",
+"pos": "N",
+"epos": "N",
+"base": "durah{zabar}",
+"morph": "~"}
+}
+]}
+]}
+]}
+]}

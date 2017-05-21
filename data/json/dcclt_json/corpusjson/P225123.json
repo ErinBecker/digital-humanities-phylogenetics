@@ -1,0 +1,151 @@
+{
+"type": "cdl",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-05-19T18:24:20",
+"project": "dcclt",
+"textid": "P225123",
+"cdl": [
+{
+"node": "c",
+"type": "text",
+"id": "P225123.U0",
+"cdl": [
+{
+"node": "d",
+"subtype": "tablet",
+"type": "object",
+"ref": "P225123.x545.1",
+"type": "tablet",
+"label": "x545"}
+,
+{
+"node": "d",
+"subtype": "obverse",
+"type": "surface",
+"ref": "P225123.o.2",
+"type": "obverse",
+"label": "o"}
+,
+{
+"node": "d",
+"subtype": "column 1o",
+"type": "column",
+"ref": "P225123.o.i.3",
+"n": "1",
+"label": "o i"}
+,
+{
+"node": "c",
+"type": "discourse",
+"subtype": "body",
+"id": "P225123.U1",
+"cdl": [
+{
+"node": "c",
+"type": "sentence",
+"id": "P225123.U2",
+"label": "o i 1 - o i 3",
+"cdl": [
+{
+"node": "d",
+"type": "line-start",
+"ref": "P225123.4",
+"n": "1",
+"label": "o i 1"}
+,
+{
+"node": "l",
+"frag": "⸢ti-ŋu₁₀⸣",
+"id": "P225123.l191df",
+"ref": "P225123.4.1",
+"inst": "ti[rib]",
+"sig": "@dcclt%sux:ti-ŋu₁₀=ti[rib//rib]N'N$ti,ŋu/ti#~,ŋu",
+"f": {"lang": "sux",
+"form": "ti-ŋu₁₀",
+"cf": "ti",
+"gw": "rib",
+"sense": "rib",
+"norm0": "ti,ŋu",
+"pos": "N",
+"epos": "N",
+"base": "ti",
+"morph": "~,ŋu"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P225123.5",
+"n": "2",
+"label": "o i 2"}
+,
+{
+"node": "l",
+"frag": "⸢ti⸣-ti-⸢ŋu₁₀⸣",
+"id": "P225123.l191e0",
+"ref": "P225123.5.1",
+"inst": "ti[rib]",
+"sig": "@dcclt%sux:ti-ti-ŋu₁₀=ti[rib//rib]N'N$ti,ŋu/ti-ti#~,ŋu",
+"f": {"lang": "sux",
+"form": "ti-ti-ŋu₁₀",
+"cf": "ti",
+"gw": "rib",
+"sense": "rib",
+"norm0": "ti,ŋu",
+"pos": "N",
+"epos": "N",
+"base": "ti-ti",
+"morph": "~,ŋu"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P225123.6",
+"n": "3",
+"label": "o i 3"}
+,
+{
+"node": "l",
+"frag": "⸢gag⸣",
+"id": "P225123.l191e1",
+"ref": "P225123.6.1",
+"inst": "gag[peg]",
+"sig": "@dcclt%sux:gag=gag[nail//peg, nail]N'N$gag/gag#~",
+"f": {"lang": "sux",
+"form": "gag",
+"cf": "gag",
+"gw": "nail",
+"sense": "peg, nail",
+"norm0": "gag",
+"pos": "N",
+"epos": "N",
+"base": "gag",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "ti-ŋu₁₀",
+"id": "P225123.l191e2",
+"ref": "P225123.6.2",
+"inst": "ti[rib]",
+"sig": "@dcclt%sux:ti-ŋu₁₀=ti[rib//rib]N'N$ti,ŋu/ti#~,ŋu",
+"f": {"lang": "sux",
+"form": "ti-ŋu₁₀",
+"cf": "ti",
+"gw": "rib",
+"sense": "rib",
+"norm0": "ti,ŋu",
+"pos": "N",
+"epos": "N",
+"base": "ti",
+"morph": "~,ŋu"}
+}
+]}
+]}
+]}
+]}

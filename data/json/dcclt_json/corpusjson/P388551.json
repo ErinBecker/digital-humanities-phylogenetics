@@ -1,0 +1,133 @@
+{
+"type": "cdl",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-05-19T18:27:29",
+"project": "dcclt",
+"textid": "P388551",
+"cdl": [
+{
+"node": "c",
+"type": "text",
+"id": "P388551.U0",
+"cdl": [
+{
+"node": "d",
+"type": "object",
+"ref": ""}
+,
+{
+"node": "d",
+"subtype": "obverse",
+"type": "surface",
+"ref": "P388551.o.1",
+"type": "obverse",
+"label": "o"}
+,
+{
+"node": "c",
+"type": "discourse",
+"subtype": "body",
+"id": "P388551.U1",
+"cdl": [
+{
+"node": "c",
+"type": "sentence",
+"id": "P388551.U2",
+"label": "o 1 - o 2",
+"cdl": [
+{
+"node": "d",
+"type": "line-start",
+"ref": "P388551.2",
+"n": "1",
+"label": "o 1"}
+,
+{
+"node": "l",
+"frag": "še",
+"id": "P388551.l267b5",
+"ref": "P388551.2.1",
+"inst": "še[barley]",
+"sig": "@dcclt%sux:še=še[barley//barley]N'N$še/še#~",
+"f": {"lang": "sux",
+"form": "še",
+"cf": "še",
+"gw": "barley",
+"sense": "barley",
+"norm0": "še",
+"pos": "N",
+"epos": "N",
+"base": "še",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "mu₂-a",
+"id": "P388551.l267b6",
+"ref": "P388551.2.2",
+"inst": "mu[grow]",
+"sig": "@dcclt%sux:mu₂-a=mu[grow//grow]V/t'V/t$mu;a/mu₂#~;a",
+"f": {"lang": "sux",
+"form": "mu₂-a",
+"cf": "mu",
+"gw": "grow",
+"sense": "grow",
+"norm0": "mu;a",
+"pos": "V/t",
+"epos": "V/t",
+"base": "mu₂",
+"morph": "~;a"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P388551.3",
+"n": "2",
+"label": "o 2"}
+,
+{
+"node": "l",
+"frag": "še",
+"id": "P388551.l267b7",
+"ref": "P388551.3.1",
+"inst": "še[barley]",
+"sig": "@dcclt%sux:še=še[barley//barley]N'N$še/še#~",
+"f": {"lang": "sux",
+"form": "še",
+"cf": "še",
+"gw": "barley",
+"sense": "barley",
+"norm0": "še",
+"pos": "N",
+"epos": "N",
+"base": "še",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "mu₂-a",
+"id": "P388551.l267b8",
+"ref": "P388551.3.2",
+"inst": "mu[grow]",
+"sig": "@dcclt%sux:mu₂-a=mu[grow//grow]V/t'V/t$mu;a/mu₂#~;a",
+"f": {"lang": "sux",
+"form": "mu₂-a",
+"cf": "mu",
+"gw": "grow",
+"sense": "grow",
+"norm0": "mu;a",
+"pos": "V/t",
+"epos": "V/t",
+"base": "mu₂",
+"morph": "~;a"}
+}
+]}
+]}
+]}
+]}

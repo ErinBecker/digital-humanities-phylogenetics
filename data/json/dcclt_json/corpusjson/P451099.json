@@ -1,0 +1,529 @@
+{
+"type": "cdl",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-05-19T18:28:36",
+"project": "dcclt",
+"textid": "P451099",
+"cdl": [
+{
+"node": "c",
+"type": "text",
+"id": "P451099.U0",
+"cdl": [
+{
+"node": "d",
+"subtype": "tablet",
+"type": "object",
+"ref": "P451099.x2002.1",
+"type": "tablet",
+"label": "x2002"}
+,
+{
+"node": "d",
+"subtype": "obverse",
+"type": "surface",
+"ref": "P451099.o.2",
+"type": "obverse",
+"label": "o"}
+,
+{
+"node": "d",
+"type": "nonx",
+"ref": "P451099.3",
+"strict": "1",
+"extent": "beginning",
+"scope": "line",
+"state": "missing"}
+,
+{
+"node": "c",
+"type": "discourse",
+"subtype": "body",
+"id": "P451099.U1",
+"cdl": [
+{
+"node": "c",
+"type": "sentence",
+"id": "P451099.U2",
+"label": "o 1' - o 5'",
+"cdl": [
+{
+"node": "d",
+"type": "line-start",
+"ref": "P451099.4",
+"n": "1'",
+"label": "o 1'"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "wp"}
+,
+{
+"node": "l",
+"frag": "[niŋ₂]-⸢nam",
+"id": "P451099.l4eaac",
+"ref": "P451099.4.1",
+"inst": "niŋnam[anything]N",
+"sig": "@dcclt%sux:niŋ₂-nam=niŋnam[anything//anything]N'N$niŋnam/niŋ₂-nam#~",
+"f": {"lang": "sux",
+"form": "niŋ₂-nam",
+"cf": "niŋnam",
+"gw": "anything",
+"sense": "anything",
+"norm0": "niŋnam",
+"pos": "N",
+"epos": "N",
+"base": "niŋ₂-nam",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "niŋ₂-ŋal₂-la",
+"id": "P451099.l4eaad",
+"ref": "P451099.4.2",
+"inst": "niŋŋala[possessions]N",
+"sig": "@dcclt%sux:niŋ₂-ŋal₂-la=niŋŋala[possessions//possessions]N'N$niŋŋala,ak/niŋ₂-ŋal₂#~,ak",
+"f": {"lang": "sux",
+"form": "niŋ₂-ŋal₂-la",
+"cf": "niŋŋala",
+"gw": "possessions",
+"sense": "possessions",
+"norm0": "niŋŋala,ak",
+"pos": "N",
+"epos": "N",
+"base": "niŋ₂-ŋal₂",
+"morph": "~,ak"}
+}
+,
+{
+"node": "l",
+"frag": "x-x⸣",
+"id": "P451099.l4eaae",
+"ref": "P451099.4.3",
+"inst": "u",
+"f": {"lang": "sux",
+"form": "x-x",
+"pos": "u"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "wp"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "eq"}
+,
+{
+"node": "d",
+"frag": ":",
+"type": "nonw",
+"ref": "P451099.4.4",
+"lang": "akk",
+"type": "punct",
+"gdl_delim": " "}
+,
+{
+"node": "l",
+"frag": "iz-⸢zu⸣-[zu]",
+"id": "P451099.l4eaaf",
+"ref": "P451099.4.5",
+"inst": "+zâzu[divide]V$izzūzū",
+"sig": "@dcclt%akk:iz-zu-zu=zâzu[divide//divide]V'V$izzūzū",
+"f": {"lang": "akk",
+"form": "iz-zu-zu",
+"cf": "zâzu",
+"gw": "divide",
+"sense": "divide",
+"norm": "izzūzū",
+"pos": "V",
+"epos": "V"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "eq"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P451099.5",
+"n": "2'",
+"label": "o 2'"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "wp"}
+,
+{
+"node": "l",
+"frag": "⸢i₃⸣-ba",
+"id": "P451099.l4eab0",
+"ref": "P451099.5.1",
+"inst": "ba[allot]V/t/ba#V:~",
+"sig": "@dcclt%sux:i₃-ba=ba[allot//allot]V/t'V/t$V:ba/ba#V:~",
+"f": {"lang": "sux",
+"form": "i₃-ba",
+"cf": "ba",
+"gw": "allot",
+"sense": "allot",
+"norm0": "V:ba",
+"pos": "V/t",
+"epos": "V/t",
+"base": "ba",
+"morph": "V:~"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "wp"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "eq"}
+,
+{
+"node": "l",
+"frag": "iz-zu-[uz]",
+"id": "P451099.l4eab1",
+"ref": "P451099.5.2",
+"inst": "+zâzu[divide]V$izzūz",
+"sig": "@dcclt%akk:iz-zu-uz=zâzu[divide//divide]V'V$izzūz",
+"f": {"lang": "akk",
+"form": "iz-zu-uz",
+"cf": "zâzu",
+"gw": "divide",
+"sense": "divide",
+"norm": "izzūz",
+"pos": "V",
+"epos": "V"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "eq"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P451099.6",
+"n": "3'",
+"label": "o 3'"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "wp"}
+,
+{
+"node": "l",
+"frag": "⸢i₃⸣-ba-e",
+"id": "P451099.l4eab2",
+"ref": "P451099.6.1",
+"inst": "ba[to allot]V/t",
+"sig": "@dcclt%sux:i₃-ba-e=ba[allot//to allot]V/t'V/t$V:ba;e/ba#V:~;e",
+"f": {"lang": "sux",
+"form": "i₃-ba-e",
+"cf": "ba",
+"gw": "allot",
+"sense": "to allot",
+"norm0": "V:ba;e",
+"pos": "V/t",
+"epos": "V/t",
+"base": "ba",
+"morph": "V:~;e"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "wp"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "eq"}
+,
+{
+"node": "l",
+"frag": "iz-za-[az]",
+"id": "P451099.l4eab3",
+"ref": "P451099.6.2",
+"inst": "+zâzu[divide]V$izzâz",
+"sig": "@dcclt%akk:iz-za-az=zâzu[divide//divide]V'V$izzâz",
+"f": {"lang": "akk",
+"form": "iz-za-az",
+"cf": "zâzu",
+"gw": "divide",
+"sense": "divide",
+"norm": "izzâz",
+"pos": "V",
+"epos": "V"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "eq"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P451099.7",
+"n": "4'",
+"label": "o 4'"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "wp"}
+,
+{
+"node": "l",
+"frag": "[i₃]-ba-e-meš",
+"id": "P451099.l4eab4",
+"ref": "P451099.7.1",
+"inst": "ba[to allot]V/t",
+"sig": "@dcclt%sux:i₃-ba-e-meš=ba[allot//to allot]V/t'V/t$V:ba;e.*a,meš/ba#V:~;e.*a,meš",
+"f": {"lang": "sux",
+"form": "i₃-ba-e-meš",
+"cf": "ba",
+"gw": "allot",
+"sense": "to allot",
+"norm0": "V:ba;e.*a,meš",
+"pos": "V/t",
+"epos": "V/t",
+"base": "ba",
+"morph": "V:~;e.*a,meš"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "wp"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "eq"}
+,
+{
+"node": "l",
+"frag": "iz-⸢zu⸣-[zu]",
+"id": "P451099.l4eab5",
+"ref": "P451099.7.2",
+"inst": "+zâzu[divide]V$izzuzzū",
+"sig": "@dcclt%akk:iz-zu-zu=zâzu[divide//divide]V'V$izzuzzū",
+"f": {"lang": "akk",
+"form": "iz-zu-zu",
+"cf": "zâzu",
+"gw": "divide",
+"sense": "divide",
+"norm": "izzuzzū",
+"pos": "V",
+"epos": "V"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "eq"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P451099.8",
+"n": "5'",
+"label": "o 5'"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "wp"}
+,
+{
+"node": "l",
+"frag": "[kug]-⸢ta⸣",
+"id": "P451099.l4eab6",
+"ref": "P451099.8.1",
+"inst": "kug[metal, silver]N",
+"sig": "@dcclt%sux:kug-ta=kug[metal//metal, silver]N'N$kug,ta/kug#~,ta",
+"f": {"lang": "sux",
+"form": "kug-ta",
+"cf": "kug",
+"gw": "metal",
+"sense": "metal, silver",
+"norm0": "kug,ta",
+"pos": "N",
+"epos": "N",
+"base": "kug",
+"morph": "~,ta"}
+}
+,
+{
+"node": "l",
+"frag": "gub-ba",
+"id": "P451099.l4eab7",
+"ref": "P451099.8.2",
+"inst": "gub[stand]V/i",
+"exosig": "@dcclt%sux:gub-ba=gub[stand//to stand]V/i'V/i$gub;a/gub+-ba=b.a#~;a",
+"f": {"lang": "sux",
+"form": "gub-ba",
+"cf": "gub",
+"gw": "stand",
+"sense": "to stand",
+"norm0": "gub;a",
+"pos": "V/i",
+"epos": "V/i",
+"base": "gub",
+"cont": "-ba=b.a",
+"morph": "~;a"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "wp"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "cell-start"}
+,
+{
+"node": "d",
+"type": "field-start",
+"subtype": "eq"}
+,
+{
+"node": "l",
+"frag": "⸢x⸣-[...]",
+"id": "P451099.l4eab8",
+"ref": "P451099.8.3",
+"inst": "u",
+"f": {"lang": "akk",
+"form": "x-x",
+"pos": "u"}
+}
+,
+{
+"node": "d",
+"type": "field-end",
+"subtype": "eq"}
+,
+{
+"node": "d",
+"type": "cell-end"}
+,
+{
+"node": "d",
+"type": "nonx",
+"ref": "P451099.9",
+"strict": "1",
+"extent": "rest",
+"scope": "line",
+"state": "missing"}
+,
+{
+"node": "d",
+"subtype": "reverse",
+"type": "surface",
+"ref": "P451099.r.10",
+"type": "reverse",
+"label": "r"}
+,
+{
+"node": "d",
+"type": "nonx",
+"ref": "P451099.11",
+"strict": "1",
+"extent": "n",
+"scope": "line",
+"state": "missing"}
+]}
+]}
+]}
+]}

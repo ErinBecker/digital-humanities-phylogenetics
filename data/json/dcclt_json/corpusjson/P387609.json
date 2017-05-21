@@ -1,0 +1,309 @@
+{
+"type": "cdl",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-05-19T18:27:27",
+"project": "dcclt",
+"textid": "P387609",
+"cdl": [
+{
+"node": "c",
+"type": "text",
+"id": "P387609.U0",
+"cdl": [
+{
+"node": "d",
+"type": "object",
+"ref": ""}
+,
+{
+"node": "d",
+"subtype": "obverse",
+"type": "surface",
+"ref": "P387609.o.1",
+"type": "obverse",
+"label": "o"}
+,
+{
+"node": "c",
+"type": "discourse",
+"subtype": "body",
+"id": "P387609.U1",
+"cdl": [
+{
+"node": "c",
+"type": "sentence",
+"id": "P387609.U2",
+"label": "o 1 - r 3",
+"cdl": [
+{
+"node": "d",
+"type": "line-start",
+"ref": "P387609.2",
+"n": "1",
+"label": "o 1"}
+,
+{
+"node": "d",
+"frag": "*",
+"type": "nonw",
+"ref": "P387609.2.1",
+"lang": "sux",
+"type": "punct",
+"gdl_delim": " "}
+,
+{
+"node": "l",
+"frag": "lu₂",
+"id": "P387609.l1f17c",
+"ref": "P387609.2.2",
+"inst": "%sux:lu₂=",
+"f": {"lang": "sux",
+"form": "lu₂"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P387609.3",
+"n": "2",
+"label": "o 2"}
+,
+{
+"node": "d",
+"frag": "*",
+"type": "nonw",
+"ref": "P387609.3.1",
+"lang": "sux",
+"type": "punct",
+"gdl_delim": " "}
+,
+{
+"node": "l",
+"frag": "lugal",
+"id": "P387609.l1f17d",
+"ref": "P387609.3.2",
+"inst": "%sux:lugal=",
+"f": {"lang": "sux",
+"form": "lugal"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P387609.4",
+"n": "3",
+"label": "o 3"}
+,
+{
+"node": "d",
+"frag": "*",
+"type": "nonw",
+"ref": "P387609.4.1",
+"lang": "sux",
+"type": "punct",
+"gdl_delim": " "}
+,
+{
+"node": "l",
+"frag": "šul",
+"id": "P387609.l1f17e",
+"ref": "P387609.4.2",
+"inst": "%sux:šul=",
+"f": {"lang": "sux",
+"form": "šul"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P387609.5",
+"n": "4",
+"label": "o 4"}
+,
+{
+"node": "d",
+"frag": "*",
+"type": "nonw",
+"ref": "P387609.5.1",
+"lang": "sux",
+"type": "punct",
+"gdl_delim": " "}
+,
+{
+"node": "l",
+"frag": "suhur",
+"id": "P387609.l1f17f",
+"ref": "P387609.5.2",
+"inst": "%sux:suhur=",
+"f": {"lang": "sux",
+"form": "suhur"}
+}
+,
+{
+"node": "d",
+"subtype": "reverse",
+"type": "surface",
+"ref": "P387609.r.6",
+"type": "reverse",
+"label": "r"}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P387609.7",
+"n": "1",
+"label": "r 1"}
+,
+{
+"node": "l",
+"frag": "kam-kam-ma",
+"id": "P387609.l1f180",
+"ref": "P387609.7.1",
+"inst": "kamkammatum[earring]",
+"sig": "@dcclt%sux:kam-kam-ma=kamkammatum[earring//earring]N'N$kamkammatum/kam-kam-ma#~",
+"f": {"lang": "sux",
+"form": "kam-kam-ma",
+"cf": "kamkammatum",
+"gw": "earring",
+"sense": "earring",
+"norm0": "kamkammatum",
+"pos": "N",
+"epos": "N",
+"base": "kam-kam-ma",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "kug-sig₁₇",
+"id": "P387609.l1f181",
+"ref": "P387609.7.2",
+"inst": "kugsig[gold]",
+"sig": "@dcclt%sux:kug-sig₁₇=kugsig[gold//gold]N'N$kugsig/kug-sig₁₇#~",
+"f": {"lang": "sux",
+"form": "kug-sig₁₇",
+"cf": "kugsig",
+"gw": "gold",
+"sense": "gold",
+"norm0": "kugsig",
+"pos": "N",
+"epos": "N",
+"base": "kug-sig₁₇",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P387609.8",
+"n": "2",
+"label": "r 2"}
+,
+{
+"node": "l",
+"frag": "har",
+"id": "P387609.l1f182",
+"ref": "P387609.8.1",
+"inst": "har[ring]",
+"sig": "@dcclt%sux:har=har[ring//ring]N'N$har/har#~",
+"f": {"lang": "sux",
+"form": "har",
+"cf": "har",
+"gw": "ring",
+"sense": "ring",
+"norm0": "har",
+"pos": "N",
+"epos": "N",
+"base": "har",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "kug-sig₁₇",
+"id": "P387609.l1f183",
+"ref": "P387609.8.2",
+"inst": "kugsig[gold]",
+"sig": "@dcclt%sux:kug-sig₁₇=kugsig[gold//gold]N'N$kugsig/kug-sig₁₇#~",
+"f": {"lang": "sux",
+"form": "kug-sig₁₇",
+"cf": "kugsig",
+"gw": "gold",
+"sense": "gold",
+"norm0": "kugsig",
+"pos": "N",
+"epos": "N",
+"base": "kug-sig₁₇",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P387609.9",
+"n": "3",
+"label": "r 3"}
+,
+{
+"node": "l",
+"frag": "har",
+"id": "P387609.l1f184",
+"ref": "P387609.9.1",
+"inst": "har[ring]",
+"sig": "@dcclt%sux:har=har[ring//ring]N'N$har/har#~",
+"f": {"lang": "sux",
+"form": "har",
+"cf": "har",
+"gw": "ring",
+"sense": "ring",
+"norm0": "har",
+"pos": "N",
+"epos": "N",
+"base": "har",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "ŋiri₃",
+"id": "P387609.l1f185",
+"ref": "P387609.9.2",
+"inst": "ŋiri[foot]",
+"sig": "@dcclt%sux:ŋiri₃=ŋiri[foot//foot]N'N$ŋiri/ŋiri₃#~",
+"f": {"lang": "sux",
+"form": "ŋiri₃",
+"cf": "ŋiri",
+"gw": "foot",
+"sense": "foot",
+"norm0": "ŋiri",
+"pos": "N",
+"epos": "N",
+"base": "ŋiri₃",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "⸢kug⸣-sig₁₇",
+"id": "P387609.l1f186",
+"ref": "P387609.9.3",
+"inst": "kugsig[gold]",
+"sig": "@dcclt%sux:kug-sig₁₇=kugsig[gold//gold]N'N$kugsig/kug-sig₁₇#~",
+"f": {"lang": "sux",
+"form": "kug-sig₁₇",
+"cf": "kugsig",
+"gw": "gold",
+"sense": "gold",
+"norm0": "kugsig",
+"pos": "N",
+"epos": "N",
+"base": "kug-sig₁₇",
+"morph": "~"}
+}
+]}
+]}
+]}
+]}

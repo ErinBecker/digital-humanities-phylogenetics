@@ -1,0 +1,189 @@
+{
+"type": "cdl",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-05-19T18:24:17",
+"project": "dcclt",
+"textid": "P225025",
+"cdl": [
+{
+"node": "c",
+"type": "text",
+"id": "P225025.U0",
+"cdl": [
+{
+"node": "d",
+"subtype": "tablet",
+"type": "object",
+"ref": "P225025.x537.1",
+"type": "tablet",
+"label": "x537"}
+,
+{
+"node": "d",
+"subtype": "obverse",
+"type": "surface",
+"ref": "P225025.o.2",
+"type": "obverse",
+"label": "o"}
+,
+{
+"node": "d",
+"subtype": "column 1o",
+"type": "column",
+"ref": "P225025.o.i.3",
+"n": "1",
+"label": "o i"}
+,
+{
+"node": "c",
+"type": "discourse",
+"subtype": "body",
+"id": "P225025.U1",
+"cdl": [
+{
+"node": "c",
+"type": "sentence",
+"id": "P225025.U2",
+"label": "o i 1 - o i 3",
+"cdl": [
+{
+"node": "d",
+"type": "line-start",
+"ref": "P225025.4",
+"n": "1",
+"label": "o i 1"}
+,
+{
+"node": "l",
+"frag": "šu-si",
+"id": "P225025.l191be",
+"ref": "P225025.4.1",
+"inst": "šusi[finger]",
+"sig": "@dcclt%sux:šu-si=šusi[finger//finger]N'N$šusi/šu-si#~",
+"f": {"lang": "sux",
+"form": "šu-si",
+"cf": "šusi",
+"gw": "finger",
+"sense": "finger",
+"norm0": "šusi",
+"pos": "N",
+"epos": "N",
+"base": "šu-si",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "⸢tur⸣-ŋu₁₀",
+"id": "P225025.l191bf",
+"ref": "P225025.4.2",
+"inst": "tur[small]",
+"sig": "@dcclt%sux:tur-ŋu₁₀=tur[small//small]V/i'V/i$tur;*a,ŋu/tur#~;*a,ŋu",
+"f": {"lang": "sux",
+"form": "tur-ŋu₁₀",
+"cf": "tur",
+"gw": "small",
+"sense": "small",
+"norm0": "tur;*a,ŋu",
+"pos": "V/i",
+"epos": "V/i",
+"base": "tur",
+"morph": "~;*a,ŋu"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P225025.5",
+"n": "2",
+"label": "o i 2"}
+,
+{
+"node": "l",
+"frag": "⸢šu⸣-si",
+"id": "P225025.l191c0",
+"ref": "P225025.5.1",
+"inst": "šusi[finger]",
+"sig": "@dcclt%sux:šu-si=šusi[finger//finger]N'N$šusi/šu-si#~",
+"f": {"lang": "sux",
+"form": "šu-si",
+"cf": "šusi",
+"gw": "finger",
+"sense": "finger",
+"norm0": "šusi",
+"pos": "N",
+"epos": "N",
+"base": "šu-si",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "šud₃-de₃-ŋu₁₀",
+"id": "P225025.l191c1",
+"ref": "P225025.5.2",
+"inst": "šud[prayer]",
+"sig": "@dcclt%sux:šud₃-de₃-ŋu₁₀=šud[prayer//prayer, dedication]N'N$šud;e.*a,ŋu/šud₃#~;e.*a,ŋu",
+"f": {"lang": "sux",
+"form": "šud₃-de₃-ŋu₁₀",
+"cf": "šud",
+"gw": "prayer",
+"sense": "prayer, dedication",
+"norm0": "šud;e.*a,ŋu",
+"pos": "N",
+"epos": "N",
+"base": "šud₃",
+"morph": "~;e.*a,ŋu"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P225025.6",
+"n": "3",
+"label": "o i 3"}
+,
+{
+"node": "l",
+"frag": "šu-si",
+"id": "P225025.l191c2",
+"ref": "P225025.6.1",
+"inst": "šusi[finger]",
+"sig": "@dcclt%sux:šu-si=šusi[finger//finger]N'N$šusi/šu-si#~",
+"f": {"lang": "sux",
+"form": "šu-si",
+"cf": "šusi",
+"gw": "finger",
+"sense": "finger",
+"norm0": "šusi",
+"pos": "N",
+"epos": "N",
+"base": "šu-si",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "murub₄-⸢ŋu₁₀⸣",
+"id": "P225025.l191c3",
+"ref": "P225025.6.2",
+"inst": "murub[middle]",
+"sig": "@dcclt%sux:murub₄-ŋu₁₀=murub[middle//middle]N'N$murub,ŋu/murub₄#~,ŋu",
+"f": {"lang": "sux",
+"form": "murub₄-ŋu₁₀",
+"cf": "murub",
+"gw": "middle",
+"sense": "middle",
+"norm0": "murub,ŋu",
+"pos": "N",
+"epos": "N",
+"base": "murub₄",
+"morph": "~,ŋu"}
+}
+]}
+]}
+]}
+]}

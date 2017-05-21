@@ -175,7 +175,7 @@
 173,P235262.97,d ii 2',umbin[wheel]N gigir[chariot]N,{ŋeš}umbin gigir,,,P235262,97
 174,P235262.98,d ii 3',kag[mouth]N umbin[wheel]N gigir[chariot]N,{ŋeš}ka umbin gigir,,,P235262,98
 175,P235262.99,d ii 4',maš[~wheel]N umbin[wheel]N gigir[chariot]N,{ŋeš}maš₂ umbin gigir,,,P235262,99
-176,P235262.100,d ii 5',HI.MAŠ[~chariot]N gigir[chariot]N,{ŋeš}HI-MAŠ gigir,,,P235262,100
+176,P235262.100,d ii 5',dub[knee]N bar[outside]V/t gigir[chariot]N,{ŋeš}dub₃ bar gigir,,,P235262,100
 177,P235262.101,d ii 6',saŋkul[bolt]N gigir[chariot]N,{ŋeš}saŋ-kul gigir,,,P235262,101
 178,P235262.102,d ii 7',gagsila[harness]N,{ŋeš}gag-sila₃,,,P235262,102
 179,P235262.103,d ii 8',zara[pivot]N gagsila[harness]N,{ŋeš}za-ra gag-sal₄,,,P235262,103
@@ -187,7 +187,7 @@
 185,P235262.109,d ii 14',DUB.du₃[~vehicle]N ŋar[place]V/t,{ŋeš}šid-du₁₀ ŋar,,,P235262,109
 186,P235262.110,d ii 15',margida[cart]N,{ŋeš}mar-gid₂-da,,,P235262,110
 187,P235262.111,d ii 16',margida[cart]N Subir[1]GN,{ŋeš}mar-gid₂-da su-bir₄{ki},,,P235262,111
-188,P235262.112,d ii 17',HI.MAŠ[~chariot]N margida[cart]N,{ŋeš}HI-MAŠ mar-gid₂-da,,,P235262,112
+188,P235262.112,d ii 17',dub[knee]N bar[outside]V/t margida[cart]N,{ŋeš}dub₃ bar mar-gid₂-da,,,P235262,112
 189,P235262.113,d ii 18',ŋešdal[crossbar]N margida[cart]N,ŋeš-dal mar-gid₂-da,,,P235262,113
 190,P235262.114,d ii 19',endur[navel?]N margida[cart]N,{ŋeš}en₃-dur mar-gid₂-da,,,P235262,114
 191,P235262.115,d ii 20',{ŋeš}x[NA]NA x[NA]NA,{ŋeš}x x,,,P235262,115
@@ -942,7 +942,7 @@
 940,P250364.13,o i 10,guza[chair]N gigir[chariot]N,{ŋeš}gu-za gigir,,,P250364,13
 941,P250364.14,o i 11,mud[tube]N gigir[chariot]N,{ŋeš}mud gigir,,,P250364,14
 942,P250364.15,o i 12,gag[nail]N mud[tube]N gigir[chariot]N,{ŋeš}gag mud gigir,,,P250364,15
-943,P250364.16,o i 13,izzi[wall]N GAM[NA]NA gigir[chariot]N,{ŋeš}i-zi GAM gigir,,,P250364,16
+943,P250364.16,o i 13,izzi[wall]N $GAM[NA]NA gigir[chariot]N,{ŋeš}i-zi $GAM gigir,,,P250364,16
 944,P250364.17,o i 14,umbin[wheel]N gigir[chariot]N,{ŋeš}umbin gigir,,,P250364,17
 945,P250364.18,o i 15,gag[nail]N x[NA]NA gigir[chariot]N,{ŋeš}gag x gigir,,,P250364,18
 946,P250364.19,o i 16,zara[pivot]N gigir[chariot]N,{ŋeš}za-ra gigir,,,P250364,19
@@ -1006,7 +1006,7 @@
 1004,P250364.81,o v 2,{ŋeš}niŋ₂-x-x[NA]NA,{ŋeš}niŋ₂-x-x,,,P250364,81
 1005,P250364.82,o v 3,sa[net]N,{ŋeš}sa,,,P250364,82
 1006,P250364.83,o v 4,sadu[net]N,{ŋeš}sa-du₃,,,P250364,83
-1007,P250364.84,o v 5,sa[net]N NI[NA]NA,{ŋeš}sa NI,,,P250364,84
+1007,P250364.84,o v 5,sa[net]N NI[~net]N,{ŋeš}sa NI,,,P250364,84
 1008,P250364.85,o v 6,sa[net]N gi[thicket]N,{ŋeš}sa {ŋeš}gi,,,P250364,85
 1009,P250364.86,o v 7,sašušgal[net]N,{ŋeš}sa-šu₂-uš-gal,,,P250364,86
 1010,P250364.87,o v 8,sahir[net]N AN-gin₇[NA]NA,{ŋeš}sa-har AN-gin₇,,,P250364,87
@@ -1148,7 +1148,7 @@
 1146,P251686.19,r 1,1(ban₂)[NA]NA 4(diš)[NA]NA sila[unit]N 14[NA]NA,1(ban₂) 4(diš) sila₃ 14,,,P251686,19
 1147,P251686.20,r 2,1(ban₂)[NA]NA 5(diš)[NA]NA sila[unit]N 15[NA]NA,1(ban₂) 5(diš) sila₃ 15,,,P251686,20
 1148,P251686.21,,,,2,line,P251686,21
-1149,P251778.2,o 1,{ŋeš}BAD[NA]NA,{ŋeš}BAD,,,P251778,2
+1149,P251778.2,o 1,bad[leg]N,{ŋeš}bad,,,P251778,2
 1150,P251778.3,o 2,{ŋeš}EŠ₂[NA]NA,{ŋeš}EŠ₂,,,P251778,3
 1151,P251778.4,o 3,al[hoe]N,{ŋeš}al,,,P251778,4
 1152,P251867.2,o 1,Madurahabzu[1]ON,{ŋeš}ma₂-durah-abzu,,,P251867,2
@@ -1161,27 +1161,27 @@
 1159,P253228.8,o i 5,al[hoe]N zu[tooth]N min[two]NU,{ŋeš}al zu₂ min,,,P253228,8
 1160,P253228.9,o i 6,al[hoe]N zu[tooth]N eš[three]NU,{ŋeš}al zu₂ eš₅,,,P253228,9
 1161,P253228.10,o i 7,al[hoe]N zu[tooth]N diš[one]NU,{ŋeš}al zu₂ diš,,,P253228,10
-1162,P253228.12,o i 8,{ŋeš}saŋ-gul[NA]NA gigir[NA]NA,{ŋeš}saŋ-gul gigir,,,P253228,12
-1163,P253228.13,o i 9,{ŋeš}al[NA]NA,{ŋeš}al,,,P253228,13
-1164,P253228.14,o i 10,{ŋeš}zu₂[NA]NA al[NA]NA,{ŋeš}zu₂ al,,,P253228,14
-1165,P253228.15,o i 11,{ŋeš}saŋ[NA]NA al[NA]NA,{ŋeš}saŋ al,,,P253228,15
-1166,P253228.16,o i 12,{ŋeš}al[NA]NA zu₂[NA]NA min[NA]NA,{ŋeš}al zu₂ min,,,P253228,16
-1167,P253228.17,o i 13,{ŋeš}al[NA]NA zu₂[NA]NA eš₅[NA]NA,{ŋeš}al zu₂ eš₅,,,P253228,17
-1168,P253228.18,o i 14,{ŋeš}al[NA]NA zu₂[NA]NA diš[NA]NA,{ŋeš}al zu₂ diš,,,P253228,18
-1169,P253228.20,o ii 1,{ŋeš}saŋ-gul[NA]NA gigir₂[NA]NA,{ŋeš}saŋ-gul gigir₂,,,P253228,20
-1170,P253228.21,o ii 2,{ŋeš}al[NA]NA,{ŋeš}al,,,P253228,21
-1171,P253228.22,o ii 3,{ŋeš}zu₂[NA]NA al[NA]NA,{ŋeš}zu₂ al,,,P253228,22
-1172,P253228.23,o ii 4,{ŋeš}saŋ[NA]NA al[NA]NA,{ŋeš}saŋ al,,,P253228,23
-1173,P253228.24,o ii 5,{ŋeš}al[NA]NA zu₂[NA]NA min[NA]NA,{ŋeš}al zu₂ min,,,P253228,24
-1174,P253228.25,o ii 6,{ŋeš}al[NA]NA zu₂[NA]NA eš₅[NA]NA,{ŋeš}al zu₂ eš₅,,,P253228,25
-1175,P253228.26,o ii 7,{ŋeš}al[NA]NA zu₂[NA]NA diš[NA]NA,{ŋeš}al zu₂ diš,,,P253228,26
-1176,P253228.27,o ii 8,{ŋeš}saŋ-gul[NA]NA gigir[NA]NA,{ŋeš}saŋ-gul gigir,,,P253228,27
-1177,P253228.28,o ii 9,{ŋeš}al[NA]NA,{ŋeš}al,,,P253228,28
-1178,P253228.29,o ii 10,{ŋeš}zu₂[NA]NA al[NA]NA,{ŋeš}zu₂ al,,,P253228,29
-1179,P253228.30,o ii 11,{ŋeš}saŋ[NA]NA al[NA]NA,{ŋeš}saŋ al,,,P253228,30
-1180,P253228.31,o ii 12,{ŋeš}al[NA]NA zu₂[NA]NA min[NA]NA,{ŋeš}al zu₂ min,,,P253228,31
-1181,P253228.32,o ii 13,{ŋeš}al[NA]NA zu₂[NA]NA eš₅[NA]NA,{ŋeš}al zu₂ eš₅,,,P253228,32
-1182,P253228.33,o ii 14,{ŋeš}al[NA]NA zu₂[NA]NA diš[NA]NA,{ŋeš}al zu₂ diš,,,P253228,33
+1162,P253228.12,o i 8,saŋkul[bolt]N gigir[chariot]N,{ŋeš}sag-gul gigir,,,P253228,12
+1163,P253228.13,o i 9,al[hoe]N,{ŋeš}al,,,P253228,13
+1164,P253228.14,o i 10,zu[tooth]N al[hoe]N,{ŋeš}zu₂ al,,,P253228,14
+1165,P253228.15,o i 11,saŋ[head]N al[hoe]N,{ŋeš}saŋ al,,,P253228,15
+1166,P253228.16,o i 12,al[hoe]N zu[tooth]N min[two]NU,{ŋeš}al zu₂ min,,,P253228,16
+1167,P253228.17,o i 13,al[hoe]N zu[tooth]N eš[three]NU,{ŋeš}al zu₂ eš₅,,,P253228,17
+1168,P253228.18,o i 14,al[hoe]N zu[tooth]N diš[one]NU,{ŋeš}al zu₂ diš,,,P253228,18
+1169,P253228.20,o ii 1,saŋkul[bolt]N gigir[chariot]N,{ŋeš}sag-gul gigir₂,,,P253228,20
+1170,P253228.21,o ii 2,al[hoe]N,{ŋeš}al,,,P253228,21
+1171,P253228.22,o ii 3,zu[tooth]N al[hoe]N,{ŋeš}zu₂ al,,,P253228,22
+1172,P253228.23,o ii 4,saŋ[head]N al[hoe]N,{ŋeš}saŋ al,,,P253228,23
+1173,P253228.24,o ii 5,al[hoe]N zu[tooth]N min[two]NU,{ŋeš}al zu₂ min,,,P253228,24
+1174,P253228.25,o ii 6,al[hoe]N zu[tooth]N eš[three]NU,{ŋeš}al zu₂ eš₅,,,P253228,25
+1175,P253228.26,o ii 7,al[hoe]N zu[tooth]N diš[one]NU,{ŋeš}al zu₂ diš,,,P253228,26
+1176,P253228.27,o ii 8,saŋkul[bolt]N gigir[chariot]N,{ŋeš}sag-gul gigir,,,P253228,27
+1177,P253228.28,o ii 9,al[hoe]N,{ŋeš}al,,,P253228,28
+1178,P253228.29,o ii 10,zu[tooth]N al[hoe]N,{ŋeš}zu₂ al,,,P253228,29
+1179,P253228.30,o ii 11,saŋ[head]N al[hoe]N,{ŋeš}saŋ al,,,P253228,30
+1180,P253228.31,o ii 12,al[hoe]N zu[tooth]N min[two]NU,{ŋeš}al zu₂ min,,,P253228,31
+1181,P253228.32,o ii 13,al[hoe]N zu[tooth]N eš[three]NU,{ŋeš}al zu₂ eš₅,,,P253228,32
+1182,P253228.33,o ii 14,al[hoe]N zu[tooth]N diš[one]NU,{ŋeš}al zu₂ diš,,,P253228,33
 1183,P253228.37,r i 1,x[NA]NA,x,,,P253228,37
 1184,P253228.38,r i 2,{ŋeš}x[NA]NA,{ŋeš}x,,,P253228,38
 1185,P253228.39,r i 3,{ŋeš}mi-x[NA]NA,{ŋeš}mi-x,,,P253228,39
@@ -1191,7 +1191,7 @@
 1189,P253228.43,r i 7,šenu[tree]N,{ŋeš}še-nu,,,P253228,43
 1190,P253228.44,r i 8,šedug[tree]N,{ŋeš}še-dug₃,,,P253228,44
 1191,P253228.45,r i 9,dada[tree]N,{ŋeš}da-da,,,P253228,45
-1192,P253228.46,r i 10,{ŋeš}KU-KU[NA]NA,{ŋeš}KU-KU,,,P253228,46
+1192,P253228.46,r i 10,tugtug[~loom]N,{ŋeš}KU-KU,,,P253228,46
 1193,P253228.47,r i 11,{ŋeš}TUK-TUK[NA]NA,{ŋeš}TUK-TUK,,,P253228,47
 1194,P253228.48,r i 12,anta[tree]N,{ŋeš}an-da,,,P253228,48
 1195,P253228.49,r i 13,{ŋeš}PA-da[NA]NA,{ŋeš}PA-da,,,P253228,49
@@ -1200,10 +1200,10 @@
 1198,P253228.52,r i 16,ildag[poplar]N bur[spread]V/t,{ŋeš}ildag₂ bur-ra,,,P253228,52
 1199,P253228.53,r i 17,ildag[poplar]N šitan[water-channel]N,{ŋeš}ildag₂ šita₃,,,P253228,53
 1200,P253228.54,r i 18,{ŋeš}gi-gid₂[NA]NA,{ŋeš}gi-gid₂,,,P253228,54
-1201,P253228.55,r i 19,mes[tree]N gi-gid₂[NA]NA,{ŋeš}mes gi-gid₂,,,P253228,55
+1201,P253228.55,r i 19,mes[tree]N gigid[reed]N,{ŋeš}mes gi-gid₂,,,P253228,55
 1202,P253228.56,r i 20,{ŋeš}x[NA]NA x-gid₂[NA]NA,{ŋeš}x x-gid₂,,,P253228,56
 1203,P253228.57,r i 21,maš[plant]N,{ŋeš}maš,,,P253228,57
-1204,P253228.58,r i 22,{ŋeš}x[NA]NA maš[NA]NA,{ŋeš}x maš,,,P253228,58
+1204,P253228.58,r i 22,{ŋeš}x[NA]NA maš[twin]N,{ŋeš}x maš,,,P253228,58
 1205,P253228.59,r i 23,x[NA]NA x-x[NA]NA,x x-x,,,P253228,59
 1206,P253228.62,r ii 1',mes[tree]N x-x[NA]NA,{ŋeš}mes x-x,,,P253228,62
 1207,P253228.63,r ii 2',{ŋeš}x[NA]NA,{ŋeš}x,,,P253228,63
@@ -1252,33 +1252,33 @@
 1250,P253230.7,o i 3,apin[plow]N šudu[equipped]AJ,{ŋeš}apin šu-nu-du₇,,,P253230,7
 1251,P253230.8,o i 4,apin[plow]N tugsaga[plow]N,{ŋeš}apin dug₃-sig₁₈,,,P253230,8
 1252,P253230.9,o i 5,apin[plow]N zir[break]V/t,{ŋeš}apin zi,,,P253230,9
-1253,P253230.11,o i 6,{ŋeš}apin[NA]NA šu[NA]NA,{ŋeš}apin šu,,,P253230,11
-1254,P253230.12,o i 7,{ŋeš}apin[NA]NA šu-du₇[NA]NA,{ŋeš}apin šu-du₇,,,P253230,12
-1255,P253230.13,o i 8,{ŋeš}apin[NA]NA šu-nu-du₇[NA]NA,{ŋeš}apin šu-nu-du₇,,,P253230,13
-1256,P253230.14,o i 9,{ŋeš}apin[NA]NA dug₃-sig₁₈[NA]NA,{ŋeš}apin dug₃-sig₁₈,,,P253230,14
-1257,P253230.15,o i 10,{ŋeš}apin[NA]NA al-zi-ra[NA]NA,{ŋeš}apin al-zi-ra,,,P253230,15
-1258,P253230.16,o i 11,{ŋeš}apin[NA]NA šu[NA]NA,{ŋeš}apin šu,,,P253230,16
-1259,P253230.17,o i 12,{ŋeš}apin[NA]NA šu-du₇[NA]NA,{ŋeš}apin šu-du₇,,,P253230,17
-1260,P253230.18,o i 13,{ŋeš}apin[NA]NA šu-nu-du₇[NA]NA,{ŋeš}apin šu-nu-du₇,,,P253230,18
-1261,P253230.19,o i 14,{ŋeš}apin[NA]NA dug₃-sig₁₈[NA]NA,{ŋeš}apin dug₃-sig₁₈,,,P253230,19
-1262,P253230.20,o i 15,{ŋeš}apin[NA]NA al-zi-ra[NA]NA,{ŋeš}apin al-zi-ra,,,P253230,20
-1263,P253230.21,o i 16,{ŋeš}apin[NA]NA šu[NA]NA,{ŋeš}apin šu,,,P253230,21
-1264,P253230.23,o ii 1,{ŋeš}apin[NA]NA šu[NA]NA,{ŋeš}apin šu,,,P253230,23
-1265,P253230.24,o ii 2,{ŋeš}apin[NA]NA šu-du₇[NA]NA,{ŋeš}apin šu-du₇,,,P253230,24
-1266,P253230.25,o ii 3,{ŋeš}apin[NA]NA šu-nu-du₇[NA]NA,{ŋeš}apin šu-nu-du₇,,,P253230,25
-1267,P253230.26,o ii 4,{ŋeš}apin[NA]NA dug₃-sig₁₈[NA]NA,{ŋeš}apin dug₃-sig₁₈,,,P253230,26
-1268,P253230.27,o ii 5,{ŋeš}apin[NA]NA al-zi-ra[NA]NA,{ŋeš}apin al-zi-ra,,,P253230,27
-1269,P253230.28,o ii 6,{ŋeš}apin[NA]NA šu[NA]NA,{ŋeš}apin šu,,,P253230,28
-1270,P253230.29,o ii 7,{ŋeš}apin[NA]NA šu-du₇[NA]NA,{ŋeš}apin šu-du₇,,,P253230,29
-1271,P253230.30,o ii 8,{ŋeš}apin[NA]NA šu-nu-du₇[NA]NA,{ŋeš}apin šu-nu-du₇,,,P253230,30
-1272,P253230.31,o ii 9,{ŋeš}apin[NA]NA dug₃-sig₁₈[NA]NA,{ŋeš}apin dug₃-sig₁₈,,,P253230,31
-1273,P253230.32,o ii 10,{ŋeš}apin[NA]NA al-zi-ra[NA]NA,{ŋeš}apin al-zi-ra,,,P253230,32
-1274,P253230.33,o ii 11,{ŋeš}apin[NA]NA šu[NA]NA,{ŋeš}apin šu,,,P253230,33
-1275,P253230.34,o ii 12,{ŋeš}apin[NA]NA šu-du₇[NA]NA,{ŋeš}apin šu-du₇,,,P253230,34
-1276,P253230.35,o ii 13,{ŋeš}apin[NA]NA šu-nu-du₇[NA]NA,{ŋeš}apin šu-nu-du₇,,,P253230,35
-1277,P253230.36,o ii 14,{ŋeš}apin[NA]NA dug₃-sig₁₈[NA]NA,{ŋeš}apin dug₃-sig₁₈,,,P253230,36
-1278,P253230.37,o ii 15,{ŋeš}apin[NA]NA al-zi-ra[NA]NA,{ŋeš}apin al-zi-ra,,,P253230,37
-1279,P253230.38,o ii 16,{ŋeš}apin[NA]NA šu[NA]NA,{ŋeš}apin šu,,,P253230,38
+1253,P253230.11,o i 6,apin[plow]N šu[hand]N,{ŋeš}apin šu,,,P253230,11
+1254,P253230.12,o i 7,apin[plow]N šudu[equipped]AJ,{ŋeš}apin šu-du₇,,,P253230,12
+1255,P253230.13,o i 8,apin[plow]N šudu[equipped]AJ,{ŋeš}apin šu-nu-du₇,,,P253230,13
+1256,P253230.14,o i 9,apin[plow]N tugsaga[plow]N,{ŋeš}apin dug₃-sig₁₈,,,P253230,14
+1257,P253230.15,o i 10,apin[plow]N zir[break]V/t,{ŋeš}apin zi,,,P253230,15
+1258,P253230.16,o i 11,apin[plow]N šu[hand]N,{ŋeš}apin šu,,,P253230,16
+1259,P253230.17,o i 12,apin[plow]N šudu[equipped]AJ,{ŋeš}apin šu-du₇,,,P253230,17
+1260,P253230.18,o i 13,apin[plow]N šudu[equipped]AJ,{ŋeš}apin šu-nu-du₇,,,P253230,18
+1261,P253230.19,o i 14,apin[plow]N tugsaga[plow]N,{ŋeš}apin dug₃-sig₁₈,,,P253230,19
+1262,P253230.20,o i 15,apin[plow]N zir[break]V/t,{ŋeš}apin zi,,,P253230,20
+1263,P253230.21,o i 16,apin[plow]N šu[hand]N,{ŋeš}apin šu,,,P253230,21
+1264,P253230.23,o ii 1,apin[plow]N šu[hand]N,{ŋeš}apin šu,,,P253230,23
+1265,P253230.24,o ii 2,apin[plow]N šudu[equipped]AJ,{ŋeš}apin šu-du₇,,,P253230,24
+1266,P253230.25,o ii 3,apin[plow]N šudu[equipped]AJ,{ŋeš}apin šu-nu-du₇,,,P253230,25
+1267,P253230.26,o ii 4,apin[plow]N tugsaga[plow]N,{ŋeš}apin dug₃-sig₁₈,,,P253230,26
+1268,P253230.27,o ii 5,apin[plow]N zir[break]V/t,{ŋeš}apin zi,,,P253230,27
+1269,P253230.28,o ii 6,apin[plow]N šu[hand]N,{ŋeš}apin šu,,,P253230,28
+1270,P253230.29,o ii 7,apin[plow]N šudu[equipped]AJ,{ŋeš}apin šu-du₇,,,P253230,29
+1271,P253230.30,o ii 8,apin[plow]N šudu[equipped]AJ,{ŋeš}apin šu-nu-du₇,,,P253230,30
+1272,P253230.31,o ii 9,apin[plow]N tugsaga[plow]N,{ŋeš}apin dug₃-sig₁₈,,,P253230,31
+1273,P253230.32,o ii 10,apin[plow]N zir[break]V/t,{ŋeš}apin zi,,,P253230,32
+1274,P253230.33,o ii 11,apin[plow]N šu[hand]N,{ŋeš}apin šu,,,P253230,33
+1275,P253230.34,o ii 12,apin[plow]N šudu[equipped]AJ,{ŋeš}apin šu-du₇,,,P253230,34
+1276,P253230.35,o ii 13,apin[plow]N šudu[equipped]AJ,{ŋeš}apin šu-nu-du₇,,,P253230,35
+1277,P253230.36,o ii 14,apin[plow]N tugsaga[plow]N,{ŋeš}apin dug₃-sig₁₈,,,P253230,36
+1278,P253230.37,o ii 15,apin[plow]N zir[break]V/t,{ŋeš}apin zi,,,P253230,37
+1279,P253230.38,o ii 16,apin[plow]N šu[hand]N,{ŋeš}apin šu,,,P253230,38
 1280,P253230.51,t.e. 1,x-x-šu-tum[NA]NA,x-x-šu-tum,,,P253230,51
 1281,P253230.52,t.e. 2,x-ri-tum[NA]NA,x-ri-tum,,,P253230,52
 1282,P253230.53,t.e. 3,x-x-du-um[NA]NA,x-x-du-um,,,P253230,53
@@ -1288,18 +1288,18 @@
 1286,P253233.9,o i 4,bariga[unit]N,{ŋeš}ba-ri₂-ga,,,P253233,9
 1287,P253233.10,o i 5,baneš[container]N,{ŋeš}{+ba-an}baneš,,,P253233,10
 1288,P253233.11,o i 6,banmin[vessel]N,{ŋeš}{+ba-an}banmin,,,P253233,11
-1289,P253233.13,o i 7,{ŋeš}dilim₂[NA]NA,{ŋeš}dilim₂,,,P253233,13
-1290,P253233.14,o i 8,{ŋeš}dilim₂[NA]NA dug₄-ga[NA]NA,{ŋeš}dilim₂ dug₄-ga,,,P253233,14
-1291,P253233.15,o i 9,{ŋeš}dilim₂[NA]NA banšur-ra[NA]NA,{ŋeš}dilim₂ banšur-ra,,,P253233,15
-1292,P253233.18,o ii 1,{ŋeš}dilim₂[NA]NA,{ŋeš}dilim₂,,,P253233,18
-1293,P253233.19,o ii 2,{ŋeš}dilim₂[NA]NA dug₄-ga[NA]NA,{ŋeš}dilim₂ dug₄-ga,,,P253233,19
-1294,P253233.20,o ii 3,{ŋeš}dilim₂[NA]NA banšur-ra[NA]NA,{ŋeš}dilim₂ banšur-ra,,,P253233,20
-1295,P253233.21,o ii 4,{ŋeš}ba-ri₂-ga[NA]NA,{ŋeš}ba-ri₂-ga,,,P253233,21
-1296,P253233.22,o ii 5,{ŋeš}{+ba-an}baneš[NA]NA,{ŋeš}{+ba-an}baneš,,,P253233,22
-1297,P253233.23,o ii 6,{ŋeš}{+ba-an}banmin[NA]NA,{ŋeš}{+ba-an}banmin,,,P253233,23
-1298,P253233.24,o ii 7,{ŋeš}dilim₂[NA]NA,{ŋeš}dilim₂,,,P253233,24
-1299,P253233.25,o ii 8,{ŋeš}dilim₂[NA]NA dug₄-ga[NA]NA,{ŋeš}dilim₂ dug₄-ga,,,P253233,25
-1300,P253233.26,o ii 9,{ŋeš}dilim₂[NA]NA banšur-ra[NA]NA,{ŋeš}dilim₂ banšur-ra,,,P253233,26
+1289,P253233.13,o i 7,dilim[spoon]N,{ŋeš}dilim₂,,,P253233,13
+1290,P253233.14,o i 8,dilim[spoon]N dug[speak]V/t,{ŋeš}dilim₂ dug₄,,,P253233,14
+1291,P253233.15,o i 9,dilim[spoon]N banšur[table]N,{ŋeš}dilim₂ banšur,,,P253233,15
+1292,P253233.18,o ii 1,dilim[spoon]N,{ŋeš}dilim₂,,,P253233,18
+1293,P253233.19,o ii 2,dilim[spoon]N dug[speak]V/t,{ŋeš}dilim₂ dug₄,,,P253233,19
+1294,P253233.20,o ii 3,dilim[spoon]N banšur[table]N,{ŋeš}dilim₂ banšur,,,P253233,20
+1295,P253233.21,o ii 4,bariga[unit]N,{ŋeš}ba-ri₂-ga,,,P253233,21
+1296,P253233.22,o ii 5,baneš[container]N,{ŋeš}{+ba-an}baneš,,,P253233,22
+1297,P253233.23,o ii 6,banmin[vessel]N,{ŋeš}{+ba-an}banmin,,,P253233,23
+1298,P253233.24,o ii 7,dilim[spoon]N,{ŋeš}dilim₂,,,P253233,24
+1299,P253233.25,o ii 8,dilim[spoon]N dug[speak]V/t,{ŋeš}dilim₂ dug₄,,,P253233,25
+1300,P253233.26,o ii 9,dilim[spoon]N banšur[table]N,{ŋeš}dilim₂ banšur,,,P253233,26
 1301,P253233.27,o ii 10,x-x[NA]NA,x-x,,,P253233,27
 1302,P253233.33,r i 1',{ŋeš}A-x[NA]NA,{ŋeš}A-x,,,P253233,33
 1303,P253233.34,r i 2',{ŋeš}x-x-ga[NA]NA a-gam-x[NA]NA,{ŋeš}x-x-ga a-gam-x,,,P253233,34
@@ -1484,7 +1484,7 @@
 1482,P253866.75,o iii 8',{ŋeš}HI-KU[NA]NA,{ŋeš}HI-KU,,,P253866,75
 1483,P253866.76,o iii 9',u[sleep]N ku[place]V/t,{ŋeš}u₃ ku,,,P253866,76
 1484,P253866.77,o iii 10',{ŋeš}a[NA]NA in-x-x[NA]NA,{ŋeš}a in-x-x,,,P253866,77
-1485,P253866.78,o iii 11',{ŋeš}DUB[NA]NA |LAGAB×X|-x[NA]NA,{ŋeš}DUB |LAGAB×X|-x,,,P253866,78
+1485,P253866.78,o iii 11',DUB[pole-pin]N |LAGAB×X|-x[NA]NA,{ŋeš}DUB |LAGAB×X|-x,,,P253866,78
 1486,P253866.79,o iii 12',innušugura[chopper]N,{ŋeš}in-nu-šu-gur₁₀-a,,,P253866,79
 1487,P253866.80,o iii 13',naŋa[mortar]N,{ŋeš}naŋa₃,,,P253866,80
 1488,P253866.81,o iii 14',naŋasikaz[pestle]N,{ŋeš}naŋa₃-zi₃-gaz,,,P253866,81
@@ -1531,9 +1531,9 @@
 1529,P253887.4,o 1,ma[ship]N u[ten]NU gur[unit]N,ma₂ u gur,,,P253887,4
 1530,P253887.5,o 2,ma[ship]N niš[twenty]NU gur[unit]N,ma₂ niš gur,,,P253887,5
 1531,P253887.6,o 3,ma[ship]N ŋeš[sixty]NU gur[unit]N,ma₂ ŋeš₂{+mi-iš?} gur,,,P253887,6
-1532,P253887.9,r 1,ma₂[NA]NA u[NA]NA gur[NA]NA,ma₂ u gur,,,P253887,9
-1533,P253887.10,r 2,ma₂[NA]NA niš[NA]NA gur[NA]NA,ma₂ niš gur,,,P253887,10
-1534,P253887.11,r 3,ma₂[NA]NA x[NA]NA gur[NA]NA,ma₂ x gur,,,P253887,11
+1532,P253887.9,r 1,ma[ship]N u[ten]NU gur[unit]N,ma₂ u gur,,,P253887,9
+1533,P253887.10,r 2,ma[ship]N niš[twenty]NU gur[unit]N,ma₂ niš gur,,,P253887,10
+1534,P253887.11,r 3,ma[ship]N x[NA]NA gur[unit]N,ma₂ x gur,,,P253887,11
 1535,P253896.2,o 1,ŋeš[tree]N hulu[bad]V/i,ŋeš hul,,,P253896,2
 1536,P253896.3,o 2,ŋeš[tree]N ki.SAR[~land]N,ŋeš ki-SAR,,,P253896,3
 1537,P253896.4,o 3,isimu[sprout]N,{ŋeš}isimu₃{+mu₂},,,P253896,4
@@ -1605,10 +1605,10 @@
 1603,P273880.30,a i 46',asal[poplar]N dug[good]V/i,{ŋeš}asal₂ dug₃,,,P273880,30
 1604,P273880.31,a i 47',{ŋeš}x-a-x-x[NA]NA,{ŋeš}x-a-x-x,,,P273880,31
 1605,P273880.33,,,,beginning,column,P273880,33
-1606,P273880.34,a ii 1',{ŋeš}du₁₀-bar[NA]NA apin[plow]N,{ŋeš}du₁₀-bar apin,,,P273880,34
-1607,P273880.35,a ii 2',gag[nail]N du₁₀-bar[NA]NA apin[plow]N,{ŋeš}gag du₁₀-bar apin,,,P273880,35
+1606,P273880.34,a ii 1',dub[knee]N bar[outside]V/t apin[plow]N,{ŋeš}dub₃ bar apin,,,P273880,34
+1607,P273880.35,a ii 2',gag[nail]N dub[knee]N bar[outside]V/t apin[plow]N,{ŋeš}gag dub₃ bar apin,,,P273880,35
 1608,P273880.36,a ii 3',gag[nail]N x-x[NA]NA apin[plow]N,{ŋeš}gag x-x apin,,,P273880,36
-1609,P273880.37,a ii 4',{ŋeš}šu-ta[NA]NA ninda[seed-funnel]N apin[plow]N,{ŋeš}šu-ta ninda₂ apin,,,P273880,37
+1609,P273880.37,a ii 4',šu[hand]N ninda[seed-funnel]N apin[plow]N,{ŋeš}šu ninda₂ apin,,,P273880,37
 1610,P273880.38,a ii 5',dubla[tower]N apin[plow]N,{ŋeš}dub-la₂ apin,,,P273880,38
 1611,P273880.39,a ii 6',leʾum[board]N apin[plow]N,{ŋeš}le apin,,,P273880,39
 1612,P273880.40,a ii 7',gag[nail]N leʾum[board]N apin[plow]N,{ŋeš}gag li apin,,,P273880,40
@@ -1823,8 +1823,8 @@
 1821,P273880.254,b ii 47,ŋeš[tree]N ya[five]NU giŋ[unit]N,ŋeš ia₂ giŋ₄,,,P273880,254
 1822,P273880.255,b ii 48,ŋeš[tree]N diš[one]NU giŋ[unit]N,ŋeš diš giŋ₄,,,P273880,255
 1823,P273880.256,b ii 49,ŋeš[tree]N 1/2[NA]NA giŋ[unit]N,ŋeš 1/2 giŋ₄,,,P273880,256
-1824,P273880.257,b ii 50,{ŋeš}GIR₃[NA]NA,{ŋeš}GIR₃,,,P273880,257
-1825,P273880.258,b ii 51,{ŋeš}GIR₃[NA]NA,{ŋeš}GIR₃,,,P273880,258
+1824,P273880.257,b ii 50,{ŋeš}$GIR₃[NA]NA,{ŋeš}$GIR₃,,,P273880,257
+1825,P273880.258,b ii 51,{ŋeš}$GIR₃[NA]NA,{ŋeš}$GIR₃,,,P273880,258
 1826,P273880.259,b ii 52,{ŋeš}SAL-am₃[NA]NA,{ŋeš}SAL-am₃,,,P273880,259
 1827,P273880.260,b ii 53,epig[drinking-vessel]N,{ŋeš}epig,,,P273880,260
 1828,P273880.261,b ii 54,epig[drinking-vessel]N x[NA]NA,{ŋeš}epig x,,,P273880,261
@@ -1870,7 +1870,7 @@
 1868,P273880.302,,,,5,line,P273880,302
 1869,P273880.303,b iii 31,{ŋeš}x[NA]NA mar[shovel]N,{ŋeš}x mar,,,P273880,303
 1870,P273880.304,b iii 32,dilim[spoon]N mar[shovel]N,{ŋeš}dilim₂ mar,,,P273880,304
-1871,P273880.305,b iii 33,{ŋeš}ŠID[NA]NA mar[shovel]N,{ŋeš}ŠID mar,,,P273880,305
+1871,P273880.305,b iii 33,DUB.du₃[~vehicle]N mar[shovel]N,{ŋeš}ŠID mar,,,P273880,305
 1872,P273880.306,b iii 34,eme[tongue]N mar[shovel]N,{ŋeš}eme mar,,,P273880,306
 1873,P273880.307,b iii 35,al[hoe]N,{ŋeš}al,,,P273880,307
 1874,P273880.308,b iii 36,al[hoe]N zu[tooth]N,{ŋeš}al zu₂,,,P273880,308
@@ -1892,9 +1892,9 @@
 1890,P273880.324,b iii 52,tilpanum[bow]N,{ŋeš}ti-il-ba-nu-um,,,P273880,324
 1891,P273880.325,b iii 53,x[NA]NA,x,,,P273880,325
 1892,P273880.326,b iii 54,{ŋeš}x[NA]NA,{ŋeš}x,,,P273880,326
-1893,P273880.327,b iii 55,{ŋeš}RU[NA]NA x-x[NA]NA,{ŋeš}RU x-x,,,P273880,327
-1894,P273880.328,b iii 56,{ŋeš}RU[NA]NA ra-x[NA]NA,{ŋeš}RU ra-x,,,P273880,328
-1895,P273880.329,b iii 57,{ŋeš}RU[NA]NA sug[empty]V/i,{ŋeš}RU sug₄,,,P273880,329
+1893,P273880.327,b iii 55,{ŋeš}$RU[NA]NA x-x[NA]NA,{ŋeš}$RU x-x,,,P273880,327
+1894,P273880.328,b iii 56,{ŋeš}$RU[NA]NA ra-x[NA]NA,{ŋeš}$RU ra-x,,,P273880,328
+1895,P273880.329,b iii 57,{ŋeš}$RU[NA]NA sug[empty]V/i,{ŋeš}$RU sug₄,,,P273880,329
 1896,P273880.330,b iii 58,sigsig[musical-instrument]N,{ŋeš}sig₃-sig₃,,,P273880,330
 1897,P273880.331,b iii 59,sigsig[musical-instrument]N eban[pair]N,{ŋeš}sig₃-sig₃ e₂-pa-an,,,P273880,331
 1898,P273880.332,b iii 60,sigsig[musical-instrument]N pa[branch]N mušen[bird]N,{ŋeš}sig₃-sig₃ pa mušen,,,P273880,332
@@ -2197,7 +2197,7 @@
 2195,P273880.637,d i 17',{ŋeš}x-x[NA]NA,{ŋeš}x-x,,,P273880,637
 2196,P273880.638,d i 18',kun[tail]N niŋ₂-il₂[NA]NA,{ŋeš}kun niŋ₂-il₂,,,P273880,638
 2197,P273880.639,d i 19',{ŋeš}zig₃-ga[NA]NA,{ŋeš}zig₃-ga,,,P273880,639
-2198,P273880.640,d i 20',{ŋeš}AŠ[NA]NA GIŠ[NA]NA,{ŋeš}AŠ GIŠ,,,P273880,640
+2198,P273880.640,d i 20',{ŋeš}AŠ-GIŠ[NA]NA,{ŋeš}AŠ-GIŠ,,,P273880,640
 2199,P273880.641,d i 21',šutug[reed-hut]N šub[fall]V/t,{ŋeš}šutug šub,,,P273880,641
 2200,P273880.642,d i 22',gag[nail]N papah[cella]N,{ŋeš}gag pa-pah,,,P273880,642
 2201,P273880.643,d i 23',ŋešpaphalla[trap?]N,ŋeš-pap-hal-la,,,P273880,643
@@ -2233,7 +2233,7 @@
 2231,P273880.674,d ii 9',ŋeš[tree]N mu-uš-za[NA]NA,ŋeš mu-uš-za,,,P273880,674
 2232,P273880.675,d ii 10',ŋeš[tree]N sukud[height]N,ŋeš sukud,,,P273880,675
 2233,P273880.676,d ii 11',ŋeš[tree]N duru[wet]V/i,ŋeš duru₅,,,P273880,676
-2234,P273880.677,d ii 12',{ŋeš}x[NA]NA KA[NA]NA,{ŋeš}x KA,,,P273880,677
+2234,P273880.677,d ii 12',{ŋeš}x[NA]NA KA[cvne]N,{ŋeš}x KA,,,P273880,677
 2235,P273880.678,d ii 13',gam[crook]N,{ŋeš}kab,,,P273880,678
 2236,P273880.679,d ii 14',{ŋeš}x[NA]NA sipad[shepherd]N,{ŋeš}x sipad,,,P273880,679
 2237,P273880.680,d ii 15',{ŋeš}x[NA]NA tab[double]V/t,{ŋeš}x tab,,,P273880,680
@@ -2353,7 +2353,7 @@
 2351,P346714.20,r i 24',zara[pivot]N margida[cart]N,{ŋeš}za-ra mar-gid₂-da,,,P346714,20
 2352,P346714.21,r i 25',gag[nail]N zara[pivot]N margida[cart]N,{ŋeš}gag za-ra mar-gid₂-da,,,P346714,21
 2353,P346714.22,r i 26',saŋkul[bolt]N margida[cart]N,{ŋeš}saŋ-kul mar-gid₂-da,,,P346714,22
-2354,P346714.23,r i 27',dub[knee]N bar[cvve]V/t margida[cart]N,{ŋeš}dub₃ bar mar-gid₂-da,,,P346714,23
+2354,P346714.23,r i 27',dub[knee]N bar[outside]V/t margida[cart]N,{ŋeš}dub₃ bar mar-gid₂-da,,,P346714,23
 2355,P346714.24,r i 28',mud[tube]N margida[cart]N,{ŋeš}mud mar-gid₂-da,,,P346714,24
 2356,P346714.25,r i 29',gag[nail]N mud[tube]N margida[cart]N,{ŋeš}gag mud mar-gid₂-da,,,P346714,25
 2357,P346714.26,r i 30',suku[pole]N margida[cart]N,{ŋeš}suku₅ mar-gid₂-da,,,P346714,26
@@ -2371,10 +2371,10 @@
 2369,P346714.39,r ii 07',ama[mother]N apin[plow]N,{ŋeš}ama apin,,,P346714,39
 2370,P346714.40,r ii 08',eme[tongue]N apin[plow]N,{ŋeš}eme apin,,,P346714,40
 2371,P346714.41,r ii 09',emesig[plank]N apin[plow]N,{ŋeš}eme-sig apin,,,P346714,41
-2372,P346714.42,r ii 10',{ŋeš}šu-ta[NA]NA ninda[seed-funnel]N apin[plow]N,{ŋeš}šu-ta ninda₂ apin,,,P346714,42
-2373,P346714.43,r ii 11',{ŋeš}pa-al-kam[NA]NA apin[NA]NA,{ŋeš}pa-al-kam apin,,,P346714,43
+2372,P346714.42,r ii 10',šu[hand]N ninda[seed-funnel]N apin[plow]N,{ŋeš}šu ninda₂ apin,,,P346714,42
+2373,P346714.43,r ii 11',{ŋeš}pa-al-kam[NA]NA apin[plow]N,{ŋeš}pa-al-kam apin,,,P346714,43
 2374,P346714.44,r ii 12',muš[snake]N apin[plow]N,{ŋeš}muš apin,,,P346714,44
-2375,P346714.45,r ii 13',gag[nail]N muš[NA]NA apin[plow]N,{ŋeš}gag muš apin,,,P346714,45
+2375,P346714.45,r ii 13',gag[nail]N muš[snake]N apin[plow]N,{ŋeš}gag muš apin,,,P346714,45
 2376,P346714.46,r ii 14',sala[~plow]N apin[plow]N,{ŋeš}sal-la apin,,,P346714,46
 2377,P346714.47,r ii 15',gag[nail]N sala[~plow]N apin[plow]N,{ŋeš}gag sal-la apin,,,P346714,47
 2378,P346714.48,r ii 16',nig[~plow]N apin[plow]N,{ŋeš}nig apin,,,P346714,48
@@ -2394,7 +2394,7 @@
 2392,P346714.62,r ii 30',saŋ[head]N ŋušur[harrow]N,{ŋeš}saŋ gana₂-ur₃,,,P346714,62
 2393,P346714.63,r ii 31',u[ride]V/t ŋušur[harrow]N,{ŋeš}u₅ gana₂-ur₃,,,P346714,63
 2394,P346714.64,r ii 32',sa[sinew]N ŋušur[harrow]N,{ŋeš}sa gana₂-ur₃,,,P346714,64
-2395,P346714.65,r ii 33',{ŋeš}{na₄}gug[NA]NA zi[NA]NA {na₄}gug[NA]NA,{ŋeš}{na₄}gug zi {na₄}gug,,,P346714,65
+2395,P346714.65,r ii 33',{ŋeš}{na₄}gug[NA]NA zu[stone]N gug[carnelian]N,{ŋeš}{na₄}gug zi {na₄}gug,,,P346714,65
 2396,P346714.66,r ii 34',saŋdu[beam]N,{ŋeš}saŋ-du,,,P346714,66
 2397,P346714.67,r ii 35',ilila[lever]N,{ŋeš}il₂-il₂,,,P346714,67
 2398,P346714.68,r ii 36',barbar[shuttle]N,{ŋeš}bar-bar,,,P346714,68
@@ -2465,7 +2465,7 @@
 2463,P346714.135,r iv 15',sa[net]N tur[small]V/i,{ŋeš}sa tur,,,P346714,135
 2464,P346714.136,r iv 16',sa[net]N mah[great]V/i,{ŋeš}sa mah,,,P346714,136
 2465,P346714.137,r iv 17',sa[net]N ur[drag]V/t,{ŋeš}sa ur₃,,,P346714,137
-2466,P346714.138,r iv 18',sa[net]N zag-la[NA]NA an[sky]N,{ŋeš}sa zag-la an,,,P346714,138
+2466,P346714.138,r iv 18',sa[net]N zagla[unmng]N an[sky]N,{ŋeš}sa zag-la an,,,P346714,138
 2467,P346714.139,r iv 19',bur[bowl]N,{ŋeš}bur,,,P346714,139
 2468,P346714.140,r iv 20',mah[great]V/i,{ŋeš}mah,,,P346714,140
 2469,P346714.141,r iv 21',harmušen[snare]N,{ŋeš}har-mušen,,,P346714,141
@@ -2475,12 +2475,12 @@
 2473,P346714.145,,,,1,line,P346714,145
 2474,P346714.146,,,,4,line,P346714,146
 2475,P346714.147,r iv 30',illar[weapon]N eban[pair]N,{ŋeš}illar e-ba-an,,,P346714,147
-2476,P346714.148,r iv 31',illar[weapon]N GIŠ[NA]NA,{ŋeš}illar GIŠ,,,P346714,148
-2477,P346714.149,r iv 32',illar[weapon]N zid[right]V/i,{ŋeš}illar zid,,,P346714,149
+2476,P346714.148,r iv 31',illar[weapon]N niŋin[encircle]V/t,{ŋeš}illar niŋin,,,P346714,148
+2477,P346714.149,r iv 32',illar[weapon]N zig[rise]V/t,{ŋeš}illar zig₃,,,P346714,149
 2478,P346714.150,r iv 33',illar[weapon]N šub[fall]V/t,{ŋeš}illar šub,,,P346714,150
 2479,P346714.151,r iv 34',illar[weapon]N šu[hand]N lugal[king]N,{ŋeš}illar šu lugal,,,P346714,151
-2480,P346714.152,r iv 35',illar[weapon]N DU-a[NA]NA,{ŋeš}illar DU-a,,,P346714,152
-2481,P346714.153,r iv 36',{ŋeš}LAGAB[NA]NA illar[weapon]N,{ŋeš}LAGAB illar,,,P346714,153
+2480,P346714.152,r iv 35',illar[weapon]N $DU-a[NA]NA,{ŋeš}illar $DU-a,,,P346714,152
+2481,P346714.153,r iv 36',{ŋeš}$LAGAB[NA]NA illar[weapon]N,{ŋeš}$LAGAB illar,,,P346714,153
 2482,P346714.154,r iv 37',ti[arrow]N,{ŋeš}ti,,,P346714,154
 2483,P346714.155,r iv 38',pana[bow]N,{ŋeš}pana,,,P346714,155
 2484,P346714.156,r iv 39',kakpana[arrow]N,{ŋeš}kak-pana,,,P346714,156
@@ -2493,7 +2493,7 @@
 2491,P346714.163,,,,2,line,P346714,163
 2492,P346714.165,r v 01',mar[shovel]N ninda[bread]N,{ŋeš}mar ninda,,,P346714,165
 2493,P346714.166,r v 02',mar[shovel]N ninda[bread]N gur[thick]V/i,{ŋeš}mar ninda gur₄,,,P346714,166
-2494,P346714.167,r v 03',mar[shovel]N ninda[bread]N gur[NA]NA,{ŋeš}mar ninda gur,,,P346714,167
+2494,P346714.167,r v 03',mar[shovel]N ninda[bread]N gur[unit]N,{ŋeš}mar ninda gur,,,P346714,167
 2495,P346714.168,r v 04',mar[shovel]N im[clay]N,{ŋeš}mar im,,,P346714,168
 2496,P346714.169,r v 05',mar[shovel]N še[barley]N,{ŋeš}mar še,,,P346714,169
 2497,P346714.170,r v 06',mar[shovel]N še[barley]N da[NA]NA,{ŋeš}mar še da,,,P346714,170
@@ -3394,7 +3394,7 @@
 3392,P388265.379,r vi 20,{ŋeš}ŋiri₃-la₂[NA]NA,{ŋeš}ŋiri₃-la₂,,,P388265,379
 3393,P388265.380,r vi 21,šerah[shovel]N,{ŋeš}še-ra-ah,,,P388265,380
 3394,P388265.381,r vi 22,raba[clamp]N,{ŋeš}rab₃,,,P388265,381
-3395,P388265.382,r vi 23,dub[knee]N bar[cvve]V/t,{ŋeš}dub₃ bar,,,P388265,382
+3395,P388265.382,r vi 23,dub[knee]N bar[outside]V/t,{ŋeš}dub₃ bar,,,P388265,382
 3396,P388265.383,r vi 24,ba[tool]N,{ŋeš}ba,,,P388265,383
 3397,P388265.384,r vi 25,ba[tool]N GIN₂[NA]NA,{ŋeš}ba GIN₂,,,P388265,384
 3398,P388265.385,r vi 26,ba[tool]N sim[swallow]N,{ŋeš}ba sim{mušen},,,P388265,385
@@ -3438,8 +3438,8 @@
 3436,P388265.426,t.e. ii 5,arina[madder]N,{ŋeš}i-ri₉-na,,,P388265,426
 3437,P388265.427,t.e. ii 6,arina[madder]N,{ŋeš}i-ri₂-na,,,P388265,427
 3438,P388265.429,t.e. iii 1,kiri[orchard]N,{ŋeš}kiri₆,,,P388265,429
-3439,P388265.430,t.e. iii 2,{ŋeš}sar-ra[NA]NA ŋar-ŋar[NA]NA,{ŋeš}sar-ra ŋar-ŋar,,,P388265,430
-3440,P388265.431,t.e. iii 3,{ŋeš}šu[NA]NA,{ŋeš}šu,,,P388265,431
+3439,P388265.430,t.e. iii 2,{ŋeš}sar-ra[NA]NA ŋar[place]V/t,{ŋeš}sar-ra ŋar-ŋar,,,P388265,430
+3440,P388265.431,t.e. iii 3,šu[handle]N,{ŋeš}šu,,,P388265,431
 3441,P388265.432,t.e. iii 4,{ŋeš}x[NA]NA,{ŋeš}x,,,P388265,432
 3442,P388265.433,t.e. iii 5,ma[ship]N gid[drag]V/t,{ŋeš}ma₂ gid₂,,,P388265,433
 3443,P388265.434,t.e. iii 6,{ŋeš}x-x[NA]NA,{ŋeš}x-x,,,P388265,434
@@ -3897,7 +3897,7 @@
 3895,P459216.179,r iv 11',DUB.du₃[~vehicle]N ŋar[place]V/t,{ŋeš}šid-du₁₀ ŋar,,,P459216,179
 3896,P459216.180,r iv 12',margida[cart]N,{ŋeš}mar-gid₂-da,,,P459216,180
 3897,P459216.181,r iv 13',margida[cart]N Subir[1]GN,{ŋeš}mar-gid₂-da su-bir₄{ki},,,P459216,181
-3898,P459216.182,r iv 14',HI.MAŠ[~chariot]N margida[cart]N,{ŋeš}HI-MAŠ mar-gid₂-da,,,P459216,182
+3898,P459216.182,r iv 14',dub[knee]N bar[outside]V/t margida[cart]N,{ŋeš}dub₃ bar mar-gid₂-da,,,P459216,182
 3899,P459216.183,r iv 15',ŋešdal[crossbar]N margida[cart]N,ŋeš-dal mar-gid₂-da,,,P459216,183
 3900,P459216.184,r iv 16',endur[navel?]N mar-da[NA]NA,{ŋeš}en₃-dur mar-da,,,P459216,184
 3901,P459216.185,r iv 17',usan[whip]N margida[cart]N,{ŋeš}usan₃ mar-gid₂-da,,,P459216,185
@@ -4289,7 +4289,7 @@
 4287,P459230.4,o 3,e[house]N ma[ship]N,{ŋeš}e₂ ma₂,,,P459230,4
 4288,P459231.2,o 1,{ŋeš}x-x[NA]NA gigir[chariot]N,{ŋeš}x-x gigir,,,P459231,2
 4289,P459231.3,o 2,ŋirigub[footstool]N gigir[chariot]N,{ŋeš}ŋiri₃-gub gigir,,,P459231,3
-4290,P459231.4,o 3,HI.MAŠ[~chariot]N gigir[chariot]N,{ŋeš}HI-MAŠ gigir,,,P459231,4
+4290,P459231.4,o 3,dub[knee]N bar[outside]V/t gigir[chariot]N,{ŋeš}dub₃ bar gigir,,,P459231,4
 4291,P459784.2,,,,beginning,column,P459784,2
 4292,P459784.3,1',{ŋeš}x[NA]NA,{ŋeš}x,,,P459784,3
 4293,P459784.4,2',šenu[tree]N,{ŋeš}še-nu,,,P459784,4

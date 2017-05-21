@@ -1,0 +1,331 @@
+{
+"type": "cdl",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-05-19T18:24:48",
+"project": "dcclt",
+"textid": "P229989",
+"cdl": [
+{
+"node": "c",
+"type": "text",
+"id": "P229989.U0",
+"cdl": [
+{
+"node": "d",
+"subtype": "tablet",
+"type": "object",
+"ref": "P229989.x931.1",
+"type": "tablet",
+"label": "x931"}
+,
+{
+"node": "d",
+"type": "surface",
+"ref": ""}
+,
+{
+"node": "d",
+"type": "nonx",
+"ref": "P229989.2",
+"strict": "0",
+"extent": "1",
+"state": "ruling"}
+,
+{
+"node": "d",
+"subtype": "obverse",
+"type": "surface",
+"ref": "P229989.o.3",
+"type": "obverse",
+"label": "o"}
+,
+{
+"node": "d",
+"subtype": "column 1o",
+"type": "column",
+"ref": "P229989.o.i.4",
+"n": "1",
+"label": "o i"}
+,
+{
+"node": "c",
+"type": "discourse",
+"subtype": "body",
+"id": "P229989.U1",
+"cdl": [
+{
+"node": "c",
+"type": "sentence",
+"id": "P229989.U2",
+"label": "o i 1 - o i 5",
+"cdl": [
+{
+"node": "d",
+"type": "line-start",
+"ref": "P229989.5",
+"n": "1",
+"label": "o i 1"}
+,
+{
+"node": "l",
+"frag": "amar",
+"id": "P229989.l230cb",
+"ref": "P229989.5.1",
+"inst": "amar[calf]N",
+"sig": "@dcclt%sux:amar=amar[young//calf]N'N$amar/amar#~",
+"f": {"lang": "sux",
+"form": "amar",
+"cf": "amar",
+"gw": "young",
+"sense": "calf",
+"norm0": "amar",
+"pos": "N",
+"epos": "N",
+"base": "amar",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "babbar",
+"id": "P229989.l230cc",
+"ref": "P229989.5.2",
+"inst": "babbar[white]V/i",
+"sig": "@dcclt%sux:babbar=babbar[white//(to be) white]V/i'V/i$babbar/babbar#~",
+"f": {"lang": "sux",
+"form": "babbar",
+"cf": "babbar",
+"gw": "white",
+"sense": "(to be) white",
+"norm0": "babbar",
+"pos": "V/i",
+"epos": "V/i",
+"base": "babbar",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P229989.6",
+"n": "2",
+"label": "o i 2"}
+,
+{
+"node": "l",
+"frag": "amar",
+"id": "P229989.l230cd",
+"ref": "P229989.6.1",
+"inst": "amar[calf]N",
+"sig": "@dcclt%sux:amar=amar[young//calf]N'N$amar/amar#~",
+"f": {"lang": "sux",
+"form": "amar",
+"cf": "amar",
+"gw": "young",
+"sense": "calf",
+"norm0": "amar",
+"pos": "N",
+"epos": "N",
+"base": "amar",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "giggi",
+"id": "P229989.l230ce",
+"ref": "P229989.6.2",
+"inst": "giggi[black]V/i",
+"sig": "@dcclt%sux:giggi=giggi[black//(to be) black]V/i'V/i$giggi/giggi#~",
+"f": {"lang": "sux",
+"form": "giggi",
+"cf": "giggi",
+"gw": "black",
+"sense": "(to be) black",
+"norm0": "giggi",
+"pos": "V/i",
+"epos": "V/i",
+"base": "giggi",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P229989.7",
+"n": "3",
+"label": "o i 3"}
+,
+{
+"node": "l",
+"frag": "amar",
+"id": "P229989.l230cf",
+"ref": "P229989.7.1",
+"inst": "amar[calf]N",
+"sig": "@dcclt%sux:amar=amar[young//calf]N'N$amar/amar#~",
+"f": {"lang": "sux",
+"form": "amar",
+"cf": "amar",
+"gw": "young",
+"sense": "calf",
+"norm0": "amar",
+"pos": "N",
+"epos": "N",
+"base": "amar",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "su₄-a",
+"id": "P229989.l230d0",
+"ref": "P229989.7.2",
+"inst": "su[red]V/i",
+"sig": "@dcclt%sux:su₄-a=su[red//red]V/i'V/i$su;a/su₄#~;a",
+"f": {"lang": "sux",
+"form": "su₄-a",
+"cf": "su",
+"gw": "red",
+"sense": "red",
+"norm0": "su;a",
+"pos": "V/i",
+"epos": "V/i",
+"base": "su₄",
+"morph": "~;a"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P229989.8",
+"n": "4",
+"label": "o i 4"}
+,
+{
+"node": "l",
+"frag": "amar",
+"id": "P229989.l230d1",
+"ref": "P229989.8.1",
+"inst": "amar[calf]N",
+"sig": "@dcclt%sux:amar=amar[young//calf]N'N$amar/amar#~",
+"f": {"lang": "sux",
+"form": "amar",
+"cf": "amar",
+"gw": "young",
+"sense": "calf",
+"norm0": "amar",
+"pos": "N",
+"epos": "N",
+"base": "amar",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "sig₇-sig₇",
+"id": "P229989.l230d2",
+"ref": "P229989.8.2",
+"inst": "sissig[green]V/i",
+"sig": "@dcclt%sux:sig₇-sig₇=sissig[green//green]V/i'V/i$sissig/sig₇-sig₇#~",
+"f": {"lang": "sux",
+"form": "sig₇-sig₇",
+"cf": "sissig",
+"gw": "green",
+"sense": "green",
+"norm0": "sissig",
+"pos": "V/i",
+"epos": "V/i",
+"base": "sig₇-sig₇",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P229989.9",
+"n": "5",
+"label": "o i 5"}
+,
+{
+"node": "l",
+"frag": "amar",
+"id": "P229989.l230d3",
+"ref": "P229989.9.1",
+"inst": "amar[calf]N",
+"sig": "@dcclt%sux:amar=amar[young//calf]N'N$amar/amar#~",
+"f": {"lang": "sux",
+"form": "amar",
+"cf": "amar",
+"gw": "young",
+"sense": "calf",
+"norm0": "amar",
+"pos": "N",
+"epos": "N",
+"base": "amar",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "gun₃-a",
+"id": "P229989.l230d4",
+"ref": "P229989.9.2",
+"inst": "gunu[speckled]V/i",
+"sig": "@dcclt%sux:gun₃-a=gunu[speckled//(to be) speckled, multicolored]V/i'V/i$gunu;a/gun₃#~;a",
+"f": {"lang": "sux",
+"form": "gun₃-a",
+"cf": "gunu",
+"gw": "speckled",
+"sense": "(to be) speckled, multicolored",
+"norm0": "gunu;a",
+"pos": "V/i",
+"epos": "V/i",
+"base": "gun₃",
+"morph": "~;a"}
+}
+,
+{
+"node": "d",
+"type": "nonx",
+"ref": "P229989.10",
+"strict": "1",
+"extent": "rest",
+"scope": "column",
+"state": "missing"}
+,
+{
+"node": "d",
+"subtype": "column 2o",
+"type": "column",
+"ref": "P229989.o.ii.11",
+"n": "2",
+"label": "o ii"}
+,
+{
+"node": "d",
+"type": "nonx",
+"ref": "P229989.12",
+"strict": "0",
+"state": "traces"}
+,
+{
+"node": "d",
+"subtype": "reverse",
+"type": "surface",
+"ref": "P229989.r.13",
+"type": "reverse",
+"label": "r"}
+,
+{
+"node": "d",
+"type": "nonx",
+"ref": "P229989.14",
+"strict": "0",
+"state": "other"}
+]}
+]}
+]}
+]}

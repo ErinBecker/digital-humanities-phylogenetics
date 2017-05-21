@@ -1,0 +1,152 @@
+{
+"type": "cdl",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-05-19T18:28:03",
+"project": "dcclt",
+"textid": "P414652",
+"cdl": [
+{
+"node": "c",
+"type": "text",
+"id": "P414652.U0",
+"cdl": [
+{
+"node": "d",
+"type": "object",
+"ref": ""}
+,
+{
+"node": "d",
+"subtype": "obverse",
+"type": "surface",
+"ref": "P414652.o.1",
+"type": "obverse",
+"label": "o"}
+,
+{
+"node": "c",
+"type": "discourse",
+"subtype": "body",
+"id": "P414652.U1",
+"cdl": [
+{
+"node": "c",
+"type": "sentence",
+"id": "P414652.U2",
+"label": "o 1 - o 3",
+"cdl": [
+{
+"node": "d",
+"type": "line-start",
+"ref": "P414652.2",
+"n": "1",
+"label": "o 1"}
+,
+{
+"node": "l",
+"frag": "{gi}en₃-bar",
+"id": "P414652.l1a8d3",
+"ref": "P414652.2.1",
+"inst": "enbar[reed]",
+"sig": "@dcclt%sux:{gi}en₃-bar=enbar[reed//reed]N'N$enbar/{gi}en₃-bar#~",
+"f": {"lang": "sux",
+"form": "{gi}en₃-bar",
+"cf": "enbar",
+"gw": "reed",
+"sense": "reed",
+"norm0": "enbar",
+"pos": "N",
+"epos": "N",
+"base": "{gi}en₃-bar",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P414652.3",
+"n": "2",
+"label": "o 2"}
+,
+{
+"node": "l",
+"frag": "{gi}en₃-bar",
+"id": "P414652.l1a8d4",
+"ref": "P414652.3.1",
+"inst": "enbar[reed]",
+"sig": "@dcclt%sux:{gi}en₃-bar=enbar[reed//reed]N'N$enbar/{gi}en₃-bar#~",
+"f": {"lang": "sux",
+"form": "{gi}en₃-bar",
+"cf": "enbar",
+"gw": "reed",
+"sense": "reed",
+"norm0": "enbar",
+"pos": "N",
+"epos": "N",
+"base": "{gi}en₃-bar",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "dug₃-ga",
+"id": "P414652.l1a8d5",
+"ref": "P414652.3.2",
+"inst": "dug[sweet]",
+"sig": "@dcclt%sux:dug₃-ga=dug[good//(to be) sweet]V/i'V/i$dug;a/dug₃+-ga=g.a#~;a",
+"f": {"lang": "sux",
+"form": "dug₃-ga",
+"cf": "dug",
+"gw": "good",
+"sense": "(to be) sweet",
+"norm0": "dug;a",
+"pos": "V/i",
+"epos": "V/i",
+"base": "dug₃",
+"cont": "-ga=g.a",
+"morph": "~;a"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P414652.4",
+"n": "3",
+"label": "o 3"}
+,
+{
+"node": "l",
+"frag": "{gi}en₃-bar",
+"id": "P414652.l1a8d6",
+"ref": "P414652.4.1",
+"inst": "enbar[reed]",
+"sig": "@dcclt%sux:{gi}en₃-bar=enbar[reed//reed]N'N$enbar/{gi}en₃-bar#~",
+"f": {"lang": "sux",
+"form": "{gi}en₃-bar",
+"cf": "enbar",
+"gw": "reed",
+"sense": "reed",
+"norm0": "enbar",
+"pos": "N",
+"epos": "N",
+"base": "{gi}en₃-bar",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "{u₂}|ZI&ZI.LAGAB|",
+"id": "P414652.l1a8d7",
+"ref": "P414652.4.2",
+"inst": "X",
+"f": {"lang": "sux",
+"form": "{u₂}|ZI&ZI.LAGAB|",
+"pos": "X"}
+}
+]}
+]}
+]}
+]}
