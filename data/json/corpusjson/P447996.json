@@ -4,7 +4,7 @@
   "license": "This data is released under the CC0 license",
   "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
   "more-info": "http://oracc.org/doc/opendata/",
-  "UTC-timestamp": "2017-05-19T18:28:25",
+  "UTC-timestamp": "2017-05-24T00:15:29",
 "project": "dcclt",
 "textid": "P447996",
 "cdl": [
@@ -5506,10 +5506,18 @@
 "frag": "{ŋeš}ŋa₂-li",
 "id": "P447996.l1b9ac",
 "ref": "P447996.149.1",
-"inst": "X",
+"inst": "ŋali[~palm]",
+"sig": "@dcclt%sux:{ŋeš}ŋa₂-li=ŋali[~palm//~palm]N'N$ŋali/{ŋeš}ŋa₂-li#~",
 "f": {"lang": "sux",
 "form": "{ŋeš}ŋa₂-li",
-"pos": "X"}
+"cf": "ŋali",
+"gw": "~palm",
+"sense": "~palm",
+"norm0": "ŋali",
+"pos": "N",
+"epos": "N",
+"base": "{ŋeš}ŋa₂-li",
+"morph": "~"}
 }
 ,
 {
