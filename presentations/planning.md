@@ -29,9 +29,9 @@ Analyses to do and/or clean up:
 - Order of entries within sections
   - apply synteny approach. Are there any changes in how this is implemented?
  - Heatmaps for mapping sections across documents  
-  - use as a way of describing the data. Section rarity, popularity. Size of sections, etc. 
+    - use as a way of describing the data. Section rarity, popularity. Size of sections, etc. 
  - Grouping documents by entry similarity (DTM)
-  - Check results, clean up notebook
-  - Revisualize tree
-  - Add proveniance and period
+    - Check results, clean up notebook  
+    - Revisualize tree  
+    - Add proveniance and period  
   
