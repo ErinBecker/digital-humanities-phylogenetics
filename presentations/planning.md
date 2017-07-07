@@ -41,29 +41,29 @@ Analyses to do and/or clean up:
   
   
   Benchmarks/Timeline:
-  - Wednesday 7/12
-    Erin: 
-    - Figure out why max is lower than it should be in SI calcs.
+  - Wednesday 7/12  
+    Erin:   
+    - Figure out why max is lower than it should be in SI calcs.  
     - Calculate maximum SI for any given k and use that to define distance measure.
     - Kick out texts that have only 1 section.
     - Make the distance trees.  
-    Niek: 
+    Niek:   
     - Add provenience and period metadata for Erin to pull into analyses.
     - Provide outliers (non-related texts). 
     - Outline Assyriology article.
     
-  - Tuesday 7/18
-    Together:
+  - Tuesday 7/18  
+    Together:  
     - Before Tuesday each read three [Ten Simple Rules](http://collections.plos.org/ten-simple-rules) articles.
     - Outline "Ten Simple Rules for Interdisciplinary Collaboration"
     - Plan of attack for proximity based section defintion method.
     
-  - Friday 7/28
-    Erin: 
+  - Friday 7/28  
+    Erin:   
       - Clean up DTM notebook.
       - Start implementing the entry proximity method for section definition. 
-    Niek:
+    Niek:  
       - Outline BIDS talk.
-    Together: 
+    Together:   
       - Plan next few weeks of work. 
 
