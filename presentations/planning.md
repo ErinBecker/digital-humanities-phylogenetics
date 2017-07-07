@@ -33,5 +33,9 @@ Analyses to do and/or clean up:
  - Grouping documents by entry similarity (DTM)
     - Check results, clean up notebook  
     - Revisualize tree  
-    - Add proveniance and period  
+    - Add proveniance and period 
+ - Checks of our methods:
+    - Metadata (do docs from the same site/period co-branch)?
+    - Making a artificial set of exemplars to test our methods on, for which similarity/relationship is known.
+ - What is the effect of text length on methods? 
   
