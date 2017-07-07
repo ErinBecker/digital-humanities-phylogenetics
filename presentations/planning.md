@@ -21,4 +21,17 @@ Three possible articles:
     - 
     
 Analyses to do and/or clean up:
-- 
+- Section definitions
+  - Automated based on entry proximity. How does this influence later results? 
+  - Test how well our analyses perform on other corpuses beyond Q39. 
+  - Formal analysis of how the section definition performed across different Q texts.
+  - Compare the results of the "entry proximity" vs "composite text" methods for defining sections.
+- Order of entries within sections
+  - apply synteny approach. Are there any changes in how this is implemented?
+ - Heatmaps for mapping sections across documents  
+  - use as a way of describing the data. Section rarity, popularity. Size of sections, etc. 
+ - Grouping documents by entry similarity (DTM)
+  - Check results, clean up notebook
+  - Revisualize tree
+  - Add proveniance and period
+  
