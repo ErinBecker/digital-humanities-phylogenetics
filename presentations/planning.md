@@ -28,6 +28,7 @@ Analyses to do and/or clean up:
   - Compare the results of the "entry proximity" vs "composite text" methods for defining sections.
 - Order of entries within sections
   - apply synteny approach. Are there any changes in how this is implemented?
+  - add "top" and "bottom" sections
  - Heatmaps for mapping sections across documents  
     - use as a way of describing the data. Section rarity, popularity. Size of sections, etc. 
  - Grouping documents by entry similarity (DTM)
@@ -43,14 +44,14 @@ Analyses to do and/or clean up:
   Benchmarks/Timeline:
   - Wednesday 7/12  
     Erin:   
-    - Figure out why max is lower than it should be in SI calcs.  
-    - Calculate maximum SI for any given k and use that to define distance measure.
-    - Kick out texts that have only 1 section.
+    - ~~Figure out why max is lower than it should be in SI calcs.~~  
+    - ~~Calculate maximum SI for any given k and use that to define distance measure.~~
+    - ~~Kick out texts that have only 1 section.~~
     - Make the distance trees.  
     Niek:   
-    - Add provenience and period metadata for Erin to pull into analyses.
-    - Provide outliers (non-related texts). 
-    - Outline Assyriology article.
+    - ~~Add provenience and period metadata for Erin to pull into analyses.~~
+    - ~~Provide outliers (non-related texts).~~ 
+    - ~~Outline Assyriology article.~~
     
   - Tuesday 7/18  
     Together:  
