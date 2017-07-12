@@ -5,6 +5,7 @@
 - factor **geographical** distance
 - temporal and geographical distance are related to **textual** distance (explain the concept of textual distance).
 Is it possible to create a **measure** of textual distance that might indicate geographical or temporal distance/proximity?
+Is it possible to use such distance for creating a tree diagram, illustrating the complex interdependencies?
 
 ### 1.2 Phylogenetics
 - measuring distance between genes
@@ -14,10 +15,13 @@ Is it possible to create a **measure** of textual distance that might indicate g
 - weak: evolution of lexical texts is not linear
 
 ### 1.3 Previous research
-BRM 29 + 30 from Ur? (diss. Niek)
-KM text from Isin? (diss. Niek)
-Nuzi text related to Emar (M. Civil)
-MB Nippur text related to Emar (Peterson)
+Instances where researches have suggested genetic connections between lexical texts based on similarity.
+* [BRM 29 + 30](http://oracc.org/dcclt/P250364) from Ur? (diss. Niek)
+* [KM 89542](http://oracc.org/dcclt/P235262) text from Isin? (diss. Niek)
+* Nuzi text related to Emar (M. Civil) (text still needs lemmatization!)
+* [MB Nippur](http://oracc.org/dcclt/P247850) text related to Emar (Peterson)
+* The rare words **negipum** and **katapum** (both referring to a type of ceremonial weapon) appear together in 4 [exemplars](http://oracc.org/dcclt/P247864.364,P273880.384,P388265.353,P347814.130). Are these texts connected?
+
 Lessons learned:
 - for **longer** texts: order of **sections** may be strong indicator of connection
 - for **shorter** texts (Civil, Peterson) order of **items** is useful
