@@ -5,7 +5,9 @@ By Erin Becker and Niek Veldhuis
 - factor **temporal** distance
 - factor **geographical** distance
 - temporal and geographical distance are related to **textual** distance which can be expressed computationally.
+
 Is it possible to create a **measure** of textual distance that might indicate geographical or temporal distance/proximity?
+
 Is it possible to use such distances for creating a **dendrogram**, illustrating the complex interdependencies?
 
 ### 1.2 Phylogenetics
