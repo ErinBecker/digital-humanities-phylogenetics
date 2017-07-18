@@ -59,6 +59,7 @@ Lessons learned:
 - comparing section order
     - Synteny Index
     - problem: lexical texts are not circular
+    - problem: section appearing multiple times
 - tree diagram
 
 ## 5 Analysis 3: Entry Order within Sections
