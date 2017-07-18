@@ -20,7 +20,7 @@ dcclt/P229426
 dcclt/P230069
 dcclt/P235262
 dcclt/P247543
-dcclt/P247864
+dcclt/P247864 - r i 16
 dcclt/P249383
 dcclt/P250361
 dcclt/P250362
@@ -32,7 +32,7 @@ dcclt/P250370
 dcclt/P250371
 dcclt/P251495
 dcclt/P251649
-dcclt/P251686
+dcclt/P251686 - o 8
 dcclt/P251778
 dcclt/P251867
 dcclt/P253228
@@ -53,7 +53,7 @@ dcclt/P272532
 dcclt/P273706
 dcclt/P273712
 dcclt/P273880
-dcclt/P296528
+dcclt/P296528 - r v 10'
 dcclt/P297185
 dcclt/P297194
 dcclt/P297195
@@ -88,7 +88,7 @@ dcclt/P432448
 dcclt/P433291
 dcclt/P447996
 dcclt/P459216
-dcclt/P459217
+dcclt/P459217 - r iv 12
 dcclt/P459218
 dcclt/P459219
 dcclt/P459220
@@ -102,35 +102,35 @@ dcclt/P459227
 dcclt/P459228
 dcclt/P459230
 dcclt/P459231
-dcclt/P459784
+dcclt/P459784 - r 1
 dcclt/P492330
 dcclt/P272243
 dcclt/P271792
-dcclt/P271301
+dcclt/P271301 - r iv 49
 dcclt/P271771
-dcclt/P271320
+dcclt/P271320 - r ii' 12'
 dcclt/P271519
 dcclt/P271549
-dcclt/P271911
+dcclt/P271911 - r v 3'
 dcclt/P429503
-dcclt/P332939
-dcclt/P332934
+dcclt/P332939 - r ii' 13'
+dcclt/P332934 - r iv 33'
 dcclt/P429504
 dcclt/P332930
 dcclt/P429505
-dcclt/X100003
+dcclt/X100003 - r 17
 dcclt/P437074
 dcclt/P409465
 dcclt/P409466
 dcclt/P349893
 dcclt/P229173
-dcclt/P228683
-dcclt/P230849
-dcclt/P249794
+dcclt/P228683 r 1 - r 4
+dcclt/P230849 r 1 - r 5
+dcclt/P249794 r 1 - r 4
 dcclt/P349859
 dcclt/P228196
 dcclt/P228596
-dcclt/P273244
+dcclt/P273244 r 1 - r 5
 dcclt/P228096
 dcclt/P228105
 dcclt/P277271
