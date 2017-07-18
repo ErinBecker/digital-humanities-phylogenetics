@@ -57,16 +57,21 @@ Analyses to do and/or clean up:
     Together:  
     ~~- Before Tuesday each read three [Ten Simple Rules](http://collections.plos.org/ten-simple-rules) articles.~~
     ~~- Outline "Ten Simple Rules for Interdisciplinary Collaboration"~~
-    - Plan of attack for proximity based section defintion method.
-    - Outline of Assyriology article
+    - ~~Plan of attack for proximity based section defintion method.~~
+    - ~~Discuss outline of Assyriology article~~
     - 
     
   - Friday 7/28  
     Erin:   
-      - Clean up DTM notebook.
-      - Start implementing the entry proximity method for section definition. 
+      - Debug notebook for building trees based on SI.
+      - Clean up DTM notebook, document and test. 
     Niek:  
       - Outline BIDS talk.
     Together:   
       - Plan next few weeks of work. 
+      
+   
+      
+      
+Start implementing the entry proximity method for section definition. 
 
