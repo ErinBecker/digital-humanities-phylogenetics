@@ -55,9 +55,11 @@ Analyses to do and/or clean up:
     
   - Tuesday 7/18  
     Together:  
-    - Before Tuesday each read three [Ten Simple Rules](http://collections.plos.org/ten-simple-rules) articles.
-    - Outline "Ten Simple Rules for Interdisciplinary Collaboration"
+    ~~- Before Tuesday each read three [Ten Simple Rules](http://collections.plos.org/ten-simple-rules) articles.~~
+    ~~- Outline "Ten Simple Rules for Interdisciplinary Collaboration"~~
     - Plan of attack for proximity based section defintion method.
+    - Outline of Assyriology article
+    - 
     
   - Friday 7/28  
     Erin:   
