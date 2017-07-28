@@ -22,6 +22,7 @@
 - Meet in person if possible (or meet regularly in some way)
     - Your mode of working may be different than your collaborators  
     - Why is this important?
+- How do you call a notebook from another GitHub repo?
 
     
 
