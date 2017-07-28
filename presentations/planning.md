@@ -61,15 +61,14 @@ Analyses to do and/or clean up:
     
   - Friday 7/28  
     Erin:   
-      - Debug notebook for building trees based on SI.
-      - Clean up DTM notebook, document and test. 
-    Niek:  
-      - Outline BIDS talk.
-    Together:   
+      - ~~Debug notebook for building trees based on SI.~~ 
+    Niek:    
+      - Outline BIDS talk.  
+    Together:     
       - Plan next few weeks of work. 
       
    
       
-      
+Clean up DTM notebook, document and test.       
 Start implementing the entry proximity method for section definition. 
 
