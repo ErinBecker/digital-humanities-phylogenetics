@@ -5,7 +5,7 @@
 - Benefits of using Jupyter Notebooks
     - cross-language compatibility makes it possible to collaborate across language proficiencies
     - report-layout makes it easy to combine analysis, results and discussion - ease of entry for collaborators unfamiliar to coding
-    - widely used, lots of resources for help
+    - widely used, lots of resources for help, great documentation, friendly community
     - active development, new features being added regularly
     
  - Intended audience
@@ -13,12 +13,31 @@
  - Who we are?
 
 ### Rule 1: Use the Right Kernel
-- Use the right kernel
-- Avoid mixing languages
+- What is a kernel and why do I care?
+- Ability to collaborate with people who speak a different (computing) language than you.
+- Originally, iPython developed for Python only (hence the name), now supports many languages.
+-  Many kernels exist (see resources)
+- Most commonly used / well supported kernels (at the time of writing) are . . . 
+- Possible to combine languages within a single notebook via cell/line magics but we don't recommend it because . . . 
+    - Difficulties passing objects back and forth between languages due to differences in formatting. 
+        - Missing values 
+        - Dataframe formatting weirdness (find the example of this)
+    - If using R within a Python notebook, do you need to load libraries in each cell you're using them in, or only in the overall notebook?
     - If you must do this, anticipate difficulties
     - What were some of our problems? How could we solve those?
 - Anticipate hidden errors when working outside of Python
+    - Working within R kernel posed challenges due to output text not being rendered to Jupyter Notebook cell.
+        - When installing packages, R prompts to select a CRAN mirror, but Jupyter simply pops up an input box saying "Selection:"
+        - For code that takes a while to run, R often displays intermediate progress messages,but these didn't appear in Jupyter Notebook
+          leading to confusion about whether process had stalled or was still running.
+        - Installing R packages sometimes timed out the kernel.
 - Know where your packages are installing
+    - Describe difficulty in terms of what the user experiences as also in terms of what the underlying technical issue is. 
+    - Fix is to explicitly specify libpath each time you load a package.
+
+#### Resources:
+- [Authoritative list of available kernels](https://github.com/jupyter/jupyter/wiki/Jupyter-kernels)
+- 
 
 ### Rule 2: Use Version Control, but . . . 
 - Use version control but . . .  
