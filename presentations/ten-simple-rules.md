@@ -40,10 +40,19 @@
 - 
 
 ### Rule 2: Use Version Control, but . . . 
-- Use version control but . . .  
-  - Avoid Merge Conflicts (or know how to handle them!) - Using Git to manage notebooks is hard
-  - Hard to work on the same notebook - how would this be possible? Or is it?
-  - similtaneous vs sequential collaboration
+- Describe the problem
+- How does this cause issues in a "normal" workflow
+- Strategies for managing/avoiding merge conflicts for the less technical crowd
+    - sequential collaboration
+    - modularity
+- Strategies for managing merge conflicts for the more technical crowd
+    - nbdime (see resources)
+
+#### Resources:
+- [Tool for diffing and merging Jupyter Notebooks](http://nbdime.readthedocs.io/en/latest/)
+- [History of the conversation about issues with merge conflicts in Jupyter Notebooks](https://github.com/jupyter/nbdime/issues?utf8=%E2%9C%93&q=is%3Aissue%20merge%20conflicts%20)
+- [YouTube video presentation of nbdime](https://www.youtube.com/watch?v=tKAmwC8ay8E)
+- [More history about the issue](https://stackoverflow.com/questions/18734739/using-ipython-notebooks-under-version-control)
 
 ### Rule 3: Practice Modularity
 - Practice Modularity - when should things go in different notebooks, when in different cells (small cells)?
