@@ -58,6 +58,12 @@
 - Practice Modularity - when should things go in different notebooks, when in different cells (small cells)?
     - chunk notebooks, each collaborator works on his/her own
     - create intermediate input/output files
+    
+#### Resources:
+   - [Reusing code between different notebooks](https://stackoverflow.com/questions/16966280/reusing-code-from-different-ipython-notebooks)
+   - [Importing notebooks as modules](http://jupyter-notebook.readthedocs.io/en/latest/examples/Notebook/Importing%20Notebooks.html)
+   - [Similar info from SciPy lectures](http://www.scipy-lectures.org/intro/language/reusing_code.html)
+   - [Relevant Google group discussion](https://groups.google.com/forum/#!topic/jupyter/V2knsyBCUYU)
 
 ### Rule 4: Be Adaptable
 - Re-run your notebook (for people used to working with scripts, cell independence can present problems)
