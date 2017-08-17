@@ -97,7 +97,7 @@
 ### References
     
 #### Misc
-- Should we mention R Notebooks somewhere as a valid alternative? Do they have cross-language capability? They claim to be easier to diff.
+- Should we mention R Notebooks somewhere as a valid alternative? Do they have cross-language capability? They claim to be easier to diff. ([Comparison of the two](http://minimaxir.com/2017/06/r-notebooks/))
 
     
 
