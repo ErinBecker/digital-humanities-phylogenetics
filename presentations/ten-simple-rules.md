@@ -7,6 +7,7 @@
     - report-layout makes it easy to combine analysis, results and discussion - ease of entry for collaborators unfamiliar to coding
     - widely used, lots of resources for help, great documentation, friendly community
     - active development, new features being added regularly
+    - interactive execution
     
  - Intended audience
  
@@ -69,6 +70,10 @@
 - Re-run your notebook (for people used to working with scripts, cell independence can present problems)
 - Anticipate differences (between Jupyter Notebooks and the platform you're used to working in)
     - Have adaptable code-writing practices (be willing to change the way you write code to take advantage of functions of Jupyter notebooks)
+    
+#### Resources:
+- [R Notebooks vs Jupyter Notebooks](https://www.datacamp.com/community/blog/jupyter-notebook-r#gs.JyqiRr0)
+- [Why I Switched from Jupyter Notebooks to R Markdown](http://danielphadley.com/Jupyter-to-Rmarkdown/)
 
 ### Rule 5: Comment Your Code
 - Comment your Code (document what you're doing)
@@ -92,7 +97,7 @@
 ### References
     
 #### Misc
-- How do you call a notebook from another GitHub repo?
+- Should we mention R Notebooks somewhere as a valid alternative? Do they have cross-language capability? They claim to be easier to diff.
 
     
 
