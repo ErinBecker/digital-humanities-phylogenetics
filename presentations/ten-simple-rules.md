@@ -32,13 +32,16 @@
         - For code that takes a while to run, R often displays intermediate progress messages,but these didn't appear in Jupyter Notebook
           leading to confusion about whether process had stalled or was still running.
         - Installing R packages sometimes timed out the kernel.
+- Accept limitations
+    - [Interactive input for R doesn't work, even in R kernel](https://stackoverflow.com/questions/38466438/readline-in-jupyter-irkernel)
 - Know where your packages are installing
     - Describe difficulty in terms of what the user experiences as also in terms of what the underlying technical issue is. 
     - Fix is to explicitly specify libpath each time you load a package.
 
 #### Resources:
 - [Authoritative list of available kernels](https://github.com/jupyter/jupyter/wiki/Jupyter-kernels)
-- 
+- [Issues with readline](https://github.com/IRkernel/IRkernel/issues/199)
+- [More issues with readline](https://github.com/IRkernel/IRkernel/pull/452)
 
 ### Rule 2: Use Version Control, but . . . 
 - Describe the problem
@@ -98,6 +101,7 @@
     
 #### Misc
 - Should we mention R Notebooks somewhere as a valid alternative? Do they have cross-language capability? They claim to be easier to diff. ([Comparison of the two](http://minimaxir.com/2017/06/r-notebooks/))
+- Is it possible to run a python magic in e.g. an R kernel? (for sidestepping limitations in eg. readline)
 
     
 
