@@ -69,6 +69,7 @@ Analyses to do and/or clean up:
       
    
       
-Clean up DTM notebook, document and test.       
+For DTM, build dataframe showing absolute number of shared entries for any document pair.
+Test distance measure of #shared entries/shortest document in pair.
 Start implementing the entry proximity method for section definition. 
 
