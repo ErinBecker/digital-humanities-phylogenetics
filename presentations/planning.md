@@ -31,45 +31,33 @@ Analyses to do and/or clean up:
   - add "top" and "bottom" sections
  - Heatmaps for mapping sections across documents  
     - use as a way of describing the data. Section rarity, popularity. Size of sections, etc. 
- - Grouping documents by entry similarity (DTM)
+~~ - Grouping documents by entry similarity (DTM)
     - Check results, clean up notebook  
     - Revisualize tree  
-    - Add proveniance and period 
+    - Add proveniance and period ~~
  - Checks of our methods:
     - Metadata (do docs from the same site/period co-branch)?
     - Making a artificial set of exemplars to test our methods on, for which similarity/relationship is known.
  - What is the effect of text length on methods? 
   
   
-  Benchmarks/Timeline:
-  - Wednesday 7/12  
-    Erin:   
-    - ~~Figure out why max is lower than it should be in SI calcs.~~  
-    - ~~Calculate maximum SI for any given k and use that to define distance measure.~~
-    - ~~Kick out texts that have only 1 section.~~
-    Niek:   
-    - ~~Add provenience and period metadata for Erin to pull into analyses.~~
-    - ~~Provide outliers (non-related texts).~~ 
-    - ~~Outline Assyriology article.~~
-    
-  - Tuesday 7/18  
-    Together:  
-    ~~- Before Tuesday each read three [Ten Simple Rules](http://collections.plos.org/ten-simple-rules) articles.~~
-    ~~- Outline "Ten Simple Rules for Interdisciplinary Collaboration"~~
-    - ~~Plan of attack for proximity based section defintion method.~~
-    - ~~Discuss outline of Assyriology article~
-    
-  - Friday 7/28  
-    Erin:   
-      - ~~Debug notebook for building trees based on SI.~~ 
-    Niek:    
-      - Outline BIDS talk.  
-    Together:     
-      - Plan next few weeks of work. 
+  Benchmarks/Timeline:      
+  - Friday 10/6
+    - Erin: 
+      - Read about hierarchical clustering algorithms and see which is appropriate for our data
+      - Implement that hclust method and sanity check ordering and branch lengths (for dtm analysis)
+      - Update section presence/absence dendrograms based on hclust research
+    - Niek:
+  - Friday 10/13
+    - Erin: 
+      - Work on filling in outline for the 10 simple rules paper. 
+      - Solidify which analyses to do /complete/ include in paper and add to outline.
+    - Niek:
+  - Wednesday 10/18
+    - Erin: 
+    - Niek:
+  - Friday 10/27
+    - Erin: 
+    - Niek:
       
-   
-      
-For DTM, build dataframe showing absolute number of shared entries for any document pair.
-Test distance measure of #shared entries/shortest document in pair.
-Start implementing the entry proximity method for section definition. 
 
