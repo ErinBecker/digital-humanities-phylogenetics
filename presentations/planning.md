@@ -1,10 +1,3 @@
-### Present at BIDS in early November  
-
-Three topics of focus:  
-1) Interdisciplinary collaboration  
-2) Collaborating across languages and platforms
-3) Results of analyses  
-
 Three possible articles:
 1) Popular opinion piece about "10 Simple Rules for Interdisciplinary Collaboration"  
   - put together draft
