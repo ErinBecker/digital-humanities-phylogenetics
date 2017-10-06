@@ -40,6 +40,7 @@ Analyses to do and/or clean up:
       - Work on filling in outline for the 10 simple rules paper. 
       - Solidify which analyses to do /complete/ include in paper and add to outline.
     - Niek:
+      - write proposal for HathiTrust conference
   - Wednesday 10/18
     - Erin: 
     - Niek:
