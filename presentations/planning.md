@@ -43,6 +43,7 @@ Analyses to do and/or clean up:
       - write proposal for HathiTrust conference
   - Wednesday 10/18
     - Erin: 
+      - Move R scripts into R studio (instead of jupyter notebooks).
       - Bootstrap the dtm trees. 
     - Niek:
   - Friday 10/27
