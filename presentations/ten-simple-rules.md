@@ -37,6 +37,7 @@
 - Know where your packages are installing
     - Describe difficulty in terms of what the user experiences as also in terms of what the underlying technical issue is. 
     - Fix is to explicitly specify libpath each time you load a package.
+- If you need to update R, you can't just install the new version. Need to https://conda.io/docs/user-guide/tasks/use-r-with-conda.html
 
 #### Resources:
 - [Authoritative list of available kernels](https://github.com/jupyter/jupyter/wiki/Jupyter-kernels)
