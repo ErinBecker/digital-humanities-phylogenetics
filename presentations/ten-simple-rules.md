@@ -37,6 +37,7 @@
 - Know where your packages are installing
     - Describe difficulty in terms of what the user experiences as also in terms of what the underlying technical issue is. 
     - Fix is to explicitly specify libpath each time you load a package.
+- If you need to update R, you can't just install the new version. Need to https://conda.io/docs/user-guide/tasks/use-r-with-conda.html
 
 #### Resources:
 - [Authoritative list of available kernels](https://github.com/jupyter/jupyter/wiki/Jupyter-kernels)
@@ -102,7 +103,6 @@
 #### Misc
 - Should we mention R Notebooks somewhere as a valid alternative? Do they have cross-language capability? They claim to be easier to diff. ([Comparison of the two](http://minimaxir.com/2017/06/r-notebooks/))
 - Is it possible to run a python magic in e.g. an R kernel? (for sidestepping limitations in eg. readline)
-
-    
+- Not all of base r is included in conda install r-essentials? https://support.bioconductor.org/p/99576/
 
 
