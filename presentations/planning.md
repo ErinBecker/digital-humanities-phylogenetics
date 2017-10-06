@@ -43,6 +43,7 @@ Analyses to do and/or clean up:
       - write proposal for HathiTrust conference
   - Wednesday 10/18
     - Erin: 
+      - Bootstrap the dtm trees. 
     - Niek:
   - Friday 10/27
     - Erin: 
