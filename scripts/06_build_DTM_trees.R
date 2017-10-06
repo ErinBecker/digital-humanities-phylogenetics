@@ -1,6 +1,6 @@
 setwd("~/Box Sync/digital-humanities-phylogenetics/")
 
-all_pairs_matrix2 = read.csv("data/all_pairs_matrix2.csv", row.names = 1)
+all_pairs_matrix2 = read.csv("data/dtm_data/all_pairs_matrix2.csv", row.names = 1)
 
 #source("http://bioconductor.org/biocLite.R")
 #biocLite("BiocInstaller")
