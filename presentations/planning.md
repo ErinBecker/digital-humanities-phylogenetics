@@ -35,17 +35,6 @@ Analyses to do and/or clean up:
   
   
   Benchmarks/Timeline:      
-  - Friday 10/6
-    - Erin: 
-      - Read about hierarchical clustering algorithms and see which is appropriate for our data
-      - Talk to Gabe about hierarchical clustering
-      - Implement that hclust method and sanity check ordering and branch lengths (for dtm analysis)
-      - Update section presence/absence dendrograms based on hclust research and be prepared to discuss at our next meeting
-    - Niek: 
-      - Read about hierarchical clustering algorithms and see which is appropriate for our data
-      - talk to Cody Hennesy about HathiTrust conference
-    - Together: 
-      - Go through dendrograms in detail. Figure out what worked / didn't work and make detailed plan for follow-up analyses.
   - Friday 10/13
     - Erin: 
       - Work on filling in outline for the 10 simple rules paper. 
