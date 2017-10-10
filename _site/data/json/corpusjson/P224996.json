@@ -1,0 +1,204 @@
+{
+"type": "cdl",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-05-26T00:11:21",
+"project": "dcclt",
+"textid": "P224996",
+"cdl": [
+{
+"node": "c",
+"type": "text",
+"id": "P224996.U0",
+"cdl": [
+{
+"node": "d",
+"subtype": "tablet",
+"type": "object",
+"ref": "P224996.x580.1",
+"type": "tablet",
+"label": "x580"}
+,
+{
+"node": "d",
+"subtype": "obverse",
+"type": "surface",
+"ref": "P224996.o.2",
+"type": "obverse",
+"label": "o"}
+,
+{
+"node": "d",
+"subtype": "column 1o",
+"type": "column",
+"ref": "P224996.o.i.3",
+"n": "1",
+"label": "o i"}
+,
+{
+"node": "c",
+"type": "discourse",
+"subtype": "body",
+"id": "P224996.U1",
+"cdl": [
+{
+"node": "c",
+"type": "sentence",
+"id": "P224996.U2",
+"label": "o i 1 - o i 3",
+"cdl": [
+{
+"node": "d",
+"type": "line-start",
+"ref": "P224996.4",
+"n": "1",
+"label": "o i 1"}
+,
+{
+"node": "l",
+"frag": "{⸢ŋeš}gu⸣-za",
+"id": "P224996.l1adcb",
+"ref": "P224996.4.1",
+"inst": "guza[chair, stool]N",
+"sig": "@dcclt%sux:{ŋeš}gu-za=guza[chair//chair]N'N$guza/{ŋeš}gu-za#~",
+"f": {"lang": "sux",
+"form": "{ŋeš}gu-za",
+"cf": "guza",
+"gw": "chair",
+"sense": "chair",
+"norm0": "guza",
+"pos": "N",
+"epos": "N",
+"base": "{ŋeš}gu-za",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P224996.5",
+"n": "2",
+"label": "o i 2"}
+,
+{
+"node": "l",
+"frag": "{⸢ŋeš}gu-za",
+"id": "P224996.l1adcc",
+"ref": "P224996.5.1",
+"inst": "guza[chair, stool]N",
+"sig": "@dcclt%sux:{ŋeš}gu-za=guza[chair//chair]N'N$guza/{ŋeš}gu-za#~",
+"f": {"lang": "sux",
+"form": "{ŋeš}gu-za",
+"cf": "guza",
+"gw": "chair",
+"sense": "chair",
+"norm0": "guza",
+"pos": "N",
+"epos": "N",
+"base": "{ŋeš}gu-za",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "gid₂⸣-da",
+"id": "P224996.l1adcd",
+"ref": "P224996.5.2",
+"inst": "gid[long]",
+"sig": "@dcclt%sux:gid₂-da=gid[long//(to be) long]V/i'V/i$gid;a/gid₂+-da=d.a#~;a",
+"f": {"lang": "sux",
+"form": "gid₂-da",
+"cf": "gid",
+"gw": "long",
+"sense": "(to be) long",
+"norm0": "gid;a",
+"pos": "V/i",
+"epos": "V/i",
+"base": "gid₂",
+"cont": "-da=d.a",
+"morph": "~;a"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P224996.6",
+"n": "3",
+"label": "o i 3"}
+,
+{
+"node": "c",
+"type": "phrase",
+"tag": "phr",
+"id": "P224996.U4",
+"ref": "P224996.ls00000",
+"cdl": [
+{
+"node": "l",
+"frag": "{[ŋeš]}⸢gu-za",
+"id": "P224996.l1adce",
+"ref": "P224996.6.1",
+"inst": "guza[chair, stool]N",
+"sig": "@dcclt%sux:{ŋeš}gu-za=guza[chair//chair]N'N$guza/{ŋeš}gu-za#~",
+"f": {"lang": "sux",
+"form": "{ŋeš}gu-za",
+"cf": "guza",
+"gw": "chair",
+"sense": "chair",
+"norm0": "guza",
+"pos": "N",
+"epos": "N",
+"base": "{ŋeš}gu-za",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "sir₂⸣-da",
+"id": "P224996.l1adcf",
+"ref": "P224996.6.2",
+"inst": "sirda[cnne]N",
+"sig": "@dcclt%sux:sir₂-da=sirda[cnne//(compound noun nominal element)]N'N$sirda/sir₂-da#~",
+"f": {"lang": "sux",
+"form": "sir₂-da",
+"cf": "sirda",
+"gw": "cnne",
+"sense": "(compound noun nominal element)",
+"norm0": "sirda",
+"pos": "N",
+"epos": "N",
+"base": "sir₂-da",
+"morph": "~"}
+}
+]}
+]}
+]}
+]}
+,
+{
+"linkbase": [{
+"type": "linkset",
+"xlink_title": "guza sirda[chair//a chair]N'N",
+"id": "P224996.ls00000",
+"xlink_type": "extended",
+"xlink_role": "psu",
+"sig": "{{ŋeš}gu-za sir₂-da = guza[chair]N sirda[cnne]N += guza sirda[chair//a chair]N'N}::@dcclt%sux:{ŋeš}gu-za=guza[chair//chair, stool]N'N$guza/{ŋeš}gu-za#~++@dcclt%sux:sir₂-da=sirda[cnne//(compound noun nominal element)]N'N$sirda/sir₂-da#~",
+"links": [
+{
+"type": "link",
+"xlink_title": "guza",
+"xlink_type": "locator",
+"xlink_href": "#P224996.l1adce",
+"xlink_role": "elt"}
+,
+{
+"type": "link",
+"xlink_title": "sirda",
+"xlink_type": "locator",
+"xlink_href": "#P224996.l1adcf",
+"xlink_role": "elt"}
+]}
+]}
+]}

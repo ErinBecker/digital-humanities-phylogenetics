@@ -1,0 +1,154 @@
+{
+"type": "cdl",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-05-26T00:11:22",
+"project": "dcclt",
+"textid": "P225059",
+"cdl": [
+{
+"node": "c",
+"type": "text",
+"id": "P225059.U0",
+"cdl": [
+{
+"node": "d",
+"subtype": "tablet",
+"type": "object",
+"ref": "P225059.x615.1",
+"type": "tablet",
+"label": "x615"}
+,
+{
+"node": "d",
+"subtype": "obverse",
+"type": "surface",
+"ref": "P225059.o.2",
+"type": "obverse",
+"label": "o"}
+,
+{
+"node": "d",
+"subtype": "column 1o",
+"type": "column",
+"ref": "P225059.o.i.3",
+"n": "1",
+"label": "o i"}
+,
+{
+"node": "c",
+"type": "discourse",
+"subtype": "body",
+"id": "P225059.U1",
+"cdl": [
+{
+"node": "c",
+"type": "sentence",
+"id": "P225059.U2",
+"label": "o i 1 - o i 3",
+"cdl": [
+{
+"node": "d",
+"type": "line-start",
+"ref": "P225059.4",
+"n": "1",
+"label": "o i 1"}
+,
+{
+"node": "l",
+"frag": "{ŋeš}⸢emerah(|SAL.TUK|)",
+"id": "P225059.l1c1ca",
+"ref": "P225059.4.1",
+"inst": "emerah[jug, can]N",
+"sig": "@dcclt%sux:{ŋeš}emerah=emerah[jug//jug]N'N$emerah/{ŋeš}emerah#~",
+"f": {"lang": "sux",
+"form": "{ŋeš}emerah",
+"cf": "emerah",
+"gw": "jug",
+"sense": "jug",
+"norm0": "emerah",
+"pos": "N",
+"epos": "N",
+"base": "{ŋeš}emerah",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P225059.5",
+"n": "2",
+"label": "o i 2"}
+,
+{
+"node": "l",
+"frag": "{ŋeš}emerah(|SAL.TUK|)",
+"id": "P225059.l1c1cb",
+"ref": "P225059.5.1",
+"inst": "emerah[jug, can]N",
+"sig": "@dcclt%sux:{ŋeš}emerah=emerah[jug//jug]N'N$emerah/{ŋeš}emerah#~",
+"f": {"lang": "sux",
+"form": "{ŋeš}emerah",
+"cf": "emerah",
+"gw": "jug",
+"sense": "jug",
+"norm0": "emerah",
+"pos": "N",
+"epos": "N",
+"base": "{ŋeš}emerah",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "[...]",
+"id": "P225059.l1c1cc",
+"ref": "P225059.5.2",
+"inst": "u",
+"f": {"lang": "sux",
+"form": "x",
+"pos": "u"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P225059.6",
+"n": "3",
+"label": "o i 3"}
+,
+{
+"node": "l",
+"frag": "{ŋeš}emerah(|SAL.TUK|)",
+"id": "P225059.l1c1cd",
+"ref": "P225059.6.1",
+"inst": "emerah[jug, can]N",
+"sig": "@dcclt%sux:{ŋeš}emerah=emerah[jug//jug]N'N$emerah/{ŋeš}emerah#~",
+"f": {"lang": "sux",
+"form": "{ŋeš}emerah",
+"cf": "emerah",
+"gw": "jug",
+"sense": "jug",
+"norm0": "emerah",
+"pos": "N",
+"epos": "N",
+"base": "{ŋeš}emerah",
+"morph": "~"}
+}
+,
+{
+"node": "l",
+"frag": "[...]",
+"id": "P225059.l1c1ce",
+"ref": "P225059.6.2",
+"inst": "u",
+"f": {"lang": "sux",
+"form": "x",
+"pos": "u"}
+}
+]}
+]}
+]}
+]}

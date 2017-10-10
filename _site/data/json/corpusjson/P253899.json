@@ -1,0 +1,138 @@
+{
+"type": "cdl",
+  "source": "http://oracc.org/dcclt",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2017-05-26T00:12:25",
+"project": "dcclt",
+"textid": "P253899",
+"cdl": [
+{
+"node": "c",
+"type": "text",
+"id": "P253899.U0",
+"cdl": [
+{
+"node": "d",
+"type": "object",
+"ref": ""}
+,
+{
+"node": "d",
+"subtype": "obverse",
+"type": "surface",
+"ref": "P253899.o.1",
+"type": "obverse",
+"label": "o"}
+,
+{
+"node": "c",
+"type": "discourse",
+"subtype": "body",
+"id": "P253899.U1",
+"cdl": [
+{
+"node": "c",
+"type": "sentence",
+"id": "P253899.U2",
+"label": "o 1 - o 3",
+"cdl": [
+{
+"node": "d",
+"type": "line-start",
+"ref": "P253899.2",
+"n": "1",
+"label": "o 1"}
+,
+{
+"node": "l",
+"frag": "{ŋeš}lam-gal",
+"id": "P253899.l1ac09",
+"ref": "P253899.2.1",
+"inst": "lamgal[a nut]N",
+"sig": "@dcclt%sux:{ŋeš}lam-gal=lamgal[nut//a nut]N'N$lamgal/{ŋeš}lam-gal#~",
+"f": {"lang": "sux",
+"form": "{ŋeš}lam-gal",
+"cf": "lamgal",
+"gw": "nut",
+"sense": "a nut",
+"norm0": "lamgal",
+"pos": "N",
+"epos": "N",
+"base": "{ŋeš}lam-gal",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P253899.3",
+"n": "2",
+"label": "o 2"}
+,
+{
+"node": "l",
+"frag": "{ŋeš}lam-tur",
+"id": "P253899.l1ac0a",
+"ref": "P253899.3.1",
+"inst": "lamtur[a nut]N",
+"sig": "@dcclt%sux:{ŋeš}lam-tur=lamtur[nut//a nut]N'N$lamtur/{ŋeš}lam-tur#~",
+"f": {"lang": "sux",
+"form": "{ŋeš}lam-tur",
+"cf": "lamtur",
+"gw": "nut",
+"sense": "a nut",
+"norm0": "lamtur",
+"pos": "N",
+"epos": "N",
+"base": "{ŋeš}lam-tur",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"type": "line-start",
+"ref": "P253899.4",
+"n": "3",
+"label": "o 3"}
+,
+{
+"node": "l",
+"frag": "{⸢ŋeš⸣}al-la-nu-um",
+"id": "P253899.l1ac0b",
+"ref": "P253899.4.1",
+"inst": "allanum[oak]N",
+"sig": "@dcclt%sux:{ŋeš}al-la-nu-um=allanum[oak//oak]N'N$allanum/{ŋeš}al-la-nu-um#~",
+"f": {"lang": "sux",
+"form": "{ŋeš}al-la-nu-um",
+"cf": "allanum",
+"gw": "oak",
+"sense": "oak",
+"norm0": "allanum",
+"pos": "N",
+"epos": "N",
+"base": "{ŋeš}al-la-nu-um",
+"morph": "~"}
+}
+,
+{
+"node": "d",
+"subtype": "reverse",
+"type": "surface",
+"ref": "P253899.r.5",
+"type": "reverse",
+"label": "r"}
+,
+{
+"node": "d",
+"type": "nonx",
+"ref": "P253899.6",
+"strict": "0",
+"extent": "0",
+"scope": "obverse",
+"state": "other"}
+]}
+]}
+]}
+]}
