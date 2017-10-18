@@ -298,6 +298,9 @@ After these cleaning steps, we now have the DTM that we will use for our remaini
 object to other scripts. 
 
 ```{r echo = TRUE}
+#add document names as row names
+dtm_df$document = rownames(dtm_df)
+
 write.csv(dtm_df, "data/dtm_data/dtm_df_clean.csv", quote = FALSE)
 ```
 
@@ -316,5 +319,100 @@ for(i in 1:1000) {
 }
 ```
 
+### Build distance matrix based on entry overlap across document pairs
 
+To help understand the scale and pattern of shared entries across the corpus, we want to build a dataframe to store the absolute number of (unique) shared entries between each document pair. This will not count duplicated entries within one of the two documents. We will then use that dataframe to calculate a distance matrix using the formula: 
+
+similarity = (number of shared entries / length of shortest text in pair)
+
+distance = 1 - similarity
+
+First, we define some functions:
+
+```{r echo = TRUE}
+# function to extract entries of any specified document
+get_entries = function(df, doc) {
+  as.character(df[which(df$document == doc &
+                          df$value == 1),]$variable)
+}
+
+# function to get number of shared entries for any specified document pair
+get_shared_entries = function(df, doc1, doc2) {
+  doc1_entries = get_entries(df, doc1)
+  doc2_entries = get_entries(df, doc2)
+  length(which(doc1_entries %in% doc2_entries))
+}
+```
+
+We next convert the dtm dataframe from wide format to long format. In wide format, each document is a row and each entry is a column. There are as many observed values per row as their are entries. In long format, each document/entry combination is a row and there is only one observed value per row.
+
+We then initialize an empty dataframe (all_pairs), compute the number of shared entries for each
+document pair and add that to our dataframe (all_pairs), reorder the new dataframe
+so that document pairs with the most shared entries are on top, add back in our `num_entries` column (we had to remove it to build the long format dataframe) and calulate our similarity metric for each document pair. We do this in a single code chunk so that we can make it a function and run it with a for loop for each of our bootstrapped dtms.
+
+```{r}
+
+calculate_distance = function(dtm) {
+  row.names(dtm) = dtm$X
+  dtm$X = NULL
+  dtm$document = row.names(dtm)
+  melted_dtm_df = melt(dtm)
+
+  # initialize an empty dataframe
+  docs = unique(melted_dtm_df$document)
+
+  all_pairs = combinations(length(docs), 2, docs, repeats.allowed = F)
+  all_pairs = as.data.frame(all_pairs, stringsAsFactors = FALSE)
+  all_pairs$doc1 = all_pairs$V1
+  all_pairs$doc2 = all_pairs$V2
+  all_pairs$V1 = NULL
+  all_pairs$V2 = NULL
+  all_pairs$num_shared_entries = NA
+
+  # compute the number of shared entries for each pair and add to dataframe
+  for(i in 1:nrow(all_pairs)) {
+    all_pairs[i,]$num_shared_entries = 
+      get_shared_entries(melted_dtm_df, all_pairs[i,]$doc1, all_pairs[i,]$doc2)
+  }
+
+  # reorder the new data frame so that the document pairs with 
+  # the most shared entries are on top
+  all_pairs = all_pairs[order(-all_pairs$num_shared_entries),] 
+
+  # add back in num_entries column
+  dtm_df$num_entries = rowSums(dtm_df[1:cols_to_sum])
+
+  # calculate similarity metric and add to dataframe
+  all_pairs$similarity = NA
+  all_pairs$distance = NA
+
+  get_num_entries = function(df, doc) {
+    df[which(df$document == doc),]$num_entries 
+  }
+
+  for(i in 1:nrow(all_pairs)) {
+    doc1_entries = get_num_entries(dtm_df, all_pairs[i,]$doc1)
+    doc2_entries = get_num_entries(dtm_df, all_pairs[i,]$doc2)
+  
+    all_pairs[i,]$similarity = 
+      all_pairs[i,]$num_shared_entries / min(doc1_entries, doc2_entries)
+  
+    all_pairs[i,]$distance = 1 - all_pairs[i,]$similarity
+  }
+
+  return(all_pairs)
+  
+}
+```
+
+```{r echo = TRUE, eval = TRUE}
+
+for(i in 1:1000) {
+  filename_out = paste0("data/dtm_data/bootstrap/distance_matrices/all_pairs_", i, ".csv")
+  filename_in = paste0("data/dtm_data/bootstrap/dtms/dtm_df_", i, ".csv")
+  dtm = read.csv(filename_in)
+  all_pairs = calculate_distance(dtm)
+  write.csv(all_pairs, filename_out)
+}
+```
 

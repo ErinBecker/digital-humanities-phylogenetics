@@ -280,7 +280,10 @@ $(document).ready(function () {
 <div id="write-out-cleaned-dtm" class="section level3">
 <h3>Write out cleaned dtm</h3>
 <p>After these cleaning steps, we now have the DTM that we will use for our remaining analyses. We will write out a copy of this dataframe so that we can pass it in as an object to other scripts.</p>
-<pre class="r"><code>write.csv(dtm_df, &quot;data/dtm_data/dtm_df_clean.csv&quot;, quote = FALSE)</code></pre>
+<pre class="r"><code>#add document names as row names
+dtm_df$document = rownames(dtm_df)
+
+write.csv(dtm_df, &quot;data/dtm_data/dtm_df_clean.csv&quot;, quote = FALSE)</code></pre>
 </div>
 <div id="create-bootstrapped-dtms" class="section level3">
 <h3>Create bootstrapped DTMs</h3>
@@ -290,6 +293,36 @@ $(document).ready(function () {
   dtm_bootstrap = sample(dtm_df, replace = TRUE)
   write.csv(dtm_bootstrap, filename)
 }</code></pre>
+</div>
+<div id="build-distance-matrix-based-on-entry-overlap-across-document-pairs" class="section level3">
+<h3>Build distance matrix based on entry overlap across document pairs</h3>
+<p>To help understand the scale and pattern of shared entries across the corpus, we want to build a dataframe to store the absolute number of (unique) shared entries between each document pair. This will not count duplicated entries within one of the two documents. We will then use that dataframe to calculate a distance matrix using the formula:</p>
+<p>similarity = (number of shared entries / length of shortest text in pair)</p>
+<p>distance = 1 - similarity</p>
+<p>First, we define some functions:</p>
+<pre class="r"><code># function to extract entries of any specified document
+get_entries = function(df, doc) {
+  as.character(df[which(df$document == doc &amp;
+                          df$value == 1),]$variable)
+}
+
+# function to get number of shared entries for any specified document pair
+get_shared_entries = function(df, doc1, doc2) {
+  doc1_entries = get_entries(df, doc1)
+  doc2_entries = get_entries(df, doc2)
+  length(which(doc1_entries %in% doc2_entries))
+}</code></pre>
+<p>We next convert the dtm dataframe from wide format to long format. In wide format, each document is a row and each entry is a column. There are as many observed values per row as their are entries. In long format, each document/entry combination is a row and there is only one observed value per row.</p>
+<p>We then initialize an empty dataframe (all_pairs), compute the number of shared entries for each document pair and add that to our dataframe (all_pairs), reorder the new dataframe so that document pairs with the most shared entries are on top, add back in our <code>num_entries</code> column (we had to remove it to build the long format dataframe) and calulate our similarity metric for each document pair. We do this in a single code chunk so that we can make it a function and run it with a for loop for each of our bootstrapped dtms.</p>
+<pre class="r"><code>for(i in 1:2) {
+  filename_out = paste0(&quot;data/dtm_data/bootstrap/distance_matrices/all_pairs_&quot;, i, &quot;.csv&quot;)
+  filename_in = paste0(&quot;data/dtm_data/bootstrap/dtms/dtm_df_&quot;, i, &quot;.csv&quot;)
+  dtm = read.csv(filename_in)
+  all_pairs = calculate_distance(dtm)
+  write.csv(all_pairs, filename_out)
+}</code></pre>
+<pre><code>## Using document as id variables
+## Using document as id variables</code></pre>
 </div>
 </div>
 
