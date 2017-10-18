@@ -131,6 +131,12 @@ $(document).ready(function () {
 <div id="setup" class="section level3">
 <h3>Setup</h3>
 <p>If you haven’t already, install and load the required packages.</p>
+<pre><code>## 
+## Attaching package: 'reshape2'</code></pre>
+<pre><code>## The following objects are masked from 'package:reshape':
+## 
+##     colsplit, melt, recast</code></pre>
+<pre><code>## Loading required package: ape</code></pre>
 <p>Load in the document term matrix (DTM) that was generated previously.</p>
 </div>
 <div id="check-how-r-parsed-the-dtm" class="section level3">
@@ -314,15 +320,15 @@ get_shared_entries = function(df, doc1, doc2) {
 }</code></pre>
 <p>We next convert the dtm dataframe from wide format to long format. In wide format, each document is a row and each entry is a column. There are as many observed values per row as their are entries. In long format, each document/entry combination is a row and there is only one observed value per row.</p>
 <p>We then initialize an empty dataframe (all_pairs), compute the number of shared entries for each document pair and add that to our dataframe (all_pairs), reorder the new dataframe so that document pairs with the most shared entries are on top, add back in our <code>num_entries</code> column (we had to remove it to build the long format dataframe) and calulate our similarity metric for each document pair. We do this in a single code chunk so that we can make it a function and run it with a for loop for each of our bootstrapped dtms.</p>
-<pre class="r"><code>for(i in 1:2) {
+<p>Run the function defined above for all of the bootstrapped DTMs and write out a new set of output files containing the calculated distance matrix for each DTM.</p>
+<pre class="r"><code>for(i in 1:20) {
   filename_out = paste0(&quot;data/dtm_data/bootstrap/distance_matrices/all_pairs_&quot;, i, &quot;.csv&quot;)
   filename_in = paste0(&quot;data/dtm_data/bootstrap/dtms/dtm_df_&quot;, i, &quot;.csv&quot;)
   dtm = read.csv(filename_in)
   all_pairs = calculate_distance(dtm)
   write.csv(all_pairs, filename_out)
 }</code></pre>
-<pre><code>## Using document as id variables
-## Using document as id variables</code></pre>
+<p>Compute a neighbor joining tree for each of the calculated distance matrices and write out the tree file.</p>
 </div>
 </div>
 

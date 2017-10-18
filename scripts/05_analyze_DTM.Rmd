@@ -21,14 +21,20 @@ code chunks by setting eval=TRUE and see the code itself by setting echo=TRUE.
 If you haven't already, install and load the required packages. 
 
 ```{r}
-# install.packages(c("ggplot2", "ggdendro", "reshape", "scales", "RColorBrewer", "gtools"))
+# install.packages(c("ggplot2", "ggdendro", "reshape", "scales", "RColorBrewer", "gtools", "reshape2"))
+
+#source("http://bioconductor.org/biocLite.R")
+#biocLite("BiocInstaller")
+#biocLite("phangorn")
 
 library(ggplot2)
 library(ggdendro)
 library(reshape)
+library(reshape2)
 library(scales)
 library(RColorBrewer)
 library(gtools)
+library(phangorn)
 ```
 
 Load in the document term matrix (DTM) that was generated previously.
@@ -356,12 +362,12 @@ calculate_distance = function(dtm) {
   row.names(dtm) = dtm$X
   dtm$X = NULL
   dtm$document = row.names(dtm)
-  melted_dtm_df = melt(dtm)
+  melted_dtm = melt(dtm)
 
   # initialize an empty dataframe
-  docs = unique(melted_dtm_df$document)
+  docs = unique(melted_dtm$document)
 
-  all_pairs = combinations(length(docs), 2, docs, repeats.allowed = F)
+  all_pairs = permutations(length(docs), 2, docs, repeats.allowed = T)
   all_pairs = as.data.frame(all_pairs, stringsAsFactors = FALSE)
   all_pairs$doc1 = all_pairs$V1
   all_pairs$doc2 = all_pairs$V2
@@ -372,7 +378,7 @@ calculate_distance = function(dtm) {
   # compute the number of shared entries for each pair and add to dataframe
   for(i in 1:nrow(all_pairs)) {
     all_pairs[i,]$num_shared_entries = 
-      get_shared_entries(melted_dtm_df, all_pairs[i,]$doc1, all_pairs[i,]$doc2)
+      get_shared_entries(melted_dtm, all_pairs[i,]$doc1, all_pairs[i,]$doc2)
   }
 
   # reorder the new data frame so that the document pairs with 
@@ -380,7 +386,7 @@ calculate_distance = function(dtm) {
   all_pairs = all_pairs[order(-all_pairs$num_shared_entries),] 
 
   # add back in num_entries column
-  dtm_df$num_entries = rowSums(dtm_df[1:cols_to_sum])
+  dtm$num_entries = rowSums(dtm[1:cols_to_sum])
 
   # calculate similarity metric and add to dataframe
   all_pairs$similarity = NA
@@ -391,8 +397,8 @@ calculate_distance = function(dtm) {
   }
 
   for(i in 1:nrow(all_pairs)) {
-    doc1_entries = get_num_entries(dtm_df, all_pairs[i,]$doc1)
-    doc2_entries = get_num_entries(dtm_df, all_pairs[i,]$doc2)
+    doc1_entries = get_num_entries(dtm, all_pairs[i,]$doc1)
+    doc2_entries = get_num_entries(dtm, all_pairs[i,]$doc2)
   
     all_pairs[i,]$similarity = 
       all_pairs[i,]$num_shared_entries / min(doc1_entries, doc2_entries)
@@ -405,9 +411,11 @@ calculate_distance = function(dtm) {
 }
 ```
 
-```{r echo = TRUE, eval = TRUE}
+Run the function defined above for all of the bootstrapped DTMs and write out a new set of output files containing the calculated distance matrix for each DTM.
 
-for(i in 1:1000) {
+```{r echo = TRUE, eval = FALSE}
+
+for(i in 1:20) {
   filename_out = paste0("data/dtm_data/bootstrap/distance_matrices/all_pairs_", i, ".csv")
   filename_in = paste0("data/dtm_data/bootstrap/dtms/dtm_df_", i, ".csv")
   dtm = read.csv(filename_in)
@@ -415,4 +423,20 @@ for(i in 1:1000) {
   write.csv(all_pairs, filename_out)
 }
 ```
+
+Compute a neighbor joining tree for each of the calculated distance matrices and write out the tree file.
+
+```{r}
+# Build neighbor joining tree for each distance matrix
+for(i in 1:20) {
+  filename_in = paste0("data/dtm_data/bootstrap/distance_matrices/all_pairs_", i, ".csv")
+  filename_out = paste0("data/dtm_data/bootstrap/trees/dtm_nj_", i, ".tre")
+  all_pairs = read.csv(filename_in, row.names = 1)
+  all_pairs_matrix = data.matrix(acast(all_pairs, doc1 ~ doc2, 
+                                       value.var='distance', fun.aggregate = sum, margins = FALSE))
+  treeNJ  <- NJ(dist(all_pairs_matrix))
+  write.tree(treeNJ, filename_out)
+}
+```
+
 

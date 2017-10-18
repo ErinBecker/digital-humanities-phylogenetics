@@ -1,18 +1,10 @@
-setwd("~/Box Sync/digital-humanities-phylogenetics/")
-
-all_pairs_matrix2 = read.csv("data/dtm_data/all_pairs_matrix2.csv", row.names = 1)
-
-#source("http://bioconductor.org/biocLite.R")
-#biocLite("BiocInstaller")
-#biocLite("phangorn")
-
-library("phangorn")
-
 # Build UPGMA and neighbor joining trees
-treeUPGMA <- upgma(dist(all_pairs_matrix2))
-treeNJ  <- NJ(dist(all_pairs_matrix2))
-plot(treeUPGMA, main="UPGMA")
-plot(treeNJ, main = "Neighbor Joining")
-
-write.tree(treeUPGMA, "data/trees/dtm_upgma.tre")
-write.tree(treeNJ, "data/trees/dtm_nj.tre")
+for(i in 1:2) {
+  filename_in = paste0("data/dtm_data/bootstrap/distance_matrices/all_pairs_", i, ".csv")
+  filename_out = paste0("data/dtm_data/bootstrap/trees/dtm_nj_", i, ".tre")
+  all_pairs = read.csv(filename_in, row.names = 1)
+  all_pairs_matrix = data.matrix(acast(all_pairs, doc1 ~ doc2, 
+                                       value.var='distance', fun.aggregate = sum, margins = FALSE))
+  treeNJ  <- NJ(dist(all_pairs_matrix))
+  write.tree(treeNJ, filename_out)
+}
