@@ -413,9 +413,9 @@ calculate_distance = function(dtm) {
 
 Run the function defined above for all of the bootstrapped DTMs and write out a new set of output files containing the calculated distance matrix for each DTM.
 
-```{r echo = TRUE, eval = FALSE}
+```{r echo = TRUE, eval = TRUE}
 
-for(i in 1:20) {
+for(i in 21:1000) {
   filename_out = paste0("data/dtm_data/bootstrap/distance_matrices/all_pairs_", i, ".csv")
   filename_in = paste0("data/dtm_data/bootstrap/dtms/dtm_df_", i, ".csv")
   dtm = read.csv(filename_in)
@@ -426,9 +426,9 @@ for(i in 1:20) {
 
 Compute a neighbor joining tree for each of the calculated distance matrices and write out the tree file.
 
-```{r}
+```{r echo = TRUE, eval = TRUE}
 # Build neighbor joining tree for each distance matrix
-for(i in 1:20) {
+for(i in 21:1000) {
   filename_in = paste0("data/dtm_data/bootstrap/distance_matrices/all_pairs_", i, ".csv")
   filename_out = paste0("data/dtm_data/bootstrap/trees/dtm_nj_", i, ".tre")
   all_pairs = read.csv(filename_in, row.names = 1)
@@ -439,4 +439,22 @@ for(i in 1:20) {
 }
 ```
 
+Compute a consensus tree for all generated tree files.
 
+```{r}
+
+trees = list()
+
+for(i in 1:1000) {
+  filename_in = paste0("data/dtm_data/bootstrap/trees/dtm_nj_", i, ".tre")
+  name = paste0("tree_", i)
+  tree = read.tree(filename_in)
+  trees[[name]] <- tree
+  }
+  
+consensus_50 = consensus(trees, p = 0.5)
+write.tree(consensus_50, "data/dtm_data/bootstrap/consensus_trees/consensus_50.tre")
+
+consensus_75 = consensus(trees, p = 0.75)
+write.tree(consensus_75, "data/dtm_data/bootstrap/consensus_trees/consensus_75.tre")
+```

@@ -329,6 +329,17 @@ get_shared_entries = function(df, doc1, doc2) {
   write.csv(all_pairs, filename_out)
 }</code></pre>
 <p>Compute a neighbor joining tree for each of the calculated distance matrices and write out the tree file.</p>
+<pre class="r"><code># Build neighbor joining tree for each distance matrix
+for(i in 1:20) {
+  filename_in = paste0(&quot;data/dtm_data/bootstrap/distance_matrices/all_pairs_&quot;, i, &quot;.csv&quot;)
+  filename_out = paste0(&quot;data/dtm_data/bootstrap/trees/dtm_nj_&quot;, i, &quot;.tre&quot;)
+  all_pairs = read.csv(filename_in, row.names = 1)
+  all_pairs_matrix = data.matrix(acast(all_pairs, doc1 ~ doc2, 
+                                       value.var='distance', fun.aggregate = sum, margins = FALSE))
+  treeNJ  &lt;- NJ(dist(all_pairs_matrix))
+  write.tree(treeNJ, filename_out)
+}</code></pre>
+<p>Compute a consensus tree for all generated tree files.</p>
 </div>
 </div>
 
