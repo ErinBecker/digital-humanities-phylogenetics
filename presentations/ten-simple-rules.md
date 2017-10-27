@@ -83,9 +83,9 @@ which enables programming in Python (currently v3.3 and higher).
 The IPython kernel also includes a number of `magic` functions for 
 incorporating other programming languages into a single cell of the 
 notebook or a single line within a cell. As of this writing, IPython
-magic functions support scripting in Bash, Perl, PyPy, and Ruby [1][magics]. 
+magic functions support scripting in Bash, Perl, PyPy, and Ruby ([1][magics]). 
 IPython can also support line or cell-based R scripting when combined with the 
-rpy2 package [2][rpy2-cite]. If you will be primarily programming in Python, but would appreciate the ability
+rpy2 package ([2][rpy2-cite]). If you will be primarily programming in Python, but would appreciate the ability
 to incorporate small chunks of another scripting language, it makes sense to use
 the default IPython kernel. 
 
