@@ -1,6 +1,6 @@
 ## Ten Simple Rules for Collaborating with Jupyter Notebooks
 
-### What is The Jupyter Notebook?
+### What is the Jupyter Notebook?
 
 The Jupyter Notebook is an open-source coding environment for producing 
 interactive documents that combine code, visualizations and explanatory
@@ -72,7 +72,7 @@ address these issues. We hope that our recommendations will be helpful
 for the reader in making effective use of Jupyter Notebook's many 
 well-developed capabilities.
 
-### Rule 1: Use the Right Kernel
+### Rule 1: Choose the Right Kernel
 
 The first choice you will face when starting to use Jupyter Notebook is which
 kernel is appropriate for your project. A kernel is the program responsible for
@@ -89,10 +89,21 @@ rpy2 package ([2][rpy2-cite]). If you will be primarily programming in Python, b
 to incorporate small chunks of another scripting language, it makes sense to use
 the default IPython kernel. 
 
+Many other kernels have been developed by the community to support the use of
+other programming languages within the Jupyter Notebook interface. Over ninety 
+alternative kernels are currenly listed in the Jupyter Notebook documentation
+([3][kernels-list]). These kernels have varying levels of developer support. 
+Although many are under active development, others have not been updated in years
+and are unlikely to be functioning. Before adopting a kernel, 
+we strongly recommend researching the project by
+reading its latest documentation, checking the last commit date to the project's
+GitHub or Bitbucket repository, and searching the kernel name on 
+StackOverflow ([4][stackoverflow]) to see common user problems. 
+
+As of this writing, the most commonly used and up-to-date kernels include IJulia, 
+IRkernel, IHaskell, IJavascript (?), jpCoffeescript (?), IfSharp, Gophernotes, Jupyter-PHP, IOctave, MATLAB Kernel, CloJupyter, and cling. 
 
 
--  Many kernels exist (see resources)
-- Most commonly used / well supported kernels (at the time of writing) are . . . 
 - Possible to combine languages within a single notebook via cell/line magics but we don't recommend it because . . . 
     - Difficulties passing objects back and forth between languages due to differences in formatting. 
         - Missing values 
@@ -114,9 +125,13 @@ the default IPython kernel.
 - If you need to update R, you can't just install the new version. Need to https://conda.io/docs/user-guide/tasks/use-r-with-conda.html
 - Keep in mind that kernels aside from the default IPython kernel are not maintained by the Jupyter team, but by the community. There may be discrepencies with implementation and/or bug fixes may be slower for community maintained kernels.
 - Distinguish between running a separate kernel for working with a different programming language through the notebook and running the default kernel (IPython) with line or cell magics to incorporate another language in parts of the notebook.
+- Outdated kernels: 
+    - [Mochi Kernel](https://github.com/pya/mochi-kernel) - last updated in 2015.
+    - [Calysto Processing](https://github.com/Calysto/calysto_processing) - last updated in May.
+    - [Forth](https://github.com/jdfreder/iforth) - last updated in 2014.
+
 
 #### Resources:
-- [Authoritative list of available kernels](https://github.com/jupyter/jupyter/wiki/Jupyter-kernels)
 - [Issues with readline](https://github.com/IRkernel/IRkernel/issues/199)
 - [More issues with readline](https://github.com/IRkernel/IRkernel/pull/452)
 - Examples of polyglot data analysis: 
@@ -195,3 +210,5 @@ http://blog.fperez.org/2012/01/ipython-notebook-historical.html
 
 [magics]: http://ipython.readthedocs.io/en/stable/interactive/magics.html
 [rpy2-cite]: https://rpy2.bitbucket.io/
+[kernels-list]: https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+[stackoverflow]: https://stackoverflow.com/
