@@ -73,6 +73,16 @@ for the reader in making effective use of Jupyter Notebook's many
 well-developed capabilities.
 
 ### Rule 1: Use the Right Kernel
+
+A kernel is the program responsible for running and interpreting the
+code that a user enters into the notebook. The Jupyter Notebook is 
+developed by the Jupyter team and ships with the default IPython kernel,
+which enables programming in Python (currently v3.3 and higher). 
+The IPython kernel also includes a number of `magic` functions for 
+incorporating other programming languages into a single cell of the 
+notebook or a single line within a cell. As of this writing, IPython
+magic functions support scripting in bash, perl, pypy, and ruby[1][magics].
+
 - What is a kernel and why do I care?
 - Ability to collaborate with people who speak a different (computing) language than you.
 - Originally, iPython developed for Python only (hence the name), now supports many languages.
@@ -178,3 +188,4 @@ well-developed capabilities.
 
 http://blog.fperez.org/2012/01/ipython-notebook-historical.html
 
+[magics]: http://ipython.readthedocs.io/en/stable/interactive/magics.html
