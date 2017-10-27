@@ -100,9 +100,9 @@ reading its latest documentation, checking the last commit date to the project's
 GitHub or Bitbucket repository, and searching the kernel name on 
 StackOverflow ([4][stackoverflow]) to see common user problems. 
 
-As of this writing, the most commonly used and up-to-date kernels include IJulia, 
-IRkernel, IHaskell, IJavascript (?), jpCoffeescript (?), IfSharp, Gophernotes, Jupyter-PHP, IOctave, MATLAB Kernel, CloJupyter, and cling. 
-
+As of this writing, the most commonly used and up-to-date kernels include IJulia
+(Julia), IRkernel (R), IHaskell (Haskell), IJavascript (nodejs), jpCoffeescript 
+(coffeescript), IfSharp (F#), Gophernotes, Jupyter-PHP, IOctave, MATLAB Kernel, CloJupyter, and cling. 
 
 - Possible to combine languages within a single notebook via cell/line magics but we don't recommend it because . . . 
     - Difficulties passing objects back and forth between languages due to differences in formatting. 
