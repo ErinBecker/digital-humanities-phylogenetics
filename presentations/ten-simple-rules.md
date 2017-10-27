@@ -74,18 +74,23 @@ well-developed capabilities.
 
 ### Rule 1: Use the Right Kernel
 
-A kernel is the program responsible for running and interpreting the
-code that a user enters into the notebook. The Jupyter Notebook is 
-developed by the Jupyter team and ships with the default IPython kernel,
+The first choice you will face when starting to use Jupyter Notebook is which
+kernel is appropriate for your project. A kernel is the program responsible for
+running and interpreting the
+code that a user enters into the notebook. The Jupyter Notebook ships with the
+default IPython kernel,
 which enables programming in Python (currently v3.3 and higher). 
 The IPython kernel also includes a number of `magic` functions for 
 incorporating other programming languages into a single cell of the 
 notebook or a single line within a cell. As of this writing, IPython
-magic functions support scripting in bash, perl, pypy, and ruby[1][magics].
+magic functions support scripting in Bash, Perl, PyPy, and Ruby [1][magics]. 
+IPython can also support line or cell-based R scripting when combined with the 
+rpy2 package [2][rpy2-cite]. If you will be primarily programming in Python, but would appreciate the ability
+to incorporate small chunks of another scripting language, it makes sense to use
+the default IPython kernel. 
 
-- What is a kernel and why do I care?
-- Ability to collaborate with people who speak a different (computing) language than you.
-- Originally, iPython developed for Python only (hence the name), now supports many languages.
+
+
 -  Many kernels exist (see resources)
 - Most commonly used / well supported kernels (at the time of writing) are . . . 
 - Possible to combine languages within a single notebook via cell/line magics but we don't recommend it because . . . 
@@ -121,7 +126,7 @@ magic functions support scripting in bash, perl, pypy, and ruby[1][magics].
 - [Pipelining R and Python in Notebooks](http://blog.revolutionanalytics.com/2016/01/pipelining-r-python.html)
 - [RPy2 on the Yhat blog](http://blog.yhat.com/posts/rpy2-combing-the-power-of-r-and-python.html)
 (Many of the above can be used as support for statement in introduction about advertised abilities of Jupyter Notebook to support cross-language collaborations)
-- [RPy2 has been around since at least 2009](https://rpy2.bitbucket.io/)
+- [RPy2 has been around since at least 2008](https://rpy2.bitbucket.io/) (initial commit on sourceforge = 2008-02-23)
 
 
 ### Rule 2: Use Version Control, but . . . 
@@ -189,3 +194,4 @@ magic functions support scripting in bash, perl, pypy, and ruby[1][magics].
 http://blog.fperez.org/2012/01/ipython-notebook-historical.html
 
 [magics]: http://ipython.readthedocs.io/en/stable/interactive/magics.html
+[rpy2-cite]: https://rpy2.bitbucket.io/
