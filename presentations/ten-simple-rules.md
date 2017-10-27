@@ -31,14 +31,14 @@ needs that arose during the course of our year-long research project.
 When considering adopting any new tool, it is important to take into 
 account the availability of resources for trouble-shooting the 
 inevitable roadblocks you will encounter. In part because of its
-popularity and the friendly community its founders have nurthered, 
+popularity and the friendly community its founders have nurtured, 
 there are abundant resources available for Jupyter Notebook in addition
 to great documentation [ref to some resources and documentation].
 
 Lastly, we would like to call attention to the multi-language 
 compatibility of the Jupyter Notebook. Currently, the Jupyter Notebook
 supports over forty programming languages. This has been touted as a 
-boon to researchers in making it possible for researchers to collaborate
+boon to researchers in making it possible for them to collaborate
 with others who have different programming language proficiencies or 
 preferences. Through our year-long collaboration, we (a Python 
 programmer and an R programmer) explored Jupyter Notebook's abilities to
@@ -47,7 +47,30 @@ findings, and recommendations in a later section.
 
 ### Intended Audience
 
+This article is intended for people who are comfortable programming in
+one or more scripting languages using either the native interpreter 
+or a graphical user interface (GUI) (such as RStudio or [list others])
+and are considering adopting the Jupyter Notebook. These ten simple 
+rules will also be helpful for current Jupyter Notebook users who want
+to expand their use of Jupyter Notebook's many useful features or 
+otherwise improve their workflow.
+
 ### Who Are the Authors?
+
+We are two computational researchers with different academic
+specializations and programmatic preferences. One is a
+computational biologist with a background in comparative genomics and 
+phylogenetics who has previous experience with Python but does most
+of her programming in R. The other is an assyriologist studying the 
+history of education and lexicography in ancient Mesopotamia who has 
+some experience with R but is more comfortable in Python. In January
+2017, we began a research collaboration and adopted the Jupyter 
+Notebook primarily for its potential to facilitate cross-language 
+collaborations. Throughout our research project, we documented issues
+we faced in using the Jupyter Notebook along with strategies we used to
+address these issues. We hope that our recommendations will be helpful
+for the reader in making effective use of Jupyter Notebook's many 
+well-developed capabilities.
 
 ### Rule 1: Use the Right Kernel
 - What is a kernel and why do I care?
@@ -74,11 +97,22 @@ findings, and recommendations in a later section.
     - Describe difficulty in terms of what the user experiences as also in terms of what the underlying technical issue is. 
     - Fix is to explicitly specify libpath each time you load a package.
 - If you need to update R, you can't just install the new version. Need to https://conda.io/docs/user-guide/tasks/use-r-with-conda.html
+- Keep in mind that kernels aside from the default IPython kernel are not maintained by the Jupyter team, but by the community. There may be discrepencies with implementation and/or bug fixes may be slower for community maintained kernels.
+- Distinguish between running a separate kernel for working with a different programming language through the notebook and running the default kernel (IPython) with line or cell magics to incorporate another language in parts of the notebook.
 
 #### Resources:
 - [Authoritative list of available kernels](https://github.com/jupyter/jupyter/wiki/Jupyter-kernels)
 - [Issues with readline](https://github.com/IRkernel/IRkernel/issues/199)
 - [More issues with readline](https://github.com/IRkernel/IRkernel/pull/452)
+- Examples of polyglot data analysis: 
+    [notebook from LAURENT GAUTIER (R and Python)](http://lgautier.github.io/jpd-pdapr-slides/notebooks/potholes.html)
+    [notebook from LAURENT GAUTIER SQL and Python](http://lgautier.github.io/odsc-pdaibp-slides/notebooks/slides.html)
+- [R vs Python: A false dichotomy](https://www.activestate.com/blog/2016/02/r-vs-python-false-dichotomy)
+- [Pipelining R and Python in Notebooks](http://blog.revolutionanalytics.com/2016/01/pipelining-r-python.html)
+- [RPy2 on the Yhat blog](http://blog.yhat.com/posts/rpy2-combing-the-power-of-r-and-python.html)
+(Many of the above can be used as support for statement in introduction about advertised abilities of Jupyter Notebook to support cross-language collaborations)
+- [RPy2 has been around since at least 2009](https://rpy2.bitbucket.io/)
+
 
 ### Rule 2: Use Version Control, but . . . 
 - Describe the problem
@@ -140,6 +174,7 @@ findings, and recommendations in a later section.
 - Should we mention R Notebooks somewhere as a valid alternative? Do they have cross-language capability? They claim to be easier to diff. ([Comparison of the two](http://minimaxir.com/2017/06/r-notebooks/))
 - Is it possible to run a python magic in e.g. an R kernel? (for sidestepping limitations in eg. readline)
 - Not all of base r is included in conda install r-essentials? https://support.bioconductor.org/p/99576/
+- One of the rules should cover install. I remember having massive problems installing either Jupyter Notebook itself or the R magic or the R kernel (can't remember which)
 
 http://blog.fperez.org/2012/01/ipython-notebook-historical.html
 
