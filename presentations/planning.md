@@ -35,19 +35,11 @@ Analyses to do and/or clean up:
   
   
   Benchmarks/Timeline:      
-  - Friday 10/13
-    - Erin: 
-      - Work on filling in outline for the 10 simple rules paper. 
-      - Solidify which analyses to do /complete/ include in paper and add to outline.
-    - Niek:
-      - write proposal for HathiTrust conference
-  - Wednesday 10/18
-    - Erin: 
-      - Move R scripts into R studio (instead of jupyter notebooks).
-      - Bootstrap the dtm trees. 
-    - Niek:
-  - Friday 10/27
-    - Erin: 
-    - Niek:
+- Friday 11/3
+  - Erin 
+    - clean up the section presence/absence code, move to R markdown, and bookstrap
+    - look into changing trees from cladograms to dendrograms
+  - Niek
+    - look at existing trees for dtm analysis and make notes about relationships / interpretation
       
 
