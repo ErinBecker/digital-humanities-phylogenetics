@@ -39,6 +39,7 @@ Analyses to do and/or clean up:
   - Erin 
     - clean up the section presence/absence code, move to R markdown, and bookstrap
     - look into changing trees from cladograms to dendrograms
+    - look into adding bootstrap support values to trees (from existing calculations)
   - Niek
     - look at existing trees for dtm analysis and make notes about relationships / interpretation
       
