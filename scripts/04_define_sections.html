@@ -123,13 +123,16 @@ $(document).ready(function () {
 </div>
 
 
-<div id="define-sections" class="section level2">
-<h2>Define Sections:</h2>
-<div id="automated-based-on-composite-text" class="section level3">
-<h3>Automated based on composite text</h3>
-<p>The first step in analyzing order of entries within a section must be defining what constitutes a section. We’ve discussed three methods for defining sections. 1) Expert definition. 2) Automated based on composite text (eg. Q000039). 3) Automated based on entry proximity.</p>
+<div id="define-sections-based-on-composite-text" class="section level2">
+<h2>Define Sections based on composite text</h2>
+<p>The first step in analyzing order of entries within a section is defining what constitutes a section. We’ve discussed three methods for defining sections.</p>
+<ol style="list-style-type: decimal">
+<li>Expert definition.</li>
+<li>Automated based on composite text (eg. Q000039).</li>
+<li>Automated based on entry proximity.</li>
+</ol>
 <p>This document implements the second method (automated based on composite text).</p>
-<p>A composite text is read in and breakpoints in the text are determined based on fuzzy matching of similar words (either in base or lemma). Entries between those breakpoints are assumed to belong to the same section. This method would need to be tested and perhaps supervised to ensure that nonsense sections (a collection of words that don’t really belong to any section) aren’t grouped together. It may also miss sections that are based not on similarity of words (e.g. “palm”) but similarity of object type or use (e.g. “bowl”, “spoon”, “cup”), unless that section is between two sections that are picked up by this method.</p>
+<p>A composite text is read in and breakpoints in the text are determined based on similar words (either in base or lemma). Entries between those breakpoints are assumed to belong to the same section.</p>
 <p>Based on the following (artificial) Q text, this method would ideally lead to three sections. Lines 1-4 (related to palm), lines 5-8 (related to poplar), and lines 9-14 (related to tree).</p>
 <ol style="list-style-type: decimal">
 <li>ŋešnimbar[palm]N</li>
@@ -147,6 +150,9 @@ $(document).ready(function () {
 <li>samazum[tree]N</li>
 <li>peškal[tree]N</li>
 </ol>
+<p>Note that in our current implementation, the split is actually entries 1-4, entries 6-8, and entries 11-14. Entries 9 and 10 are not grouped with any section. This will be explained further in a later section.</p>
+<div id="implementation-strategy" class="section level3">
+<h3>Implementation strategy</h3>
 <p>Our strategy for implementing this method is the following:</p>
 <ol style="list-style-type: decimal">
 <li>Calculate the degree of similarity between any two adjacent entries in the source/composite document. This similarity can take two independent forms:</li>
@@ -165,7 +171,6 @@ $(document).ready(function () {
 <div id="setup" class="section level3">
 <h3>Setup</h3>
 <p>If you haven’t already, install and load the required packages.</p>
-<p>Note: The “EXTRA” tag indicates a hidden code chunk illustrating an important point about the data that is tangential to the main thread of the analysis. You can run these code chunks by setting eval=TRUE and see the code itself by setting echo=TRUE.</p>
 </div>
 </div>
 <div id="step-1-calculate-similarity-between-adjacent-entries." class="section level2">
@@ -176,17 +181,20 @@ $(document).ready(function () {
 <h3>Remove uninformative characters from character strings</h3>
 <p>Some characters in entries are not informative for our purposes and should be excluded from the character count in the longest common substring. The function below removes these characters from the entry string.</p>
 <pre class="r"><code>clean_kmer = function(x) {
+  
+  # get rid of [na]na strings
+  x = gsub(&quot;\\[na\\]na&quot;, &quot;&quot;, x)
+  
   # get rid of part of speech (follows each &quot;]&quot;)
   x = gsub(&quot;(\\])[a-zA-Z/]*&quot;, &quot;\\1&quot;, x)
   
-  # get rid of certain punctuation ({}[]_.~)
+  # get rid of certain punctuation ({}[]_.)
   x = gsub(&quot;\\]&quot;, &quot;&quot;, x)
   x = gsub(&quot;\\[&quot;, &quot;&quot;, x)
   x = gsub(&quot;\\{&quot;, &quot;&quot;, x)
   x = gsub(&quot;\\}&quot;, &quot;&quot;, x)
   x = gsub(&quot;_&quot;, &quot;&quot;, x)
   x = gsub(&quot;\\.&quot;, &quot;&quot;, x)
-  x = gsub(&quot;~&quot;, &quot;&quot;, x)
   x
 }</code></pre>
 <div id="example-to-illustrate-function" class="section level4">
@@ -227,6 +235,9 @@ get_citation_forms = function(line) {
 <pre><code>## [1] &quot;house&quot;   &quot;whip&quot;    &quot;chariot&quot;</code></pre>
 <pre class="r"><code>get_citation_forms(entry)</code></pre>
 <pre><code>## [1] &quot;e&quot;     &quot;usan&quot;  &quot;gigir&quot;</code></pre>
+<p>We define a section break as any line pair where overlap in guidewords + citation forms is zero AND the longest shared substring (k) is below a defined cutoff.</p>
+<p>After defining section breaks, we want to export all sections (with all members of each) to a output file. We will also name each section based on the guidewords from the first entry in that section.</p>
+<p>The function below wraps around the previously defined functions, reading in an input file, initializing a new data frame to store results, finding section breaks and outputing sections and entry by entry comparisonts to new files.</p>
 </div>
 </div>
 </div>

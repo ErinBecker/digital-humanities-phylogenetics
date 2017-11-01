@@ -10,23 +10,18 @@ knitr::opts_chunk$set(echo = FALSE)
 knitr::opts_knit$set(root.dir = "~/Box Sync/digital-humanities-phylogenetics/")
 ```
 
-## Define Sections: 
-### Automated based on composite text
+## Define Sections based on composite text
 
-The first step in analyzing order of entries within a section must be defining what constitutes a section. We've discussed three methods for defining sections.
+The first step in analyzing order of entries within a section is defining what constitutes a section. We've discussed three methods for defining sections.
+
 1) Expert definition.
 2) Automated based on composite text (eg. Q000039).
 3) Automated based on entry proximity.
 
 This document implements the second method (automated based on composite text).
 
-A composite text is read in and breakpoints in the text are determined based on fuzzy matching of
-similar words (either in base or lemma). Entries between those breakpoints are assumed to belong to
-the same section. This method would need to be tested and perhaps supervised to ensure that nonsense
-sections (a collection of words that don't really belong to any section) aren't grouped together. It
-may also miss sections that are based not on similarity of words (e.g. "palm") but similarity of
-object type or use (e.g. "bowl", "spoon", "cup"), unless that section is between two sections that
-are picked up by this method.
+A composite text is read in and breakpoints in the text are determined based on similar words (either in base or lemma). Entries between those breakpoints are assumed to belong to
+the same section. 
 
 Based on the following (artificial) Q text, this method would ideally lead to three sections. Lines 1-4 (related to palm), lines 5-8 (related to poplar), and lines 9-14 (related to tree).
 
@@ -45,6 +40,9 @@ Based on the following (artificial) Q text, this method would ideally lead to th
 13) samazum[tree]N
 14) peškal[tree]N
 
+Note that in our current implementation, the split is actually entries 1-4, entries 6-8, and entries 11-14. Entries 9 and 10 are not grouped with any section. This will be explained further in a later section.
+
+### Implementation strategy
 Our strategy for implementing this method is the following:
 
 1) Calculate the degree of similarity between any two adjacent entries in the source/composite document. This similarity can take two independent forms:
@@ -73,10 +71,6 @@ library(scales)
 library(Rlibstree)
 ```
 
-Note: The "EXTRA" tag indicates a hidden code chunk illustrating an important point about
-the data that is tangential to the main thread of the analysis. You can run these
-code chunks by setting eval=TRUE and see the code itself by setting echo=TRUE.
-
 ## Step 1: Calculate similarity between adjacent entries.
 
 This step relies on defining a number of functions to process and clean entry strings. The following entry will be used to demonstrate these functions:
@@ -87,21 +81,24 @@ print(entry)
 
 ### Remove uninformative characters from character strings
 
-Some characters in entries are not informative for our purposes and should be excluded from the character count in the longest common substring. The function below removes these characters from the entry string.
+Some characters in entries are not informative for our purposes and should be excluded from the character count in the longest common substring. The function below removes these characters from the entry string. 
 
 ```{r echo = TRUE}
 clean_kmer = function(x) {
+  
+  # get rid of [na]na strings
+  x = gsub("\\[na\\]na", "", x)
+  
   # get rid of part of speech (follows each "]")
   x = gsub("(\\])[a-zA-Z/]*", "\\1", x)
   
-  # get rid of certain punctuation ({}[]_.~)
+  # get rid of certain punctuation ({}[]_.)
   x = gsub("\\]", "", x)
   x = gsub("\\[", "", x)
   x = gsub("\\{", "", x)
   x = gsub("\\}", "", x)
   x = gsub("_", "", x)
   x = gsub("\\.", "", x)
-  x = gsub("~", "", x)
   x
 }
 ```
@@ -189,14 +186,13 @@ extract_sections = function(df, file) {
 }
 ```
 
-The function below wraps around the previously defined functions, reading in an input file, initializing a new data frame to store results, finding section breaks and outputing sections to a new file. It also creates two summary plots.
-The first plot shows the number of matching words (overlap) between any consecutive two lines.
-The second plot shows the total number of entries in each section.
+The function below wraps around the previously defined functions, reading in an input file, initializing a new data frame to store results, finding section breaks and outputing sections and entry by entry comparisonts to new files. 
 
 ```{r}
-compare_entries = function(infile, cutoff, outfile, comp) {
-  name = strsplit(infile, "\\.")[[1]][1]
+compare_entries = function(infile, comp, cutoff, outfile1, outfile2) {
+#  name = strsplit(infile, "\\.")[[1]][1]
   df_composite = read.csv(infile, stringsAsFactors = FALSE)
+  # get lines that belong to composite text
   df_composite = df_composite[which(grepl(comp, df_composite$id_text)),]
   # remove lines in df representing missing lines or sections
   empty_lines = which(df_composite$entry == "")
@@ -219,12 +215,14 @@ compare_entries = function(infile, cutoff, outfile, comp) {
     line_b = tolower(df_composite$entry[i + 1])
     guidewords_b = get_guidewords(line_b)
     citation_form_b = get_citation_forms(line_b)
-    
+
+# Note that here we are getting longest common substring after cleaning kmer. This means that a substring can span word boundaries and even span language boundaries. The alternative is cleaning the kmer after getting the longest common substring and then recalculating substring length.    
     line_a_clean = clean_kmer(line_a)
     line_b_clean = clean_kmer(line_b)
     kmer = getLongestCommonSubstring(c(line_a_clean, line_b_clean))
     kmer = gsub("[\x80-\xFF]", "", kmer) # get rid of multibyte strings introduced by Rlibstree
     k = nchar(kmer)
+    # Define kmer as NA and k as 0 if no shared characters
     if (length(kmer) == 0) {
         kmer = NA
         k = 0 }
@@ -237,19 +235,19 @@ compare_entries = function(infile, cutoff, outfile, comp) {
     df_compare$kmer[i] = kmer
     df_compare$k[i] = k
   }
-  plot(df_compare$overlap, pch = ".", main = name, ylab = "# matching words", xlab = "line number")
+#  plot(df_compare$overlap, pch = ".", main = name, ylab = "# matching words", xlab = "line number")
   df_compare = def_section_breaks(df_compare, cutoff = cutoff)
-  plot(table(df_compare$section), main = name, ylab = "# entries in section", xlab = "section")
-  extract_sections(df_compare, outfile)
+  write.csv(df_compare, outfile2, row.names = FALSE, quote = FALSE)
+#  plot(table(df_compare$section), main = name, ylab = "# entries in section", xlab = "section")
+  extract_sections(df_compare, outfile1)
   df_compare
 }
 ```
 
 ```{r}
-
-Q1 = compare_entries("data/pass/Q01_par.csv", cutoff = 3, "data/sections/Q01_sections.csv", comp = "Q000001")
-Q39 = compare_entries("data/pass/Q39_par.csv", cutoff = 3, "data/sections/Q39_sections.csv", comp = "Q000039")
-Q40 = compare_entries("data/pass/Q40_par.csv", cutoff = 3, "data/sections/Q40_sections.csv", comp = "Q000040")
-Q41 = compare_entries("data/pass/Q41_par.csv", cutoff = 3, "data/sections/Q41_sections.csv", comp = "Q000041")
-Q42 = compare_entries("data/pass/Q42_par.csv", cutoff = 3, "data/sections/Q42_sections.csv", comp = "Q000042")
+Q1 = suppressWarnings(compare_entries(infile = "data/pass/Q01_par.csv", comp = "Q000001", cutoff = 3, outfile1 = "data/sections/Q01_sections.csv", outfile2 = "data/sections/intermediate/Q01_comparison_table.csv"))
+Q39 = suppressWarnings(compare_entries(infile = "data/pass/Q39_par.csv", comp = "Q000039", cutoff = 3, outfile1 = "data/sections/Q39_sections.csv", outfile2 = "data/sections/intermediate/Q39_comparison_table.csv"))
+Q40 = suppressWarnings(compare_entries(infile = "data/pass/Q40_par.csv", comp = "Q000040", cutoff = 3, outfile1 = "data/sections/Q40_sections.csv", outfile2 = "data/sections/intermediate/Q40_comparison_table.csv"))
+Q41 = suppressWarnings(compare_entries(infile = "data/pass/Q41_par.csv", comp = "Q000041", cutoff = 3, outfile1 = "data/sections/Q41_sections.csv", outfile2 = "data/sections/intermediate/Q41_comparison_table.csv"))
+Q42 = suppressWarnings(compare_entries(infile = "data/pass/Q42_par.csv", comp = "Q000042", cutoff = 3, outfile1 = "data/sections/Q42_sections.csv", outfile2 = "data/sections/intermediate/Q42_comparison_table.csv"))
 ```
