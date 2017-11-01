@@ -194,10 +194,10 @@ The first plot shows the number of matching words (overlap) between any consecut
 The second plot shows the total number of entries in each section.
 
 ```{r}
-compare_entries = function(infile, cutoff, outfile) {
+compare_entries = function(infile, cutoff, outfile, comp) {
   name = strsplit(infile, "\\.")[[1]][1]
   df_composite = read.csv(infile, stringsAsFactors = FALSE)
-  df_composite = df_composite[which(grepl("^Q", df_composite$id_line)),]
+  df_composite = df_composite[which(grepl(comp, df_composite$id_text)),]
   # remove lines in df representing missing lines or sections
   empty_lines = which(df_composite$entry == "")
   if (length(empty_lines) != 0) {df_composite = df_composite[-empty_lines,] }
@@ -247,9 +247,9 @@ compare_entries = function(infile, cutoff, outfile) {
 
 ```{r}
 
-Q1 = compare_entries("data/pass/Q01_par.csv", cutoff = 3, "data/sections/Q01_sections.csv")
-Q39 = compare_entries("data/pass/Q39_par.csv", cutoff = 3, "data/sections/Q39_sections.csv")
-Q40 = compare_entries("data/pass/Q40_par.csv", cutoff = 3, "data/sections/data/pass/Q40_sections.csv")
-Q41 = compare_entries("data/pass/Q41_par.csv", cutoff = 3, "data/sections/Q41_sections.csv")
-Q42 = compare_entries("data/pass/Q42_par.csv", cutoff = 3, "data/sections/Q42_sections.csv")
+Q1 = compare_entries("data/pass/Q01_par.csv", cutoff = 3, "data/sections/Q01_sections.csv", comp = "Q000001")
+Q39 = compare_entries("data/pass/Q39_par.csv", cutoff = 3, "data/sections/Q39_sections.csv", comp = "Q000039")
+Q40 = compare_entries("data/pass/Q40_par.csv", cutoff = 3, "data/sections/Q40_sections.csv", comp = "Q000040")
+Q41 = compare_entries("data/pass/Q41_par.csv", cutoff = 3, "data/sections/Q41_sections.csv", comp = "Q000041")
+Q42 = compare_entries("data/pass/Q42_par.csv", cutoff = 3, "data/sections/Q42_sections.csv", comp = "Q000042")
 ```
