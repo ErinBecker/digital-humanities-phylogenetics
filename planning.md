@@ -11,7 +11,9 @@ Order of analyses in manuscript:
     - [ ] Add bootstrap support values to tree nodes  
 
 2) Grouping documents by section similarity  
+
 a) Defining sections based on composite text  
+
 i) Grouping documents by shared section composition  
 - [ ] Move to Rmd   
 - [ ] Clean up code  
