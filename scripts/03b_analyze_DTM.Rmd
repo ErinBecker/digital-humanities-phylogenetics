@@ -1,0 +1,460 @@
+---
+title: "05_analyze_DTM"
+author: "Erin Becker"
+date: "October 17, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_knit$set(root.dir = "~/Box Sync/digital-humanities-phylogenetics/")
+```
+
+## Analyze the Document Term Matrix
+This continues our analysis of document similarity based on shared entries.
+
+Note: The "EXTRA" tag indicates a hidden code chunk illustrating an important point about
+the data that is tangential to the main thread of the analysis. You can run these
+code chunks by setting eval=TRUE and see the code itself by setting echo=TRUE.
+
+### Setup
+If you haven't already, install and load the required packages. 
+
+```{r}
+# install.packages(c("ggplot2", "ggdendro", "reshape", "scales", "RColorBrewer", "gtools", "reshape2"))
+
+#source("http://bioconductor.org/biocLite.R")
+#biocLite("BiocInstaller")
+#biocLite("phangorn")
+
+library(ggplot2)
+library(ggdendro)
+library(reshape)
+library(reshape2)
+library(scales)
+library(RColorBrewer)
+library(gtools)
+library(phangorn)
+```
+
+Load in the document term matrix (DTM) that was generated previously.
+
+```{r}
+dtm_df = read.csv("data/pass/Q39_par_dtm.csv", 
+                  stringsAsFactors = F, row.names = 1) 
+```
+
+### Check how R parsed the DTM
+R doesn't allow variable names to start with a number, 
+so entries starting with a number had "X" added to the beggining of the entry name.
+R doesn't allow parentheses or brackets in variable names, 
+so entries like "1(ban₂)[na]na" parsed as "X1.ban...na.na"
+
+```{r}
+head(dtm_df[,1:3])
+```
+
+In a later cell, we will sum the columns and rows to get an idea of the density of the matrix. In order to avoid iteratively summing the summary column and summary row, we need to set variables specifying the columns and rows we want to sum. 
+
+```{r}
+cols_to_sum = ncol(dtm_df)
+rows_to_sum = nrow(dtm_df)
+
+dim(dtm_df) 
+```
+
+### Check density of DTM
+
+Two attributes of the DTM which are of interest to us are:
+  
+1) Distribution of document lengths (number of entries per document).  
+2) Distribution of entry frequency (number of times each entry appears across the corpus). Note that an entry may appear multiple times in a single document.
+
+We will look at these two distributions below.
+
+Note that entries may appear multiple times in a single document (EXTRA).
+
+```{r EXTRA, eval=FALSE, echo=FALSE}
+# Output shows each entry that appears more than once within a document, along with the 
+# maximum number of times that it appears within a document.
+
+for(x in colnames(dtm_df)) {
+  
+  num_appearances = unname(unlist(unique(dtm_df[x])))
+  if(any(num_appearances > 1)) print(paste(x, max(num_appearances)))
+  
+}
+```
+
+We next add a column showing the number of entries in each document, a row
+showing the number of occurences of each entry, and set the intersection of these
+two sumamries to NA.
+
+```{r}
+dtm_df$num_entries = rowSums(dtm_df[1:cols_to_sum])
+dtm_df["num_occurrences",] = colSums(dtm_df[1:rows_to_sum,])
+dtm_df["num_occurrences","num_entries"] = NA 
+```
+
+We can see the distribution of document length by looking at a histogram.
+
+```{r}
+hist(dtm_df$num_entries, breaks = 30, main = "Document length", 
+     ylab = "# documents", xlab = "# entries")
+```
+
+There are `r length(which(dtm_df$num_entries >= 10))` documents with 10 or more entries and `r length(which(dtm_df$num_entries >= 100))` documents with 100 or more entries.
+
+We see that the majority of documents are very short. However, there are a decent number of documents with a substantial number of entries (summarized above). 
+
+## Look at document length
+Which documents are the longest?
+
+```{r}
+dtm_df = dtm_df[order(dtm_df$num_entries, decreasing = TRUE),]
+head(dtm_df["num_entries"])
+
+num_occurrences = unlist(dtm_df["num_occurrences",])
+hist(num_occurrences, breaks = 30, main = "Entry frequency", 
+     ylab = "# entries", xlab = "# occurrences")
+hist(num_occurrences, breaks = 30, ylim = c(0, 100), 
+     main = "Entry frequency (zoomed in)", 
+     ylab = "# entries", xlab = "# occurrences")
+```
+We then look at the distribution of entries across the corpus.
+
+``` {r}
+rare = round(length(which(dtm_df["num_occurrences",] <=2))/cols_to_sum*100,2)
+common_entries = colnames(dtm_df[which(dtm_df["num_occurrences",] >=10)])
+most_common = max(dtm_df["num_occurrences",], na.rm = TRUE)
+most_common_entry = colnames(dtm_df[which(dtm_df["num_occurrences",] == most_common)])
+```
+
+`r rare`% of entries appear only once or twice across the corpus. `r length(common_entries)` entries occur 10 or more times within the corpus, including one that occurs `r most_common` times within the `r rows_to_sum` documents. The most common entry is `r most_common_entry`.
+
+Below we inspect the most common entries (those that appear at least ten times across the corpus) to see if they make sense.
+
+## Look at some of the most common entries
+
+```{r}
+common_entries[1:15]
+```
+
+As seen from the output above, many of the most common entries include
+either unlematizable or illegible words (represented as x.na.na or x.x.na.na). 
+These are not particularly informative. We want to remove these entries from the analysis. Also remove the entry "unknown".
+
+```{r}
+entries_with_na = grep("na.na", colnames(dtm_df))
+
+if(length(entries_with_na) > 0) {
+  dtm_df = dtm_df[,-entries_with_na]
+  dtm_df$unknown = NULL
+}
+```
+
+Look again at entry frequency after removing these entries.
+
+Note that we must re-create the summary column and row after excluding these entries.
+
+```{r}
+# Remove summary column and row
+dtm_df$num_entries = NULL
+dtm_df = dtm_df[-which(rownames(dtm_df) == "num_occurrences"),]
+
+#recreate summary column and row
+cols_to_sum = ncol(dtm_df)
+rows_to_sum = nrow(dtm_df)
+
+dtm_df$num_entries = rowSums(dtm_df[1:cols_to_sum])
+dtm_df["num_occurrences",] = colSums(dtm_df[1:rows_to_sum,])
+dtm_df["num_occurrences","num_entries"] = NA 
+```
+```{r}
+num_occurrences = unlist(dtm_df["num_occurrences",])
+hist(num_occurrences, breaks = 30, main = "Entry frequency", 
+     ylab = "# entries", xlab = "# occurrences")
+hist(num_occurrences, breaks = 30, ylim = c(0, 100), 
+     main = "Entry frequency (zoomed in)", 
+     ylab = "# entries", xlab = "# occurrences")
+
+rare = round(length(which(dtm_df["num_occurrences",] <=2))/cols_to_sum*100,2)
+common_entries = colnames(dtm_df[which(dtm_df["num_occurrences",] >=10)])
+most_common = max(dtm_df["num_occurrences",], na.rm = TRUE)
+most_common_entry = colnames(dtm_df[which(dtm_df["num_occurrences",] == most_common)])
+```
+
+`r rare`% of entries appear only once or twice across the corpus. `r length(common_entries)` entries occur 10 or more times within the corpus, including one that occurs `r most_common` times within the `r rows_to_sum` documents. The most common entry is `r most_common_entry`. Now some of the most common entries are: 
+
+```{r}
+common_entries[1:15]
+```
+
+Next we will reorganize our data to enable pretty and informative plotting of entry distribution across documents and overall frequency.
+
+First, we reorder the columns in our dataframe from alphabetical to
+sorting by frequency so that the most common entries are clustered together for ease of visualization.
+
+To do this, we first convert the frequency counts to presence/absence (binary), then reorder the columns by column sums.
+
+```{r}
+# Convert to binary presence/absence information
+dtm_df = as.matrix((dtm_df > 0) + 0)
+
+dtm_df = dtm_df[,order(colSums(dtm_df), decreasing = TRUE)]
+dtm_df = as.data.frame(dtm_df)
+```
+
+We then recalculate number of occurrences
+and number of entries. These are now binary, so they
+represent:
+  
+- num_occurrences = number of documents in which an entry appears  
+- num_entries = number of unique entries in a document (excluding "na.na" and "unknown" entries)
+
+``` {r}
+dtm_df$num_entries = rowSums(dtm_df[1:cols_to_sum])
+dtm_df["num_occurrences",] = colSums(dtm_df[1:rows_to_sum,])
+dtm_df["num_occurrences","num_entries"] = NA 
+
+num_occurrences = unlist(dtm_df["num_occurrences",])
+most_frequent = max(num_occurrences, na.rm = TRUE)
+most_frequent_entry = colnames(dtm_df[which(dtm_df["num_occurrences",] == most_frequent)])
+```
+
+`r table(num_occurrences)[1]` entries appear in only one document. The entry that appears in the most documents is `r most_frequent_entry`.
+
+```{r}
+# table(num_occurrences, useNA = "ifany")
+
+num_occurrences = unlist(dtm_df["num_occurrences",])
+hist(num_occurrences, breaks = max(num_occurrences, na.rm = TRUE), main = "Entry frequency", 
+     ylab = "# entries", xlab = "# occurrences")
+```
+
+These entries appear in at least 10 different documents:
+```{r}
+colnames(dtm_df)[which(dtm_df["num_occurrences",] >=10)]
+```
+
+Our dataset is built around lists of trees and wooden objects (composite text Q000039). For sanity testing our analyses, we've included some outlier texts 
+which are not part of the lists of trees and wooden objects document group. 
+One of the outlier text is Q000001, which is a composite text of lists of animals.
+Before using this text as an outlier, we want to make sure that it doesn't share
+many similarities with Q000039. (EXTRA)
+
+``` {r echo = FALSE, eval = FALSE}
+# Which entries appear in both Q000001 and Q000039?
+shared_entries = which(dtm_df["Q000001",] == 1 & dtm_df["Q000039",] == 1)
+dtm_df[c("Q000001", "Q000039"),shared_entries]
+
+# Do these entries also appear in other documents?
+docs_w_shared_entries = c()
+
+for(x in rownames(dtm_df)) {
+  if(any(dtm_df[x,shared_entries] > 0)) {
+    docs_w_shared_entries = c(docs_w_shared_entries,x)
+  }}
+
+dtm_df[docs_w_shared_entries,shared_entries]
+```
+
+### Remove rare entries
+A large number of entries appear only in one document in the corpus. We remove these from the remainder of the analysis. However, we want to keep all entries from our outlier texts. After removing rare entries, the dimensions of our dtm are:
+
+```{r}
+# Keep all entries which appear in one of the outlier texts.
+outlier_docs = c("Q000001", "P250736", "num_occurrences")
+outlier_doc_data = dtm_df[outlier_docs,]
+keep1 = which(outlier_doc_data["num_occurrences",] == 1)
+
+# Also keep entries which appear in more than one document in the corpus.
+keep2 = which(dtm_df["num_occurrences",] > 1)
+
+all_keep = unique(c(keep1, keep2))
+
+dtm_df = dtm_df[,all_keep]
+
+dim(dtm_df)
+```
+
+Our next step is to compare this presence/absence distribution of entries across documents to understand which documents are most similar to one another at the entry level. First we will extract only those texts with at least ten entries to see if patterns make sense before analyzing the shorter texts. After removing short texts, the dimmensions of our dataframe are: 
+
+``` {r}
+# add back in num_entries column
+dtm_df$num_entries = rowSums(dtm_df[1:cols_to_sum])
+
+dtm_df = dtm_df[which(dtm_df$num_entries >= 10),]
+
+#add document names as row names
+#dtm_df$document = rownames(dtm_df)
+
+# remove num_occurances row
+dtm_df = dtm_df[-which(rownames(dtm_df) == "num_occurrences"),]
+
+# remove num_entries column
+dtm_df$num_entries = NULL
+
+dim(dtm_df)
+```
+
+### Write out cleaned dtm
+
+After these cleaning steps, we now have the DTM that we will use for our remaining analyses. We will write out a copy of this dataframe so that we can pass it in as an 
+object to other scripts. 
+
+```{r echo = TRUE}
+#add document names as row names
+dtm_df$document = rownames(dtm_df)
+
+write.csv(dtm_df, "data/dtm_data/dtm_df_clean.csv", quote = FALSE)
+```
+
+### Create bootstrapped DTMs
+
+We now create many different versions of the DTM by resampling from within the DTM. This will enable us to evaluate the quality of each branching point on our dendrograms
+based on the fraction of dendrograms generated from these bootstrapped DTMs that 
+replicate that branching point. [Erin needs to add better explanation of bootstrapping here but is tired right now.] Note that eval is set to FALSE so that these don't regenerate every time the file is knit.
+
+```{r echo = TRUE, eval = FALSE}
+
+for(i in 1:1000) {
+  filename = paste0("data/dtm_data/bootstrap/dtms/dtm_df_", i, ".csv")
+  dtm_bootstrap = sample(dtm_df, replace = TRUE)
+  write.csv(dtm_bootstrap, filename)
+}
+```
+
+### Build distance matrix based on entry overlap across document pairs
+
+To help understand the scale and pattern of shared entries across the corpus, we want to build a dataframe to store the absolute number of (unique) shared entries between each document pair. This will not count duplicated entries within one of the two documents. We will then use that dataframe to calculate a distance matrix using the formula: 
+
+similarity = (number of shared entries / length of shortest text in pair)
+
+distance = 1 - similarity
+
+First, we define some functions:
+
+```{r echo = TRUE}
+# function to extract entries of any specified document
+get_entries = function(df, doc) {
+  as.character(df[which(df$document == doc &
+                          df$value == 1),]$variable)
+}
+
+# function to get number of shared entries for any specified document pair
+get_shared_entries = function(df, doc1, doc2) {
+  doc1_entries = get_entries(df, doc1)
+  doc2_entries = get_entries(df, doc2)
+  length(which(doc1_entries %in% doc2_entries))
+}
+```
+
+We next convert the dtm dataframe from wide format to long format. In wide format, each document is a row and each entry is a column. There are as many observed values per row as their are entries. In long format, each document/entry combination is a row and there is only one observed value per row.
+
+We then initialize an empty dataframe (all_pairs), compute the number of shared entries for each
+document pair and add that to our dataframe (all_pairs), reorder the new dataframe
+so that document pairs with the most shared entries are on top, add back in our `num_entries` column (we had to remove it to build the long format dataframe) and calulate our similarity metric for each document pair. We do this in a single code chunk so that we can make it a function and run it with a for loop for each of our bootstrapped dtms.
+
+```{r}
+
+calculate_distance = function(dtm) {
+  row.names(dtm) = dtm$X
+  dtm$X = NULL
+  dtm$document = row.names(dtm)
+  melted_dtm = melt(dtm)
+
+  # initialize an empty dataframe
+  docs = unique(melted_dtm$document)
+
+  all_pairs = permutations(length(docs), 2, docs, repeats.allowed = T)
+  all_pairs = as.data.frame(all_pairs, stringsAsFactors = FALSE)
+  all_pairs$doc1 = all_pairs$V1
+  all_pairs$doc2 = all_pairs$V2
+  all_pairs$V1 = NULL
+  all_pairs$V2 = NULL
+  all_pairs$num_shared_entries = NA
+
+  # compute the number of shared entries for each pair and add to dataframe
+  for(i in 1:nrow(all_pairs)) {
+    all_pairs[i,]$num_shared_entries = 
+      get_shared_entries(melted_dtm, all_pairs[i,]$doc1, all_pairs[i,]$doc2)
+  }
+
+  # reorder the new data frame so that the document pairs with 
+  # the most shared entries are on top
+  all_pairs = all_pairs[order(-all_pairs$num_shared_entries),] 
+
+  # add back in num_entries column
+  dtm$num_entries = rowSums(dtm[1:cols_to_sum])
+
+  # calculate similarity metric and add to dataframe
+  all_pairs$similarity = NA
+  all_pairs$distance = NA
+
+  get_num_entries = function(df, doc) {
+    df[which(df$document == doc),]$num_entries 
+  }
+
+  for(i in 1:nrow(all_pairs)) {
+    doc1_entries = get_num_entries(dtm, all_pairs[i,]$doc1)
+    doc2_entries = get_num_entries(dtm, all_pairs[i,]$doc2)
+  
+    all_pairs[i,]$similarity = 
+      all_pairs[i,]$num_shared_entries / min(doc1_entries, doc2_entries)
+  
+    all_pairs[i,]$distance = 1 - all_pairs[i,]$similarity
+  }
+
+  return(all_pairs)
+  
+}
+```
+
+Run the function defined above for all of the bootstrapped DTMs and write out a new set of output files containing the calculated distance matrix for each DTM.
+
+```{r echo = TRUE, eval = TRUE}
+
+for(i in 21:1000) {
+  filename_out = paste0("data/dtm_data/bootstrap/distance_matrices/all_pairs_", i, ".csv")
+  filename_in = paste0("data/dtm_data/bootstrap/dtms/dtm_df_", i, ".csv")
+  dtm = read.csv(filename_in)
+  all_pairs = calculate_distance(dtm)
+  write.csv(all_pairs, filename_out)
+}
+```
+
+Compute a neighbor joining tree for each of the calculated distance matrices and write out the tree file.
+
+```{r echo = TRUE, eval = TRUE}
+# Build neighbor joining tree for each distance matrix
+for(i in 21:1000) {
+  filename_in = paste0("data/dtm_data/bootstrap/distance_matrices/all_pairs_", i, ".csv")
+  filename_out = paste0("data/dtm_data/bootstrap/trees/dtm_nj_", i, ".tre")
+  all_pairs = read.csv(filename_in, row.names = 1)
+  all_pairs_matrix = data.matrix(acast(all_pairs, doc1 ~ doc2, 
+                                       value.var='distance', fun.aggregate = sum, margins = FALSE))
+  treeNJ  <- NJ(dist(all_pairs_matrix))
+  write.tree(treeNJ, filename_out)
+}
+```
+
+Compute a consensus tree for all generated tree files.
+
+```{r}
+
+trees = list()
+
+for(i in 1:1000) {
+  filename_in = paste0("data/dtm_data/bootstrap/trees/dtm_nj_", i, ".tre")
+  name = paste0("tree_", i)
+  tree = read.tree(filename_in)
+  trees[[name]] <- tree
+  }
+
+consensus_50 = consensus(trees, p = 0.5)
+write.tree(consensus_50, "data/dtm_data/bootstrap/consensus_trees/consensus_50.tre")
+
+consensus_75 = consensus(trees, p = 0.75)
+write.tree(consensus_75, "data/dtm_data/bootstrap/consensus_trees/consensus_75.tre")
+```
