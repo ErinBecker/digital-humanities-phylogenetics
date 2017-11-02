@@ -16,3 +16,5 @@ The 50% tree adds the text [P346714](http://oracc.org/dcclt/P346714) which is a 
 The text [Q000001](http://oracc.org/dcclt/Q000001) and [P250736](http://oracc.org/dcclt/P250736) have nothing in common and do not relate to the lists of trees and wooden objects. Apparently they end up in a single branch because they consistently have a distance 1 from each other throughout the bootstrap and they mostly have a distance 1 from all other texts. In other words, the end up in the "rest" branch - with a lot of confidence.
 
 The texts [Q000039 and P229426](http://oracc.org/dcclt/Q000039,P229426) are an interesting couple. [P229426](http://oracc.org/dcclt/P229426) is kept in a library in New York where it has no known provenance. Textually and materially it looks much like a Nippur text and **all** the lines in this text are duplicate in the composite [Q000039](http://oracc.org/dcclt/Q000039). 
+
+To be continued.
