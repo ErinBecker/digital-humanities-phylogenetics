@@ -48,7 +48,7 @@ Our strategy for implementing this method is the following:
 1) Calculate the degree of similarity between any two adjacent entries in the source/composite document. This similarity can take two independent forms:
   a) shared character strings in the Sumerian (citation form) or the English (guideword)
   b) shared entire words (citation forms and/or guidewords).
-2) Eetermine appropriate cutoff values for similarity that distinguish between sections.
+2) Determine appropriate cutoff values for similarity that distinguish between sections.
 3) Automatically assign a name to each section.
 4) Output a file containing the entries present in each section.
 
@@ -58,7 +58,7 @@ We can then use these section definitions to analyze similarities and difference
 If you haven't already, install and load the required packages. 
 
 ```{r}
-# install.packages(c("ggplot2", "ggdendro", "reshape", "scales"))
+# install.packages(c("ggplot2", "ggdendro", "reshape", "scales", "dplyr"))
 # 
 # source("http://bioconductor.org/biocLite.R")
 # biocLite("BiocInstaller")
@@ -69,6 +69,7 @@ library(ggdendro)
 library(reshape)
 library(scales)
 library(Rlibstree)
+library(dplyr)
 ```
 
 ## Step 1: Calculate similarity between adjacent entries.
@@ -77,36 +78,6 @@ This step relies on defining a number of functions to process and clean entry st
 ```{r}
 entry = "e[house]N_usan[whip]N_gigir[chariot]N"
 print(entry)
-```
-
-### Remove uninformative characters from character strings
-
-Some characters in entries are not informative for our purposes and should be excluded from the character count in the longest common substring. The function below removes these characters from the entry string. 
-
-```{r echo = TRUE}
-clean_kmer = function(x) {
-  
-  # get rid of [na]na strings
-  x = gsub("\\[na\\]na", "", x)
-  
-  # get rid of part of speech (follows each "]")
-  x = gsub("(\\])[a-zA-Z/]*", "\\1", x)
-  
-  # get rid of certain punctuation ({}[]_.)
-  x = gsub("\\]", "", x)
-  x = gsub("\\[", "", x)
-  x = gsub("\\{", "", x)
-  x = gsub("\\}", "", x)
-  x = gsub("_", "", x)
-  x = gsub("\\.", "", x)
-  x
-}
-```
-
-#### Example to illustrate function
-```{r echo = TRUE}
-print(entry)
-clean_kmer(entry)
 ```
 
 ### Extract whole words
@@ -142,6 +113,57 @@ get_guidewords(entry)
 get_citation_forms(entry)
 ```
 
+Entries may also share partial words (either in the citation form or the guideword) (e.g. "kišig[acacia]n" and "kišighar[tree]n" share "kišig", which would not be found using the whole word approach). We need to find these partial word matches in both the Sumerian (citation forms) and the English (guidewords). The function below finds the longest common substring shared between any two citation forms or two guidewords for an entry pair.
+
+```{r}
+get_longest_kmer_from_set_of_words = function(entry1, entry2, fun) {
+  # extract word sets from each entry
+  word_set_x = fun(entry1)
+  word_set_y = fun(entry2)
+  
+  # initialize empty vector to store results
+  longest = c() 
+  
+  # loop through each word pair and get longest common substring
+  for(word_x in word_set_x) {
+    for(word_y in word_set_y) {
+      substring = getLongestCommonSubstring(c(word_x, word_y))
+      longest = c(longest, gsub("[\x80-\xFF]", "", substring))
+    }}
+  
+  if (length(longest) == 0) {
+    kmer = NA
+    k = 0 }
+  
+  else {
+  # get longest common substring from any of the possible pairs
+  k = max(nchar(longest))[1]
+  kmer = longest[which(nchar(longest) == max(nchar(longest)))][1] }
+  
+  
+  # return the k and kmer with names associated with the vector
+  return_values = c(k, kmer)
+  names(return_values) = c("k", "kmer")
+  return(return_values)
+}
+
+find_kmer_per_language = function(entry1, entry2, fun1, fun2) {
+  
+  # extract longest common substring based on different word sets output from fun1 and fun2
+  # example fun1 = get_citation_forms, fun2 = get_guidewords
+  longest_kmer_x = get_longest_kmer_from_set_of_words(entry1, entry2, fun1)
+  longest_kmer_y = get_longest_kmer_from_set_of_words(entry1, entry2, fun2)
+  
+  # extract the longest kmer from each set of comparisons
+  lengths = c(longest_kmer_x["k"], longest_kmer_y["k"])
+  names(lengths) = c(longest_kmer_x["kmer"], longest_kmer_y["kmer"])
+  
+  # return the kmer that is the longest between these two sets
+  names(which(lengths == max(as.numeric(lengths))))[1]
+}
+```
+
+
 We define a section break as any line pair where overlap in guidewords + citation forms is zero AND the longest shared substring (k) is below a defined cutoff. 
 
 ```{r}
@@ -175,13 +197,22 @@ extract_sections = function(df, file) {
   sections = data.frame(sapply(section_nums, function(x) x = character(max(table(df$section)) + 1)))
   
   for (i in section_nums) {
-    elements = unique(c(df[which(df$section == i),]$line_a, df[which(df$section == i),]$line_b))
+    # extract all of the entries that belong to that section (including duplicates)
+    lines_a = df[which(df$section == i),]$line_a
+    lines_b = df[which(df$section == i),]$line_b
+    elements = c(lines_a, tail(lines_b, n = 1))
+    # define number of empty rows for that section in output dataframe
     missing = max(table(df$section) + 1) - length(elements)
+    # add that number of NAs to the end of the elements vector
     elements = c(elements, rep(NA, missing))
+    # append entries belonging to that section to the ith column of the output dataframe
     sections[,i] = elements 
     # the guidewords from the first entry in a section is used to name the section
-    colnames(sections)[i] = paste(get_guidewords(sections[1,i]), collapse = "_")
-  }
+#    colnames(sections)[i] = paste(get_guidewords(sections[1,i]), collapse = "_")
+    entries = unique(c(df[which(df$section == i),]$line_a, df[which(df$section == i),]$line_b))
+    t = table(get_guidewords(entries))
+    colnames(sections)[i] = paste(names(which(t == max(t))), collapse = "_")
+     }
   write.csv(sections, file, row.names = FALSE, quote = FALSE)
 }
 ```
@@ -207,7 +238,7 @@ compare_entries = function(infile, comp, cutoff, outfile1, outfile2) {
                           k = numeric(num_rows),
                           stringsAsFactors = FALSE)
   
-  for (i in 1:nrow(df_composite) - 1) {
+  for (i in 1:num_rows) {
     line_a = tolower(df_composite$entry[i])
     guidewords_a = get_guidewords(line_a)
     citation_form_a = get_citation_forms(line_a)
@@ -216,17 +247,9 @@ compare_entries = function(infile, comp, cutoff, outfile1, outfile2) {
     guidewords_b = get_guidewords(line_b)
     citation_form_b = get_citation_forms(line_b)
 
-# Note that here we are getting longest common substring after cleaning kmer. This means that a substring can span word boundaries and even span language boundaries. The alternative is cleaning the kmer after getting the longest common substring and then recalculating substring length.    
-    line_a_clean = clean_kmer(line_a)
-    line_b_clean = clean_kmer(line_b)
-    kmer = getLongestCommonSubstring(c(line_a_clean, line_b_clean))
-    kmer = gsub("[\x80-\xFF]", "", kmer) # get rid of multibyte strings introduced by Rlibstree
-    k = nchar(kmer)
-    # Define kmer as NA and k as 0 if no shared characters
-    if (length(kmer) == 0) {
-        kmer = NA
-        k = 0 }
-    
+  kmer = find_kmer_per_language(line_a, line_b, get_guidewords, get_citation_forms) 
+  if(is.na(kmer)) k = 0 else k = nchar(kmer)
+  
     overlap = sum(citation_form_a %in% citation_form_b) + sum(guidewords_a %in% guidewords_b)
     
     df_compare$line_a[i] = line_a
@@ -244,7 +267,7 @@ compare_entries = function(infile, comp, cutoff, outfile1, outfile2) {
 }
 ```
 
-```{r eval = FALSE}
+```{r eval = TRUE}
 Q1 = suppressWarnings(compare_entries(infile = "data/pass/Q01_par.csv", comp = "Q000001", cutoff = 3, outfile1 = "data/sections/Q01_sections.csv", outfile2 = "data/sections/intermediate/Q01_comparison_table.csv"))
 Q39 = suppressWarnings(compare_entries(infile = "data/pass/Q39_par.csv", comp = "Q000039", cutoff = 3, outfile1 = "data/sections/Q39_sections.csv", outfile2 = "data/sections/intermediate/Q39_comparison_table.csv"))
 Q40 = suppressWarnings(compare_entries(infile = "data/pass/Q40_par.csv", comp = "Q000040", cutoff = 3, outfile1 = "data/sections/Q40_sections.csv", outfile2 = "data/sections/intermediate/Q40_comparison_table.csv"))

@@ -14,7 +14,7 @@ Order of analyses in manuscript:
 a) Defining sections based on composite text  
 
 i) Grouping documents by shared section composition  
-- [ ] Move to Rmd   
+- [X] Move to Rmd   
 - [ ] Clean up code  
 - [ ] Deal with kmers crossing language boundaries. 
 - [ ] Clean up explanatory text  
@@ -70,5 +70,19 @@ Benchmarks/Timeline:
     - [ ] look into adding bootstrap support values to trees (from existing calculations)
   - Niek
     - [ ] look at existing trees for dtm analysis and make notes about relationships / interpretation
+
+
+Other
+### To Do (section order):
+- (For efficiency) get rid of self-self comparisons and duplicate pairs in all_pairs_SI df.
+- Calculate maximum SI for any given k and use that to define distance measure (this depends on document length).
+- Incorporate "top" and "bottom" of documents where known.
+- Implement Niek's method for comparing sections that appear multiple times within a document. 
+- Add outlier texts. 
+- Exclude sections that are "garbage" sections (X.1, X.2). (But check that these are garbage first.)
+- Incorporate items from Q text that were not assigned to sections - add these to the section preceding the item.
+- Make the distance trees. 
+- Incorporate provenience and period in output. 
+- Fix issue that very short documents (eg 2 sections) have low self-self SI.
       
 

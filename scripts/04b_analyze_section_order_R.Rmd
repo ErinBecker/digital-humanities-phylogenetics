@@ -10,68 +10,62 @@ knitr::opts_chunk$set(echo = FALSE)
 knitr::opts_knit$set(root.dir = "~/Box Sync/digital-humanities-phylogenetics/")
 ```
 
-### To Do:
-- (For efficiency) get rid of self-self comparisons and duplicate pairs in all_pairs_SI df.
-- Calculate maximum SI for any given k and use that to define distance measure (this depends on document length).
-- Incorporate "top" and "bottom" of documents where known.
-- Implement Niek's method for comparing sections that appear multiple times within a document. 
-- Add outlier texts. 
-- Exclude sections that are "garbage" sections (X.1, X.2). (But check that these are garbage first.)
-- Incorporate items from Q text that were not assigned to sections - add these to the section preceding the item.
-- Make the distance trees. 
-- Incorporate provenience and period in output. 
-- Fix issue that very short documents (eg 2 sections) have low self-self SI.
-
 # Section order
 
-Here we analyze document similarity/difference from one another based on the degree of shared order of sections within a document. Sections are defined in 03_define_sections_R. 
+Here we analyze document similarity based on the degree of shared order of sections within a document. Sections are defined in 04_define_sections.Rmd. 
 
-Our approach is based on the idea of *synteny* from the field of genomics. Two (or more) genes are said to have a synteny if those genes are found in proximity across a set of genomes. The degree of synteny is proportional to the frequency with which genes are colocalized and the evolutionary distance of organisms in which that colocalization occurs.  
+Our approach is based on the idea of *synteny* from the field of genomics. Two (or more) genes are said to have synteny if those genes are found in proximity across a set of genomes. The degree of synteny is proportional to the frequency with which genes are colocalized and the evolutionary distance of organisms in which that colocalization occurs.  
 
-A genome wide *synteny index* between a pair of genomes can be defined by calculating the *synteny* for all gene shared between that genome pair.
+A genome wide *synteny index* between a pair of genomes can be defined by calculating the *synteny* for all genes shared between that genome pair.
 
-Reference: ~/resources/biology/gene-order-phylogenetics/Ordered-orthology-as-a-tool-in-prokaryotic-evolutionary-inference.pdf
+[Reference](http://www.tandfonline.com/doi/full/10.1080/2159256X.2015.1120576)
 
 For this analysis, **genes** are equivalent to **sections** (not **entries**) and **genomes** are equivalent to **documents**.  
 
 ### Limitations/Issues: 
-- SI is only defined for sections shared between two documents. If there is no overlap in sections, the genome-wide SI is 0. Short documents will tend to have extremes of SI, either 1 (all sections shared) or 0 (no sections shared). 
-    - That's ok and makes sense.
-- Need to set a reasonable value for `k` by trial and error. This may also depend on the distribution of document lengths across our corpus. 
-    - Try 2,3,5 or 7 and see what makes sense.
-- This method was developed for microbial genomes, which are usually circular. For our purposes, we will need to decide how to treat sections that occur within `k` of the beginning or end of a document.
-    - Idea: add a section called "top" and one called "bottom" when known to a document. Treat these as sections in the SI calculations.
-- Is the document wide SI the average of all shared sections SIs or are non-shared sections counted? 
-    - Answer: Don't count non-shared sections.
-    - All of our documents are broken. Usually don't know whether a section was originally present in the non-broken document. (Difference because something missing because of sample and something truly missing.) 
-- When a section appears multiple times in a document, how to deal with this? (Analogy in genomics is repeated genes.)
-    - How common is this? 
-- When two sections are flipped in order, this method wouldn't notice (unless the documents are relatively long compared to k). Do we want it to?
-- Throw in a handful of outliers (documents from other list types).
+- SI is only defined for sections shared between two documents. If there is no overlap in sections, the genome-wide SI is 0. Short documents will tend to have extremes of SI, either 1 (all sections shared) or 0 (no sections shared). We will include only documents above a certain section-number threshold for this analysis.
 
-### Steps: 
-- Determine order of sections within each document in corpus.  
-- Provisionally set `k` to some low number (2?).
-- For each document pair:
+- A reasonable value of `k` will need to be determined by trial and error. This may also depend on the distribution of document lengths across our corpus. 
+
+- This method was developed for microbial genomes, which are usually circular. Our documents are not circular, so we will need to decide how to treat sections that occur within `k` sections of the beginning or end of a document.
+    - Idea: add a section called "top" and one called "bottom" when known to a document. Treat these as sections in the SI calculations.
+    
+- The document wide SI is the average SI for of all shared sections. Non-shared sections are not included in the calculation.  
+    
+- All of our documents are broken. We usually don't know whether a section is absent from a document because the original scribe did not include it or because it was originally included and subsequently lost from damage. was originally present in the non-broken document. This also occurs in microbial genomes, particularly in metagenomic sequencing where incomplete genomes are assembled.
+    
+- How should we deal with sections that appear multiple times in a document? This happens in microbial genomes when genes are repeated within a genome. 
+    
+- When two sections are flipped in order, this method wouldn't notice (unless the documents are relatively long compared to k). Do we want it to?
+
+### Implementation strategy
+Our strategy for implementing this method is the following:
+
+1) Determine the order of sections within each document in corpus.  
+2) For each document pair:
     - Define the intersection of sections present in that pair.
     - For each section in the intersection, count the number of shared sections in the k-neighborhood between the two documents.
-- Calculate document wide SI = average SI for all sections present in both documents (don't include unshared sections in calculation).
-- Distance = 1 - document wide SI for any document pair
-- Calculate a tree from the distance matrix
+3) Calculate document wide SI = average SI for all sections present in both documents.
+4) Calculate distance = 1 - document wide SI for any document pair
+5) Calculate a tree from the distance matrix.
+6) Bootstrap.
+7) Calculate consensus tree.
 
 ## Read in section definitions
-Sections were defined in (previous notebook link) and are read in from file here.
+Sections were defined [previously](https://github.com/ErinBecker/digital-humanities-phylogenetics/blob/master/scripts/04_define_sections.Rmd) and are read in from file here.
 
-setwd("../data/sections/")
+```{r}
+Q1_sections = read.csv("data/sections/Q01_sections.csv", stringsAsFactors = FALSE)
+Q39_sections = read.csv("data/sections/Q39_sections.csv", stringsAsFactors = FALSE)
+Q40_sections = read.csv("data/sections/Q40_sections.csv", stringsAsFactors = FALSE)
+Q41_sections = read.csv("data/sections/Q41_sections.csv", stringsAsFactors = FALSE)
+Q42_sections = read.csv("data/sections/Q42_sections.csv", stringsAsFactors = FALSE)
+```
 
-Q1_sections = read.csv("Q01_sections.csv", stringsAsFactors = FALSE)
-Q39_sections = read.csv("Q39_sections.csv", stringsAsFactors = FALSE)
-Q40_sections = read.csv("Q40_sections.csv", stringsAsFactors = FALSE)
-Q41_sections = read.csv("Q41_sections.csv", stringsAsFactors = FALSE)
-Q42_sections = read.csv("Q42_sections.csv", stringsAsFactors = FALSE)
-
+```{r}
 # preview X sections
 head(Q39_sections[,grep("X.", colnames(Q39_sections))])
+```
 
 ## Read in a corpus to analyze
 df = read.csv("../pass/Q39_par.csv", stringsAsFactors = FALSE)
@@ -374,3 +368,4 @@ labelCol = function(x) {
 
 ## apply labelCol on all nodes of the dendrogram
 plot(dendrapply(as.dendrogram(clusters), labelCol))
+
