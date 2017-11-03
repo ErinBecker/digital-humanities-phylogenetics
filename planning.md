@@ -1,11 +1,10 @@
 Order of analyses in manuscript:
 1) Grouping documents by shared entry composition (DTM)
-    - [ ] Move to Rmd 
-    - [ ] Clean up code 
-    - [ ] Deal with kmers crossing language boundaries.  
-    - [ ] Clean up explanatory text  
-    - [ ] Bootstrap  
-    - [ ] Build consensus tree  
+    - [X] Move to Rmd 
+    - [X] Clean up code  
+    - [X] Clean up explanatory text  
+    - [X] Bootstrap  
+    - [X] Build consensus tree  
     - [ ] Hyperlink documents in tree (?)  
     - [ ] Convert tree to phylogram  
     - [ ] Add bootstrap support values to tree nodes  
@@ -17,6 +16,7 @@ a) Defining sections based on composite text
 i) Grouping documents by shared section composition  
 - [ ] Move to Rmd   
 - [ ] Clean up code  
+- [ ] Deal with kmers crossing language boundaries. 
 - [ ] Clean up explanatory text  
 - [ ] Bootstrap  
 - [ ] Build consensus tree  
