@@ -72,7 +72,7 @@ Benchmarks/Timeline:
     - [ ] look into changing trees from cladograms to dendrograms
     - [ ] look into adding bootstrap support values to trees (from existing calculations)
   - Niek
-    - [ ] look at existing trees for dtm analysis and make notes about relationships / interpretation
+    - [X] look at existing trees for dtm analysis and make notes about relationships / interpretation
 
 
 Other
@@ -81,7 +81,6 @@ Other
 - Calculate maximum SI for any given k and use that to define distance measure (this depends on document length).
 - Incorporate "top" and "bottom" of documents where known.
 - Implement Niek's method for comparing sections that appear multiple times within a document. 
-- Add outlier texts. 
 - Exclude sections that are "garbage" sections (X.1, X.2). (But check that these are garbage first.)
 - Incorporate items from Q text that were not assigned to sections - add these to the section preceding the item.
 - Make the distance trees. 
