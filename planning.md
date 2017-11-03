@@ -12,13 +12,16 @@ Order of analyses in manuscript:
 2) Grouping documents by section similarity  
 
 a) Defining sections based on composite text  
+- [X] Move to Rmd
+- [X] Clean up code
+- [ ] Clean up explanatory text
 
 i) Grouping documents by shared section composition  
 - [X] Move to Rmd   
 - [ ] Clean up code  
-- [ ] Deal with kmers crossing language boundaries. 
+- [X] Deal with kmers crossing language boundaries. 
 - [ ] Clean up explanatory text  
-- [ ] Bootstrap  
+- [ ] Bootstrap  (by sampling rows from Q39_par)
 - [ ] Build consensus tree  
 - [ ] Hyperlink documents in tree (?)  
 - [ ] Convert tree to phylogram  
