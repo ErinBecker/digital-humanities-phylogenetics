@@ -166,7 +166,7 @@ def_section_breaks = function(df, cutoff) {
 }
 ```
 
-After defining section breaks, we want to export all sections (with all members of each) to a output file. We will also name each section based on the guidewords from the first entry in that section.
+After defining section breaks, we export all sections (with all members of each) to a output file. We also name each section based on the guidewords from the first entry in that section.
 
 ```{r}
 extract_sections = function(df, file) {
@@ -186,7 +186,7 @@ extract_sections = function(df, file) {
 }
 ```
 
-The function below wraps around the previously defined functions, reading in an input file, initializing a new data frame to store results, finding section breaks and outputing sections and entry by entry comparisonts to new files. 
+The function below wraps around the previously defined functions, reading in an input file, initializing a new data frame to store results, finding section breaks and outputing sections and entry by entry comparisons to new files. 
 
 ```{r}
 compare_entries = function(infile, comp, cutoff, outfile1, outfile2) {
@@ -244,7 +244,7 @@ compare_entries = function(infile, comp, cutoff, outfile1, outfile2) {
 }
 ```
 
-```{r}
+```{r eval = FALSE}
 Q1 = suppressWarnings(compare_entries(infile = "data/pass/Q01_par.csv", comp = "Q000001", cutoff = 3, outfile1 = "data/sections/Q01_sections.csv", outfile2 = "data/sections/intermediate/Q01_comparison_table.csv"))
 Q39 = suppressWarnings(compare_entries(infile = "data/pass/Q39_par.csv", comp = "Q000039", cutoff = 3, outfile1 = "data/sections/Q39_sections.csv", outfile2 = "data/sections/intermediate/Q39_comparison_table.csv"))
 Q40 = suppressWarnings(compare_entries(infile = "data/pass/Q40_par.csv", comp = "Q000040", cutoff = 3, outfile1 = "data/sections/Q40_sections.csv", outfile2 = "data/sections/intermediate/Q40_comparison_table.csv"))

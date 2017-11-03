@@ -236,8 +236,8 @@ get_citation_forms = function(line) {
 <pre class="r"><code>get_citation_forms(entry)</code></pre>
 <pre><code>## [1] &quot;e&quot;     &quot;usan&quot;  &quot;gigir&quot;</code></pre>
 <p>We define a section break as any line pair where overlap in guidewords + citation forms is zero AND the longest shared substring (k) is below a defined cutoff.</p>
-<p>After defining section breaks, we want to export all sections (with all members of each) to a output file. We will also name each section based on the guidewords from the first entry in that section.</p>
-<p>The function below wraps around the previously defined functions, reading in an input file, initializing a new data frame to store results, finding section breaks and outputing sections and entry by entry comparisonts to new files.</p>
+<p>After defining section breaks, we export all sections (with all members of each) to a output file. We also name each section based on the guidewords from the first entry in that section.</p>
+<p>The function below wraps around the previously defined functions, reading in an input file, initializing a new data frame to store results, finding section breaks and outputing sections and entry by entry comparisons to new files.</p>
 </div>
 </div>
 </div>
