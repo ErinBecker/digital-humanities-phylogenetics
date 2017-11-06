@@ -167,10 +167,6 @@ $(document).ready(function () {
 <li>Output a file containing the entries present in each section.</li>
 </ol>
 <p>We can then use these section definitions to analyze similarities and differences between texts in terms of both section presence / absence patterns and section order.</p>
-</div>
-<div id="setup" class="section level3">
-<h3>Setup</h3>
-<p>If you haven’t already, install and load the required packages.</p>
 <pre><code>## 
 ## Attaching package: 'dplyr'</code></pre>
 <pre><code>## The following object is masked from 'package:reshape':
@@ -219,8 +215,8 @@ get_citation_forms = function(line) {
 <pre class="r"><code>get_citation_forms(entry)</code></pre>
 <pre><code>## [1] &quot;e&quot;     &quot;usan&quot;  &quot;gigir&quot;</code></pre>
 <p>Entries may also share partial words (either in the citation form or the guideword) (e.g. “kišig[acacia]n” and “kišighar[tree]n” share “kišig”, which would not be found using the whole word approach). We need to find these partial word matches in both the Sumerian (citation forms) and the English (guidewords). The function below finds the longest common substring shared between any two citation forms or two guidewords for an entry pair.</p>
-<p>We define a section break as any line pair where overlap in guidewords + citation forms is zero AND the longest shared substring (k) is below a defined cutoff.</p>
-<p>After defining section breaks, we export all sections (with all members of each) to a output file. We also name each section based on the guidewords from the first entry in that section.</p>
+<p>We now use these functions to identify entries that are in the same section and section breaks (breaks between sections). We define a section break as any line pair where overlap in guidewords + citation forms is zero AND the longest shared substring (k) is below a defined cutoff. Not all entries will be assigned to a section using this method.</p>
+<p>After defining section breaks, we export all sections (with all members of each) to an output file. We also name each section based on the most common guidewords in that section.</p>
 <p>The function below wraps around the previously defined functions, reading in an input file, initializing a new data frame to store results, finding section breaks and outputing sections and entry by entry comparisons to new files.</p>
 </div>
 </div>

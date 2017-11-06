@@ -1,5 +1,5 @@
 ---
-title: "04b_analyze_section_order_R"
+title: "04b_analyze_section_order"
 author: "Erin Becker"
 date: "November 3, 2017"
 output: html_document
@@ -50,6 +50,23 @@ Our strategy for implementing this method is the following:
 5) Calculate a tree from the distance matrix.
 6) Bootstrap.
 7) Calculate consensus tree.
+
+```{r}
+# install.packages(c("ggplot2", "ggdendro", "reshape", "scales", "RColorBrewer", "gtools", "reshape2"))
+
+#source("http://bioconductor.org/biocLite.R")
+#biocLite("BiocInstaller")
+#biocLite("phangorn")
+
+library(ggplot2)
+library(ggdendro)
+library(reshape)
+library(reshape2)
+library(scales)
+library(RColorBrewer)
+library(gtools)
+library(phangorn)
+```
 
 ## Read in section definitions
 Sections were defined [previously](https://github.com/ErinBecker/digital-humanities-phylogenetics/blob/master/scripts/04_define_sections.Rmd) and are read in from file here.
@@ -209,9 +226,6 @@ The theoretical maximum SI for a document pair depends on k, but is always less 
 
 For k = 2, the maximum SI for a document pair is 3.66666666666667.
 
-#install.packages('gtools')
-
-library(gtools, lib.loc = "/anaconda/lib/R/library")
 
 docs = names(doc_sections_keep)
 #all_pairs = t(as.data.frame(combn(docs, 2)))
@@ -289,83 +303,23 @@ head(all_pairs_SI)
 # round the distances
 all_pairs_SI$dist = round(all_pairs_SI$dist, 2)
 
-#install.packages("reshape2")
-library(reshape2, lib.loc = "/anaconda/lib/R/library")
+### Create bootstrapped corpuses
 
-#install.packages("ggdendro")
-library(ggdendro, lib.loc = "/anaconda/lib/R/library")
+We now create many different versions of the input corpus by resampling from within the corpus file (QXX_par). This will enable us to evaluate the quality of each branching point on our dendrograms
+based on the fraction of dendrograms generated from these bootstrapped corpuses that 
+replicate that branching point. Note that eval is set to FALSE so that these don't regenerate every time the file is knit.
 
-#install.packages("scales")
-library(scales, lib.loc = "/anaconda/lib/R/library")
+#### Note to self: 
+Need to make sure the boostrapped corpuses are sorted before analyzing whether sequential entries are in the same section (or check to see if the algorithm checks for row number).
 
-#install.packages("ggplot2")
-library(ggplot2, lib.loc = "/anaconda/lib/R/library")
+```{r echo = TRUE, eval = FALSE}
 
-# reshape the data to wide format
-all_pairs_SI_wide = dcast(all_pairs_SI, doc_A ~ doc_B, 
-                          value.var = "dist", fun.aggregate = mean)
-all_pairs_SI_wide$document = all_pairs_SI_wide$doc_A
-all_pairs_SI_wide$doc_A = NULL
+Q39_par = read.csv("~/Box Sync/digital-humanities-phylogenetics/data/pass/Q39_par.csv", stringsAsFactors = FALSE)
 
-# convert document column to rownames
-rownames(all_pairs_SI_wide) = all_pairs_SI_wide$document
-
-all_pairs_SI_wide_metadata = all_pairs_SI_wide
-
-# remove document column to make matrix square (same number of cols and rows)
-all_pairs_SI_wide$document = NULL
-
-clusters = hclust(as.dist(all_pairs_SI_wide))
-
-plot(clusters, main = "Distance between documents by section order", 
-    ylab = "Distance", xlab = "")
-    
-# An alternative visualization (should be mathematically equivalent)
-ggdendrogram(clusters, rotate = TRUE)
-
-# Bring in metadata
-metadata = read.csv("../metadata/dcclt_cat.csv")
-metadata$document = metadata$X
-metadata$X = NULL
-head(metadata)
-
-# Add colors to dendrogram by provenance
-numColors = length(levels(factor(metadata$provenience)))
-numColors
-myPalette = brewer_pal(palette = "Paired")(numColors)
-names(myPalette) = levels(factor(metadata$provenience))
-print(names(myPalette))
-show_col(myPalette)
-
-myPalette[as.character(metadata[metadata$document == docs[3],]$provenience)]
-
-all_pairs_SI_wide$document = rownames(all_pairs_SI_wide)
-all_pairs_SI_wide = merge(all_pairs_SI_wide, metadata, by = "document")
-
-#metadata[,c("document", "provenience")]
-#all_pairs_SI_wide[,c("document", "provenience")]
-
-str(myPalette)
-names(myPalette)
-
-label = "P459225"
-group = metadata[which(metadata$document == label),"provenience"]
-print(group)
-unname(myPalette[as.character(group)])
-
-labelCol = function(x) {
-  if (is.leaf(x)) {
-    # fetch label
-    label = attr(x, "label")
-    # print(label)
-    group = metadata[which(metadata$document == label),"provenience"]
-    group_col = unname(myPalette[as.character(group)])
-#    attr(x, "nodePar") = list(lab.col = ifelse(label %in% c("A", "B"), "red", "blue"))
-    attr(x, "nodePar") = list(lab.col = group_col)
-  }
-  return(x)
+for(i in 1:1000) {
+  filename = paste0("~/Box Sync/digital-humanities-phylogenetics/data/pass/bootstrap/Q39_par_bootstrap/Q39_par_bootstrap_", i, ".csv")
+  rows = sample(1:nrow(Q39_par), replace = TRUE)
+  corpus_bootstrap = Q39_par[rows,]
+  write.csv(corpus_bootstrap, filename, row.names = FALSE)
 }
-
-## apply labelCol on all nodes of the dendrogram
-plot(dendrapply(as.dendrogram(clusters), labelCol))
-
+```

@@ -54,10 +54,11 @@ Our strategy for implementing this method is the following:
 
 We can then use these section definitions to analyze similarities and differences between texts in terms of both section presence / absence patterns and section order.
 
-### Setup
-If you haven't already, install and load the required packages. 
-
 ```{r}
+
+### Setup
+## If you haven't already, install and load the required packages. 
+
 # install.packages(c("ggplot2", "ggdendro", "reshape", "scales", "dplyr"))
 # 
 # source("http://bioconductor.org/biocLite.R")
@@ -125,10 +126,10 @@ get_longest_kmer_from_set_of_words = function(entry1, entry2, fun) {
   longest = c() 
   
   # loop through each word pair and get longest common substring
-  for(word_x in word_set_x) {
-    for(word_y in word_set_y) {
+  for (word_x in word_set_x) {
+    for (word_y in word_set_y) {
       substring = getLongestCommonSubstring(c(word_x, word_y))
-      longest = c(longest, gsub("[\x80-\xFF]", "", substring))
+      longest = c(longest, gsub("[\x80-\xFF]", "", substring)) # removes random multibyte characters sometimes added by the getLongestCommonSubstring function
     }}
   
   if (length(longest) == 0) {
@@ -136,10 +137,10 @@ get_longest_kmer_from_set_of_words = function(entry1, entry2, fun) {
     k = 0 }
   
   else {
-  # get longest common substring from any of the possible pairs
+  # get longest common substring for any of the possible pairs
+  # if there is more than one longest substring of the same length, take the first
   k = max(nchar(longest))[1]
   kmer = longest[which(nchar(longest) == max(nchar(longest)))][1] }
-  
   
   # return the k and kmer with names associated with the vector
   return_values = c(k, kmer)
@@ -163,8 +164,7 @@ find_kmer_per_language = function(entry1, entry2, fun1, fun2) {
 }
 ```
 
-
-We define a section break as any line pair where overlap in guidewords + citation forms is zero AND the longest shared substring (k) is below a defined cutoff. 
+We now use these functions to identify entries that are in the same section and section breaks (breaks between sections). We define a section break as any line pair where overlap in guidewords + citation forms is zero AND the longest shared substring (k) is below a defined cutoff. Not all entries will be assigned to a section using this method.
 
 ```{r}
 def_section_breaks = function(df, cutoff) {
@@ -188,7 +188,7 @@ def_section_breaks = function(df, cutoff) {
 }
 ```
 
-After defining section breaks, we export all sections (with all members of each) to a output file. We also name each section based on the guidewords from the first entry in that section.
+After defining section breaks, we export all sections (with all members of each) to an output file. We also name each section based on the most common guidewords in that section.
 
 ```{r}
 extract_sections = function(df, file) {
@@ -248,7 +248,7 @@ compare_entries = function(infile, comp, cutoff, outfile1, outfile2) {
     citation_form_b = get_citation_forms(line_b)
 
   kmer = find_kmer_per_language(line_a, line_b, get_guidewords, get_citation_forms) 
-  if(is.na(kmer)) k = 0 else k = nchar(kmer)
+  if (is.na(kmer)) k = 0 else k = nchar(kmer)
   
     overlap = sum(citation_form_a %in% citation_form_b) + sum(guidewords_a %in% guidewords_b)
     
