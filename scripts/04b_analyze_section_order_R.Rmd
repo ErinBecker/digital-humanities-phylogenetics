@@ -5,7 +5,7 @@ date: "November 3, 2017"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include=FALSE, echo = FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 knitr::opts_knit$set(root.dir = "~/Box Sync/digital-humanities-phylogenetics/")
 ```
@@ -16,7 +16,7 @@ Here we analyze document similarity based on the degree of shared order of secti
 
 Our approach is based on the idea of *synteny* from the field of genomics. Two (or more) genes are said to have synteny if those genes are found in proximity across a set of genomes. The degree of synteny is proportional to the frequency with which genes are colocalized and the evolutionary distance of organisms in which that colocalization occurs.  
 
-A genome wide *synteny index* between a pair of genomes can be defined by calculating the *synteny* for all genes shared between that genome pair.
+A genome-wide *synteny index* between a pair of genomes can be defined by calculating the *synteny* for all genes shared between that genome pair and taking the average.
 
 [Reference](http://www.tandfonline.com/doi/full/10.1080/2159256X.2015.1120576)
 
@@ -25,14 +25,13 @@ For this analysis, **genes** are equivalent to **sections** (not **entries**) an
 ### Limitations/Issues: 
 - SI is only defined for sections shared between two documents. If there is no overlap in sections, the genome-wide SI is 0. Short documents will tend to have extremes of SI, either 1 (all sections shared) or 0 (no sections shared). We will include only documents above a certain section-number threshold for this analysis.
 
-- A reasonable value of `k` will need to be determined by trial and error. This may also depend on the distribution of document lengths across our corpus. 
+- A reasonable value of `k` (neighborhood size) will need to be determined by trial and error. This may also depend on the distribution of document lengths across our corpus. 
 
 - This method was developed for microbial genomes, which are usually circular. Our documents are not circular, so we will need to decide how to treat sections that occur within `k` sections of the beginning or end of a document.
     - Idea: add a section called "top" and one called "bottom" when known to a document. Treat these as sections in the SI calculations.
     
 - The document wide SI is the average SI for of all shared sections. Non-shared sections are not included in the calculation.  
-    
-- All of our documents are broken. We usually don't know whether a section is absent from a document because the original scribe did not include it or because it was originally included and subsequently lost from damage. was originally present in the non-broken document. This also occurs in microbial genomes, particularly in metagenomic sequencing where incomplete genomes are assembled.
+- All of our documents are broken. We usually don't know whether a section is absent from a document because the original scribe did not include it or because it was originally included and subsequently lost due to damage. This also occurs in microbial genomes, particularly in metagenomic sequencing where incomplete genomes are assembled.
     
 - How should we deal with sections that appear multiple times in a document? This happens in microbial genomes when genes are repeated within a genome. 
     
@@ -41,7 +40,7 @@ For this analysis, **genes** are equivalent to **sections** (not **entries**) an
 ### Implementation strategy
 Our strategy for implementing this method is the following:
 
-1) Determine the order of sections within each document in corpus.  
+1) Determine the order of sections within each document in the corpus.  
 2) For each document pair:
     - Define the intersection of sections present in that pair.
     - For each section in the intersection, count the number of shared sections in the k-neighborhood between the two documents.
@@ -72,100 +71,140 @@ library(phangorn)
 Sections were defined [previously](https://github.com/ErinBecker/digital-humanities-phylogenetics/blob/master/scripts/04_define_sections.Rmd) and are read in from file here.
 
 ```{r}
-Q1_sections = read.csv("data/sections/Q01_sections.csv", stringsAsFactors = FALSE)
 Q39_sections = read.csv("data/sections/Q39_sections.csv", stringsAsFactors = FALSE)
-Q40_sections = read.csv("data/sections/Q40_sections.csv", stringsAsFactors = FALSE)
-Q41_sections = read.csv("data/sections/Q41_sections.csv", stringsAsFactors = FALSE)
-Q42_sections = read.csv("data/sections/Q42_sections.csv", stringsAsFactors = FALSE)
 ```
 
-```{r}
-# preview X sections
-head(Q39_sections[,grep("X.", colnames(Q39_sections))])
+```{r eval = FALSE}
+# preview X. sections (possible garbage sections)
+head(Q39_sections[,grep("X\\.", colnames(Q39_sections))])
 ```
 
 ## Read in a corpus to analyze
-df = read.csv("../pass/Q39_par.csv", stringsAsFactors = FALSE)
-tail(df)
-length(unique(df$id_text))
+We now read in a csv file containing the data from all of our exemplar texts (and a few unrelated documents to act as outgroups).
+
+```{r}
+corpus = read.csv("data/pass/Q39_par.csv", stringsAsFactors = FALSE)
+```
+
+There are `r length(unique(corpus$id_text))` documents in our corpus, including
+our composite text.
 
 ### Step 1: Determine order of sections for each document in corpus
 For each entry in each document in the corpus, identify which section it belongs to. Add this section identification to a new column in the dataframe. If an entry is found in more than one section, section names are separated by ":".
 
-section_defs = Q39_sections
-for (i in 1:nrow(df)) {
-    entry = tolower(df$entry[i])
-    sections = names(which(sapply(section_defs, function(x) any(x == entry)) == TRUE))
-    if (length(sections) == 0) df$section[i] = NA
-    else df$section[i] = paste(sections, collapse = ":")
+```{r echo = TRUE}
+add_sections_to_entries = function(df, section_defs) {
+  
+  for (i in 1:nrow(df)) {
+      entry = tolower(df$entry[i])
+      sections = names(which(sapply(section_defs, function(x) any(x == entry)) == TRUE))
+      if (length(sections) == 0) df$section[i] = NA
+      else df$section[i] = paste(sections, collapse = ":")
+  }
+  df
 }
-df
+
+corpus = add_sections_to_entries(corpus, Q39_sections)
+```
+
+We can preview the section definitions:
+
+```{r}
+head(corpus[,c("id_text", "entry", "section")], n = 10)
+```
 
 Many entries will not be assigned to a section because they either do not appear verbatium in the Q text that was used to define sections or they do appear in the Q text, but were not part of a section (i.e. they were not adjacent to another entry that shared enough similarity to be considered part of the same section).
 
-Note to Erin: Try going back to the section definition notebook and adding entries in the Q text that don't join a section to the previous section.
+We then check how common it was for entries to be assigned to more than one section. 
 
-Very few entries were assigned to more than one section. Only the entry "ŋešgana[pestle]N" appears in two sections in the Q39 corpus. This entry appears in several documents.
+```{r echo = TRUE}
+unique(corpus[grep(":", corpus$section),]$entry)
+```
 
-unique(df[grep(":", df$section),]$entry)
+Let's junk the X. sections (in the previous script). 
 
-Now that we know which section(s) each entry belongs to, we can define the order of sections for each document. 
+```{r echo = FALSE, eval = FALSE}
+unique(corpus[grep("X\\.4", corpus$section),])
+```
 
-First, we split our dataframe by id_text so that each document is in its own dataframe. We then have a list of dataframes.
+Only the entry "ŋešgana[pestle]N" appears in two sections in the Q39 corpus. This entry appears in several documents. 
 
-We then extract the "section" column from each of those dataframes. This gives us a list of character vectors.
+```{r echo = TRUE}
+unique(corpus[grep(":", corpus$section),])
+```
 
-df$id_text = as.factor(df$id_text)
-docs = split(df, df$id_text)
+Now that we know which section(s) each entry belongs to, we can define the order
+of sections for each document.First, we split our dataframe by id_text so that
+each document is in its own dataframe. We then have a list of dataframes. We then
+extract the "section" column from each of those dataframes. This gives us a list
+of character vectors.
+
+```{r}
+corpus$id_text = as.factor(corpus$id_text)
+docs = split(corpus, corpus$id_text)
 docs = sapply(docs, function(x) x$section)
 head(docs)
+```
 
 We need to get rid of `NA`s. These represent entries that were not assigned to a section. Then we retain only documents that are not of length zero (i.e. documents that had at least one entry assigned to a section).
 
+```{r}
 docs_no_nas = sapply(docs, function(x) x[!is.na(x)])
 
 non_empty_docs = sapply(docs_no_nas, function(x) length(x) > 0)
 
 docs_no_nas = docs_no_nas[non_empty_docs]
 head(docs_no_nas)
+```
 
-print(paste("This leaves us with", length(docs_no_nas), "documents."))
+This leaves us with `r length(docs_no_nas)` documents in our corpus.
 
-We can then use the `rle()` function ("run length encoding") to get a character vector of the sections in each document, in order. This function calculates the lengths and values of runs in a sequence. We're not interested in the lengths of the runs (for this analysis), but can extract the values (names of sections).
+We can then use the `rle()` function ("run length encoding") to get a character
+vector of the sections in each document, in order. This function calculates the
+lengths and values of runs in a sequence. We're not interested in the lengths of
+the runs (for this analysis), but can extract the values (names of sections). We end up with a list of character vectors.
 
-We end up with a list of character vectors.
-
+```{r}
 doc_sections = lapply(docs_no_nas, 
                       function(x) unname(rle(unlist(x))$values))
                       
 head(doc_sections)
-tail(doc_sections)
+```
 
-We now want to get rid of all documents with only one section, as this will not be informative when comparing section order.
+We will focus our analysis on documents with eight or more sections.
 
+```{r echo = TRUE}
 num_sections = sapply(doc_sections, length)
-doc_sections_keep = doc_sections[-which(num_sections == 1)]
-head(doc_sections_keep)
-
-print(paste("This leaves us with", length(doc_sections_keep), "documents."))
-
-print(paste(length(which(num_sections >= 20)), "documents have 20 sections or more.",
-            length(which(num_sections >= 10)), "documents have 10 sections or more.", 
-            "Those sections are:"))
-print(names(which(num_sections >= 10)))
-
 hist(num_sections, breaks = 20)
+doc_sections_keep = doc_sections[which(num_sections >= 8)]
+```
+
+There are `r length(doc_sections_keep)` documents remaining in our corpus.
 
 ### Method 1: Repeated sections combined
 
-This method considers repeated sections in a document as a single section and combines their k-neighborhoods.
+One important consideration in calculating section order is in determining how
+to count sections that appear multiple times within a document. For this method,
+we consider repeated sections as a single section and combine their k-neighborhoods.
 
-First, we need a function to get the section neighborhood for any given section in any given document. The function below accomplishes this. Note that it is agnostic to the number of times a section appears in a document, combining the neighborhoods for all times that section appears. Individual neighborhoods are "neighborhood", combined neighborhoods are "n". 
+We first define function to get the section neighborhood for any given section in
+any given document. This function must be agnostic to the number of times a
+section appears in a document, combining the neighborhoods for all times that
+section appears. Individual neighborhoods are **neighborhood**, combined
+neighborhoods are **n**. 
 
-Note also that the complicated indexing within the for loop is required to avoid going out of bounds. This is important for first few and last few sections in a document. Going out of bounds into negative numbers will throw a `Traceback error`, however, going out of bounds into numbers larger than the length of the vector you're indexing will add `NA`s to your resulting vector. This is worse because the `NA`s are counted in the intersection!
+Note also that the complicated indexing within the for loop is required to avoid
+going out of bounds. This is important for the first few and last few sections 
+in a document. Going out of bounds into negative numbers will throw a `Traceback
+error`, however, going out of bounds into numbers larger than the length of the
+vector you're indexing will add `NA`s to your resulting vector. This is worse
+because the `NA` is counted as an item in the intersection!
 
-Another thing to notice is that the grep statement only finds whole word matches. This is accomplished by using the "beginning of string" `^` and "end of string" `$` metacharacters within the regular expression search.
+Another thing to notice is that the grep statement only finds whole word matches.
+This is accomplished by using the "beginning of string" `^` and "end of string"
+`$` metacharacters within the regular expression search.
 
+```{r echo = TRUE}
 get_neighborhood = function(doc, i, k) {
     
     # create vector to store combined neighborhoods
@@ -186,71 +225,65 @@ get_neighborhood = function(doc, i, k) {
 }
         # return combined neighborhood    
         n 
-    }
+}
+```
+
     
-Our next step is to create a function to calculate a document-wide synteny index (SI) for any given document pair. 
+Next we define a function to calculate a document-wide synteny index (SI) for any given document pair. 
 
-A = doc_sections[["P370399"]]
-B = doc_sections[["P370399"]]
-
-print(A)
-print(B)
-
+```{r}
 calc_SI = function(A, B, k) {
 
     I = intersect(A, B)
-    print(I)
     counter = 0
 
-    for(i in I) {
-        print(paste("Next section:", i))
+    for (i in I) {
         n_A = get_neighborhood(A, i, k)
         n_B = get_neighborhood(B, i, k)
         SI = length(na.omit(intersect(n_A, n_B))) - 1 # subtract the shared section iteself
-        print(paste("The SI for", i, "is", SI))
+
         counter = counter + SI
         }
 
 return(c(SI = counter/length(I), num_shared = length(I), k = k))
-#counter/length(I)
     }
+```
 
-test = calc_SI(A, B, k = 2)
-test
+Next we create a dataframe to store our results. It will have the following columns: 
 
-Now we will create a dataframe to store our results. It will have column `doc_A` = text_id for first document in compared pair, column `doc_B` = text_id for second document in compared pair, `num_shared_sec` = length(I) or number of shared sections between the two documents, and `SI` = document wide SI. 
+* `doc_A` = text_id for first document in compared pair
+* `doc_B` = text_id for second document in compared pair
+* `num_shared_sec` = length(I) or number of shared sections between the two documents
+* `SI` = document wide SI
 
 The function `combn` allows us to get all possible combinations of documents. `t` transposes the resulting data.frame.
 
-The theoretical maximum SI for a document pair depends on k, but is always less than 2k, because sections at the end and beginning of documents can never have a SI of 2k, even if they match perfectly with the comparison document. 
-
-For k = 2, the maximum SI for a document pair is 3.66666666666667.
-
-
+```{r}
 docs = names(doc_sections_keep)
-#all_pairs = t(as.data.frame(combn(docs, 2)))
 all_pairs = permutations(length(docs), 2, docs, repeats.allowed = T)
 all_pairs = as.data.frame(all_pairs, stringsAsFactors = FALSE)
 
-all_pairs_SI = data.frame("doc_A" = all_pairs[,1], "doc_B" = all_pairs[,2], 
+all_pairs_SI = data.frame("doc_A" = all_pairs[,1], "doc_B" = all_pairs[,2],
                         "num_shared_sec" = numeric(length(all_pairs)), 
                        "SI" = numeric(length(all_pairs)), 
                           "k" = numeric(length(all_pairs)))
 all_pairs_SI$doc_A = as.character(all_pairs_SI$doc_A)
 all_pairs_SI$doc_B = as.character(all_pairs_SI$doc_B)
+```
 
-str(all_pairs_SI)
+The `all_pairs` object includes self-self pairs (A=B) and duplicate pairs with reversed order (A-B and B-A). (EXTRA)
 
+```{r echo = FALSE, eval = FALSE}
 # check for self-self pairs
 length(which(all_pairs$V1 == all_pairs$V2))
 # check for duplicate pairs (A-B and B-A)
-all_pairs[which(all_pairs$V1 == "P225033" & all_pairs$V2 == "P225086"),]
-all_pairs[which(all_pairs$V1 == "P225086" & all_pairs$V2 == "P225033"),]
-
-The `all_pairs` object includes self-self pairs (A=B) and duplicate pairs with reversed order (A-B and B-A). 
+all_pairs[which(all_pairs$V1 == "P235262" & all_pairs$V2 == "P247864"),]
+all_pairs[which(all_pairs$V1 == "P247864" & all_pairs$V2 == "P235262"),]
+```
 
 Now we use the `calc_SI` function to iterate through each of the document pairs and store the results in our data.frame `all_pairs_SI`.
 
+```{r}
 for(i in 1:nrow(all_pairs_SI)) {
     A = all_pairs_SI[i,]$doc_A
     B = all_pairs_SI[i,]$doc_B
@@ -259,10 +292,16 @@ for(i in 1:nrow(all_pairs_SI)) {
     all_pairs_SI[i,]$num_shared_sec = result["num_shared"]
     all_pairs_SI[i,]$k = result["k"] 
 }
+```
 
 summary(all_pairs_SI$SI)
 nrow(all_pairs_SI)
 head(all_pairs_SI)
+
+Note that the theoretical maximum SI for a document pair depends on k, but is
+always less than 2k, because sections at the end and beginning of documents can
+never have a SI of 2k, even if they match perfectly with the comparison document. 
+For k = 2, the maximum SI for a document pair is 3.66666666666667.
 
 The maximum possible SI for a pair of document should be 2*k. However, there are a few complications. 
 

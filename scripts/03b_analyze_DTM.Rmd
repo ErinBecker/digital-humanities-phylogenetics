@@ -17,10 +17,11 @@ Note: The "EXTRA" tag indicates a hidden code chunk illustrating an important po
 the data that is tangential to the main thread of the analysis. You can run these
 code chunks by setting eval=TRUE and see the code itself by setting echo=TRUE.
 
-### Setup
-If you haven't already, install and load the required packages. 
-
 ```{r}
+
+#### Setup
+## If you haven't already, install and load the required packages. 
+
 # install.packages(c("ggplot2", "ggdendro", "reshape", "scales", "RColorBrewer", "gtools", "reshape2"))
 
 #source("http://bioconductor.org/biocLite.R")
@@ -303,7 +304,7 @@ dim(dtm_df)
 After these cleaning steps, we now have the DTM that we will use for our remaining analyses. We will write out a copy of this dataframe so that we can pass it in as an 
 object to other scripts. 
 
-```{r echo = TRUE}
+```{r echo = TRUE, eval = FALSE}
 #add document names as row names
 dtm_df$document = rownames(dtm_df)
 
@@ -413,7 +414,7 @@ calculate_distance = function(dtm) {
 
 Run the function defined above for all of the bootstrapped DTMs and write out a new set of output files containing the calculated distance matrix for each DTM.
 
-```{r echo = TRUE, eval = TRUE}
+```{r echo = TRUE, eval = FALSE}
 
 for(i in 21:1000) {
   filename_out = paste0("data/dtm_data/bootstrap/distance_matrices/all_pairs_", i, ".csv")
@@ -426,7 +427,7 @@ for(i in 21:1000) {
 
 Compute a neighbor joining tree for each of the calculated distance matrices and write out the tree file.
 
-```{r echo = TRUE, eval = TRUE}
+```{r echo = TRUE, eval = FALSE}
 # Build neighbor joining tree for each distance matrix
 for(i in 21:1000) {
   filename_in = paste0("data/dtm_data/bootstrap/distance_matrices/all_pairs_", i, ".csv")
@@ -441,7 +442,7 @@ for(i in 21:1000) {
 
 Compute a consensus tree for all generated tree files.
 
-```{r}
+```{r echo = TRUE, eval = FALSE}
 
 trees = list()
 

@@ -14,7 +14,8 @@ Order of analyses in manuscript:
 a) Defining sections based on composite text  
 - [X] Move to Rmd
 - [X] Clean up code
-- [ ] Clean up explanatory text
+- [X] Clean up explanatory text
+- [ ] Remove garbage sections?
 
 i) Grouping documents by shared section composition  
 - [X] Move to Rmd   
