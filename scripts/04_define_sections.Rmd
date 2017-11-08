@@ -40,7 +40,7 @@ Based on the following (artificial) Q text, this method would ideally lead to th
 13) samazum[tree]N
 14) peškal[tree]N
 
-Note that in our current implementation, the split is actually entries 1-4, entries 6-8, and entries 11-14. Entries 9 and 10 are not grouped with any section. This will be explained further in a later section.
+Note that in our current implementation, the split is actually entries 1-4, entries 6-8, and entries 11-14. Entries 9 and 10 are not grouped with any section. This will be explained further in a later note.
 
 ### Implementation strategy
 Our strategy for implementing this method is the following:
@@ -75,7 +75,7 @@ library(dplyr)
 
 ## Step 1: Calculate similarity between adjacent entries.
 
-This step relies on defining a number of functions to process and clean entry strings. The following entry will be used to demonstrate these functions:
+This step relies on defining functions to process and clean entry strings. The following entry will be used to demonstrate these functions:
 ```{r}
 entry = "e[house]N_usan[whip]N_gigir[chariot]N"
 print(entry)
@@ -164,7 +164,7 @@ find_kmer_per_language = function(entry1, entry2, fun1, fun2) {
 }
 ```
 
-We now use these functions to identify entries that are in the same section and section breaks (breaks between sections). We define a section break as any line pair where overlap in guidewords + citation forms is zero AND the longest shared substring (k) is below a defined cutoff. Not all entries will be assigned to a section using this method.
+We now use these functions to identify entries that are in the same section and section breaks (breaks between sections). We define a section break as any line pair where overlap in guidewords + citation forms is zero AND the longest shared substring (k) is below a defined cutoff (our cutoff was 3). Not all entries will be assigned to a section using this method.
 
 ```{r}
 def_section_breaks = function(df, cutoff) {
