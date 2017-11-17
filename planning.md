@@ -15,11 +15,11 @@ a) Defining sections based on composite text
 - [X] Move to Rmd
 - [X] Clean up code
 - [X] Clean up explanatory text
-- [ ] Remove garbage sections?
+- [X] Remove garbage sections?
 
 i) Grouping documents by shared section composition  
 - [X] Move to Rmd   
-- [ ] Clean up code  
+- [X] Clean up code  
 - [X] Deal with kmers crossing language boundaries. 
 - [ ] Clean up explanatory text  
 - [ ] Bootstrap  (by sampling rows from Q39_par)

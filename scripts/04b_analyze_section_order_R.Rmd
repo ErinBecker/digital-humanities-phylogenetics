@@ -74,9 +74,16 @@ Sections were defined [previously](https://github.com/ErinBecker/digital-humanit
 Q39_sections = read.csv("data/sections/Q39_sections.csv", stringsAsFactors = FALSE)
 ```
 
-```{r eval = FALSE}
+We remove sections that have no citation forms (these sections have column names
+that begin with "X.") and are shown below.
+
+```{r eval = TRUE}
 # preview X. sections (possible garbage sections)
 head(Q39_sections[,grep("X\\.", colnames(Q39_sections))])
+```
+
+```{r echo = TRUE}
+Q39_sections = Q39_sections[,-grep("X\\.", colnames(Q39_sections))]
 ```
 
 ## Read in a corpus to analyze
@@ -121,12 +128,6 @@ We then check how common it was for entries to be assigned to more than one sect
 unique(corpus[grep(":", corpus$section),]$entry)
 ```
 
-Let's junk the X. sections (in the previous script). 
-
-```{r echo = FALSE, eval = FALSE}
-unique(corpus[grep("X\\.4", corpus$section),])
-```
-
 Only the entry "ŋešgana[pestle]N" appears in two sections in the Q39 corpus. This entry appears in several documents. 
 
 ```{r echo = TRUE}
@@ -134,10 +135,13 @@ unique(corpus[grep(":", corpus$section),])
 ```
 
 Now that we know which section(s) each entry belongs to, we can define the order
-of sections for each document.First, we split our dataframe by id_text so that
+of sections for each document. First, we split our dataframe by id_text so that
 each document is in its own dataframe. We then have a list of dataframes. We then
 extract the "section" column from each of those dataframes. This gives us a list
 of character vectors.
+
+## Note to self - need to add line here to sort documents by line number,
+# so that bootstrapped corpuses are in the correct order.
 
 ```{r}
 corpus$id_text = as.factor(corpus$id_text)
@@ -264,9 +268,9 @@ all_pairs = permutations(length(docs), 2, docs, repeats.allowed = T)
 all_pairs = as.data.frame(all_pairs, stringsAsFactors = FALSE)
 
 all_pairs_SI = data.frame("doc_A" = all_pairs[,1], "doc_B" = all_pairs[,2],
-                        "num_shared_sec" = numeric(length(all_pairs)), 
-                       "SI" = numeric(length(all_pairs)), 
-                          "k" = numeric(length(all_pairs)))
+                        "num_shared_sec" = numeric(nrow(all_pairs)), 
+                       "SI" = numeric(nrow(all_pairs)), 
+                          "k" = numeric(nrow(all_pairs)))
 all_pairs_SI$doc_A = as.character(all_pairs_SI$doc_A)
 all_pairs_SI$doc_B = as.character(all_pairs_SI$doc_B)
 ```
@@ -294,53 +298,80 @@ for(i in 1:nrow(all_pairs_SI)) {
 }
 ```
 
+```{r}
 summary(all_pairs_SI$SI)
-nrow(all_pairs_SI)
-head(all_pairs_SI)
+```
 
-Note that the theoretical maximum SI for a document pair depends on k, but is
-always less than 2k, because sections at the end and beginning of documents can
-never have a SI of 2k, even if they match perfectly with the comparison document. 
-For k = 2, the maximum SI for a document pair is 3.66666666666667.
+# Complications in calculating maximum document-wide SI
 
-The maximum possible SI for a pair of document should be 2*k. However, there are a few complications. 
+The maximum possible SI for a pair of document should be 2*k. However, there are a few complications: 
 
 1) Our documents are not circular. Therefore, the first k and last k sections in a document can not have 2*k neighbors. This reduces the maximum possible SI for a given document pair and makes the actual maximum SI possible dependent on document length. 
 
-2) Because some sections are repeated more than once in a document (particularly "garbage" sections like X.6), and this method pools the neighborhoods for all times a section appears in a document, the maximum calculated SI can be greater than 2*k. In fact, the maximum calculated SI can be arbitraribly large, if many sections are repeated within a document.
+2) Because some sections are repeated more than once in a document, and this method pools the neighborhoods for all times a section appears in a document, the maximum calculated SI can be greater than 2*k. In fact, the maximum calculated SI can be arbitraribly large, if many sections are repeated within a document.
 
-For this dataset, all instances where SI is > 2k are for self-self pairs. However, that may not be the case for all datasets, so we should add a check here. For our dataset, however, we can set a "ceiling" SI to 4. 
+For this dataset, all instances where SI is > 2k are for self-self pairs. 
 
-# Visually inspect that all cases of SI > 2k are identical docs.
+```{r}
+# Visually inspect that all cases of SI > 2k are self-self.
 k = unique(all_pairs_SI$k)
 all_pairs_SI[which(all_pairs_SI$SI > 2*k),]
+```
 
+We can set a "ceiling" SI to 4. 
+
+```{r echo = TRUE}
 # change all SI > 2k to 2k
 all_pairs_SI[which(all_pairs_SI$SI > 2*k),]$SI = 2*k
+```
 
-We also have many document pairs with an SI of NaN. These appear to be cases where two documents have no shared sections (and therefore SI was calculated as 0/0). The following checks that this is the case for all instances of SI = NaN and sets the SI for these document pairs to be -2k. 
+We also have many document pairs with an SI of NaN. These appear to be cases where two documents have no shared sections (and therefore SI was calculated as 0/0). The following checks that this is the case for all instances of SI = NaN. 
 
+```{r echo = TRUE}
 # check that all doc pairs with SI of NaN have zero shared sections
 unique(all_pairs_SI[which(is.na(all_pairs_SI$SI)),]$num_shared_sec)
+```
 
-# if this condition is true provisionally replace SI of NaN to -2k
+Set the SI for these document pairs to be -2k. 
+
+```{r echo = TRUE}
+# if the condition above is true, change SI of NaN to -2k
 # so that distance will be greatest for these doc pairs
 NA_rows = which(is.na(all_pairs_SI$SI) == TRUE)
 all_pairs_SI[NA_rows,]$SI = -2*k
-head(all_pairs_SI)
+```
 
+We can now calculate the distance between any document pair and add that to
+our dataframe. 
+
+```{r}
 # Calculate distance and add to dataframe
 all_pairs_SI$dist = (2*all_pairs_SI$k)-(all_pairs_SI$SI)
 head(all_pairs_SI)
+```
 
+And visualize the distribution of distances as a histogram. 
+
+```{r}
 hist(all_pairs_SI$dist, breaks = 30)
+```
 
+Next we extract the columns of our data frame that we need
+to build a distance tree.
+
+```{r}
 # Extract the columns of the data frame we need to build a dendrogram
 all_pairs_SI = all_pairs_SI[,c("doc_A", "doc_B", "dist")]
 head(all_pairs_SI)
+```
 
+We will round the distances to two decimal places.
+
+```{r}
 # round the distances
 all_pairs_SI$dist = round(all_pairs_SI$dist, 2)
+head(all_pairs_SI)
+```
 
 ### Create bootstrapped corpuses
 
