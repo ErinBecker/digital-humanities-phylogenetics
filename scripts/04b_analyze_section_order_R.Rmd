@@ -90,7 +90,7 @@ Q39_sections = Q39_sections[,-grep("X\\.", colnames(Q39_sections))]
 We now read in a csv file containing the data from all of our exemplar texts (and a few unrelated documents to act as outgroups).
 
 ```{r}
-corpus = read.csv("data/pass/Q39_par.csv", stringsAsFactors = FALSE)
+Q39_corpus = read.csv("data/pass/Q39_par.csv", stringsAsFactors = FALSE)
 ```
 
 There are `r length(unique(corpus$id_text))` documents in our corpus, including
@@ -111,13 +111,13 @@ add_sections_to_entries = function(df, section_defs) {
   df
 }
 
-corpus = add_sections_to_entries(corpus, Q39_sections)
+Q39_corpus = add_sections_to_entries(Q39_corpus, Q39_sections)
 ```
 
 We can preview the section definitions:
 
 ```{r}
-head(corpus[,c("id_text", "entry", "section")], n = 10)
+head(Q39_corpus[,c("id_text", "entry", "section")], n = 10)
 ```
 
 Many entries will not be assigned to a section because they either do not appear verbatium in the Q text that was used to define sections or they do appear in the Q text, but were not part of a section (i.e. they were not adjacent to another entry that shared enough similarity to be considered part of the same section).
@@ -125,13 +125,13 @@ Many entries will not be assigned to a section because they either do not appear
 We then check how common it was for entries to be assigned to more than one section. 
 
 ```{r echo = TRUE}
-unique(corpus[grep(":", corpus$section),]$entry)
+unique(Q39_corpus[grep(":", Q39_corpus$section),]$entry)
 ```
 
 Only the entry "ŋešgana[pestle]N" appears in two sections in the Q39 corpus. This entry appears in several documents. 
 
 ```{r echo = TRUE}
-unique(corpus[grep(":", corpus$section),])
+unique(Q39_corpus[grep(":", Q39_corpus$section),])
 ```
 
 Now that we know which section(s) each entry belongs to, we can define the order
@@ -140,25 +140,22 @@ each document is in its own dataframe. We then have a list of dataframes. We the
 extract the "section" column from each of those dataframes. This gives us a list
 of character vectors.
 
-## Note to self - need to add line here to sort documents by line number,
-# so that bootstrapped corpuses are in the correct order.
-
 ```{r}
-corpus$id_text = as.factor(corpus$id_text)
-docs = split(corpus, corpus$id_text)
-docs = sapply(docs, function(x) x$section)
-head(docs)
+Q39_corpus$id_text = as.factor(Q39_corpus$id_text)
+Q39_docs = split(Q39_corpus, Q39_corpus$id_text)
+Q39_docs = sapply(Q39_docs, function(x) x$section)
+head(Q39_docs)
 ```
 
 We need to get rid of `NA`s. These represent entries that were not assigned to a section. Then we retain only documents that are not of length zero (i.e. documents that had at least one entry assigned to a section).
 
 ```{r}
-docs_no_nas = sapply(docs, function(x) x[!is.na(x)])
+Q39_docs_no_nas = sapply(Q39_docs, function(x) x[!is.na(x)])
 
-non_empty_docs = sapply(docs_no_nas, function(x) length(x) > 0)
+Q39_non_empty_docs = sapply(Q39_docs_no_nas, function(x) length(x) > 0)
 
-docs_no_nas = docs_no_nas[non_empty_docs]
-head(docs_no_nas)
+Q39_docs_no_nas = Q39_docs_no_nas[Q39_non_empty_docs]
+head(Q39_docs_no_nas)
 ```
 
 This leaves us with `r length(docs_no_nas)` documents in our corpus.
@@ -169,18 +166,18 @@ lengths and values of runs in a sequence. We're not interested in the lengths of
 the runs (for this analysis), but can extract the values (names of sections). We end up with a list of character vectors.
 
 ```{r}
-doc_sections = lapply(docs_no_nas, 
+Q39_doc_sections = lapply(Q39_docs_no_nas, 
                       function(x) unname(rle(unlist(x))$values))
                       
-head(doc_sections)
+head(Q39_doc_sections)
 ```
 
 We will focus our analysis on documents with eight or more sections.
 
 ```{r echo = TRUE}
-num_sections = sapply(doc_sections, length)
-hist(num_sections, breaks = 20)
-doc_sections_keep = doc_sections[which(num_sections >= 8)]
+Q39_num_sections = sapply(Q39_doc_sections, length)
+hist(Q39_num_sections, breaks = 20)
+Q39_doc_sections_keep = Q39_doc_sections[which(Q39_num_sections >= 8)]
 ```
 
 There are `r length(doc_sections_keep)` documents remaining in our corpus.
@@ -263,43 +260,45 @@ Next we create a dataframe to store our results. It will have the following colu
 The function `combn` allows us to get all possible combinations of documents. `t` transposes the resulting data.frame.
 
 ```{r}
-docs = names(doc_sections_keep)
-all_pairs = permutations(length(docs), 2, docs, repeats.allowed = T)
-all_pairs = as.data.frame(all_pairs, stringsAsFactors = FALSE)
+Q39_docs = names(Q39_doc_sections_keep)
 
-all_pairs_SI = data.frame("doc_A" = all_pairs[,1], "doc_B" = all_pairs[,2],
+make_df = function(docs) {
+  all_pairs = permutations(length(docs), 2, docs, repeats.allowed = T)
+  all_pairs = as.data.frame(all_pairs, stringsAsFactors = FALSE)
+
+  df = data.frame("doc_A" = all_pairs[,1], "doc_B" = all_pairs[,2],
                         "num_shared_sec" = numeric(nrow(all_pairs)), 
                        "SI" = numeric(nrow(all_pairs)), 
                           "k" = numeric(nrow(all_pairs)))
-all_pairs_SI$doc_A = as.character(all_pairs_SI$doc_A)
-all_pairs_SI$doc_B = as.character(all_pairs_SI$doc_B)
+  df$doc_A = as.character(df$doc_A)
+  df$doc_B = as.character(df$doc_B)
+  df
+}
+
+Q39_all_pairs_SI = make_df(Q39_docs)
 ```
 
 The `all_pairs` object includes self-self pairs (A=B) and duplicate pairs with reversed order (A-B and B-A). (EXTRA)
 
-```{r echo = FALSE, eval = FALSE}
-# check for self-self pairs
-length(which(all_pairs$V1 == all_pairs$V2))
-# check for duplicate pairs (A-B and B-A)
-all_pairs[which(all_pairs$V1 == "P235262" & all_pairs$V2 == "P247864"),]
-all_pairs[which(all_pairs$V1 == "P247864" & all_pairs$V2 == "P235262"),]
-```
-
 Now we use the `calc_SI` function to iterate through each of the document pairs and store the results in our data.frame `all_pairs_SI`.
 
 ```{r}
-for(i in 1:nrow(all_pairs_SI)) {
-    A = all_pairs_SI[i,]$doc_A
-    B = all_pairs_SI[i,]$doc_B
+fill_df = function(df, doc_sections_keep) {
+  for (i in 1:nrow(df)) {
+    A = df[i,]$doc_A
+    B = df[i,]$doc_B
     result = calc_SI(doc_sections_keep[[A]], doc_sections_keep[[B]], k = 2)
-    all_pairs_SI[i,]$SI = result["SI"]
-    all_pairs_SI[i,]$num_shared_sec = result["num_shared"]
-    all_pairs_SI[i,]$k = result["k"] 
-}
+    df[i,]$SI = result["SI"]
+    df[i,]$num_shared_sec = result["num_shared"]
+    df[i,]$k = result["k"] 
+  } 
+  df }
+
+Q39_all_pairs_SI = fill_df(Q39_all_pairs_SI, Q39_doc_sections_keep)
 ```
 
 ```{r}
-summary(all_pairs_SI$SI)
+summary(Q39_all_pairs_SI$SI)
 ```
 
 # Complications in calculating maximum document-wide SI
@@ -314,22 +313,22 @@ For this dataset, all instances where SI is > 2k are for self-self pairs.
 
 ```{r}
 # Visually inspect that all cases of SI > 2k are self-self.
-k = unique(all_pairs_SI$k)
-all_pairs_SI[which(all_pairs_SI$SI > 2*k),]
+k = unique(Q39_all_pairs_SI$k)
+Q39_all_pairs_SI[which(Q39_all_pairs_SI$SI > 2*k),]
 ```
 
 We can set a "ceiling" SI to 4. 
 
 ```{r echo = TRUE}
 # change all SI > 2k to 2k
-all_pairs_SI[which(all_pairs_SI$SI > 2*k),]$SI = 2*k
+Q39_all_pairs_SI[which(Q39_all_pairs_SI$SI > 2*k),]$SI = 2*k
 ```
 
 We also have many document pairs with an SI of NaN. These appear to be cases where two documents have no shared sections (and therefore SI was calculated as 0/0). The following checks that this is the case for all instances of SI = NaN. 
 
 ```{r echo = TRUE}
 # check that all doc pairs with SI of NaN have zero shared sections
-unique(all_pairs_SI[which(is.na(all_pairs_SI$SI)),]$num_shared_sec)
+unique(Q39_all_pairs_SI[which(is.na(Q39_all_pairs_SI$SI)),]$num_shared_sec)
 ```
 
 Set the SI for these document pairs to be -2k. 
@@ -337,8 +336,8 @@ Set the SI for these document pairs to be -2k.
 ```{r echo = TRUE}
 # if the condition above is true, change SI of NaN to -2k
 # so that distance will be greatest for these doc pairs
-NA_rows = which(is.na(all_pairs_SI$SI) == TRUE)
-all_pairs_SI[NA_rows,]$SI = -2*k
+Q39_NA_rows = which(is.na(Q39_all_pairs_SI$SI) == TRUE)
+Q39_all_pairs_SI[Q39_NA_rows,]$SI = -2*k
 ```
 
 We can now calculate the distance between any document pair and add that to
@@ -346,14 +345,14 @@ our dataframe.
 
 ```{r}
 # Calculate distance and add to dataframe
-all_pairs_SI$dist = (2*all_pairs_SI$k)-(all_pairs_SI$SI)
-head(all_pairs_SI)
+Q39_all_pairs_SI$dist = (2*Q39_all_pairs_SI$k)-(Q39_all_pairs_SI$SI)
+head(Q39_all_pairs_SI)
 ```
 
 And visualize the distribution of distances as a histogram. 
 
 ```{r}
-hist(all_pairs_SI$dist, breaks = 30)
+hist(Q39_all_pairs_SI$dist, breaks = 30)
 ```
 
 Next we extract the columns of our data frame that we need
@@ -361,16 +360,16 @@ to build a distance tree.
 
 ```{r}
 # Extract the columns of the data frame we need to build a dendrogram
-all_pairs_SI = all_pairs_SI[,c("doc_A", "doc_B", "dist")]
-head(all_pairs_SI)
+Q39_all_pairs_SI = Q39_all_pairs_SI[,c("doc_A", "doc_B", "dist")]
+head(Q39_all_pairs_SI)
 ```
 
 We will round the distances to two decimal places.
 
 ```{r}
 # round the distances
-all_pairs_SI$dist = round(all_pairs_SI$dist, 2)
-head(all_pairs_SI)
+Q39_all_pairs_SI$dist = round(Q39_all_pairs_SI$dist, 2)
+head(Q39_all_pairs_SI)
 ```
 
 ### Create bootstrapped corpuses
@@ -378,9 +377,6 @@ head(all_pairs_SI)
 We now create many different versions of the input corpus by resampling from within the corpus file (QXX_par). This will enable us to evaluate the quality of each branching point on our dendrograms
 based on the fraction of dendrograms generated from these bootstrapped corpuses that 
 replicate that branching point. Note that eval is set to FALSE so that these don't regenerate every time the file is knit.
-
-#### Note to self: 
-Need to make sure the boostrapped corpuses are sorted before analyzing whether sequential entries are in the same section (or check to see if the algorithm checks for row number).
 
 ```{r echo = TRUE, eval = FALSE}
 
@@ -393,3 +389,114 @@ for(i in 1:1000) {
   write.csv(corpus_bootstrap, filename, row.names = FALSE)
 }
 ```
+
+### Run through bootstrapped corpus files and build distance tree for each
+
+Define a function to carry out the whole workflow:
+
+```{r echo = TRUE}
+calculate_SI = function(sections_file, corpus_file, k, dist_file) {
+  # read in section definitions
+  sections = read.csv(sections_file, stringsAsFactors = FALSE)
+  
+  # get rid of X. sections
+  sections = sections[,-grep("X\\.", colnames(sections))]
+  
+  # read in corpus
+  corpus = read.csv(corpus_file, stringsAsFactors = FALSE)
+  
+  # sort corpus by document id and line number
+  # so that bootstrapped corpuses are in correct order
+  corpus = corpus[order(corpus$id_text, corpus$id_line),]
+  
+  # add sections to entries
+  corpus = add_sections_to_entries(corpus, sections)
+  
+  # define order of sections within each document
+  corpus$id_text = as.factor(corpus$id_text)
+  docs = split(corpus, corpus$id_text)
+  docs = sapply(docs, function(x) x$section)
+  
+  # get rid of entries that weren't assigned to a section
+  docs_no_nas = sapply(docs, function(x) x[!is.na(x)])
+  non_empty_docs = sapply(docs_no_nas, function(x) length(x) > 0)
+  docs_no_nas = docs_no_nas[non_empty_docs]
+  
+  # extract a character vector of the sections in each document, in order
+  doc_sections = lapply(docs_no_nas, 
+                      function(x) unname(rle(unlist(x))$values))
+  
+  # include only documents with 8 or more sections
+  num_sections = sapply(doc_sections, length)
+  doc_sections_keep = doc_sections[which(num_sections >= 8)]
+  doc_names = names(doc_sections_keep)
+  
+  # calculate the document-wide SI for each document pair
+  all_SI = make_df(doc_names)
+  all_SI = fill_df(all_SI, doc_sections_keep)
+
+  # change all SI > 2k to 2k
+  all_SI[which(all_SI$SI > 2*k),]$SI = 2*k
+
+  # set SI for document pairs with no shared sections to -2k
+  NA_rows = which(is.na(all_SI$SI) == TRUE)
+  all_SI[NA_rows,]$SI = -2*k
+  
+  # Calculate distance and add to dataframe
+  all_SI$dist = (2*all_SI$k) - (all_SI$SI)
+
+  # Extract the columns of the data frame we need to build a dendrogram
+  all_SI = all_SI[,c("doc_A", "doc_B", "dist")]
+  
+  write.csv(all_SI, file = dist_file)
+}
+```
+
+Run the workflow above for all of the bootstrapped corpuses and write out a new set of output files containing the calculated distance matrix for each corpus.
+
+```{r echo = TRUE, eval = FALSE}
+
+for(i in 1:10) {
+  filename_in = paste0("data/", i, ".csv")
+  filename_out = paste0("data/", i, ".csv")
+  corpus = read.csv(filename_in)
+  all_pairs_SI = calculate_SI(corpus)
+  write.csv(all_pairs_SI, filename_out)
+}
+```
+
+Compute a neighbor joining tree for each of the calculated distance matrices and write out the tree file.
+
+```{r echo = TRUE, eval = FALSE}
+# Build neighbor joining tree for each distance matrix
+for(i in 21:1000) {
+  filename_in = paste0("data/dtm_data/bootstrap/distance_matrices/all_pairs_", i, ".csv")
+  filename_out = paste0("data/dtm_data/bootstrap/trees/dtm_nj_", i, ".tre")
+  all_pairs = read.csv(filename_in, row.names = 1)
+  all_pairs_matrix = data.matrix(acast(all_pairs, doc1 ~ doc2, 
+                                       value.var='distance', fun.aggregate = sum, margins = FALSE))
+  treeNJ  <- NJ(dist(all_pairs_matrix))
+  write.tree(treeNJ, filename_out)
+}
+```
+
+Compute a consensus tree for all generated tree files.
+
+```{r echo = TRUE, eval = FALSE}
+
+trees = list()
+
+for(i in 1:1000) {
+  filename_in = paste0("data/", i, ".tre")
+  name = paste0("tree_", i)
+  tree = read.tree(filename_in)
+  trees[[name]] <- tree
+  }
+
+consensus_50 = consensus(trees, p = 0.5)
+write.tree(consensus_50, "....bootstrap/consensus_trees/consensus_50.tre")
+
+consensus_75 = consensus(trees, p = 0.75)
+write.tree(consensus_75, "..../bootstrap/consensus_trees/consensus_75.tre")
+```
+
