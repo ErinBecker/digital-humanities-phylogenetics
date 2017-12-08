@@ -56,6 +56,8 @@ Our strategy for implementing this method is the following:
 #source("http://bioconductor.org/biocLite.R")
 #biocLite("BiocInstaller")
 #biocLite("phangorn")
+#biocLite("ggtree")
+#biocLite("phytools")
 
 library(ggplot2)
 library(ggdendro)
@@ -65,6 +67,8 @@ library(scales)
 library(RColorBrewer)
 library(gtools)
 library(phangorn)
+library(ggtree)
+library(phytools)
 ```
 
 ## Read in section definitions
@@ -364,14 +368,6 @@ Q39_all_pairs_SI = Q39_all_pairs_SI[,c("doc_A", "doc_B", "dist")]
 head(Q39_all_pairs_SI)
 ```
 
-We will round the distances to two decimal places.
-
-```{r}
-# round the distances
-Q39_all_pairs_SI$dist = round(Q39_all_pairs_SI$dist, 2)
-head(Q39_all_pairs_SI)
-```
-
 ### Create bootstrapped corpuses
 
 We now create many different versions of the input corpus by resampling from within the corpus file (QXX_par). This will enable us to evaluate the quality of each branching point on our dendrograms
@@ -395,13 +391,7 @@ for(i in 1:1000) {
 Define a function to carry out the whole workflow:
 
 ```{r echo = TRUE}
-calculate_SI = function(sections_file, corpus_file, k, dist_file) {
-  # read in section definitions
-  sections = read.csv(sections_file, stringsAsFactors = FALSE)
-  
-  # get rid of X. sections
-  sections = sections[,-grep("X\\.", colnames(sections))]
-  
+calculate_SI = function(corpus_file, k, dist_file, doc_names) {
   # read in corpus
   corpus = read.csv(corpus_file, stringsAsFactors = FALSE)
   
@@ -425,11 +415,7 @@ calculate_SI = function(sections_file, corpus_file, k, dist_file) {
   # extract a character vector of the sections in each document, in order
   doc_sections = lapply(docs_no_nas, 
                       function(x) unname(rle(unlist(x))$values))
-  
-  # include only documents with 8 or more sections
-  num_sections = sapply(doc_sections, length)
-  doc_sections_keep = doc_sections[which(num_sections >= 8)]
-  doc_names = names(doc_sections_keep)
+  doc_sections_keep = doc_sections[which(names(doc_sections) %in% doc_names)]
   
   # calculate the document-wide SI for each document pair
   all_SI = make_df(doc_names)
@@ -448,7 +434,7 @@ calculate_SI = function(sections_file, corpus_file, k, dist_file) {
   # Extract the columns of the data frame we need to build a dendrogram
   all_SI = all_SI[,c("doc_A", "doc_B", "dist")]
   
-  write.csv(all_SI, file = dist_file)
+  write.csv(all_SI, file = dist_file, row.names = FALSE, quote = FALSE)
 }
 ```
 
@@ -456,12 +442,23 @@ Run the workflow above for all of the bootstrapped corpuses and write out a new 
 
 ```{r echo = TRUE, eval = FALSE}
 
-for(i in 1:10) {
-  filename_in = paste0("data/", i, ".csv")
-  filename_out = paste0("data/", i, ".csv")
-  corpus = read.csv(filename_in)
-  all_pairs_SI = calculate_SI(corpus)
-  write.csv(all_pairs_SI, filename_out)
+# Since the section definitions are the same for all,
+# we can read the section defs in outside of the loop
+# read in section definitions
+sections_file = "data/sections/Q39_sections.csv"
+sections = read.csv(sections_file, stringsAsFactors = FALSE)
+# get rid of X. sections
+sections = sections[,-grep("X\\.", colnames(sections))]
+
+# We want to make sure that the same set of documents are included in each tree
+# so we will use the Q39_doc_sections object to get the names of the 
+# documents to include
+doc_names = names(Q39_doc_sections[which(Q39_num_sections >= 8)])
+
+for(i in 1:1000) {
+  corpus_file = paste0("data/pass/bootstrap/Q39_par_bootstrap/Q39_par_bootstrap_", i, ".csv")
+  dist_file = paste0("data/section_SI/bootstrap/distance_matrices/Q39_par_dist_matrix_", i, ".csv")
+  calculate_SI(corpus_file, k = 2, dist_file, doc_names)
 }
 ```
 
@@ -469,13 +466,13 @@ Compute a neighbor joining tree for each of the calculated distance matrices and
 
 ```{r echo = TRUE, eval = FALSE}
 # Build neighbor joining tree for each distance matrix
-for(i in 21:1000) {
-  filename_in = paste0("data/dtm_data/bootstrap/distance_matrices/all_pairs_", i, ".csv")
-  filename_out = paste0("data/dtm_data/bootstrap/trees/dtm_nj_", i, ".tre")
-  all_pairs = read.csv(filename_in, row.names = 1)
-  all_pairs_matrix = data.matrix(acast(all_pairs, doc1 ~ doc2, 
-                                       value.var='distance', fun.aggregate = sum, margins = FALSE))
-  treeNJ  <- NJ(dist(all_pairs_matrix))
+for(i in 1:1000) {
+  filename_in = paste0("data/section_SI/bootstrap/distance_matrices/Q39_par_dist_matrix_", i, ".csv")
+  filename_out = paste0("data/section_SI/bootstrap/trees/sect_si_nj_", i, ".tre")
+  distances = read.csv(filename_in)
+  distance_matrix = data.matrix(acast(distances, doc_A ~ doc_B, 
+                                       value.var='dist', fun.aggregate = sum, margins = FALSE))
+  treeNJ  <- NJ(dist(distance_matrix))
   write.tree(treeNJ, filename_out)
 }
 ```
@@ -487,16 +484,35 @@ Compute a consensus tree for all generated tree files.
 trees = list()
 
 for(i in 1:1000) {
-  filename_in = paste0("data/", i, ".tre")
+  filename_in = paste0("data/section_SI/bootstrap/trees/sect_si_nj_", i, ".tre")
   name = paste0("tree_", i)
   tree = read.tree(filename_in)
+  
+  
   trees[[name]] <- tree
   }
 
 consensus_50 = consensus(trees, p = 0.5)
-write.tree(consensus_50, "....bootstrap/consensus_trees/consensus_50.tre")
+write.tree(consensus_50, "data/section_SI/bootstrap/consensus_trees/consensus_50.tre")
 
 consensus_75 = consensus(trees, p = 0.75)
-write.tree(consensus_75, "..../bootstrap/consensus_trees/consensus_75.tre")
+write.tree(consensus_75, "data/section_SI/bootstrap/consensus_trees/consensus_75.tre")
 ```
 
+```{r echo = TRUE}
+
+class(trees) = "multiPhylo"
+
+avg_tree = averageTree(trees)
+write.tree(avg_tree, "data/section_SI/bootstrap/consensus_trees/avg_tree.tre")
+mcc_tree = maxCladeCred(trees)
+write.tree(mcc_tree, "data/section_SI/bootstrap/consensus_trees/mcc_tree.tre")
+
+pdf("data/section_SI/bootstrap/consensus_trees/mcc_tree.pdf")
+ggtree(mcc_tree) + geom_tiplab()
+dev.off()
+
+pdf("data/section_SI/bootstrap/consensus_trees/avg_tree.pdf")
+ggtree(avg_tree) + geom_tiplab()
+dev.off()
+```
