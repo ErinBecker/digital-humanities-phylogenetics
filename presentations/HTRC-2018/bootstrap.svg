@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="212.5769mm"
-   height="199.61905mm"
-   viewBox="0 0 753.22525 707.31159"
+   width="212.97215mm"
+   height="300.37549mm"
+   viewBox="0 0 754.62574 1064.3226"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
@@ -38,15 +38,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.83175171"
-     inkscape:cx="372.71289"
-     inkscape:cy="230.82142"
+     inkscape:cx="205.94173"
+     inkscape:cy="998.44027"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
      showgrid="false"
      inkscape:window-width="1793"
      inkscape:window-height="1008"
-     inkscape:window-x="184"
-     inkscape:window-y="27"
+     inkscape:window-x="20"
+     inkscape:window-y="0"
      inkscape:window-maximized="0"
      inkscape:snap-grids="true"
      inkscape:object-paths="true"
@@ -70,7 +70,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -79,13 +79,13 @@
      inkscape:groupmode="layer"
      id="layer1"
      style="display:inline"
-     transform="translate(-1.7213821e-4,1.8073523)" />
+     transform="translate(0.34584981,1.8113582)" />
   <g
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Layer 2"
      style="display:inline"
-     transform="translate(-1.7213821e-4,1.8073523)">
+     transform="translate(0.34584981,1.8113582)">
     <g
        id="g7020">
       <g
