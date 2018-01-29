@@ -1,3 +1,16 @@
+Before Monday 2/5:
+
+Niek:
+- [ ] Check whether theres anything to add or remove from the other corpora (data/text_IDs).
+- [ ] See whether to lematize some of the other texts. 
+- [ ] Look into whether we need to split documents from other corpora. 
+
+Erin:
+- [ ] Run each of the other corpora through the 04_define_sections.Rmd and 04b_analyze_section_order_R.Rmd workflows.
+- [ ] Add text to intro and methods section, as well as images, for paper (based on poster).
+
+_________________________
+
 Order of analyses in manuscript:
 1) Grouping documents by shared entry composition (DTM)
     - [X] Move to Rmd 
