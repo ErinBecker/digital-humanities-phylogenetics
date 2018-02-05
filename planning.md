@@ -1,3 +1,12 @@
+Before next meeting:
+
+Erin: 
+- [ ] Add metadata to trees. 
+- [ ] Run new Q39 data through scripts (DTM and section order). 
+- [ ] Writing.
+- [ ] After Niek lematizes stuff re-run through 04b_analyze_section_order.Rmd
+
+
 Before Monday 2/5:
 
 Niek:
@@ -6,8 +15,8 @@ Niek:
 - [ ] Look into whether we need to split documents from other corpora. 
 
 Erin:
-- [ ] Run each of the other corpora through 04_define_sections.Rmd  
-- [ ] Run each of the other corpora through 04b_analyze_section_order_R.Rmd  
+- [X] Run each of the other corpora through 04_define_sections.Rmd  
+- [X] Run each of the other corpora through 04b_analyze_section_order_R.Rmd  
     Note: only the following number of documents are present with eight or more sections.
     - Q01 - 1
     - Q40 - 4
