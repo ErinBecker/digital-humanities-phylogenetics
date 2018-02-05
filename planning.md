@@ -6,8 +6,9 @@ Niek:
 - [ ] Look into whether we need to split documents from other corpora. 
 
 Erin:
-- [ ] Run each of the other corpora through the 04_define_sections.Rmd and 04b_analyze_section_order_R.Rmd workflows.
-** Only the following number of documents in each corpus have eight or more sections:
+- [ ] Run each of the other corpora through 04_define_sections.Rmd  
+- [ ] Run each of the other corpora through 04b_analyze_section_order_R.Rmd  
+    Note: only the following number of documents are present with eight or more sections.
     - Q01 - 1
     - Q40 - 4
     - Q41 - 6
