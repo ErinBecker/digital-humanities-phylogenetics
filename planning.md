@@ -6,7 +6,13 @@ Niek:
 - [ ] Look into whether we need to split documents from other corpora. 
 
 Erin:
-- [ ] Run each of the other corpora through the 04_define_sections.Rmd and 04b_analyze_section_order_R.Rmd workflows.
+- [ ] Run each of the other corpora through 04_define_sections.Rmd  
+- [ ] Run each of the other corpora through 04b_analyze_section_order_R.Rmd  
+    Note: only the following number of documents are present with eight or more sections.
+    - Q01 - 1
+    - Q40 - 4
+    - Q41 - 6
+    - Q42 - 1
 - [ ] Add text to intro and methods section, as well as images, for paper (based on poster).
 
 _________________________

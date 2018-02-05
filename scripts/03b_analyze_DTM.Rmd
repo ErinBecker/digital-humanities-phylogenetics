@@ -36,6 +36,7 @@ library(scales)
 library(RColorBrewer)
 library(gtools)
 library(phangorn)
+library(phytools)
 ```
 
 Load in the document term matrix (DTM) that was generated previously.
@@ -459,3 +460,22 @@ write.tree(consensus_50, "data/dtm_data/bootstrap/consensus_trees/consensus_50.t
 consensus_75 = consensus(trees, p = 0.75)
 write.tree(consensus_75, "data/dtm_data/bootstrap/consensus_trees/consensus_75.tre")
 ```
+
+```{r}
+
+class(trees) = "multiPhylo"
+
+#avg_tree = averageTree(trees)
+#write.tree(avg_tree, "data/dtm_data/bootstrap/consensus_trees/avg_tree.tre")
+mcc_tree = maxCladeCred(trees)
+write.tree(mcc_tree, "data/dtm_data/bootstrap/consensus_trees/mcc_tree.tre")
+
+#pdf("data/dtm_data/bootstrap/consensus_trees/mcc_tree.pdf")
+#ggtree(mcc_tree) + geom_tiplab()
+#dev.off()
+
+#pdf("data/dtm_data/bootstrap/consensus_trees/avg_tree.pdf")
+#ggtree(avg_tree) + geom_tiplab()
+#dev.off()
+```
+
