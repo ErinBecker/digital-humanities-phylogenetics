@@ -1,0 +1,528 @@
+---
+title: "04b_analyze_section_order"
+author: "Erin Becker"
+date: "November 3, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE, echo = FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_knit$set(root.dir = "~/Box Sync/digital-humanities-phylogenetics/")
+```
+
+# Section order
+
+Here we analyze document similarity based on the degree of shared order of sections within a document. Sections are defined in 04_define_sections.Rmd. 
+
+Our approach is based on the idea of *synteny* from the field of genomics. Two (or more) genes are said to have synteny if those genes are found in proximity across a set of genomes. The degree of synteny is proportional to the frequency with which genes are colocalized and the evolutionary distance of organisms in which that colocalization occurs.  
+
+A genome-wide *synteny index* between a pair of genomes can be defined by calculating the *synteny* for all genes shared between that genome pair and taking the average.
+
+[Reference](http://www.tandfonline.com/doi/full/10.1080/2159256X.2015.1120576)
+
+For this analysis, **genes** are equivalent to **sections** (not **entries**) and **genomes** are equivalent to **documents**.  
+
+### Limitations/Issues: 
+- SI is only defined for sections shared between two documents. If there is no overlap in sections, the genome-wide SI is 0. Short documents will tend to have extremes of SI, either 1 (all sections shared) or 0 (no sections shared). We will include only documents above a certain section-number threshold for this analysis.
+
+- A reasonable value of `k` (neighborhood size) will need to be determined by trial and error. This may also depend on the distribution of document lengths across our corpus. 
+
+- This method was developed for microbial genomes, which are usually circular. Our documents are not circular, so we will need to decide how to treat sections that occur within `k` sections of the beginning or end of a document.
+    - Idea: add a section called "top" and one called "bottom" when known to a document. Treat these as sections in the SI calculations.
+    
+- The document wide SI is the average SI for of all shared sections. Non-shared sections are not included in the calculation.  
+- All of our documents are broken. We usually don't know whether a section is absent from a document because the original scribe did not include it or because it was originally included and subsequently lost due to damage. This also occurs in microbial genomes, particularly in metagenomic sequencing where incomplete genomes are assembled.
+    
+- How should we deal with sections that appear multiple times in a document? This happens in microbial genomes when genes are repeated within a genome. 
+    
+- When two sections are flipped in order, this method wouldn't notice (unless the documents are relatively long compared to k). Do we want it to?
+
+### Implementation strategy
+Our strategy for implementing this method is the following:
+
+1) Determine the order of sections within each document in the corpus.  
+2) For each document pair:
+    - Define the intersection of sections present in that pair.
+    - For each section in the intersection, count the number of shared sections in the k-neighborhood between the two documents.
+3) Calculate document wide SI = average SI for all sections present in both documents.
+4) Calculate distance = 1 - document wide SI for any document pair
+5) Calculate a tree from the distance matrix.
+6) Bootstrap.
+7) Calculate consensus tree.
+
+```{r}
+# install.packages(c("ggplot2", "ggdendro", "reshape", "scales", "RColorBrewer", "gtools", "reshape2"))
+
+#source("http://bioconductor.org/biocLite.R")
+#biocLite("BiocInstaller")
+#biocLite("phangorn")
+#biocLite("ggtree")
+#biocLite("phytools")
+
+library(ggplot2)
+library(ggdendro)
+library(reshape)
+library(reshape2)
+library(scales)
+library(RColorBrewer)
+library(gtools)
+library(phangorn)
+library(ggtree)
+library(phytools)
+```
+
+## Read in section definitions
+Sections were defined [previously](https://github.com/ErinBecker/digital-humanities-phylogenetics/blob/master/scripts/04_define_sections.Rmd) and are read in from file here.
+
+```{r}
+# Example filename = ~/Box Sync/digital-humanities-phylogenetics/data/sections/Q01_sections.csv
+section_infile = readline(prompt = "Enter a section filename: ")
+```
+
+```{r}
+section_defs = read.csv(section_infile, stringsAsFactors = FALSE)
+```
+
+We remove sections that have no citation forms (these sections have column names
+that begin with "X.") and are shown below.
+
+```{r eval = TRUE}
+# preview X. sections (possible garbage sections)
+head(section_defs[,grep("X\\.", colnames(section_defs))])
+```
+
+```{r echo = TRUE}
+if(length(grep("X\\.", colnames(section_defs))) > 0) {
+  section_defs = section_defs[,-grep("X\\.", colnames(section_defs))]
+}
+```
+
+## Read in a corpus to analyze
+We now read in a csv file containing the data from all of our exemplar texts (and a few unrelated documents to act as outgroups).
+
+```{r}
+# Example filename = ~/Box Sync/digital-humanities-phylogenetics/data/pass/Q01_par.csv
+corpus_infile = readline(prompt = "Enter a corpus filename: ")
+```
+
+```{r}
+corpus = read.csv(corpus_infile, stringsAsFactors = FALSE)
+```
+
+There are `r length(unique(corpus$id_text))` documents in our corpus, including
+our composite text.
+
+### Step 1: Determine order of sections for each document in corpus
+For each entry in each document in the corpus, identify which section it belongs to. Add this section identification to a new column in the dataframe. If an entry is found in more than one section, section names are separated by ":".
+
+```{r echo = TRUE}
+add_sections_to_entries = function(df, section_defs) {
+  
+  for (i in 1:nrow(df)) {
+      entry = tolower(df$entry[i])
+      sections = names(which(sapply(section_defs, function(x) any(x == entry)) == TRUE))
+      if (length(sections) == 0) df$section[i] = NA
+      else df$section[i] = paste(sections, collapse = ":")
+  }
+  df
+}
+
+corpus = add_sections_to_entries(corpus, section_defs)
+```
+
+We can preview the section definitions:
+
+```{r}
+head(corpus[,c("id_text", "entry", "section")], n = 10)
+```
+
+Many entries will not be assigned to a section because they either do not appear verbatium in the Q text that was used to define sections or they do appear in the Q text, but were not part of a section (i.e. they were not adjacent to another entry that shared enough similarity to be considered part of the same section).
+
+We then check how common it was for entries to be assigned to more than one section. 
+
+```{r echo = TRUE}
+unique(corpus[grep(":", corpus$section),]$entry)
+```
+
+# These entries above appear in at least two sections in the Q doc. This entry appears in several documents in the corpus. 
+
+```{r echo = TRUE}
+unique(corpus[grep(":", corpus$section),])
+```
+
+Now that we know which section(s) each entry belongs to, we can define the order
+of sections for each document. First, we split our dataframe by id_text so that
+each document is in its own dataframe. We then have a list of dataframes. We then
+extract the "section" column from each of those dataframes. This gives us a list
+of character vectors.
+
+```{r}
+corpus$id_text = as.factor(corpus$id_text)
+docs = split(corpus, corpus$id_text)
+docs = sapply(docs, function(x) x$section)
+head(docs)
+```
+
+We need to get rid of `NA`s. These represent entries that were not assigned to a section. Then we retain only documents that are not of length zero (i.e. documents that had at least one entry assigned to a section).
+
+```{r}
+docs_no_nas = sapply(docs, function(x) x[!is.na(x)])
+
+non_empty_docs = sapply(docs_no_nas, function(x) length(x) > 0)
+
+docs_no_nas = docs_no_nas[non_empty_docs]
+head(docs_no_nas)
+```
+
+This leaves us with `r length(docs_no_nas)` documents in our corpus.
+
+We can then use the `rle()` function ("run length encoding") to get a character
+vector of the sections in each document, in order. This function calculates the
+lengths and values of runs in a sequence. We're not interested in the lengths of
+the runs (for this analysis), but can extract the values (names of sections). We end up with a list of character vectors.
+
+```{r}
+doc_sections = lapply(docs_no_nas, 
+                      function(x) unname(rle(unlist(x))$values))
+                      
+head(doc_sections)
+```
+
+We will focus our analysis on documents with eight or more sections.
+
+```{r echo = TRUE}
+num_sections = sapply(doc_sections, length)
+hist(num_sections, breaks = 20)
+doc_sections_keep = doc_sections[which(num_sections >= 8)]
+```
+
+There are `r length(doc_sections_keep)` documents remaining in our corpus.
+
+### Method 1: Repeated sections combined
+
+One important consideration in calculating section order is in determining how
+to count sections that appear multiple times within a document. For this method,
+we consider repeated sections as a single section and combine their k-neighborhoods.
+
+We first define function to get the section neighborhood for any given section in
+any given document. This function must be agnostic to the number of times a
+section appears in a document, combining the neighborhoods for all times that
+section appears. Individual neighborhoods are **neighborhood**, combined
+neighborhoods are **n**. 
+
+Note also that the complicated indexing within the for loop is required to avoid
+going out of bounds. This is important for the first few and last few sections 
+in a document. Going out of bounds into negative numbers will throw a `Traceback
+error`, however, going out of bounds into numbers larger than the length of the
+vector you're indexing will add `NA`s to your resulting vector. This is worse
+because the `NA` is counted as an item in the intersection!
+
+Another thing to notice is that the grep statement only finds whole word matches.
+This is accomplished by using the "beginning of string" `^` and "end of string"
+`$` metacharacters within the regular expression search.
+
+```{r echo = TRUE}
+get_neighborhood = function(doc, i, k) {
+    
+    # create vector to store combined neighborhoods
+    n = c()
+    
+    # search for a section within a document and extract neighborhood
+    for(x in grep(paste0("^",i,"$"), doc)) {
+    
+        if(x >= k+1 & x <= length(doc) - k) sequence = (x - k):(x + k)
+        else if(x < k+1) sequence = 1:(x + k)
+        else if(x > length(doc) - k) sequence = (x - k):length(doc)
+    
+        neighborhood = doc[sequence]
+    
+        # add neighborhood to combined neighborhoods for repeated sections
+        n = c(n, neighborhood)
+        #print(paste("The combined neighborhood is:", n))
+}
+        # return combined neighborhood    
+        n 
+}
+```
+
+    
+Next we define a function to calculate a document-wide synteny index (SI) for any given document pair. 
+
+```{r}
+calc_SI = function(A, B, k) {
+
+    I = intersect(A, B)
+    counter = 0
+
+    for (i in I) {
+        n_A = get_neighborhood(A, i, k)
+        n_B = get_neighborhood(B, i, k)
+        SI = length(na.omit(intersect(n_A, n_B))) - 1 # subtract the shared section iteself
+
+        counter = counter + SI
+        }
+
+return(c(SI = counter/length(I), num_shared = length(I), k = k))
+    }
+```
+
+Next we create a dataframe to store our results. It will have the following columns: 
+
+* `doc_A` = text_id for first document in compared pair
+* `doc_B` = text_id for second document in compared pair
+* `num_shared_sec` = length(I) or number of shared sections between the two documents
+* `SI` = document wide SI
+
+The function `combn` allows us to get all possible combinations of documents. `t` transposes the resulting data.frame.
+
+```{r}
+docs = names(doc_sections_keep)
+
+make_df = function(docs) {
+  all_pairs = permutations(length(docs), 2, docs, repeats.allowed = T)
+  all_pairs = as.data.frame(all_pairs, stringsAsFactors = FALSE)
+
+  df = data.frame("doc_A" = all_pairs[,1], "doc_B" = all_pairs[,2],
+                        "num_shared_sec" = numeric(nrow(all_pairs)), 
+                       "SI" = numeric(nrow(all_pairs)), 
+                          "k" = numeric(nrow(all_pairs)))
+  df$doc_A = as.character(df$doc_A)
+  df$doc_B = as.character(df$doc_B)
+  df
+}
+
+all_pairs_SI = make_df(docs)
+```
+
+The `all_pairs` object includes self-self pairs (A=B) and duplicate pairs with reversed order (A-B and B-A). (EXTRA)
+
+Now we use the `calc_SI` function to iterate through each of the document pairs and store the results in our data.frame `all_pairs_SI`.
+
+```{r}
+fill_df = function(df, doc_sections_keep) {
+  for (i in 1:nrow(df)) {
+    A = df[i,]$doc_A
+    B = df[i,]$doc_B
+    result = calc_SI(doc_sections_keep[[A]], doc_sections_keep[[B]], k = 2)
+    df[i,]$SI = result["SI"]
+    df[i,]$num_shared_sec = result["num_shared"]
+    df[i,]$k = result["k"] 
+  } 
+  df }
+
+all_pairs_SI = fill_df(all_pairs_SI, doc_sections_keep)
+```
+
+```{r}
+summary(all_pairs_SI$SI)
+```
+
+# Complications in calculating maximum document-wide SI
+
+The maximum possible SI for a pair of document should be 2*k. However, there are a few complications: 
+
+1) Our documents are not circular. Therefore, the first k and last k sections in a document can not have 2*k neighbors. This reduces the maximum possible SI for a given document pair and makes the actual maximum SI possible dependent on document length. 
+
+2) Because some sections are repeated more than once in a document, and this method pools the neighborhoods for all times a section appears in a document, the maximum calculated SI can be greater than 2*k. In fact, the maximum calculated SI can be arbitraribly large, if many sections are repeated within a document.
+
+For this dataset, all instances where SI is > 2k are for self-self pairs. 
+
+```{r}
+# Visually inspect that all cases of SI > 2k are self-self.
+k = unique(all_pairs_SI$k)
+all_pairs_SI[which(all_pairs_SI$SI > 2*k),]
+```
+
+We can set a "ceiling" SI to 4. 
+
+```{r echo = TRUE}
+# change all SI > 2k to 2k
+all_pairs_SI[which(all_pairs_SI$SI > 2*k),]$SI = 2*k
+```
+
+We also have many document pairs with an SI of NaN. These appear to be cases where two documents have no shared sections (and therefore SI was calculated as 0/0). The following checks that this is the case for all instances of SI = NaN. 
+
+```{r echo = TRUE}
+# check that all doc pairs with SI of NaN have zero shared sections
+unique(all_pairs_SI[which(is.na(all_pairs_SI$SI)),]$num_shared_sec)
+```
+
+Set the SI for these document pairs to be -2k. 
+
+```{r echo = TRUE}
+# if the condition above is true, change SI of NaN to -2k
+# so that distance will be greatest for these doc pairs
+NA_rows = which(is.na(all_pairs_SI$SI) == TRUE)
+all_pairs_SI[NA_rows,]$SI = -2*k
+```
+
+We can now calculate the distance between any document pair and add that to
+our dataframe. 
+
+```{r}
+# Calculate distance and add to dataframe
+all_pairs_SI$dist = (2*all_pairs_SI$k)-(all_pairs_SI$SI)
+head(all_pairs_SI)
+```
+
+And visualize the distribution of distances as a histogram. 
+
+```{r}
+hist(all_pairs_SI$dist, breaks = 30)
+```
+
+Next we extract the columns of our data frame that we need
+to build a distance tree.
+
+```{r}
+# Extract the columns of the data frame we need to build a dendrogram
+all_pairs_SI = all_pairs_SI[,c("doc_A", "doc_B", "dist")]
+head(all_pairs_SI)
+```
+
+### Create bootstrapped corpuses
+
+We now create many different versions of the input corpus by resampling from within the corpus file (QXX_par). This will enable us to evaluate the quality of each branching point on our dendrograms
+based on the fraction of dendrograms generated from these bootstrapped corpuses that 
+replicate that branching point. Note that eval is set to FALSE so that these don't regenerate every time the file is knit.
+
+```{r echo = TRUE, eval = FALSE}
+
+#define par_infile
+
+par = read.csv(par_infile, stringsAsFactors = FALSE)
+
+for(i in 1:1000) {
+  filename = paste0("~/Box Sync/digital-humanities-phylogenetics/data/pass/bootstrap/", corpus_id, "_par_bootstrap/", corpus_id, "_par_bootstrap_", i, ".csv")
+  rows = sample(1:nrow(par), replace = TRUE)
+  corpus_bootstrap = par[rows,]
+  write.csv(corpus_bootstrap, filename, row.names = FALSE)
+}
+```
+
+### Run through bootstrapped corpus files and build distance tree for each
+
+Define a function to carry out the whole workflow:
+
+```{r echo = TRUE}
+calculate_SI = function(corpus_file, k, dist_file, doc_names) {
+  # read in corpus
+  corpus = read.csv(corpus_file, stringsAsFactors = FALSE)
+  
+  # sort corpus by document id and line number
+  # so that bootstrapped corpuses are in correct order
+  corpus = corpus[order(corpus$id_text, corpus$id_line),]
+  
+  # add sections to entries
+  corpus = add_sections_to_entries(corpus, sections)
+  
+  # define order of sections within each document
+  corpus$id_text = as.factor(corpus$id_text)
+  docs = split(corpus, corpus$id_text)
+  docs = sapply(docs, function(x) x$section)
+  
+  # get rid of entries that weren't assigned to a section
+  docs_no_nas = sapply(docs, function(x) x[!is.na(x)])
+  non_empty_docs = sapply(docs_no_nas, function(x) length(x) > 0)
+  docs_no_nas = docs_no_nas[non_empty_docs]
+  
+  # extract a character vector of the sections in each document, in order
+  doc_sections = lapply(docs_no_nas, 
+                      function(x) unname(rle(unlist(x))$values))
+  doc_sections_keep = doc_sections[which(names(doc_sections) %in% doc_names)]
+  
+  # calculate the document-wide SI for each document pair
+  all_SI = make_df(doc_names)
+  all_SI = fill_df(all_SI, doc_sections_keep)
+
+  # change all SI > 2k to 2k
+  all_SI[which(all_SI$SI > 2*k),]$SI = 2*k
+
+  # set SI for document pairs with no shared sections to -2k
+  NA_rows = which(is.na(all_SI$SI) == TRUE)
+  all_SI[NA_rows,]$SI = -2*k
+  
+  # Calculate distance and add to dataframe
+  all_SI$dist = (2*all_SI$k) - (all_SI$SI)
+
+  # Extract the columns of the data frame we need to build a dendrogram
+  all_SI = all_SI[,c("doc_A", "doc_B", "dist")]
+  
+  write.csv(all_SI, file = dist_file, row.names = FALSE, quote = FALSE)
+}
+```
+
+Run the workflow above for all of the bootstrapped corpuses and write out a new set of output files containing the calculated distance matrix for each corpus.
+
+```{r echo = TRUE, eval = FALSE}
+
+# Since the section definitions are the same for all,
+# we can read the section defs in outside of the loop
+# these are defined by section_defs (above)
+
+# We want to make sure that the same set of documents are included in each tree
+# so we will use the doc_sections object to get the names of the 
+# documents to include
+doc_names = names(doc_sections[which(num_sections >= 8)])
+
+for(i in 1:1000) {
+  corpus_file = paste0("data/pass/bootstrap/", corpus_id, "par_bootstrap/", corpus_id, "_par_bootstrap_", i, ".csv")
+  dist_file = paste0("data/section_SI/bootstrap/distance_matrices/", corpus_id, "_par_dist_matrix_", i, ".csv")
+  calculate_SI(corpus_file, k = 2, dist_file, doc_names)
+}
+```
+
+Compute a neighbor joining tree for each of the calculated distance matrices and write out the tree file.
+
+```{r echo = TRUE, eval = FALSE}
+# Build neighbor joining tree for each distance matrix
+for(i in 1:1000) {
+  filename_in = paste0("data/section_SI/", corpus_id, "/bootstrap/distance_matrices/", corpus_id, "_par_dist_matrix_", i, ".csv")
+  filename_out = paste0("data/section_SI/", corpus_id, "/bootstrap/trees/sect_si_nj_", i, ".tre")
+  distances = read.csv(filename_in)
+  distance_matrix = data.matrix(acast(distances, doc_A ~ doc_B, 
+                                       value.var='dist', fun.aggregate = sum, margins = FALSE))
+  treeNJ  <- NJ(dist(distance_matrix))
+  write.tree(treeNJ, filename_out)
+}
+```
+
+Compute a consensus tree for all generated tree files.
+
+```{r echo = TRUE, eval = FALSE}
+
+trees = list()
+
+for(i in 1:1000) {
+  filename_in = paste0("data/section_SI/", corpus_id, "/bootstrap/trees/sect_si_nj_", i, ".tre")
+  name = paste0("tree_", i)
+  tree = read.tree(filename_in)
+  
+  
+  trees[[name]] <- tree
+  }
+
+consensus_50 = consensus(trees, p = 0.5)
+write.tree(consensus_50, "data/section_SI/", corpus_id, "/bootstrap/consensus_trees/consensus_50.tre")
+
+consensus_75 = consensus(trees, p = 0.75)
+write.tree(consensus_75, "data/section_SI/", corpus_id, "/bootstrap/consensus_trees/consensus_75.tre")
+```
+
+```{r echo = TRUE}
+
+class(trees) = "multiPhylo"
+
+avg_tree = averageTree(trees)
+write.tree(avg_tree, "data/section_SI/", corpus_id, "/bootstrap/consensus_trees/avg_tree.tre")
+mcc_tree = maxCladeCred(trees)
+write.tree(mcc_tree, "data/section_SI/", corpus_id, "/bootstrap/consensus_trees/mcc_tree.tre")
+
+pdf("data/section_SI/bootstrap/", corpus_id, "/consensus_trees/mcc_tree.pdf")
+ggtree(mcc_tree) + geom_tiplab()
+dev.off()
+
+pdf("data/section_SI/bootstrap/", corpus_id, "/consensus_trees/avg_tree.pdf")
+ggtree(avg_tree) + geom_tiplab()
+dev.off()
+```

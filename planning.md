@@ -7,6 +7,11 @@ Niek:
 
 Erin:
 - [ ] Run each of the other corpora through the 04_define_sections.Rmd and 04b_analyze_section_order_R.Rmd workflows.
+** Only the following number of documents in each corpus have eight or more sections:
+    - Q01 - 1
+    - Q40 - 4
+    - Q41 - 6
+    - Q42 - 1
 - [ ] Add text to intro and methods section, as well as images, for paper (based on poster).
 
 _________________________
