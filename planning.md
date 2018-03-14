@@ -6,7 +6,6 @@ Erin:
 - [ ] Writing.
 - [ ] After Niek lematizes stuff re-run through 04b_analyze_section_order.Rmd
 
-
 Before Monday 2/5:
 
 Niek:

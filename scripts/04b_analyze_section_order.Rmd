@@ -75,7 +75,7 @@ library(phytools)
 Sections were defined [previously](https://github.com/ErinBecker/digital-humanities-phylogenetics/blob/master/scripts/04_define_sections.Rmd) and are read in from file here.
 
 ```{r}
-# Example filename = ~/Box Sync/digital-humanities-phylogenetics/data/sections/Q01_sections.csv
+# Example filename = ~/Box Sync/digital-humanities-phylogenetics/data/sections/Q39_sections.csv
 section_infile = readline(prompt = "Enter a section filename: ")
 ```
 
@@ -101,7 +101,7 @@ if(length(grep("X\\.", colnames(section_defs))) > 0) {
 We now read in a csv file containing the data from all of our exemplar texts (and a few unrelated documents to act as outgroups).
 
 ```{r}
-# Example filename = ~/Box Sync/digital-humanities-phylogenetics/data/pass/Q01_par.csv
+# Example filename = ~/Box Sync/digital-humanities-phylogenetics/data/pass/Q39_par.csv
 corpus_infile = readline(prompt = "Enter a corpus filename: ")
 ```
 
@@ -388,14 +388,13 @@ replicate that branching point. Note that eval is set to FALSE so that these don
 
 ```{r echo = TRUE, eval = FALSE}
 
-#define par_infile
-
-par = read.csv(par_infile, stringsAsFactors = FALSE)
+# example corpus id = Q39
+corpus_id = readline(prompt = "Enter a corpus id: ")
 
 for(i in 1:1000) {
   filename = paste0("~/Box Sync/digital-humanities-phylogenetics/data/pass/bootstrap/", corpus_id, "_par_bootstrap/", corpus_id, "_par_bootstrap_", i, ".csv")
-  rows = sample(1:nrow(par), replace = TRUE)
-  corpus_bootstrap = par[rows,]
+  rows = sample(1:nrow(corpus), replace = TRUE)
+  corpus_bootstrap = corpus[rows,]
   write.csv(corpus_bootstrap, filename, row.names = FALSE)
 }
 ```
@@ -414,7 +413,7 @@ calculate_SI = function(corpus_file, k, dist_file, doc_names) {
   corpus = corpus[order(corpus$id_text, corpus$id_line),]
   
   # add sections to entries
-  corpus = add_sections_to_entries(corpus, sections)
+  corpus = add_sections_to_entries(corpus, section_defs)
   
   # define order of sections within each document
   corpus$id_text = as.factor(corpus$id_text)
@@ -466,8 +465,8 @@ Run the workflow above for all of the bootstrapped corpuses and write out a new 
 doc_names = names(doc_sections[which(num_sections >= 8)])
 
 for(i in 1:1000) {
-  corpus_file = paste0("data/pass/bootstrap/", corpus_id, "par_bootstrap/", corpus_id, "_par_bootstrap_", i, ".csv")
-  dist_file = paste0("data/section_SI/bootstrap/distance_matrices/", corpus_id, "_par_dist_matrix_", i, ".csv")
+  corpus_file = paste0("~/Box Sync/digital-humanities-phylogenetics/data/pass/bootstrap/", corpus_id, "_par_bootstrap/", corpus_id, "_par_bootstrap_", i, ".csv")
+  dist_file = paste0("~/Box Sync/digital-humanities-phylogenetics/data/section_SI/", corpus_id, "/bootstrap/distance_matrices/", corpus_id, "_par_dist_matrix_", i, ".csv")
   calculate_SI(corpus_file, k = 2, dist_file, doc_names)
 }
 ```
@@ -477,8 +476,8 @@ Compute a neighbor joining tree for each of the calculated distance matrices and
 ```{r echo = TRUE, eval = FALSE}
 # Build neighbor joining tree for each distance matrix
 for(i in 1:1000) {
-  filename_in = paste0("data/section_SI/", corpus_id, "/bootstrap/distance_matrices/", corpus_id, "_par_dist_matrix_", i, ".csv")
-  filename_out = paste0("data/section_SI/", corpus_id, "/bootstrap/trees/sect_si_nj_", i, ".tre")
+  filename_in = paste0("~/Box Sync/digital-humanities-phylogenetics/data/section_SI/", corpus_id, "/bootstrap/distance_matrices/", corpus_id, "_par_dist_matrix_", i, ".csv")
+  filename_out = paste0("~/Box Sync/digital-humanities-phylogenetics/data/section_SI/", corpus_id, "/bootstrap/trees/sect_si_nj_", i, ".tre")
   distances = read.csv(filename_in)
   distance_matrix = data.matrix(acast(distances, doc_A ~ doc_B, 
                                        value.var='dist', fun.aggregate = sum, margins = FALSE))
@@ -503,10 +502,10 @@ for(i in 1:1000) {
   }
 
 consensus_50 = consensus(trees, p = 0.5)
-write.tree(consensus_50, "data/section_SI/", corpus_id, "/bootstrap/consensus_trees/consensus_50.tre")
+write.tree(consensus_50, "~/Box Sync/digital-humanities-phylogenetics/data/section_SI/", corpus_id, "/bootstrap/consensus_trees/consensus_50.tre")
 
 consensus_75 = consensus(trees, p = 0.75)
-write.tree(consensus_75, "data/section_SI/", corpus_id, "/bootstrap/consensus_trees/consensus_75.tre")
+write.tree(consensus_75, "~/Box Sync/digital-humanities-phylogenetics/data/section_SI/", corpus_id, "/bootstrap/consensus_trees/consensus_75.tre")
 ```
 
 ```{r echo = TRUE}
@@ -514,15 +513,15 @@ write.tree(consensus_75, "data/section_SI/", corpus_id, "/bootstrap/consensus_tr
 class(trees) = "multiPhylo"
 
 avg_tree = averageTree(trees)
-write.tree(avg_tree, "data/section_SI/", corpus_id, "/bootstrap/consensus_trees/avg_tree.tre")
+write.tree(avg_tree, paste0("~/Box Sync/digital-humanities-phylogenetics/data/section_SI/", corpus_id, "/bootstrap/consensus_trees/avg_tree.tre"))
 mcc_tree = maxCladeCred(trees)
-write.tree(mcc_tree, "data/section_SI/", corpus_id, "/bootstrap/consensus_trees/mcc_tree.tre")
+write.tree(mcc_tree, paste0("~/Box Sync/digital-humanities-phylogenetics/data/section_SI/", corpus_id, "/bootstrap/consensus_trees/mcc_tree.tre"))
 
-pdf("data/section_SI/bootstrap/", corpus_id, "/consensus_trees/mcc_tree.pdf")
+pdf(paste0("~/Box Sync/digital-humanities-phylogenetics/data/section_SI/", corpus_id, "/bootstrap/consensus_trees/mcc_tree.pdf"))
 ggtree(mcc_tree) + geom_tiplab()
 dev.off()
 
-pdf("data/section_SI/bootstrap/", corpus_id, "/consensus_trees/avg_tree.pdf")
+pdf(paste0("~/Box Sync/digital-humanities-phylogenetics/data/section_SI/", corpus_id, "/bootstrap/consensus_trees/avg_tree.pdf"))
 ggtree(avg_tree) + geom_tiplab()
 dev.off()
 ```
