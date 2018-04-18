@@ -139,7 +139,7 @@ Below we inspect the most common entries (those that appear at least ten times a
 ## Look at some of the most common entries
 
 ```{r}
-common_entries[1:15]
+common_entries
 ```
 
 As seen from the output above, many of the most common entries include
@@ -189,7 +189,7 @@ most_common_entry = colnames(dtm_df[which(dtm_df["num_occurrences",] == most_com
 `r rare`% of entries appear only once or twice across the corpus. `r length(common_entries)` entries occur 10 or more times within the corpus, including one that occurs `r most_common` times within the `r rows_to_sum` documents. The most common entry is `r most_common_entry`. Now some of the most common entries are: 
 
 ```{r}
-common_entries[1:15]
+common_entries
 ```
 
 Next we will reorganize our data to enable pretty and informative plotting of entry distribution across documents and overall frequency.
@@ -243,7 +243,7 @@ Our dataset is built around lists of trees and wooden objects (composite text Q0
 which are not part of the lists of trees and wooden objects document group. 
 One of the outlier text is Q000001, which is a composite text of lists of animals.
 Before using this text as an outlier, we want to make sure that it doesn't share
-many similarities with Q000039. (EXTRA)
+many similarities with Q000039. We find very few shared entries between Q000039 and Q000001. (EXTRA)
 
 ``` {r echo = FALSE, eval = FALSE}
 # Which entries appear in both Q000001 and Q000039?
@@ -312,170 +312,4 @@ dtm_df$document = rownames(dtm_df)
 write.csv(dtm_df, "data/dtm_data/dtm_df_clean.csv", quote = FALSE)
 ```
 
-### Create bootstrapped DTMs
-
-We now create many different versions of the DTM by resampling from within the DTM. This will enable us to evaluate the quality of each branching point on our dendrograms
-based on the fraction of dendrograms generated from these bootstrapped DTMs that 
-replicate that branching point. [Erin needs to add better explanation of bootstrapping here but is tired right now.] Note that eval is set to FALSE so that these don't regenerate every time the file is knit.
-
-```{r echo = TRUE, eval = FALSE}
-
-for(i in 1:1000) {
-  filename = paste0("data/dtm_data/bootstrap/dtms/dtm_df_", i, ".csv")
-  dtm_bootstrap = sample(dtm_df, replace = TRUE)
-  write.csv(dtm_bootstrap, filename)
-}
-```
-
-### Build distance matrix based on entry overlap across document pairs
-
-To help understand the scale and pattern of shared entries across the corpus, we want to build a dataframe to store the absolute number of (unique) shared entries between each document pair. This will not count duplicated entries within one of the two documents. We will then use that dataframe to calculate a distance matrix using the formula: 
-
-similarity = (number of shared entries / length of shortest text in pair)
-
-distance = 1 - similarity
-
-First, we define some functions:
-
-```{r echo = TRUE}
-# function to extract entries of any specified document
-get_entries = function(df, doc) {
-  as.character(df[which(df$document == doc &
-                          df$value == 1),]$variable)
-}
-
-# function to get number of shared entries for any specified document pair
-get_shared_entries = function(df, doc1, doc2) {
-  doc1_entries = get_entries(df, doc1)
-  doc2_entries = get_entries(df, doc2)
-  length(which(doc1_entries %in% doc2_entries))
-}
-```
-
-We next convert the dtm dataframe from wide format to long format. In wide format, each document is a row and each entry is a column. There are as many observed values per row as their are entries. In long format, each document/entry combination is a row and there is only one observed value per row.
-
-We then initialize an empty dataframe (all_pairs), compute the number of shared entries for each
-document pair and add that to our dataframe (all_pairs), reorder the new dataframe
-so that document pairs with the most shared entries are on top, add back in our `num_entries` column (we had to remove it to build the long format dataframe) and calulate our similarity metric for each document pair. We do this in a single code chunk so that we can make it a function and run it with a for loop for each of our bootstrapped dtms.
-
-```{r}
-
-calculate_distance = function(dtm) {
-  row.names(dtm) = dtm$X
-  dtm$X = NULL
-  dtm$document = row.names(dtm)
-  melted_dtm = melt(dtm)
-
-  # initialize an empty dataframe
-  docs = unique(melted_dtm$document)
-
-  all_pairs = permutations(length(docs), 2, docs, repeats.allowed = T)
-  all_pairs = as.data.frame(all_pairs, stringsAsFactors = FALSE)
-  all_pairs$doc1 = all_pairs$V1
-  all_pairs$doc2 = all_pairs$V2
-  all_pairs$V1 = NULL
-  all_pairs$V2 = NULL
-  all_pairs$num_shared_entries = NA
-
-  # compute the number of shared entries for each pair and add to dataframe
-  for(i in 1:nrow(all_pairs)) {
-    all_pairs[i,]$num_shared_entries = 
-      get_shared_entries(melted_dtm, all_pairs[i,]$doc1, all_pairs[i,]$doc2)
-  }
-
-  # reorder the new data frame so that the document pairs with 
-  # the most shared entries are on top
-  all_pairs = all_pairs[order(-all_pairs$num_shared_entries),] 
-
-  # add back in num_entries column
-  dtm$num_entries = rowSums(dtm[1:cols_to_sum])
-
-  # calculate similarity metric and add to dataframe
-  all_pairs$similarity = NA
-  all_pairs$distance = NA
-
-  get_num_entries = function(df, doc) {
-    df[which(df$document == doc),]$num_entries 
-  }
-
-  for(i in 1:nrow(all_pairs)) {
-    doc1_entries = get_num_entries(dtm, all_pairs[i,]$doc1)
-    doc2_entries = get_num_entries(dtm, all_pairs[i,]$doc2)
-  
-    all_pairs[i,]$similarity = 
-      all_pairs[i,]$num_shared_entries / min(doc1_entries, doc2_entries)
-  
-    all_pairs[i,]$distance = 1 - all_pairs[i,]$similarity
-  }
-
-  return(all_pairs)
-  
-}
-```
-
-Run the function defined above for all of the bootstrapped DTMs and write out a new set of output files containing the calculated distance matrix for each DTM.
-
-```{r echo = TRUE, eval = FALSE}
-
-for(i in 21:1000) {
-  filename_out = paste0("data/dtm_data/bootstrap/distance_matrices/all_pairs_", i, ".csv")
-  filename_in = paste0("data/dtm_data/bootstrap/dtms/dtm_df_", i, ".csv")
-  dtm = read.csv(filename_in)
-  all_pairs = calculate_distance(dtm)
-  write.csv(all_pairs, filename_out)
-}
-```
-
-Compute a neighbor joining tree for each of the calculated distance matrices and write out the tree file.
-
-```{r echo = TRUE, eval = FALSE}
-# Build neighbor joining tree for each distance matrix
-for(i in 21:1000) {
-  filename_in = paste0("data/dtm_data/bootstrap/distance_matrices/all_pairs_", i, ".csv")
-  filename_out = paste0("data/dtm_data/bootstrap/trees/dtm_nj_", i, ".tre")
-  all_pairs = read.csv(filename_in, row.names = 1)
-  all_pairs_matrix = data.matrix(acast(all_pairs, doc1 ~ doc2, 
-                                       value.var='distance', fun.aggregate = sum, margins = FALSE))
-  treeNJ  <- NJ(dist(all_pairs_matrix))
-  write.tree(treeNJ, filename_out)
-}
-```
-
-Compute a consensus tree for all generated tree files.
-
-```{r echo = TRUE, eval = FALSE}
-
-trees = list()
-
-for(i in 1:1000) {
-  filename_in = paste0("data/dtm_data/bootstrap/trees/dtm_nj_", i, ".tre")
-  name = paste0("tree_", i)
-  tree = read.tree(filename_in)
-  trees[[name]] <- tree
-  }
-
-consensus_50 = consensus(trees, p = 0.5)
-write.tree(consensus_50, "data/dtm_data/bootstrap/consensus_trees/consensus_50.tre")
-
-consensus_75 = consensus(trees, p = 0.75)
-write.tree(consensus_75, "data/dtm_data/bootstrap/consensus_trees/consensus_75.tre")
-```
-
-```{r}
-
-class(trees) = "multiPhylo"
-
-#avg_tree = averageTree(trees)
-#write.tree(avg_tree, "data/dtm_data/bootstrap/consensus_trees/avg_tree.tre")
-mcc_tree = maxCladeCred(trees)
-write.tree(mcc_tree, "data/dtm_data/bootstrap/consensus_trees/mcc_tree.tre")
-
-#pdf("data/dtm_data/bootstrap/consensus_trees/mcc_tree.pdf")
-#ggtree(mcc_tree) + geom_tiplab()
-#dev.off()
-
-#pdf("data/dtm_data/bootstrap/consensus_trees/avg_tree.pdf")
-#ggtree(avg_tree) + geom_tiplab()
-#dev.off()
-```
 
