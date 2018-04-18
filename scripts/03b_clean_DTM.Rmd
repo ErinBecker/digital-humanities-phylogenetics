@@ -311,5 +311,3 @@ dtm_df$document = rownames(dtm_df)
 
 write.csv(dtm_df, "data/dtm_data/dtm_df_clean.csv", quote = FALSE)
 ```
-
-
