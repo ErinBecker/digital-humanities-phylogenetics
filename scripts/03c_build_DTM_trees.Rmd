@@ -10,6 +10,52 @@ knitr::opts_chunk$set(echo = FALSE)
 knitr::opts_knit$set(root.dir = "~/Box Sync/digital-humanities-phylogenetics/")
 ```
 
+```{r}
+#### Setup
+## If you haven't already, install and load the required packages. 
+
+# install.packages(c("ggplot2", "ggdendro", "reshape", "scales", "RColorBrewer", "gtools", "reshape2"))
+
+#source("http://bioconductor.org/biocLite.R")
+#biocLite("BiocInstaller")
+#biocLite("phangorn")
+
+library(ggplot2)
+library(ggdendro)
+library(reshape)
+library(reshape2)
+library(scales)
+library(RColorBrewer)
+library(gtools)
+library(phangorn)
+library(phytools)
+```
+
+
+### Read in the cleaned DTM
+
+In the previous script, we cleaned the DTM. Read in the cleaned DTM and preview. 
+
+```{r}
+dtm_df = read.csv("data/dtm_data/dtm_df_clean.csv", stringsAsFactors = FALSE)
+head(dtm_df)
+```
+
+### Move document names to row names
+We need to ensure that we do not include the document names in the columns that are
+being bootstrapped. It is unlikely that with so many columns (over 2400) that the
+document name column will be sampled many times, but if it is, it could potentially
+affect the results (as the document names do not contribute to the distance matrix).
+
+We can solve this problem by moving the document names column to row names of the data frame. 
+
+```{r}
+row.names(dtm_df) = dtm_df$document
+dtm_df$document = NULL
+dtm_df$X = NULL
+head(dtm_df)
+```
+
 ### Create bootstrapped DTMs
 
 We now create many different versions of the DTM by resampling from within the DTM. This will enable us to evaluate the quality of each branching point on our dendrograms
@@ -18,10 +64,17 @@ replicate that branching point. Note that eval is set to FALSE so that these don
 
 ```{r echo = TRUE, eval = FALSE}
 
+dir.create("data/dtm_data/bootstrap/dtms", recursive = TRUE)
+
+# save row names as a vector so we can add those back in as a document column for
+# when we melt the data frame later
+row_names = row.names(dtm_df)
+
 for(i in 1:1000) {
   filename = paste0("data/dtm_data/bootstrap/dtms/dtm_df_", i, ".csv")
   dtm_bootstrap = sample(dtm_df, replace = TRUE)
-  write.csv(dtm_bootstrap, filename)
+  dtm_bootstrap$document = row_names
+  write.csv(dtm_bootstrap, filename, row.names = FALSE, quote = FALSE)
 }
 ```
 
@@ -59,13 +112,14 @@ so that document pairs with the most shared entries are on top, add back in our 
 ```{r}
 
 calculate_distance = function(dtm) {
-  row.names(dtm) = dtm$X
-  dtm$X = NULL
-  dtm$document = row.names(dtm)
+  
+  # add document rownames
+  row.names(dtm) = row_names
+  
   melted_dtm = melt(dtm)
 
   # initialize an empty dataframe
-  docs = unique(melted_dtm$document)
+  docs = as.character(unique(melted_dtm$document))
 
   all_pairs = permutations(length(docs), 2, docs, repeats.allowed = T)
   all_pairs = as.data.frame(all_pairs, stringsAsFactors = FALSE)
@@ -85,8 +139,8 @@ calculate_distance = function(dtm) {
   # the most shared entries are on top
   all_pairs = all_pairs[order(-all_pairs$num_shared_entries),] 
 
-  # add back in num_entries column
-  dtm$num_entries = rowSums(dtm[1:cols_to_sum])
+  # add back in num_entries column but exclude document column from sums
+  dtm$num_entries = rowSums(dtm[-which(names(dtm) == "document")])
 
   # calculate similarity metric and add to dataframe
   all_pairs$similarity = NA
@@ -115,10 +169,13 @@ Run the function defined above for all of the bootstrapped DTMs and write out a 
 
 ```{r echo = TRUE, eval = FALSE}
 
-for(i in 21:1000) {
+dir.create("data/dtm_data/bootstrap/distance_matrices", recursive = TRUE)
+
+for(i in 1:1000) {
   filename_out = paste0("data/dtm_data/bootstrap/distance_matrices/all_pairs_", i, ".csv")
   filename_in = paste0("data/dtm_data/bootstrap/dtms/dtm_df_", i, ".csv")
-  dtm = read.csv(filename_in)
+  # read in one of the bootstrapped dtms
+  dtm = read.csv(filename_in, stringsAsFactors = FALSE)
   all_pairs = calculate_distance(dtm)
   write.csv(all_pairs, filename_out)
 }
